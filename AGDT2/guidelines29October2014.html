@@ -76,8 +76,8 @@
 			</li>
 			<li>4.1.2<a href="#adj_prp"> Adjective proper</a></li>
 			<li>4.1.3<a href="#sbs_adj"> Substantive adjective</a></li>
-			<li>4.1.4<a href="#vrb_adj"> Verbal adjective in </a></li>
-			<li>4.1.5<a href="#vrb_adj_sbs"> Substantive verbal adjective in </a></li>
+			<li>4.1.4<a href="#vrb_adj"> Verbal adjective in τος/τεος</a></li>
+			<li>4.1.5<a href="#vrb_adj_sbs"> Substantive verbal adjective in τος/τεος</a></li>
 			<li>4.1.6<a href="#sbs_prn"> Substantive pronoun</a></li>
 			<li>4.1.7<a href="#adj_prn"> Adjective pronoun</a></li>
 			<li>4.1.8<a href="#fnt_moo"> Syntax of the finite verb</a></li>
@@ -221,9 +221,10 @@ Although the forms τις-τι may have the force of an indefinite article (SG <
 <p>The adjective is the PoS that is inflected and so annotated for gender, number, case, and degree, and is lemmatized as such in the 
 <a href="http://www.perseus.tufts.edu/hopper/resolveform?redirect=true" target="_blank">LSJ dictionary</a>.</p>
 
-<p>The lemma translation for the adjective should be an English positive adjective (or, if this is not possible, an equivalent expression). Some examples are:</p>
+<p>The lemma translation for the adjective should be an English positive adjective (or, if this is not possible, an equivalent expression) or a noun, if appropriate. Some examples are:</p>
 <ul>
 <li>εὐέλπιδος <code>hopeful</code></li>
+<li>ἱερός <code>temple</code> (when the adjective is substantivized and means "temple")</li>
 <li>γυιαρκής <code>strengthening.the.limbs</code></li>
 <li>μακρότερος <code>small</code></li>
 <li>τάχιστος <code>quick</code></li>
@@ -780,7 +781,7 @@ The morphosyntactic tagset consists of those categories which, on the basis of t
 
 <p>
 In traditional grammar, the syntax of the case is concerned with the functions of the cases of the noun and 
-its syntactic equivalents (the substantive pronoun, the substantive adjective, the substantive participle, the articular infinitive, and the substantivized adjective clause; henceforth I will usually use the term "noun" to mean "noun" plus these syntactic equivalents). It deals with the distinction between, for example, an <a href="#acc_aff">accusative of the external object</a> and an <a href="#acc_rsp">accusative of respect</a>. In the treebank 2.0, it is possible to fully annotate the syntax of the case by means of an elaborate algorithm. Most of the categories covered by the traditional syntax of the case are today treated under the rubric of semantic roles (in the following, the term "(semantic) function" is sometimes used as a synonym for "semantic role").
+its syntactic equivalents (the substantive pronoun, the substantive adjective, including the verbal ones in τος/τεος, the substantive participle, the articular infinitive, and the substantivized adjective clause; henceforth I will usually use the term "noun" to mean "noun" plus these syntactic equivalents). It deals with the distinction between, for example, an <a href="#acc_aff">accusative of the external object</a> and an <a href="#acc_rsp">accusative of respect</a>. In the treebank 2.0, it is possible to fully annotate the syntax of the case by means of an elaborate algorithm. Most of the categories covered by the traditional syntax of the case are today treated under the rubric of semantic roles (in the following, the term "(semantic) function" is sometimes used as a synonym for "semantic role").
 </p>
 
 <p>
@@ -792,12 +793,12 @@ After the morphological annotation, the annotator is required to annotate the sy
 
 <p>
 Following SG, the annotation algorithm distinguishes between main and adpositional functions for each case: e.g., the semantic function encoded by the 
-<a href="#acc_trm">terminal accusative</a> (accusative of direction) is a main function (because it is expressed by the bare case), while an adpositional function is a semantic function that can be encoded only by a case plus an adposition (e.g., "cause" expressed by 
+<a href="#acc_trm">terminal accusative</a> (accusative of direction) is a main function (because it can be expressed by the bare case), while an adpositional function is a semantic function that can be encoded only by a case plus an adposition (e.g., "cause" expressed by 
 <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">διά + accusative</a>, which cannot be expressed by the bare accusative case). A case can sometimes express a main function also in conjunction with an adposition, which can define it more specifically: e.g., "direction" can also be encoded by, for example, 
 <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1686&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">εἰς</a> or 
 <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1692&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">παρά</a> + accusative. A main function, whether or not it is specified by an adposition, is <em>always</em> annotated by selecting the relevant main function.</p>
 
-<p>By contrast, a function that is shown as adpositional in the annotation algorithm is a semantic function that is always different from those expressed by the main functions (adpositionl functions are indicated by the formalism "(with x) y", where x is one or more than one adposition and y is a SR). For the sake of perspicuity, time and place SRs are all grouped together under the relevant non-adpositional function specific to each case (and so these groupings are the only exception to the above criterion according to which adpositional functions which are not expressed by the bare case are always and only listed in the adpositional functions).</p>
+<p>By contrast, a function that is shown as adpositional in the annotation algorithm is a semantic function that is always different from those expressed by the main functions (i.e., they cannot be expressed by the bare case). For the sake of perspicuity/simplicity, however, time and place SRs are all grouped together under the relevant non-adpositional function specific to each case (irrespective of the above criterion), with the exception of the genitive of separation and the terminal accusative, which are kept distinct from the genitive of place and the accusative of extent respectively.</p>
 
 <p>All the instantiations for the adpositional case are grouped and algorithmically placed on the same level as the main functions, even when a certain adpositional function might have been subsumed under one of the main functions, it being clearly derived from it: this is a technical expedient to keep all kinds of the  adpositional case together, in that it is not possible to claim for a number of adpositional functions whether/from which main function they are derived. When accompanied by an adposition, the function of a case is technically annotated as belonging to the noun, without a claim that the case is the only bearer of the semantic function expressed by it and its governing adposition.
 </p>
@@ -814,9 +815,9 @@ The annotator is <em>required</em> to annotate the syntax of the case when the n
 </ul>
 
 <p>
-When a case depends on any other part of speech, the option "none of the above" is to be selected. The latter option is made available because I do not attempt to provide guidelines for the annotation of dependents of the adjective and the adverb, which is, as is known, more controversial and so more difficult to rule. There are cases where the SG annotation of a noun depending on an adjective or an adverb is rather straightforward, but many others where it is not  (SG (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1413&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1413</a>) itself acknowledges this). Providing operational criteria for this latter kind of annotation is outside the scope of the present guidelines. However, the system technically allows the annotation of a given SR also when a noun depends on an adjective or adverb: the annotator is free to also annotate it, provided that this is declared and the annotation criteria are documented.</p> 
+When a case depends on any other part of speech, the option "none of the above" is to be selected. The latter option is made available because I do not attempt to provide guidelines for the annotation of dependents of the adjective and the adverb, which is, as is known, more controversial and so more difficult to rule. There are cases where the SG annotation of a noun depending on an adjective or an adverb is rather straightforward, but many others where it is not  (SG (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1413&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1413</a>) itself acknowledges this). Providing operational criteria for this latter kind of annotation is outside the scope of the present guidelines. However, the annotation environment "Arethusa" technically allows the annotation of a given SR also when a noun depends on an adjective or adverb: the annotator is free to also annotate it, provided that this is declared and the annotation criteria are documented.</p> 
 
-<p>The option "none of the above" is also to be selected when a PP expresses a SR whose annotation is not available (for a selection of SRs can currently be annotated only: see the list below). I have tried to design the algorithm in such a way that it is possible to annotate a certain SR wherever it appears within the clause, independently of its morphosyntactic realization (e.g., "cause" can always be annotated, whether it is expressed by a noun, an adverb, or a PP). Note, however, that, following SG and the most recent literature on the subject, the semantics of the adjective, the nominative, and that of some kinds of genitive, dative, and accusative (such as the partitive genitive with verbs or the dative as direct complement of verbs) is not investigated here, the definition of such a more complex semantic analysis being outside the scope of the current release of the treebank. 
+<p>The option "none of the above" is also to be selected when a PP expresses a SR whose annotation is not available (for a selection of SRs can currently be annotated only: see the list below). I have tried to design the algorithm in such a way that it is possible to annotate a certain SR wherever it appears within the clause, independently of its morphosyntactic realization (e.g., "cause" can always be annotated, whether it is expressed by a noun, an adverb, a PP, a participle, or a clause). Note, however, that, following SG and much literature on the subject, the semantics of the adjective, the nominative, and that of some kinds of genitive, dative, and accusative (such as the partitive genitive with verbs or the dative as direct complement of verbs) is not investigated (and so cannot be annotated), there being much less agreement on it. Providing operational criteria for this kind of annotation is outside the scope of the present release of the guidelines.
 </p>
 
 <p>A certain SR expressed by a sub-clause constituent may also be conveyed by a clause (e.g., the causal clause): the present annotation system allows the annotation of sub-clause SRs also at the clause level (e.g., "manner" can be annotated when expressed not only by an adverb or a dative, but also by a circumstantial participle).</p>
@@ -834,11 +835,11 @@ In the list I do not include the categories
 "dative with the participle of inclination or aversion" (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1487&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1487</a>), 
 "dative of the participle expressing time" (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1498&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1498</a>), 
 object affected (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1551&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1551</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1562&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1562</a>), and
-object effected (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1563&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1563</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1579&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1579</a>): they are grammatical categories rather than SRs.
+object effected (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1563&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1563</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1579&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1579</a>): they are grammatical categories rather than SRs. As stated above, their semantics cannot be annotated in the present version of the guidelines.
 </p>
 
 
-<table style="border:1">
+<table id="table_SR" style="border:1">
 <caption><span style="font-weight: bold">1. Table for semantic roles in AG</span></caption>
 <tr>
 <th>Semantic role</th>
@@ -859,8 +860,8 @@ object effected (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+gra
 <td>accompanying circumstance</td>
 <td>abstract participant that denotes the circumstance (but not the manner) accompanying an event</td>
 <td></td>
-<td><a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1481&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1527</a></td>
-<td>This SR should be used only when the accompanying circumstance cannot be interpreted as a manner</td>
+<td><a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1527&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1527</a></td>
+<td>This SR should be selected only when the accompanying circumstance cannot be interpreted as a manner</td>
 </tr>
 
 <tr>
@@ -868,7 +869,7 @@ object effected (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+gra
 <td>animate participant (or participant composed of animate entities, such as "country") to whose advantage an event occurs</td>
 <td>I work <span style="font-style: italic">for you</span></td>
 <td><a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1481&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1481</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1485&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1485</a></td>
-<td>This SR is usually known as "beneficiary"</td>
+<td>This SR is also known as "beneficiary" in the literature</td>
 </tr>
 
 <tr>
@@ -884,7 +885,7 @@ object effected (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+gra
 <td>participant that causes an event intentionally or consciously</td>
 <td>The cake was made <span style="font-style: italic">by him</span></td>
 <td><a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1488&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1488</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1494&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1494</a></td>
-<td></td>
+<td>Due to the limitations stated above, this SR cannot be annotated when it is expressed by a nominative (the semantics of the nominative not being investigated in this version of the treebank)</td>
 </tr>
 <tr>
 <td>friendly association</td>
@@ -907,7 +908,7 @@ He fights <span style="font-style: italic">with you</span>
 </tr>
 <tr>
 <td>cause</td>
-<td>participant that is the occasion (external cause) or motive (internal cause) of an event without its consciuosness or intentionality</td>
+<td>participant that is the occasion (external cause) or motive (internal cause) of an event, typically without its consciuosness or intentionality</td>
 <td>
 I was astonished <span style="font-style: italic">at that</span>;<br/>
 I admire him <span style="font-style: italic">for</span> his <span style="font-style: italic">bravery</span>
@@ -918,7 +919,7 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 
 <tr>
 <td>conformity</td>
-<td>participant specifying according to what something occurrs</td>
+<td>participant specifying according to what something occurs</td>
 <td>
 <span style="font-style: italic">in accordance with</span> the <span style="font-style: italic">laws</span>
 </td>
@@ -933,7 +934,7 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <span style="font-style: italic">as regards</span> a <span style="font-style: italic">wife</span>, if she conducts herself ill, etc.
 </td>
 <td><a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1381&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1381</a></td>
-<td>This SR is also used when a genitive expresses the SR of respect (see below)</td>
+<td>This SR is also used when a genitive expresses the SR of respect. Note that, contrary to SG, if a genitive expresses topic with verbs of saying or thinking (or similar verbs), the SR to be selected is "topic"</td>
 </tr>
 <tr>
 <td>crime and accountability</td>
@@ -943,9 +944,9 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td></td>
 </tr>
 <tr>
-<td>distinction and comparison</td>
-<td>participant with respect to which two participants differ</td>
-<td>he is superior to you <span style="font-style: italic">in eloquence</span></td>
+<td>(distinction and) comparison</td>
+<td>participant to which another participant is compared</td>
+<td>he is superior <span style="font-style: italic">to you</span> in eloquence</td>
 <td><a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1401&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1401</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1404&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1404</a></td>
 <td></td>
 </tr>
@@ -969,7 +970,7 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>participant that specifies how an event occurs</td>
 <td>he reads <span style="font-style: italic">wonderfully</span></td>
 <td><a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1527&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1527</a></td>
-<td>SG definition (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1513&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1513</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1515&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1515</a>) of manner is not the one adopted here: our basically definition coincides with the definition of accompanying circumstance (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1527&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1527</a>), excluding all those instances that cannot be strictly interpreted as manner specifications</td>
+<td>SG definition (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1513&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1513</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1515&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1515</a>) of manner is not the one adopted here: SG defines manner as "measure of difference" and "respect", both of which are treated here as distinct SRs. My definition of manner basically coincides with SG definition of accompanying circumstance (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1527&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1527</a>), excluding all those instances that cannot be strictly interpreted as manner specifications</td>
 </tr>
 <tr>
 <td>material or contents</td>
@@ -1024,11 +1025,11 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>This SR is also known as "goal" or "allative"</td>
 </tr>
 <tr>
-<td>possession or belonging</td>
+<td>possession or belonging/possessor</td>
 <td>participant that possesses or is interested in possessing another participant</td>
 <td><span style="font-style: italic">Areistotle's</span> books</td>
 <td><a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1297&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1297</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1305&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1305</a>; <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1476&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1476</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1480&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1480</a></td>
-<td>The genitive of possession indicates possession, while the dative of possession interest in possession</td>
+<td>The genitive of possession indicates possession, while the dative of possessor interest in possession</td>
 </tr>
 <tr>
 <td>price and value</td>
@@ -1042,7 +1043,7 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>participant that is the aim of an event</td>
 <td>He earned money <span style="font-style: italic">for him/that</span></td>
 <td><a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1408&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1408</a></td>
-<td>The SR "purpose" is usually inanimate. When the theme is animate, the context can help in distinguishing between purpose and beneficiary.</td>
+<td>The SR "purpose" is usually inanimate. When the participant is animate, the context can help in distinguishing between purpose and beneficiary.</td>
 </tr>
 <tr>
 <td>quality</td>
@@ -1056,14 +1057,14 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>animate participant that limits the meaning of an event</td>
 <td>it is safer <span style="font-style: italic">for them</span> to flee</td>
 <td><a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1495&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1495</a></td>
-<td>This SR and that of "respect" can be distinguished only on the basis of animacy</td>
+<td>This SR and that of "respect" can be distinguished on the basis of animacy</td>
 </tr>
 <tr>
 <td>recipient or addressee</td>
 <td>participant to which an event is directed</td>
 <td>he told <span style="font-style: italic">me</span> that he was happy</td>
 <td><a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1469&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1469</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1470&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1470</a></td>
-<td></td>
+<td>This SR prototypically depends on verbs of giving (recipient) and saying (addressee)</td>
 </tr>
 <tr>
 <td>reference</td>
@@ -1077,7 +1078,7 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>inanimate participant that delimits the scope of a property or event</td>
 <td>harsh <span style="font-style: italic">of voice</span></td>
 <td><a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1516&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1516</a>; <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1600&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1600</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1605&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1605</a></td>
-<td>This SR can be expressed by the dative or the accusative. It is also related to the SR of connection.</td>
+<td>This SR can be expressed by the dative or the accusative. The SR of connection can be considered as a variant of it.</td>
 </tr>
 <tr>
 <td>feeling</td>
@@ -1122,8 +1123,8 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 </tr>
 <tr>
 <td>(time) temporal distance</td>
-<td>time in which an event occurred (it also indicates how much time ago an event occurred)</td>
-<td>(I will return) <span style="font-style: italic">in</span> three <span style="font-style: italic">weeks</span>
+<td>time in which an event occurred; or how long ago an event occurred</td>
+<td>(I will return) <span style="font-style: italic">in</span> three <span style="font-style: italic">weeks</span><br/> three <span style="font-style: italic">years ago</span>
 </td>
 <td><a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1539&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1539</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1543&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1543</a></td>
 <td>More examples and explanation in Haspelmath 1997:80–96</td>
@@ -1132,8 +1133,7 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>(time) temporal extent</td>
 <td>time for which an event has occurred</td>
 <td><span style="font-style: italic">for</span> two <span style="font-style: italic">months</span><br/>
-I wrote the letter <span style="font-style: italic">in</span> two <span style="font-style: italic">hours</span><br/>
-<span style="font-style: italic">seit</span> drei <span style="font-style: italic">Jahren</span>
+I wrote the letter <span style="font-style: italic">in</span> two <span style="font-style: italic">hours</span>
 </td>
 <td><a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1444&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1444</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1447&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1447</a>;
 <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1539&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1539</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1543&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1543</a>;
@@ -1154,7 +1154,7 @@ I wrote the letter <span style="font-style: italic">in</span> two <span style="f
 <td><span style="font-style: italic">of Darius</span> and <span style="font-style: italic">Parysatis</span> were born two sons; <br/>
 I heard that from him</td>
 <td><a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1410&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1410</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1411&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1411</a></td>
-<td>This SR is also known as "origin"</td>
+<td>This SR is also known as "origin" in the literature</td>
 </tr>
 <tr>
 <td>standard of judgment</td>
@@ -1167,7 +1167,7 @@ I heard that from him</td>
 
 
 <p>
-In the following sections I show the algorithms underlying the annotation for each case and their explanation: as for grammar definitions, the reader will constantly be referred to SG sections.
+In the following sections I show the algorithms underlying the annotation for each case and their explanation: as for grammar definitions, the reader will constantly be referred to the relevant SG sections.
 </p>
 
 
@@ -1534,10 +1534,9 @@ There exist three main kinds of dative: the dative proper, the instrumental dati
 	<li>adpositional dative 
 	<ul>
 	<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ἐπί</a>) purpose</li>
-	<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ἐπί</a>) measure</li>
 	<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1687&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ἐν</a>, 
 			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1696&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">συν</a>) conformity</li>
-	<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ἐπί</a>) price</li>
+	<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ἐπί</a>) price and value</li>
 	<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ἐπί</a>) condition</li>
 	<li>none of the above</li>
 	<li>I do not know</li>
@@ -1928,7 +1927,7 @@ In the following sections, the annotation of the adpositional case is detailed. 
 	<li>condition: adpositional condition</li>
 	<li>reason, motive: dative of cause</li>
 	<li>hostility: dative of disadvantage</li>
-	<li>price: adpositional price</li>
+	<li>price: adpositional price and value</li>
 </ul>	
 
 
@@ -2510,9 +2509,9 @@ On the basis of the mood selected at the morphological level, the annotation alg
 <div id="adj_cls">
 <h4>4.1.8.4 Adjective clause</h4>
 <p>
-The Adjective clause is a relative clause. Just like an adjective, the relative clause can have the function of an adjective (adjective clause proper) or be substantivized (i.e., strictly when the antecedent is not expressed). There two ways to annotate substantivized relative clauses. The easiest way is to not add an elliptical node for the omitted antecedent: although this solution is the fastest, it does not allow to always annotate the case which is governed by the verb of the relative clause. The second option is to add the elliptical node and so treat the relative clause as an adjective clause proper (and do any relative clause is treated as an adjective clause proper, independentely of whether or not the antecedent of the relative pronoun is expressed). The first option is the default one, while the second has to be declared. The adjective relative clause can be an ordinary relative clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2553&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2553</a>), a final relative clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2554&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2554</a>), a cause relative clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2555&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2555</a>), a consecutive relative clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2556&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2556</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2559&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2559</a>), or a conditional relative clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2560&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2560</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2573&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2573</a>), on the basis of its meaning.</p>
+The Adjective clause is a relative clause. Just like an adjective, the relative clause can have the function of an adjective (adjective clause proper) or be substantivized (i.e., when the antecedent is not expressed). There two ways to annotate substantivized relative clauses. The easiest way is to not add an elliptical node for the omitted antecedent. The second option is to add the elliptical node and so treat the relative clause as an adjective clause proper (and so any relative clause is treated as an adjective clause proper, independentely of whether or not the antecedent of the relative pronoun is expressed). The first option is the default one, while the second one has to be declared. The adjective relative clause can be an ordinary relative clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2553&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2553</a>), a final relative clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2554&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2554</a>), a cause relative clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2555&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2555</a>), a consecutive relative clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2556&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2556</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2559&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2559</a>), or a conditional relative clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2560&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2560</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2573&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2573</a>), on the basis of its meaning.</p>
 
-<p>The easiest example of relative clause is the one with the antecedent expressed (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=46&amp;doc=4971" target="_blank">tree1</a>). When the antecedent is not expressed, and so the adjective clause it taken to be substantivized, the verb of the relative clause is attached to the governor verb and receives the SG annotation that an antecedent would have received if it were expressed; the relative pronoun is attached to the verb of the relative clause and receives the SG annotation that is required by the governor verb, no matter what the morphology of the relative pronoun is (this allows us to solve the problem with the phenomenon of attraction of the relative pronoun): see  <a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=20&amp;doc=4971" target="_blank">tree1</a>, <a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=49&amp;doc=4971" target="_blank">tree2</a>. There may cases where, although adopting the annotation style for substantivized adjective clauses, the annotator is forced to add an elliptical node, no other annoation being possible according to the present formalism (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=50&amp;doc=4971" target="_blank">tree1</a>). The possibility to choose a different syntactic case for each word allows also the annotation of examples of incorporation of the ancedent (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=51&amp;doc=4971" target="_blank">tree1</a>). When an adjective clause has adverbial function, it has to be appended to its superordinate verb: <a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=47&amp;doc=4971">tree1</a>.</p>
+<p>The easiest example of relative clause is the one with the antecedent expressed (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=46&amp;doc=4971" target="_blank">tree1</a>). When the antecedent is not expressed, and so the adjective clause it taken to be substantivized, the verb of the relative clause is attached to the governor verb and receives the SG annotation that an antecedent would have received if it were expressed; the relative pronoun is attached to the verb of the relative clause and receives the SG annotation that is required by the governor verb, no matter what the morphology of the relative pronoun is (i.e., the syntactic case can be different from the morphological one of the relative pronoun/adverb): see  <a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=20&amp;doc=4971" target="_blank">tree1</a>, <a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=49&amp;doc=4971" target="_blank">tree2</a>. There may cases where, although adopting the default annotation style for substantivized adjective clauses, the annotator is forced to add an elliptical node, no other annotation being possible according to the present formalism (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=50&amp;doc=4971" target="_blank">tree1</a>). The possibility to choose a different syntactic case for each word allows also the annotation of examples of incorporation of the ancedent (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=51&amp;doc=4971" target="_blank">tree1</a>). When an adjective clause proper has adverbial function, it has to be appended to its superordinate verb: <a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=47&amp;doc=4971">tree1</a>.</p>
 
 <p>
 The Prague annotation labels for the head verb of an adjective clause are the same as those for the <a href="#adj">adjective</a> or <a href="#noun">noun</a> (for the substantivized adjective clause).
@@ -2653,7 +2652,7 @@ The label "any attendand circumstance" should be reserved for those participles 
 
 The supplementary participle is an argument of the verb. Following SG, two kinds of supplementary participles are distinguished: the one not in indirect discourse (SG 
 <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2094&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2094</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2105&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2105</a>; <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2123&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2123</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2145</a>) and the one in indirect discourse (SG
-<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2106&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2106</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2115&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2115</a>; <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2120&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2120</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2145</a>). The difference lies in the nature of the governing verb, which can allows a participle to be equivalent to a dependent statement according to the principles of indirect discourse (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2589&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2589</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2589&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2635</a>):
+<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2106&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2106</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2115&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2115</a>; <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2120&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2120</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2145</a>). The difference lies in the nature of the governing verb, which can allows a participle to be equivalent to a dependent statement according to the principles of indirect discourse (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2589&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2589</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2635&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2635</a>):
 
 <blockquote>
 <p>οὐ γὰρ ᾔδεσαν αὐτὸν τεθνηκότα (= τέθνηκε)</p> 
@@ -2684,7 +2683,7 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 <div id="prh_prt">
 <h4> 4.1.9.4 Periphrastic participle</h4>
 
-<p>In SG, this participle is considered to be a kind of supplementary participle (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2091&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2091</a>; note that if a participle is substantivized it cannot be taken to be a periphrastic). However it seems to be useful to categorize it separately. See SG (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+599&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">599</a>, 
+<p>In SG, this participle is considered to be a kind of supplementary participle (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2091&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2091</a>; note that if a participle is substantivized it cannot be taken to be periphrastic). However it seems to be useful to categorize it separately. See SG (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+599&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">599</a>, 
 		<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+600&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">600</a>, 
 			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1961&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1961</a>-<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1965&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1965</a>) for plenty of examples.</p> 
 
@@ -2934,7 +2933,7 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 
 <div id="part">
 <h4>4.1.12.1 Particle</h4>
-<p>Particle are here defined as those adverbs, typically sentence adverbs, which in AG are typically in pospositive position. The definition in SG, as well as in many traditional grammars, is broader, in that it also includes conjunctions: these, however, have to be always and only annotated as conjunctions. As is known, the meaning and function of AG particles is very complex to capture. In the following guidelines there is no attempt to provide detailed criteria to annotate particles. The annotator is only required to be able to identify those particle (in the traditional large definition of terms) which are conjunctions:</p> 
+<p>Particle are here defined as those adverbs, typically sentence adverbs, which in AG are typically in pospositive position. The definition in SG, as well as in many traditional grammars, is broader, in that it also includes conjunctions: these, however, have to be always annotated as conjunctions. As is known, the meaning and function of AG particles is very complex to capture. In the following guidelines there is no attempt to provide detailed criteria to annotate particles. The annotator is only required to be able to identify those particle (in the traditional large definition of terms) which are conjunctions:</p> 
 
 <ul><li>ἀλλά</li>
 	<li>ἀτάρ</li>
@@ -2961,7 +2960,7 @@ Any other particle which is not one of the above conjunctions is attached either
 
 </p>
 </div>
-
+ 
 		
 </div>
 
@@ -2972,3 +2971,4 @@ Any other particle which is not one of the above conjunctions is attached either
 </div>
 </body>
 </html>
+
