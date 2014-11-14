@@ -10,7 +10,7 @@
 <div id="guidelines">
 <h3 style="text-align: center">GUIDELINES FOR THE ANCIENT GREEK DEPENDENCY TREEBANK 2.0 (PRE-RELEASE)</h3>
 <h4 style="text-align: center">Giuseppe G. A. Celano</h4>
-<h4 style="text-align: center">Tufts University  &amp; Universität Leipzig</h4>
+<h4 style="text-align: center">Tufts University &amp; Universität Leipzig</h4>
 
 <div id="sum">
 	<h3>Summary</h3>
@@ -83,8 +83,17 @@
 			<li>4.1.8<a href="#fnt_moo"> Syntax of the finite verb</a></li>
 			<li>4.1.9<a href="#adj_prt"> Adjective participle</a></li>
 			<li>4.1.10<a href="#sbs_prt"> Substantive participle</a></li>
-			<li>4.1.11<a href="#inf"> Syntax of the infinitive</a></li>
-			<li>4.1.12<a href="#adv_snt"> Syntax of the adverb</a></li>
+			<li>4.1.11<a href="#inf"> Syntax of the infinitive</a>
+				<ul>
+					<li>4.1.11.1 <a href="#dpn_inf">Dependent</a></li>
+					<li>4.1.11.2 <a href="#idp_inf">Independent</a></li>
+					<li>4.1.11.3 <a href="#art_inf">Articular infinitive</a></li>
+					<li>4.1.11.4 <a href="#vrl_inf">Verbal infinitive</a></li>
+				</ul>
+			</li>
+			<li>4.1.12<a href="#adv_snt"> Syntax of the adverb</a>
+				<ul><li>4.1.12.1 <a href="#part">Particles</a></li></ul>
+			</li>
 		</ul>
 		</li>
 		<li></li>
@@ -2722,8 +2731,29 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 <ul>
 <li>as nominative (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=39&amp;doc=4971" target="_blank">tree1</a>)
 <ul>
-<li>in indirect discourse</li>
-<li>not in indirect discourse</li>	
+<li>in indirect discourse
+<ul>
+	<li>statement</li>
+	<li>assumption</li>
+	<li>command</li>
+	<li>wish</li>
+	<li>question</li>
+	<li>exclamation</li>
+	<li>none of the above</li>
+	<li>I do not know</li>
+</ul></li>
+<li>not in indirect discourse
+<ul>
+	<li>statement</li>
+	<li>assumption </li>
+	<li>command </li>
+	<li>wish</li>
+	<li>question</li>
+	<li>exclamation</li>
+	<li>none of the above</li>
+	<li>I do not know</li>
+</ul>
+</li>	
 <li>none of the above</li>
 <li>I do not know</li>
 </ul>
@@ -2785,7 +2815,7 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 
 <div id="idp_inf">
 <h4>4.1.11.2 Independent</h4>
-<p>An infinitive is said to be "independent" if it is the head of a sentence (or linguistically independent, as is the absolute infinitive).</p>
+<p>An infinitive is said to be "independent" if it is the head of a sentence (or linguistically independent, as the absolute infinitive is).</p>
 </div>
 
 <div id="art_inf">
@@ -2802,19 +2832,30 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 
 <p>The whole spectrum of possibilities available to annotate the noun is algorithmically made available for the articular infinitive, even though only some them 
 	are likely to be found in practice. On the basis of the case selected, the annotator has access to the <a href="#snt_cas">syntax of the case</a>.</p>
-<p>The Prague annotation labels are the same as those for the <a href="#nou">noun</a></p>
+<p>The Prague annotation labels are the same as those for the <a href="#nou">noun</a>.</p>
 
 </div>
 
 <div id="vrl_inf">
 <h4>4.1.11.4 Verbal infinitive</h4>
 
-<p>When the infinitive is not articular, it is labeled "verbal". The following possibilities are available:
+<p>When the infinitive is not articular, it is labeled as "verbal". The following possibilities are available:
 
 <ul>
 	<li>as nominative
 	<ul>
-	<li>in indirect discourse</li>
+	<li>in indirect discourse
+	<ul>
+		<li>statement</li>
+		<li>assumption </li>
+		<li>command </li>
+		<li>wish</li>
+		<li>question</li>
+		<li>exclamation</li>
+		<li>none of the above</li>
+		<li>I do not know</li>
+	</ul>
+	</li>
 	<li>not in indirect discourse</li>
 	<li>none of the above</li>
 	<li>I do not know</li>
@@ -2822,7 +2863,18 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 	</li>
 	<li>as accusative
 	<ul>
-	<li>in indirect discourse</li>
+	<li>in indirect discourse
+	<ul>
+		<li>statement</li>
+		<li>assumption </li>
+		<li>command </li>
+		<li>wish</li>
+		<li>question</li>
+		<li>exclamation</li>
+		<li>none of the above</li>
+		<li>I do not know</li>
+	</ul>
+	</li>
 	<li>not in indirect discourse</li>
 	<li>none of the above</li>
 	<li>I do not know</li>
@@ -2852,12 +2904,12 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 </ul>
 	
 	
-<p>The infinitive, when depending on a verb, bears a syntactic (not morphological) nominative or accusative case on the basis of whether it is the subject or the object of a verb, and can be in indirect discourse (SG
+<p>The infinitive, when depending on a verb, bears a syntactic nominative or accusative case on the basis of whether it is the subject or the object of a verb, and can be in indirect discourse (SG
 	<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2016&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2016</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2024&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2024</a>) or not in indirect discourse (SG 
 	<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1989&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1989</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2007&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2007</a>). The infinitive can also be used to express purpose (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2008&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2008</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2010&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2010</a>), result (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2011&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2011</a>), or temporal clauses (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2453&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2453</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2461&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2461</a>).
 </p>
 
-<p>The Prague annotation labels are the same as those for the <a href="#nou">noun</a>. When the infinitive is of purpose, result, or temporal, the label is ADV.</p>
+<p>The Prague annotation labels are the same as those for the <a href="#nou">noun</a>. When the infinitive is of purpose, result, or temporal, the label is <a href="#adv_fnc">ADV</a>.</p>
 
 </div>
 
@@ -2870,6 +2922,7 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 		<li>simultaneous location</li>
 		<li>sequential location</li>
 		<li>sequential-durative</li>
+		<li>temporal distance</li>
 		<li>temporal extent</li>
 		<li>none of the above</li>
 		<li>I do not know</li>
@@ -2929,15 +2982,15 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 	
 <p>The tagset distinguishes many kinds of time and place adverbs because the annotation aims to preserve the distinctions that are morphologically signaled by the case when the SR is expressed by a noun.</p>
 
-<p>The Prague annotation labels are OBJ, ADV (on the basis of whether or not the adverb is an argument), <a href="#auxz">AuxZ</a>, or <a href="#auxy">AuxY</a>.</p>
+<p>The Prague annotation labels are <a href="#obj">OBJ</a>, <a href="#adv_fnc">ADV</a> (on the basis of whether or not the adverb is an argument), <a href="#auxz">AuxZ</a>, or <a href="#auxy">AuxY</a>.</p>
 
 <div id="part">
 <h4>4.1.12.1 Particle</h4>
-<p>Particle are here defined as those adverbs, typically sentence adverbs, which in AG are usually in pospositive position. The definition in SG, as well as in many traditional grammars, is broader, in that it also includes conjunctions: these, however, have to be always annotated as conjunctions. As is known, the meaning and function of AG particles is very complex to capture. In the following guidelines there is no attempt to provide detailed criteria to annotate particles. The annotator is only required to be able to identify those particle (in the traditional large definition of terms) which are conjunctions:</p> 
+<p>Particle are here defined as those adverbs, typically sentence adverbs, which in AG are usually in pospositive position. The definition in SG, as well as in many traditional grammars, is broader, in that it also includes conjunctions: these, however, have to be always annotated as conjunctions. As is known, the meaning and function of AG particles is very complex to capture. In the following guidelines there is no attempt to provide detailed criteria to annotate particles. The annotator is only required to be able to identify those particle (in the traditional large definition of terms) which are conjunctions, such as:</p> 
 
 <ul><li>ἀλλά</li>
 	<li>ἀτάρ</li>
-	<li>δέ <a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=51&amp;doc=4971" target="_blank">tree1</a></li>
+	<li>δέ<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=51&amp;doc=4971" target="_blank">tree1</a></li>
 	<li>εἴτε</li>
 	<li>ἤ</li>
 	<li>ἠδέ</li>
@@ -2947,7 +3000,7 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 	<li>οὔτε</li>
 	<li>μηδέ</li>
 	<li>μήτε</li>
-	<li>τέ</li>
+	<li>τε</li>
 </ul>
 	
 	
