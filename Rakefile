@@ -31,12 +31,13 @@ end
 
 
 ##################
-#  Path Helpers  #
+#  File Helpers  #
 ##################
 
 XML_EXTENSION = '.xml'
 TEMP_EXTENSION = ".tmp.xml"
 TEMP_PATH = "temp_transformations"
+V1_TO_IGNORE = %w{ ldt-1.5.xml agdt-1.7.xml }
 
 def v1_path(lang)
   File.join('v1', lang, 'data')
@@ -66,6 +67,8 @@ end
 
 desc 'Transforms v1 data to v1.6'
 task :"v1_to_v1.6" do
+  total_start = Time.now
+
   Dir.mkdir(TEMP_PATH) unless File.exists?(TEMP_PATH)
   %w{ latin greek }.each do |lang|
     info("Processing #{lang}", true)
@@ -74,7 +77,10 @@ task :"v1_to_v1.6" do
     Dir.mkdir(dir) unless File.exists?(dir)
 
     Dir.glob(xml_glob_at(v1_path(lang))) do |file|
-      info("Transforming #{File.basename(file)}")
+      basename = File.basename(file)
+      next if V1_TO_IGNORE.include?(basename)
+
+      info("Transforming #{basename}")
 
       start = Time.now
 
@@ -94,5 +100,10 @@ task :"v1_to_v1.6" do
 
     FileUtils.rm_rf(dir)
   end
+
   Dir.rmdir(TEMP_PATH)
+  total_stop = Time.now
+  total_time = total_stop - total_start
+
+  success("Transformations completed in #{total_time.round(2)}s", true)
 end
