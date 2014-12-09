@@ -34,6 +34,7 @@ end
 #  Path Helpers  #
 ##################
 
+XML_EXTENSION = '.xml'
 TEMP_EXTENSION = ".tmp.xml"
 TEMP_PATH = "temp_transformations"
 
@@ -46,11 +47,11 @@ def v1six_path(lang)
 end
 
 def xml_glob_at(path)
-  File.join(path, '*.xml')
+  File.join(path, "*#{XML_EXTENSION}")
 end
 
 def temp_file(filename)
-  stripped = File.basename(filename, '.xml')
+  stripped = File.basename(filename, XML_EXTENSION)
   "#{stripped}#{TEMP_EXTENSION}"
 end
 
@@ -73,14 +74,13 @@ task :"v1_to_v1.6" do
     Dir.mkdir(dir) unless File.exists?(dir)
 
     Dir.glob(xml_glob_at(v1_path(lang))) do |file|
-      basename = File.basename(file)
-      info("Transforming #{basename}")
+      info("Transforming #{File.basename(file)}")
 
       start = Time.now
 
       transformer = Treebank::Transform.new(File.read(file))
       result   = transformer.transform
-      filename = transformer.extract_cts_name('.xml')
+      filename = transformer.extract_cts_name(XML_EXTENSION)
 
       new_dir = v1six_path(lang)
       FileUtils.mkdir_p(new_dir) unless File.exists?(new_dir)
@@ -92,7 +92,7 @@ task :"v1_to_v1.6" do
       success("Transformed as #{filename} in #{time_elapsed.round(2)}s")
     end
 
-    system("rm -rf #{dir}")
+    FileUtils.rm_rf(dir)
   end
   Dir.rmdir(TEMP_PATH)
 end
