@@ -76,6 +76,8 @@ task :"v1_to_v1.6" do
       basename = File.basename(file)
       info("Transforming #{basename}")
 
+      start = Time.now
+
       transformer = Treebank::Transform.new(File.read(file))
       result   = transformer.transform
       filename = transformer.extract_cts_name('.xml')
@@ -84,7 +86,10 @@ task :"v1_to_v1.6" do
       FileUtils.mkdir_p(new_dir) unless File.exists?(new_dir)
       File.write(File.join(new_dir, filename), result)
 
-      success("Transformed as #{filename}")
+      stop = Time.now
+      time_elapsed = stop - start
+
+      success("Transformed as #{filename} in #{time_elapsed.round(2)}s")
     end
 
     system("rm -rf #{dir}")
