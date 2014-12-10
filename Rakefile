@@ -1,6 +1,7 @@
 require 'treebank/transform'
 require 'fileutils'
 
+
 #################
 #  Log Helpers  #
 #################
@@ -60,10 +61,10 @@ def temp_dir(lang)
   File.join(TEMP_PATH, lang)
 end
 
+
 ###########
 #  Tasks  #
 ###########
-
 
 desc 'Transforms v1 data to v1.6'
 task :"v1_to_v1.6" do
@@ -86,7 +87,12 @@ task :"v1_to_v1.6" do
 
       transformer = Treebank::Transform.new(File.read(file))
       result   = transformer.transform
-      filename = transformer.extract_cts_name(XML_EXTENSION)
+
+      # We want to do a more elaborate new filename that is CTS compliant
+      # later on.
+      #filename = transformer.extract_cts_name(XML_EXTENSION)
+
+      filename = basename
 
       new_dir = v1six_path(lang)
       FileUtils.mkdir_p(new_dir) unless File.exists?(new_dir)
