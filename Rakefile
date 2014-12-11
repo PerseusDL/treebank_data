@@ -35,6 +35,7 @@ end
 #  File Helpers  #
 ##################
 
+TB_EXTENSION = '.tb.xml'
 XML_EXTENSION = '.xml'
 TEMP_EXTENSION = ".tmp.xml"
 TEMP_PATH = "temp_transformations"
@@ -88,11 +89,7 @@ task :"v1_to_v1.6" do
       transformer = Treebank::Transform.new(File.read(file))
       result   = transformer.transform
 
-      # We want to do a more elaborate new filename that is CTS compliant
-      # later on.
-      #filename = transformer.extract_cts_name(XML_EXTENSION)
-
-      filename = basename
+      filename = transformer.extract_cts_name(TB_EXTENSION) || basename
 
       new_dir = v1six_path(lang)
       FileUtils.mkdir_p(new_dir) unless File.exists?(new_dir)
