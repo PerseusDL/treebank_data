@@ -39,7 +39,7 @@ TB_EXTENSION = '.tb.xml'
 XML_EXTENSION = '.xml'
 TEMP_EXTENSION = ".tmp.xml"
 TEMP_PATH = "temp_transformations"
-V1_TO_IGNORE = %w{ ldt-1.5.xml agdt-1.7.xml }
+V1_TO_IGNORE = %w{ ldt-1.5 agdt-1.7 }
 
 def v1_path(lang)
   File.join('v1', lang, 'data')
@@ -80,20 +80,31 @@ task :"v1_to_v1.6" do
 
     Dir.glob(xml_glob_at(v1_path(lang))) do |file|
       basename = File.basename(file)
+      basename = basename.sub(/#{TB_EXTENSION}$/,'')
+      basename = basename.sub(/#{XML_EXTENSION}$/,'')
       next if V1_TO_IGNORE.include?(basename)
 
       info("Transforming #{basename}")
 
       start = Time.now
 
-      transformer = Treebank::Transform.new(File.read(file))
+      transformer = Treebank::Transform.new(File.read(file, :encoding => 'utf-8'))
       result   = transformer.transform
 
       filename = transformer.extract_cts_name(TB_EXTENSION) || basename
+      stripped_filename = filename.sub(/#{TB_EXTENSION}/,'')
+      if (basename =~ /#{stripped_filename}/)
+        filename = basename
+        filename << TB_EXTENSION
+      else 
+        filename = transformer.extract_cts_name(TB_EXTENSION) || basename
+      end
 
       new_dir = v1six_path(lang)
       FileUtils.mkdir_p(new_dir) unless File.exists?(new_dir)
-      File.write(File.join(new_dir, filename), result)
+      File.open(File.join(new_dir, filename), 'w:UTF-8') do |f|
+        f.write result
+      end
 
       stop = Time.now
       time_elapsed = stop - start
