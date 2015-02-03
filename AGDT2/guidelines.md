@@ -1,12 +1,10 @@
-<div id="guidelines">
+
 
 ### GUIDELINES FOR THE ANCIENT GREEK DEPENDENCY TREEBANK 2.0 (PRE-RELEASE)
 
 #### Giuseppe G. A. Celano
 
 #### Tufts University &amp; Universität Leipzig
-
-<div id="sum">
 
 ### Summary
 
@@ -107,9 +105,9 @@ The language the guidelines focus on is Classical Greek: additions and adaptatio
 
 In Section [2](#mph_tgs), I describe the morphological tagset. I define the Prague labels accompanied by links to key treebanking examples in Section [3](#prg_ann), which integrates/corrects the already existing guidelines for the [AGDT 1.0](http://nlp.perseus.tufts.edu/syntax/treebank/greek.html). In Section [4](#sg_ann), I deal with the SG algorithm of the advanced syntax layer (also called "semantic layer").
 
-</div> 
 
-<div id="mph_tgs">
+
+
 
 ### 2. Morphological layer
 
@@ -132,7 +130,7 @@ In the annotation environment "Arethusa", the morphological annotation of each w
 10.  [interjection](#exc)
 11.  [punctuation](#pct)
 
-<div id="art">
+
 
 #### 2.1 Article
 
@@ -147,9 +145,7 @@ The lemma translation for article ὁ is `the`, while that for pronoun ὁ `that
 
 The article always takes the Prague annotation label ATR; the pronoun takes the same syntactic labels as the [noun](#nou). There is no SG annotation for the article, while the pronoun has access to the algorithm for the [syntax of the case](#snt_cas).
 
-</div>
 
-<div id="nou">
 
 #### 2.2 Noun(/Substantive)
 
@@ -164,9 +160,7 @@ The lemma translation for the noun should be an English noun (always in its sing
 
 The Prague annotation label for the noun can be SBJ, OBJ, ATR, ADV, PNOM, OCOMP, or APOS. The SG tagset allows the annotation of the [syntax of the case](#snt_cas) for each noun.
 
-</div>
 
-<div id="prn">
 
 #### 2.3 Pronoun
 
@@ -194,9 +188,6 @@ The notations `.R` or `.I` will be added to every lemma which is a relative or i
 
 If the pronoun is a substantive pronoun, one of the Prague annotation labels used for the [noun](#nou) applies, while if it is an adjective pronoun, one of the Prague annotation labels for the [adjective](#adj) in adjective function is used. The SG tagset allows us to specify if the pronoun is a [substantive pronoun](#sbs_prn) or an [adjective pronoun](#adj_prn). In the former case, the SG tagset allows annotation of its [syntax of the case](#snt_cas) (whose categories are the same as those for the [noun](#nou)). In the latter case, no further SG annotation is allowed (as occurs with any other [adjective](#adj) in adjective function).
 
-</div>
-
-<div id="adj">
 
 #### 2.4 Adjective
 
