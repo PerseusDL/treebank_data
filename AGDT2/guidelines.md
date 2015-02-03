@@ -83,9 +83,6 @@
 
                         *   4.1.12.1 [Particles](#part)
 *
-</div>
-
-<div id="int">
 
 ### 1. Introduction
 
@@ -208,9 +205,6 @@ The Prague annotation label is usually ATR, PNOM, or OCOMP, if the adjective has
 [syntax of the case](#snt_cas) 
 as that used for the [noun](#nou).
 
-</div>
-
-<div id="vrb">
 
 #### 2.5 Verb
 
@@ -223,9 +217,7 @@ The lemma translation for the adjective should be an English verb. A few example
 
 if the verb is in a finite mood, it usually takes the Prague annotation labels PRED (main clause), SBJ or OBJ (substantive clause), ATR (adjective clause proper; if there is a substantivized relative clause, the labels are the same as those for the [noun](#nou)), or ADV (adverb clause). If the verb is a participle it can take the label ATR (attributive participle), ADV (circumstantial participle), OBJ, OCOMP, or PNOM (supplementary participle), or those for the [noun](#nou), if the participle is a substantive participle. Similarly, an infinitive can take the same labels as a noun if it is articular, and SBJ or OBJ (occasionally ADV), if it is "verbal". On the basis of the mood selected, i.e., whether the verb is in the indicative, subjunctive, optative, or imperative mood, i.e. a [finite mood](#fnt_moo), or in the [infinitive](#inf) or [participle](#adj_prt) mood, i.e., non-finite moods, the SG tagset allows annotation of its syntax through a complex algorithm (see Section [4](#sg_ann)).
 
-</div>
 
-<div id="adv1">
 
 #### 2.6 Adverb
 
@@ -240,9 +232,7 @@ Sentence adverbs (i.e., some of those words that SG ([2769](http://www.perseus.t
 
  The Prague annotation label for the adverb is usually ADV, OBJ, AuxY, or AuxZ. The SG tagset allows specification of the SR expressed by the adverb.
 
-</div>
 
-<div id="adp">
 
 #### 2.7 Adposition
 
@@ -258,9 +248,7 @@ The lemma translation should be an English adposition (or an equivalent expressi
 
  Adpositions always take the Prague annotation label AuxP. There is no SG annotation available for adpositions.
 
-</div>
 
-<div id="cnj">
 
 #### 2.8 Conjunction
 
@@ -270,9 +258,6 @@ The lemma translation should be an English conjunction.
 
 The Prague annotation allows the distinction between coordinating conjunctions (COORD) and subordinating conjunctions (AuxC) (AuxY is used with all conjunctions except the last one in a multi-conjunction [coordination](#coord)). No SG annotation is available for the conjunction.
 
-</div>
-
-<div id="nmr">	
 
 #### 2.9 Numeral
 
@@ -282,9 +267,6 @@ The lemma translation should be an English numeral.
 
 Cardinal and ordinal numerals take the Prague annotation labels that [adjectives](#adj) take, while adverbs take the Prague labels reserved for [adverbs](#adv). The SG algorithm allows access to the options for [adjectives](#adj), if the numeral is cardinal or ordinal, or those for [adverbs](#adv), if the numeral is an adverb.
 
-</div>
-
-<div id="exc">	
 
 #### 2.10 Interjection
 
@@ -294,9 +276,7 @@ The lemma translation should be an English interjection.
 
 The interjection receives the syntactic label ExD. No SG annotation is available for interjections.
 
-</div>
 
-<div id="pct">	
 
 #### 2.11 Punctuation
 
@@ -304,16 +284,11 @@ Punctuation marks are identifiable by being a set of forms (see SG ([188](http:/
 
  The Prague annotation labels for puntuation can be AuxX, AuxY, AuxK, AuxG, COORD (and APOS). There is no available SG annotation for punctuation marks.
 
-</div>
-</div>
-
-<div id="prg_ann">
 
 ### 3. (Prague) syntactic layer
 
 The syntactic layer allows annotation of traditional syntactic functions, such as the subject or the predicate nominal. Some of the labels, however, are used with a different meaning from the one adopted in traditional grammar. For example, the label ATR is here used to describe not only adjectives modifying nouns, but also any other kind of depend of the noun having the same or similar function (see below); the labels OBJ and ADV are meant to capture the argument structure of verbs, adjectives, and adverbs (see below). In the following, the terms "noun", "adjective", "verb", and "adverb" are sometimes used to mean the corresponding phrases. The following definitions are accompanied by links to key treebanking examples.
 
-<div id="pred">
 
 #### 3.1 PRED
 
@@ -327,9 +302,6 @@ The PRED ("predicate") function is reserved for the verb of the main clause in a
 
 	([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=32&amp;doc=4971)).
 
-</div>
-
-<div id="sbj">
 
 #### 3.2 SBJ
 
@@ -365,9 +337,7 @@ The SBJ ("subject") label is attached to every subject (SG [927](http://www.pers
 
 	.
 
-</div>
 
-<div id="obj">
 
 #### 3.3 OBJ
 
@@ -409,9 +379,7 @@ The OBJ ("object") label is attached to any dependent which is taken to be an ar
 
 	 can receive the label OBJ. 
 
-</div>
 
-<div id="atr">
 
 #### 3.4 ATR
 
@@ -437,9 +405,6 @@ Any dependent of the noun (or one of its equivalents, excluding the substantive 
 
 	receives the ATR ("attribute") function.
 
-</div>
-
-<div id="adv_fnc">
 
 #### 3.5 ADV
 
@@ -477,9 +442,6 @@ The ADV ("adverbial") label is attached to any dependent which is taken to be an
 
 	are ADV modifications as well.
 
-</div>
-
-<div id="atvv">
 
 #### 3.6 ATV/AtvV
 
@@ -493,9 +455,6 @@ ATV/AtvV ("verbal attribute") is in the AGDT 1.0 the label for those adjectives 
 
 	This latter annotation style has to be declared.
 
-</div>
-
-<div id="pnom">
 
 #### 3.7 PNOM
 
@@ -513,9 +472,6 @@ The PNOM ("predicate nominal") label applies to every noun
 
 	which are dependent on a copulative verb (SG [917](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+917&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). 
 
-</div>
-
-<div id="ocomp">
 
 #### 3.8 OCOMP
 
@@ -527,9 +483,6 @@ The function OCOMP ("object complement") is reserved for the predicative accusat
 
 	([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=23&amp;doc=4971)).
 
-</div>
-
-<div id="coord">
 
 #### 3.9 COORD
 
@@ -545,9 +498,6 @@ The function COORD ("coordination") is reserved for coordinate conjunctions (the
 
 	([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=26&amp;doc=4971)). Every coordinated constituent takes the suffix _CO (if function words, such as AuxPs, are coordinated, the suffix is attached to their children).
 
-</div>
-
-<div id="apos">
 
 #### 3.10 APOS
 
@@ -569,17 +519,11 @@ There are two possible annotations for apposition. In the first annotation style
 
 In the SG annotation (if the first annotation style for apposition is adopted) the analysis of an appositive noun is (technically) the same as that of the governing noun. The annotator should pay attention to the many examples of clauses in apposition to a noun, which have to be fully annotated: [tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=52&amp;doc=4971)
 
-</div>
-
-<div id="mwe">
 
 #### 3.11 MWE
 
 The label MWP is reseverd for multiword expressions. When there is an phrase where it is not clear which the function/meaning of the single words are, the head of that phrase takes the function of the phrase as a whole, while the other words are attached to it with the label MWE.
 
-</div>
-
-<div id="auxp">
 
 #### 3.12 AuxP
 
@@ -587,9 +531,7 @@ The function AuxP ("preposition") is reserved for adpositions (whose list is in 
 
 	([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=6&amp;doc=4971)).
 
-</div>
 
-<div id="auxc">
 
 #### 3.13 AuxC
 
@@ -597,89 +539,62 @@ The function AuxC ("conjunction") is used to label subordinate conjunctions only
 
 	([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=11&amp;doc=4971)).
 
-</div>
 
-<div id="auxx">
 
 #### 3.14 AuxX
 
 AuxX is the label used for commas, unless they function as coodinating commas when no conjunction is present (in which case they take the [COORD](#coord) function ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=25&amp;doc=4971)); when there is a coordination with conjunctions and commas, see the example in [tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=31&amp;doc=4971)). A non-coordinating comma is appended to its preceding word. If two commas mark a vocative or a parenthetical clause, they are both appended (with label AuxX) to the vocative and the head of the parenthetical clause respectively.
 
-</div>
 
-<div id="auxg">
 
 #### 3.15 AuxG
 
 The label AuxG is used for modern punctuation marks (other than commas) that can be found in an edition of Ancient Greek texts (such as inverted commas introducing direct speech).
 
-</div>
 
-<div id="auxk">
 
 #### 3.16 AuxK
 
 The label AuxK is used for the final punctuation mark of a sentence (which can be a period, a semicolon, or the point above the line). The node is always appended to the ROOT node ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=31&amp;doc=4971)).
 
-</div>
 
-<div id="auxy">
 
 #### 3.17 AuxY
 
 The AuxY label is used to mark technical nodes (such as correlative conjunctions attached to the last one, which is taken to be the coordinating one: see [tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=26&amp;doc=4971) and [tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=25&amp;doc=4971)) or for sentence adverbs (i.e., non-conjunction particles in SG ([1094](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1094&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), but only those whose scope is the whole sentence).
 
-</div>
 
-<div id="auxz">
 
 #### 3.18 AuxZ
 
 The AuxZ label is reserved for logical operators that are adverbs, such as those meaning "not", "even", and "also".
 
-</div>
-
-<div id="exd">
 
 #### 3.19 ExD
 
 The label ExD is used for those constituents that do not syntactically belong to a sentence, such as vocatives and the head of a parenthetical clause. They are appended to the PRED node.
 
-</div>
 
-<div id="suffixes">
 
 #### 3.20 Suffixes
 
 Each syntactic label can be specified by a suffix. There are two main suffixes: _CO and _AP
 
-<div id="_CO">
 
 #### 3.20.1 _CO
 
 The suffix _CO is added to all conjuncts in a coordination.
 
-</div>
-
-<div id="_AP">
 
 #### 3.20.2 _AP
 
 The suffix _AP is used _only_ if the second annotation style for apposition is chosen (which has to be declared). The suffix is attached to a noun and its appositive. There is also the variant _AP_CO, when there are coordinate appositives.
 
-</div>
-
-</div>
-
-</div>
-
-<div id="sg_ann">
 
 ### 4. (Smyth's Grammar) Advanced syntax layer / semantic layer
 
 The advanced syntax layer allows annotation of the rich number of categories described by Smyth (1920). In some modern linguistic frameworks, some of these categories are described as morphosyntactic and some others as semantic.
 
-<div id="morphsyn_tagset">	
 
 ### 4.1 Morphosyntactic tagset
 
@@ -754,7 +669,6 @@ The morphosyntactic tagset consists of those categories which, on the basis of t
 10.  (interjection)
 11.  (punctuation)
 
-<div id="snt_cas">	
 
 #### 4.1.1 Syntax of the case
 
@@ -1142,7 +1056,6 @@ I heard that from him</td>
 
 In the following sections I show the algorithms underlying the annotation for each case and their explanation: as for grammar definitions, the reader will constantly be referred to the relevant SG sections.
 
-<div id="nom">
 
 #### 4.1.1.1 Nominative
 
@@ -1184,9 +1097,6 @@ The nominativus pendens (SG
 The nominative of exclamation (SG 
 [1288](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1288&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) can be the head of a sentence or be technically dependent of another word when equivalent to a vocative.
 
-</div> <!-- end nominative -->
-
-<div id="gnt">
 
 #### 4.1.1.2 Genitive
 
@@ -1326,9 +1236,6 @@ The SR expressed by the genitive of source is sometimes labeled "origin" in ling
 
 A genitive is independent if it does not dependent on any other word, and so is the linguistic head of a sentence.
 
-</div> <!-- end genitive -->
-
-<div id="dtv">
 
 #### 4.1.1.3 Dative
 
@@ -1447,9 +1354,6 @@ The dative of accompanying circumstance is to be selected when the SR expressed 
 
 "Path" partly corresponds here to what is labeled (dative of) "space and time" in SG ([1528](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1528&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). Similarly, the dative of time treated in SG as a kind of instrumental/comitative dative (SG [1528](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1528&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) has to be simply annotated with one of the categories under "dative of time".
 
-</div> <!-- end dative -->
-
-<div id="acc">
 
 #### 4.1.1.4 Accusative
 
@@ -1563,15 +1467,11 @@ expresses in relation to what the meaning of a verb or adjective is circumscribe
 
 Independent is the accusative which is the head of a sentence, i.e. the elliptical accusative (SG [1599](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1599&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)).
 
-</div> <!-- end accusative -->
-
-<div id="prp">
 
 #### 4.1.1.5 Adpositions
 
 In the following sections, the annotation of the adpositional case is detailed. I follow the SG list for the meanings/functions of each proper adposition (SG [1681](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1681&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1698](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1698&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); note that some use of a certain preposition might not be covered in SG and hence here). Each function is followed by indication of how to annotate it. Note that "genitive of place/time", "dative of place/time", and "accusative of space/time" are here used as abbreviations to mean that the annotator has to choose, on the basis of the verb governing the case, the right SR that is algorithmically available for each of them (e.g., genitive of place > location). If it is not possible to annotate a semantic funtion (i.e., it is not included in the list), "none of the above" has to be selected. The annotator should try to stick to the lemma translation proposed (if present). Since most prepositions conveying a local meaning can also be used in a figurative sense, the annotation algorithm always requires specification of whether a certain use of a preposition is concrete or figurative (this option is therefore available under any local meaning of a case).
 
-<div>
 
 #### 4.1.1.5.1 [ἀμφί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1681&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
 
@@ -1594,10 +1494,6 @@ with accusative
 *   of occupation with an object (i.e., figuratively): accusative of space
 *   οἱ ἀμφί τινα (i.e., figuratively): accusative of space
 
-</div>
-
-<div>
-
 #### 4.1.1.5.2 [ἀνά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1682&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
 
 with dative
@@ -1611,9 +1507,6 @@ with accusative
 *   distributively: none of the above
 *   manner: adpositional manner
 
-</div>
-
-<div>
 
 #### 4.1.1.5.3 [ἀντί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1683&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
 
@@ -1622,9 +1515,8 @@ with genitive
 *   local: genitive of place
 *   In other meanings ("instead of" or "in return for"): none of the above (for the lemma translation use, according to the meaning, "instead of" or "in return for")
 *   in entreaty: adpositional advantage
-</div>
 
-<div>
+
 
 #### 4.1.1.5.4 [ἀπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1684&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
 
@@ -1641,9 +1533,6 @@ with genitive
 *   manner: adpositional  manner
 *   conformity: adpositional conformity
 
-</div>
-
-<div>
 
 #### 4.1.1.5.5 [διά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
 
@@ -1664,9 +1553,8 @@ with accusative
 *   cause: adpositional cause
 *   purpose: adpositional purpose
 *   agency/mediation/means: adpositional instrument or means
-</div>
 
-<div>
+
 
 #### 4.1.1.5.6 [εἰς](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1686&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), ἐς
 
@@ -1681,9 +1569,8 @@ with accusative
 *   relation: accusative of respect
 *   manner: adpositional  manner
 *   PPs such as ἐς καιρόν should be annotated as adverbs of manner
-</div>
 
-<div>
+
 
 #### 4.1.1.5.7 [ἐν](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1687&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
 
@@ -1698,9 +1585,7 @@ with dative
 *   manner: dative of manner
 *   conformity: adpositional conformity
 
-</div>
 
-<div>
 
 #### 4.1.1.5.8 [ἐξ](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1688&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), ἐκ
 
@@ -1720,9 +1605,6 @@ with genitive
 *   PPs such as ἐκ τοῦ ἴσου should be annotated as adverbs of manner
 *   partitive: genitive of the divided whole
 
-</div>
-
-<div>
 
 #### 4.1.1.5.9 [ἐπί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
 
@@ -1752,9 +1634,8 @@ with accusative
 *   purpose: adpositional purpose
 *   hostility: adpositional disadvantage
 *   reference: accusative of respect
-</div>
 
-<div>
+
 
 #### 4.1.1.5.10 [κατά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
 
@@ -1779,9 +1660,8 @@ with accusative
 *   distribution: none of the above
 *   approximate number: it depends on the function of the PP in the clause
 
-</div>
 
-<div>
+
 
 #### 4.1.1.5.11 [μετά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
 
@@ -1802,9 +1682,7 @@ with accusative
 *   temporal, "after": accusative of time
 *   figuratively: accusative of space	
 
-</div>
 
-<div>
 
 #### 4.1.1.5.12 [παρά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1692&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
 
@@ -1832,9 +1710,6 @@ with accusative
 *   Adverbial PPs such as παρὰ πολύ or παρὰ μικρόν: πολύ and μικρόν are morphologically annotated as adverbs (adverb > measure in SG tab)
 *   comparison: adpositional comparison	
 
-</div>
-
-<div>
 
 #### 4.1.1.5.13 [περί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1693&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
 
@@ -1859,9 +1734,6 @@ with accusative
 *   occupation (i.e., figuratively): accusative of space
 *   relation: accusative of respect	
 
-</div>
-
-<div>
 
 #### 4.1.1.5.14 [πρό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1694&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
 
@@ -1873,9 +1745,6 @@ with genitive
 *   preference: none of the above (for the lemma translation use, according to the meaning, "in preference to" or "on behalf of")
 *   PPs such as πρὸ πολλοῦ ("highly") should be annotated as adverbs of measure
 
-</div>
-
-<div>
 
 #### 4.1.1.5.15 [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
 
@@ -1908,9 +1777,6 @@ with accusative
 *   comparison: adpositional comparison
 *   exchange: none of the above	
 
-</div>
-
-<div>
 
 #### 4.1.1.5.16 [σύν](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1696&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
 
@@ -1921,9 +1787,6 @@ with dative
 *   manner: dative of manner
 *   "in conformity with": adpositional conformity
 
-</div>
-
-<div>
 
 #### 4.1.1.5.17 [ὑπέρ](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1697&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
 
@@ -1941,9 +1804,6 @@ with accusative
 *   temporal: accusative of time
 *   measure: accusative of measure
 
-</div>
-
-<div>
 
 #### 4.1.1.5.18 [ὑπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1698&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
 
@@ -1968,13 +1828,7 @@ with accusative
 *   temporal: accusative of time
 *   subjection: none of the above	
 
-</div>
 
-</div> <!-- end adposition -->
-
-</div>
-
-<div id="adj_prp">
 
 #### 4.1.2 Adjective proper
 
@@ -1982,9 +1836,6 @@ If an adjective is also syntactically used as such, no further SG annotation is 
 
 The Prague annotation labels are usually ATR, PNOM, and OCOM.
 
-</div>
-
-<div id="sbs_adj">
 
 #### 4.1.3 Substantive adjective
 
@@ -1992,9 +1843,6 @@ A substantive adjective is an adjective lemma in the [LSJ dictionary](http://www
 
 The Prague annotation label for the substantive adjective are the same as those for the [noun](#nou).
 
-</div>
-
-<div id="vrb_adj">
 
 #### 4.1.4 Verbal adjective in τος/τεος
 
@@ -2002,9 +1850,6 @@ A verbal adjective in τος/τεος derives from a verb root by the addition o
 
 The verbal adjective in τος/τεος takes the same Prague annotation labels as the [adjective](#adj) in adjective function.
 
-</div>
-
-<div id="vrb_adj_sbs">
 
 #### 4.1.5 Substantive verbal adjective in τος/τεος
 
@@ -2012,9 +1857,6 @@ A substantive verbal adjective in τος/τεος is a verbal adjective used as 
 
 The Prague annotation labels are the same as those for the [noun](#nou).
 
-</div>
-
-<div id="sbs_prn">
 
 #### 4.1.6 Substantive pronoun
 
@@ -2022,9 +1864,6 @@ A substantive pronoun is a pronoun used as a noun. This option gives access to t
 
 The Prague annotation labels are the same as those for the [noun](#nou).
 
-</div>
-
-<div id="adj_prn">
 
 #### 4.1.7 Adjective pronoun
 
@@ -2032,9 +1871,6 @@ An adjective pronoun is a pronoun used as an adjective. As occurs with any other
 
 The Prague annotation labels are the same as those for the [adjective](#adj) in adjective function.
 
-</div>
-
-<div id="fnt_moo">
 
 #### 4.1.8 Syntax of the finite verb
 
@@ -2208,7 +2044,6 @@ On the basis of the mood selected at the morphological level, the annotation alg
 *   none of the above
 *   I do not know
 
-<div id="ind_fnt_vrb">
 
 #### 4.1.8.1 Independent
 
@@ -2221,17 +2056,11 @@ A finite verb form is said to be independent if it is the head of a main clause 
 
 The finite verb takes the Prague annotation label PRED, OBJ, ADV, or ATR.
 
-</div>
-
-<div id="dpn_fnt_vrb">
 
 #### 4.1.8.2 Dependent
 
 A finite verb form is said to be dependent if it is the head of a subordinate clause.
 
-</div>
-
-<div id="sbs_cls">
 
 #### 4.1.8.3 Substantive clause
 
@@ -2239,9 +2068,6 @@ A substantive clause is equivalent to a noun with respect to its governing verb 
 
 The head verb of the substantive clause takes the Prague annotation labels SBJ, OBJ, or APOS.
 
-</div>
-
-<div id="adj_cls">
 
 #### 4.1.8.4 Adjective clause
 
@@ -2251,9 +2077,6 @@ The easiest example of relative clause is the one with the antecedent expressed 
 
 The Prague annotation labels for the head verb of an adjective clause are the same as those for the [adjective](#adj) or [noun](#noun) (for the substantivized adjective clause).
 
-</div>
-
-<div id="adv_cls">
 
 #### 4.1.8.5 Adverb clause
 
@@ -2261,11 +2084,6 @@ An adverb clause is a clause functioning as an adverb with respect to its govern
 
 The verb head of an adverb clause takes the Prague annotation label ADV.
 
-</div>
-
-</div>
-
-<div id="adj_prt">
 
 #### 4.1.9 Adjective participle
 
@@ -2305,7 +2123,6 @@ The participle is a verbal adjective (SG [2039](http://www.perseus.tufts.edu/hop
 *   none of the above
 *   I do not know
 
-<div id="att_prt">
 
 #### 4.1.9.1 Attributive participle
 
@@ -2337,9 +2154,6 @@ The participle προεροῦντα can be interpreted as translating a final r
 
 All the participles so far discussed take the Prague annotation label ATR when they are attached to a noun or the function ADV if they are equivalent to an adverb clause and are attached to their superordinate verb.
 
-</div>
-
-<div id="crc_prt">
 
 #### 4.1.9.2 Circumstantial participle
 
@@ -2372,9 +2186,7 @@ These kinds of circumstantial participles are labeled as ADV in the Prague annot
 
 The genitive absolute and the accusative absolute (SG [2070](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2070&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2078](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2078&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) are considered to be a kind of circumstantial participle, so there is no difference in their annotation, except that the genitive or the accusative nouns functioning as their subjects are attached to the participle (and receive the Prague annotation label "SBJ") and not to the superordinate verb of the participle.
 
-</div>
 
-<div id="spp_prt">
 
 #### 4.1.9.3 Supplementary participle
 
@@ -2407,9 +2219,7 @@ The participle πολεμοῦσιν depends on ἔσται and receives the lab
 	Some verbs (SG 
  [2123](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2123&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2145](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) allow either the participle or the infinitive in indirect discourse or not in indirect discourse.
 
-</div>
 
-<div id="prh_prt">
 
 ####  4.1.9.4 Periphrastic participle
 
@@ -2419,10 +2229,6 @@ In SG, this participle is considered to be a kind of supplementary participle (S
 
 The syntactic label for the periphrastic participle is PNOM.
 
-</div>
-</div>
-
-<div id="sbs_prt">
 
 #### 4.1.10 Substantive participle
 
@@ -2430,9 +2236,6 @@ A substantive participle is a participle which is used as a noun. The SG algorit
 
 The Prague annotation labels for the substantive participle are the same as those for the [noun](#nou).
 
-</div>
-
-<div id="inf">
 
 #### 4.1.11 Syntax of the infinitive
 
@@ -2516,23 +2319,18 @@ The infinitive is a [verbal noun](http://www.perseus.tufts.edu/hopper/text?doc=S
 *   none of the above
 *   I do not know
 
-<div id="dpn_inf">
+
 
 #### 4.1.11.1 Dependent
 
 An infinitive is said to be "dependent" if it is (linguistically) governed by another word in the sentence.
 
-</div>
-
-<div id="idp_inf">
 
 #### 4.1.11.2 Independent
 
 An infinitive is said to be "independent" if it is the head of a sentence (or linguistically independent, as the absolute infinitive is).
 
-</div>
 
-<div id="art_inf">
 
 #### 4.1.11.3 Articular infinitive
 
@@ -2548,9 +2346,7 @@ The whole spectrum of possibilities available to annotate the noun is algorithmi
 
 The Prague annotation labels are the same as those for the [noun](#nou).
 
-</div>
 
-<div id="vrl_inf">
 
 #### 4.1.11.4 Verbal infinitive
 
@@ -2606,9 +2402,7 @@ The infinitive, when depending on a verb, bears a syntactic nominative or accusa
 
 The Prague annotation labels are the same as those for the [noun](#nou). When the infinitive is of purpose, result, or temporal, the label is [ADV](#adv_fnc).
 
-</div>
 
-<div id="adv_snt">
 
 #### 4.1.12 Syntax of the adverb
 
@@ -2668,7 +2462,7 @@ The tagset distinguishes many kinds of time and place adverbs because the annota
 
 The Prague annotation labels are [OBJ](#obj), [ADV](#adv_fnc) (on the basis of whether or not the adverb is an argument), [AuxZ](#auxz), or [AuxY](#auxy).
 
-<div id="part">
+
 
 #### 4.1.12.1 Particle
 
@@ -2695,12 +2489,3 @@ Some of these particples can of course be adverbs, and so should accordingly be 
 
 Any other particle which is not one of the above conjunctions is attached to the verb of the main clause and receives the AuxY label, if the particle is a sentence adverb, or is attached to the word which it modifies and receives the label AuxZ. In the current version of the treebank it is left to the annotator to decide which of these two options is the right one for each of the non-conjuntion particles.
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-</div>
-</div>
