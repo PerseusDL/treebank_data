@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<!-- PRE-RELEASE 5 December 2014: this is a draft -->
-<html>
-<head>
-<title>Guidelines for the Ancient Greek Treebank 2.0</title>
-<meta charset="utf-8"/>
-</head>
-<body>
-
 <div id="guidelines">
 
 ### GUIDELINES FOR THE ANCIENT GREEK DEPENDENCY TREEBANK 2.0 (PRE-RELEASE)
@@ -2722,5 +2713,3 @@ Any other particle which is not one of the above conjunctions is attached to the
 </div>
 </div>
 </div>
-</body>
-</html>
