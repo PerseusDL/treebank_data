@@ -619,7 +619,7 @@ object effected ([1563](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+gramm
 
 I went to Rome <span style="font-style: italic">with him</span>
 </td>
-<td> [1524](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1524&fromdoc=Perseus%3Atext%3A1999.04.0007) – [1526](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1526&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td> <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1524&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1524</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1526&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1526</a></td>
 <td/>
 </tr>
 
