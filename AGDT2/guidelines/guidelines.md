@@ -341,27 +341,7 @@ The OBJ ("object") label is attached to any dependent which is taken to be an ar
 
 #### 3.4 ATR
 
-Any dependent of the noun (or one of its equivalents, excluding the substantive participle and the infinitive when they function as verbs), which is an article
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=3&doc=4971)), 
-
-    an adjective
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=9&doc=4971)), 
-
-    or a noun (or one of its equivalents)
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=14&doc=4971)) ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=15&doc=4971)), 
-
-    a PP
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=16&doc=4971)),
-
-    or a relative clause 
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=17&doc=4971))
-
-    receives the ATR ("attribute") function.
+Any dependent of the noun (or one of its equivalents, excluding the substantive participle and the infinitive when they function as verbs), which is an article ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=3&doc=4971)), an adjective ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=9&doc=4971)),  or a noun (or one of its equivalents) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=14&doc=4971)) ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=15&doc=4971)),  a PP ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=16&doc=4971)), or a relative clause ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=17&doc=4971)) receives the ATR ("attribute") function.
 
 </a>
 
@@ -369,39 +349,7 @@ Any dependent of the noun (or one of its equivalents, excluding the substantive 
 
 #### 3.5 ADV
 
-The ADV ("adverbial") label is attached to any dependent which is taken to be an optional modification of the verb, the adjective, or the adverb. An ADV modification can be a noun (or one of its equivalents) 
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=18&doc=4971)), 
-
-    a PP
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=31&doc=4971)),
-
-    or an adverb
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=6&doc=4971)). 
-
-    Adverb clauses (SG [2191](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2191&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2487](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2487&fromdoc=Perseus%3Atext%3A1999.04.0007))
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=38&doc=4971)), 
-
-    as well as a substantivized relative clause (SG [2488](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2488&fromdoc=Perseus%3Atext%3A1999.04.0007))
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=20&doc=4971), 
-
-    which annotation is the default one, while the alternative annotation style, i.e., adjective clause + elliptical node is to be declared
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=35&doc=4971))), 
-
-    the infinitive of purpose and result (SG [2008](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2008&fromdoc=Perseus%3Atext%3A1999.04.0007)-[2011](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2011&fromdoc=Perseus%3Atext%3A1999.04.0007))
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=41&doc=4971)), 
-
-    and the circumstantial participle (SG [2054](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2054&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2087](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2087&fromdoc=Perseus%3Atext%3A1999.04.0007))
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=11&doc=4971)) 
-
-    are ADV modifications as well.
+The ADV ("adverbial") label is attached to any dependent which is taken to be an optional modification of the verb, the adjective, or the adverb. An ADV modification can be a noun (or one of its equivalents) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=18&doc=4971)),  a PP ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=31&doc=4971)), or an adverb ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=6&doc=4971)).  Adverb clauses (SG [2191](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2191&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2487](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2487&fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=38&doc=4971)),  as well as a substantivized relative clause (SG [2488](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2488&fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=20&doc=4971),  which annotation is the default one, while the alternative annotation style, i.e., adjective clause + elliptical node is to be declared ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=35&doc=4971))),  the infinitive of purpose and result (SG [2008](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2008&fromdoc=Perseus%3Atext%3A1999.04.0007)-[2011](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2011&fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=41&doc=4971)),  and the circumstantial participle (SG [2054](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2054&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2087](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2087&fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=11&doc=4971))  are ADV modifications as well.
 
 </a>
 
@@ -409,15 +357,7 @@ The ADV ("adverbial") label is attached to any dependent which is taken to be an
 
 #### 3.6 ATV/AtvV
 
-ATV/AtvV ("verbal attribute") is in the AGDT 1.0 the label for those adjectives agreeing with a subject but functioning as adjuncts. They are annotated as ADV and appended to the governing verb in the AGDT 2.0
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=7&doc=4971)). 
-
-    Alternatively, according to the annotation style of the AGDT 1.0, they can receive the label ATV/AtvV and be appended to the subject/verb (see the guidelines for the [AGDT 1.0](http://nlp.perseus.tufts.edu/syntax/treebank/greek.html) for more information)
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=36&doc=4971)). 
-
-    This latter annotation style has to be declared.
+ATV/AtvV ("verbal attribute") is in the AGDT 1.0 the label for those adjectives agreeing with a subject but functioning as adjuncts. They are annotated as ADV and appended to the governing verb in the AGDT 2.0 ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=7&doc=4971)).  lternatively, according to the annotation style of the AGDT 1.0, they can receive the label ATV/AtvV and be appended to the subject/verb (see the guidelines for the [AGDT 1.0](http://nlp.perseus.tufts.edu/syntax/treebank/greek.html) for more information) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=36&doc=4971)).  This latter annotation style has to be declared.
 
 </a>
 
@@ -425,19 +365,7 @@ ATV/AtvV ("verbal attribute") is in the AGDT 1.0 the label for those adjectives 
 
 #### 3.7 PNOM
 
-The PNOM ("predicate nominal") label applies to every noun 
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=17&doc=4971))
-
-    (or one of its equivalents, including the infinitive (especially SG [1982](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1982&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1983](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1983&fromdoc=Perseus%3Atext%3A1999.04.0007))) 
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=39&doc=4971))
-
-    or adjective (including the adjective pronoun and the supplementary participle not in indirect discourse; SG [2094](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2094&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2105](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2105&fromdoc=Perseus%3Atext%3A1999.04.0007); [2123](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2123&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2145](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&fromdoc=Perseus%3Atext%3A1999.04.0007)
-
-    ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=21&doc=4971)))
-
-    which are dependent on a copulative verb (SG [917](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+917&fromdoc=Perseus%3Atext%3A1999.04.0007)). 
+The PNOM ("predicate nominal") label applies to every noun ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=17&doc=4971)) (or one of its equivalents, including the infinitive (especially SG [1982](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1982&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1983](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1983&fromdoc=Perseus%3Atext%3A1999.04.0007))) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=39&doc=4971)) or adjective (including the adjective pronoun and the supplementary participle not in indirect discourse; SG [2094](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2094&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2105](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2105&fromdoc=Perseus%3Atext%3A1999.04.0007); [2123](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2123&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2145](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&fromdoc=Perseus%3Atext%3A1999.04.0007) ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=21&doc=4971))) which are dependent on a copulative verb (SG [917](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+917&fromdoc=Perseus%3Atext%3A1999.04.0007)). 
 
 </a>
 
@@ -445,13 +373,7 @@ The PNOM ("predicate nominal") label applies to every noun
 
 #### 3.8 OCOMP
 
-The function OCOMP ("object complement") is reserved for the predicative accusative (SG [1613](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1613&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1618](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1618&fromdoc=Perseus%3Atext%3A1999.04.0007)) 
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=22&doc=4971)) 
-
-    and, more in general, any predicative complement not agreeing with the subject. It is also used with the supplementary participle not in indirect discourse with verbs of perceiving and finding (SG [2110](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2110&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2115](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2115&fromdoc=Perseus%3Atext%3A1999.04.0007))
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=23&doc=4971)).
+The function OCOMP ("object complement") is reserved for the predicative accusative (SG [1613](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1613&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1618](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1618&fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=22&doc=4971)) and, more in general, any predicative complement not agreeing with the subject. It is also used with the supplementary participle not in indirect discourse with verbs of perceiving and finding (SG [2110](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2110&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2115](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2115&fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=23&doc=4971)).
 
 </a>
 
@@ -459,17 +381,7 @@ The function OCOMP ("object complement") is reserved for the predicative accusat
 
 #### 3.9 COORD
 
-The function COORD ("coordination") is reserved for coordinate conjunctions (the list can be found in SG [2163](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2163&fromdoc=Perseus%3Atext%3A1999.04.0007), _excluding the  inferential, causal, and some of the adversative conjunctions_ (_such as μέντοι_);_ these are all treated here as _(_sentence_) _adverbs_)
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=24&doc=4971))
-
-    and commas coordinating two or more constituents when no conjunction is present (asyndeton)
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=25&doc=4971)). 
-
-    If there are correlative conjunctions (or more coordinating commas without conjunctions), the last one by rule takes the function COORD, while the preceding ones take the technical label AuxY and are attached to the last one
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=26&doc=4971)). Every coordinated constituent takes the suffix _CO (if function words, such as AuxPs, are coordinated, the suffix is attached to their children).
+The function COORD ("coordination") is reserved for coordinate conjunctions (the list can be found in SG [2163](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2163&fromdoc=Perseus%3Atext%3A1999.04.0007), _excluding the  inferential, causal, and some of the adversative conjunctions_ (_such as μέντοι_);_ these are all treated here as _(_sentence_) _adverbs_) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=24&doc=4971)) and commas coordinating two or more constituents when no conjunction is present (asyndeton) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=25&doc=4971)). If there are correlative conjunctions (or more coordinating commas without conjunctions), the last one by rule takes the function COORD, while the preceding ones take the technical label AuxY and are attached to the last one ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=26&doc=4971)). Every coordinated constituent takes the suffix _CO (if function words, such as AuxPs, are coordinated, the suffix is attached to their children).
 
 </a>
 
@@ -477,23 +389,7 @@ The function COORD ("coordination") is reserved for coordinate conjunctions (the
 
 #### 3.10 APOS
 
-There are two possible annotations for apposition. In the first annotation style, the label APOS ("apposition"/"appositive") is attached to an appositive noun 
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=27&doc=4971))
-
-    ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=28&doc=4971))
-
-    (SG [916](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+916&fromdoc=Perseus%3Atext%3A1999.04.0007)) or an equivalent of an appositive noun (including a substantivized relative clause and a substantive or adverb clause (SG [976](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+976&fromdoc=Perseus%3Atext%3A1999.04.0007)–[995](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+995&fromdoc=Perseus%3Atext%3A1999.04.0007)))
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=29&doc=4971))
-
-    ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=30&doc=4971)), 
-
-    and the appositive is annotated as a dependent of the noun it specifies. 
-
-    Note that, according to this anotation style, the appositive is always a noun and annotated in the same way, independently of whether it functions as an attribute or is, for example, descriptive (see SG [976](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+976&fromdoc=Perseus%3Atext%3A1999.04.0007)–[995](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+995&fromdoc=Perseus%3Atext%3A1999.04.0007)). In the second annotation style, used in AGDT 1.0, the label APOS marks the comma separating a noun and its appositive, and the noun and its appositive take the function required within the sentence (with suffix _AP; see the [AGDT 1.0 guidelines](http://nlp.perseus.tufts.edu/syntax/treebank/agdt/1.7/docs/guidelines.pdf)); if the appositive is an attributive noun it is attached to the noun and labeled as ATR. If this second annotation style is adopted, it has to be declared.
-
-In the SG annotation (if the first annotation style for apposition is adopted) the analysis of an appositive noun is (technically) the same as that of the governing noun. The annotator should pay attention to the many examples of clauses in apposition to a noun, which have to be fully annotated: [tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=52&doc=4971)
+There are two possible annotations for apposition. In the first annotation style, the label APOS ("apposition"/"appositive") is attached to an appositive noun ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=27&doc=4971)) ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=28&doc=4971)) (SG [916](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+916&fromdoc=Perseus%3Atext%3A1999.04.0007)) or an equivalent of an appositive noun (including a substantivized relative clause and a substantive or adverb clause (SG [976](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+976&fromdoc=Perseus%3Atext%3A1999.04.0007)–[995](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+995&fromdoc=Perseus%3Atext%3A1999.04.0007))) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=29&doc=4971)) ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=30&doc=4971)), and the appositive is annotated as a dependent of the noun it specifies. Note that, according to this anotation style, the appositive is always a noun and annotated in the same way, independently of whether it functions as an attribute or is, for example, descriptive (see SG [976](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+976&fromdoc=Perseus%3Atext%3A1999.04.0007)–[995](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+995&fromdoc=Perseus%3Atext%3A1999.04.0007)). In the second annotation style, used in AGDT 1.0, the label APOS marks the comma separating a noun and its appositive, and the noun and its appositive take the function required within the sentence (with suffix _AP; see the [AGDT 1.0 guidelines](http://nlp.perseus.tufts.edu/syntax/treebank/agdt/1.7/docs/guidelines.pdf)); if the appositive is an attributive noun it is attached to the noun and labeled as ATR. If this second annotation style is adopted, it has to be declared. In the SG annotation (if the first annotation style for apposition is adopted) the analysis of an appositive noun is (technically) the same as that of the governing noun. The annotator should pay attention to the many examples of clauses in apposition to a noun, which have to be fully annotated: [tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=52&doc=4971)
 
 </a>
 
@@ -509,9 +405,7 @@ The label MWP is reseverd for multiword expressions. When there is an phrase whe
 
 #### 3.12 AuxP
 
-The function AuxP ("preposition") is reserved for adpositions (whose list is in SG [1636](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1636&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1702](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1702&fromdoc=Perseus%3Atext%3A1999.04.0007))
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=6&doc=4971)).
+The function AuxP ("preposition") is reserved for adpositions (whose list is in SG [1636](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1636&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1702](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1702&fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=6&doc=4971)).
 
 </a>
 
@@ -519,9 +413,7 @@ The function AuxP ("preposition") is reserved for adpositions (whose list is in 
 
 #### 3.13 AuxC
 
-The function AuxC ("conjunction") is used to label subordinate conjunctions only. Their list is in SG ([2770](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2770&fromdoc=Perseus%3Atext%3A1999.04.0007))
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=11&doc=4971)).
+The function AuxC ("conjunction") is used to label subordinate conjunctions only. Their list is in SG ([2770](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2770&fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=11&doc=4971)).
 
 </a>
 
