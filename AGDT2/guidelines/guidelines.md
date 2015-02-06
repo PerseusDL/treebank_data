@@ -82,13 +82,13 @@
 
 ### 1. Introduction
 
-The Ancient Greek Dependency Treebank 2.0 (AGDT 2.0) is an extension of the [Ancient Greek Dependency Treebank 1.0](http://nlp.perseus.tufts.edu/syntax/treebank/greek.html) (AGDT 1.0), which subsumes and integrates the morphosyntactic analysis available in the AGDT 1.0 with a more fine-grained annotation based on the categories identified in [H. W. Smyth's Greek Grammar for Colleges](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1&amp;fromdoc=Perseus%3Atext%3A1999.04.0007) (SG).
+The Ancient Greek Dependency Treebank 2.0 (AGDT 2.0) is an extension of the [Ancient Greek Dependency Treebank 1.0](http://nlp.perseus.tufts.edu/syntax/treebank/greek.html) (AGDT 1.0), which subsumes and integrates the morphosyntactic analysis available in the AGDT 1.0 with a more fine-grained annotation based on the categories identified in [H. W. Smyth's Greek Grammar for Colleges](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1&fromdoc=Perseus%3Atext%3A1999.04.0007) (SG).
 
 Despite having being published at the beginning of the 20th century, SG turns out to be, in its foundations, a highly valuable compendium of Ancient Greek grammar, which is still widely used and consulted in the Anglo-Saxon world to study the Greek language. Because of its intermediate nature/size between a school grammar and a reference grammar, SG is particularly well suited to provide the framework which a computational model for Ancient Greek (AG) grammar can be built on. Such a computional model, which is outlined in the present guidelines, introduces modifications and integrations to SG to make it fully coherent, and consistent with more recent linguistic literature.
 
 The AGDT 2.0 is organized into three layers: the morphological layer, the (Prague) syntactic layer, and the (SG) advanced syntax layer (which someone may want to call "semantic layer"). The first and the second layer were already present in the AGDT 1.0: they have been incorporated into the AGDT 2.0, even though modifications and corrections have been introduced, which are detailed in Section [2](#mph_tgs) and [3](#prg_ann).
 
-The advanced syntax layer allows, by means of a complex algorithm relying on morphosyntax, the (guided) annotation of the syntax of the sentence as described by SG ([900](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+900&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2687](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2687&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)): this includes semantic roles (SRs) (such as "location", expressed, e.g., by the SG "genitive of place" or "dative of place"; see also [Luraghi 2003](http://www.worldcat.org/title/on-the-meaning-of-prepositions-and-cases-the-expression-of-semantic-roles-in-ancient-greek/oclc/227038149&amp;referer=brief_results)) and the various types of subordinate clause. In the present guidelines, I will use the term "(morpho-)syntax" in Smyth's terms, i.e. to also include the analysis of what is usually described in some theoretical frameworks as belonging to a semantic layer. This is in accordance with the view that grammar consists of pairings of form and meaning, and not separate components (see, among others, [Langacker 1981-1991](http://www.worldcat.org/title/foundations-of-cognitive-grammar/oclc/13859017&amp;referer=brief_results)). The SG annotation algorithm has been written in such a way that a certain SR can always be annotated at every grammar level (i.e., although "manner" can be expressed by a dative or an adverb or a PP, it is possible to label it in each case).
+The advanced syntax layer allows, by means of a complex algorithm relying on morphosyntax, the (guided) annotation of the syntax of the sentence as described by SG ([900](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+900&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2687](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2687&fromdoc=Perseus%3Atext%3A1999.04.0007)): this includes semantic roles (SRs) (such as "location", expressed, e.g., by the SG "genitive of place" or "dative of place"; see also [Luraghi 2003](http://www.worldcat.org/title/on-the-meaning-of-prepositions-and-cases-the-expression-of-semantic-roles-in-ancient-greek/oclc/227038149&referer=brief_results)) and the various types of subordinate clause. In the present guidelines, I will use the term "(morpho-)syntax" in Smyth's terms, i.e. to also include the analysis of what is usually described in some theoretical frameworks as belonging to a semantic layer. This is in accordance with the view that grammar consists of pairings of form and meaning, and not separate components (see, among others, [Langacker 1981-1991](http://www.worldcat.org/title/foundations-of-cognitive-grammar/oclc/13859017&referer=brief_results)). The SG annotation algorithm has been written in such a way that a certain SR can always be annotated at every grammar level (i.e., although "manner" can be expressed by a dative or an adverb or a PP, it is possible to label it in each case).
 
 The advanced syntax annotation (also referred to, for convenience, as "SG annotation") is designed to complement the annotation of the Prague syntactic layer, i.e., a revised version of the analytical layer of the Prague Dependency Treebank 2.0, already adopted in the AGDT 1.0 (henceforth "Prague annotation"). The Prague analytical layer also informs the syntactic layer adopted in the [PROIEL](http://www.hf.uio.no/ifikk/english/research/projects/proiel/) annotation, which guarantees that the AGDT and the PROIEL treebank are to a very large extent compatible. The Prague annotation provides labels for (morpho-)syntactic categories, such as SBJ ("subject") or APOS ("apposition"), which, not being PoS-specific, can be kept out of the SG algorithm and superimposed on it. Moreover, the Prague syntactic layer comprises the annotation of the argument structure of verbs, adjectives, and adverbs, which is displayed in the distinction between OBJs and ADVs (see Section [3](#prg_ann)).
 
@@ -106,10 +106,10 @@ In Section [2](#mph_tgs), I describe the morphological tagset. I define the Prag
 
 The morphological tagset consists of 11 categories, most of which can be identified on the basis of their lemmas in the [LSJ dictionary](http://www.perseus.tufts.edu/hopper/resolveform?redirect=true). When annotating a PoS, the system allows addition of the lemma (_not word form_) translation for each word form (details, including the formalism, are provided below), in order to enable automatic creation of a gloss according to the [Leipzig Glossing Rules](http://www.eva.mpg.de/lingua/resources/glossing-rules.php) and allow connection with existing computational resources for the English language.
 
-The lemma translation should be _as literal as possible_, _always the same whenever possible_, and _preferably taken from the [LSJ dictionary](http://www.perseus.tufts.edu/hopper/resolveform?redirect=true)_ (or _[SG](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)_): this is made easy because, in the [Perseus Digital Library](http://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Greco-Roman), the reader can access the LSJ lemma of a Greek word form contained in a text by clicking on it. Moreover, if that exact word form is quoted in the dictionary, it is showed in bold characters.
+The lemma translation should be _as literal as possible_, _always the same whenever possible_, and _preferably taken from the [LSJ dictionary](http://www.perseus.tufts.edu/hopper/resolveform?redirect=true)_ (or _[SG](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1&fromdoc=Perseus%3Atext%3A1999.04.0007)_): this is made easy because, in the [Perseus Digital Library](http://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Greco-Roman), the reader can access the LSJ lemma of a Greek word form contained in a text by clicking on it. Moreover, if that exact word form is quoted in the dictionary, it is showed in bold characters.
 
 In the annotation environment "Arethusa", the morphological annotation of each word is performed using the "morph" tab. The annotator can there choose among the options that are automatically generated or add their own, if the right analysis is not available. It is to be noted that the automatically generated options are the output of the tagger Morpheus (also available in 
-[Perseus](http://www.perseus.tufts.edu/hopper/morph?redirect=true&amp;lang=greek)), which can contain inconsistencies or different analyses from the ones required for the present annotation. The annotator has therefore to pay much attention to annotate morphology only according to the present guidelines, without relying uncritically on Morpheus, but being ready to add a right morphologycal analysis, if missing. The PoS tagset is the following:
+[Perseus](http://www.perseus.tufts.edu/hopper/morph?redirect=true&lang=greek)), which can contain inconsistencies or different analyses from the ones required for the present annotation. The annotator has therefore to pay much attention to annotate morphology only according to the present guidelines, without relying uncritically on Morpheus, but being ready to add a right morphologycal analysis, if missing. The PoS tagset is the following:
 
 1.  [article](#art)
 2.  [noun(/substantive)](#nou)
@@ -127,12 +127,12 @@ In the annotation environment "Arethusa", the morphological annotation of each w
 
 #### 2.1 Article
 
-AG has one definite article (SG [1118](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1118&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1189](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1189&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), inflected and so annotated for gender, number, and case (ὁ, ἡ, τό). Note that in AG the same forms can also be used (_and hence should be accordingly annotated_) as 
-[pronouns](#prn) (SG [1105](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1105&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [1106](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1106&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1117](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1117&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). The annotator should pay attention here, because the system tends not to suggest the pronominal analysis, which has to be added manually.
+AG has one definite article (SG [1118](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1118&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1189](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1189&fromdoc=Perseus%3Atext%3A1999.04.0007)), inflected and so annotated for gender, number, and case (ὁ, ἡ, τό). Note that in AG the same forms can also be used (_and hence should be accordingly annotated_) as 
+[pronouns](#prn) (SG [1105](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1105&fromdoc=Perseus%3Atext%3A1999.04.0007); [1106](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1106&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1117](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1117&fromdoc=Perseus%3Atext%3A1999.04.0007)). The annotator should pay attention here, because the system tends not to suggest the pronominal analysis, which has to be added manually.
 
-The article can have substantive-making power (SG [1153](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1153&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). However, in phrases such as οἱ ἀμφί τινα or οἱ ἐκεῖ (i.e. when the article/pronoun is associated _with a PP_ or _an adverb_), ὁ is annotated as a pronoun (even though traditional grammar takes them as substantivized PPs and adverbs). This annotation style, which allows us to keep the SG algorithm more constrained, is made possible by analogy with examples such as τὰ τῶν στρατιωτῶν, where τῶν στρατιωτῶν is taken to be dependent on ὁ (and so the latter is a pronoun).
+The article can have substantive-making power (SG [1153](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1153&fromdoc=Perseus%3Atext%3A1999.04.0007)). However, in phrases such as οἱ ἀμφί τινα or οἱ ἐκεῖ (i.e. when the article/pronoun is associated _with a PP_ or _an adverb_), ὁ is annotated as a pronoun (even though traditional grammar takes them as substantivized PPs and adverbs). This annotation style, which allows us to keep the SG algorithm more constrained, is made possible by analogy with examples such as τὰ τῶν στρατιωτῶν, where τῶν στρατιωτῶν is taken to be dependent on ὁ (and so the latter is a pronoun).
 
-Although the forms τις-τι may have the force of an indefinite article (SG [1267](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1267&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), they should not be annotated as articles but as [pronouns](#prn).
+Although the forms τις-τι may have the force of an indefinite article (SG [1267](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1267&fromdoc=Perseus%3Atext%3A1999.04.0007)), they should not be annotated as articles but as [pronouns](#prn).
 
 The lemma translation for article ὁ is `the`, while that for pronoun ὁ `that`.
 
@@ -161,7 +161,7 @@ The Prague annotation label for the noun can be SBJ, OBJ, ATR, ADV, PNOM, OCOMP,
 
 #### 2.3 Pronoun
 
-The term "pronoun" is used here in its traditional definition, i.e. _as a cover term for both substantive and adjective pronouns_. Pronouns are a set of word forms, which are listed in SG ([325](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+325&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[340](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+340&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). The pronoun is annotated for gender, number, and case. The annotator should pay attention to the options suggested _because for some pronouns the erroneous PoS "adjective" is suggested_. This means that the right analysis as pronoun has to be added manually.
+The term "pronoun" is used here in its traditional definition, i.e. _as a cover term for both substantive and adjective pronouns_. Pronouns are a set of word forms, which are listed in SG ([325](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+325&fromdoc=Perseus%3Atext%3A1999.04.0007)–[340](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+340&fromdoc=Perseus%3Atext%3A1999.04.0007)). The pronoun is annotated for gender, number, and case. The annotator should pay attention to the options suggested _because for some pronouns the erroneous PoS "adjective" is suggested_. This means that the right analysis as pronoun has to be added manually.
 
 The lemma translation for the pronoun should be an English pronoun. Some examples are:
 
@@ -175,7 +175,7 @@ The lemma translation for the pronoun should be an English pronoun. Some example
 *   ἐμός `my`
 *   ἀλλήλαιν `one.another`
 
-Consult the SG ([325](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+325&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[340](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+340&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) for the lemma translation, especially for correlative pronouns (SG [340](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+340&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). Particular attention should be paid to relative and interrogative pronouns (used adjectively or substantively): a form can correspond to different kinds of pronouns: ὅς, ἥ, ὅ can, for example, be a demonstrative or a relative pronoun. In the LSJ different kinds of pronoun having the same form are usually lemmatized together, and the different functions are signalled in different sections with letters or numbers. Since it can be hard/impossible to detect the category "relative" and "interrogative" relying only on the morphological and syntactic annotation here adopted, the lemma field should contain this information. In order to make this task easier (instead of preserving the letters or numbers of the LSJ), the annotator will adopt the following notation in the lemma field:
+Consult the SG ([325](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+325&fromdoc=Perseus%3Atext%3A1999.04.0007)–[340](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+340&fromdoc=Perseus%3Atext%3A1999.04.0007)) for the lemma translation, especially for correlative pronouns (SG [340](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+340&fromdoc=Perseus%3Atext%3A1999.04.0007)). Particular attention should be paid to relative and interrogative pronouns (used adjectively or substantively): a form can correspond to different kinds of pronouns: ὅς, ἥ, ὅ can, for example, be a demonstrative or a relative pronoun. In the LSJ different kinds of pronoun having the same form are usually lemmatized together, and the different functions are signalled in different sections with letters or numbers. Since it can be hard/impossible to detect the category "relative" and "interrogative" relying only on the morphological and syntactic annotation here adopted, the lemma field should contain this information. In order to make this task easier (instead of preserving the letters or numbers of the LSJ), the annotator will adopt the following notation in the lemma field:
 
 *   `ὅς.R`
 *   `ὅστις.R`
@@ -229,14 +229,14 @@ if the verb is in a finite mood, it usually takes the Prague annotation labels P
 
 #### 2.6 Adverb
 
-The adverb is morphologically defined as the PoS having an invariable form (with the exception of the degree feature; see SG ([341](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+341&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[346](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+346&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) for an introduction on adverbs). Adverbs deriving from adjectives are not lemmatized independently in the [LSJ dictionary](http://www.perseus.tufts.edu/hopper/resolveform?redirect=true), but are contained in the adjective lemma: _so the lemma for an adverb should be the corresponding adjective lemma_. There are, however, a great number of adverbs which are not related to an adjective form and so have an independent entry in 
+The adverb is morphologically defined as the PoS having an invariable form (with the exception of the degree feature; see SG ([341](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+341&fromdoc=Perseus%3Atext%3A1999.04.0007)–[346](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+346&fromdoc=Perseus%3Atext%3A1999.04.0007)) for an introduction on adverbs). Adverbs deriving from adjectives are not lemmatized independently in the [LSJ dictionary](http://www.perseus.tufts.edu/hopper/resolveform?redirect=true), but are contained in the adjective lemma: _so the lemma for an adverb should be the corresponding adjective lemma_. There are, however, a great number of adverbs which are not related to an adjective form and so have an independent entry in 
 [LSJ dictionary](http://www.perseus.tufts.edu/hopper/resolveform?redirect=true) (and so, correspondingly, the lemma will be an adverb).
 
-Sentence adverbs, which are labeled as particles in SG ([1094](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1094&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), should be tagged as adverbs at the morphological level (the label "particle" is however available in the SG annotation). If a certain noun, adjective, or PP has attained the status of an adverb, _it has to be annotated as an adverb_. This occurs, for example, with the so-called adverbial accusative (SG [1606](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1606&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1611](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1611&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) or the head of PPs such as πρὸ πολλοῦ (πρὸ πολλοῦ ποιεῖσθαι, "to esteem highly") or ἀφ᾽ οὗ ("since"). The annotator has to pay attention here, because the system sometimes suggests a nominal/adjectival analysis, which means that the adverbial analysis has to added manually.
+Sentence adverbs, which are labeled as particles in SG ([1094](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1094&fromdoc=Perseus%3Atext%3A1999.04.0007)), should be tagged as adverbs at the morphological level (the label "particle" is however available in the SG annotation). If a certain noun, adjective, or PP has attained the status of an adverb, _it has to be annotated as an adverb_. This occurs, for example, with the so-called adverbial accusative (SG [1606](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1606&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1611](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1611&fromdoc=Perseus%3Atext%3A1999.04.0007)) or the head of PPs such as πρὸ πολλοῦ (πρὸ πολλοῦ ποιεῖσθαι, "to esteem highly") or ἀφ᾽ οὗ ("since"). The annotator has to pay attention here, because the system sometimes suggests a nominal/adjectival analysis, which means that the adverbial analysis has to added manually.
 
-The lemma translation should be an English adjective, if the Greek lemma is an adjective, or an English adverb. For the translation of correlative adverbs, see SG ([346](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+346&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)).
+The lemma translation should be an English adjective, if the Greek lemma is an adjective, or an English adverb. For the translation of correlative adverbs, see SG ([346](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+346&fromdoc=Perseus%3Atext%3A1999.04.0007)).
 
-Sentence adverbs (i.e., some of those words that SG ([2769](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2769&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) defines as particles) are not required to be translated. If the annotator decides to translate them (or some of them), this should be made in a consistent way and declared. Note that conjunctions (both coordinate and subordinate) are here treated as a separate category from particles (see [below](#cnj)).
+Sentence adverbs (i.e., some of those words that SG ([2769](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2769&fromdoc=Perseus%3Atext%3A1999.04.0007)) defines as particles) are not required to be translated. If the annotator decides to translate them (or some of them), this should be made in a consistent way and declared. Note that conjunctions (both coordinate and subordinate) are here treated as a separate category from particles (see [below](#cnj)).
 
  The Prague annotation label for the adverb is usually ADV, OBJ, AuxY, or AuxZ. The SG tagset allows specification of the SR expressed by the adverb.
 
@@ -246,7 +246,7 @@ Sentence adverbs (i.e., some of those words that SG ([2769](http://www.perseus.t
 
 #### 2.7 Adposition
 
-Adposition is a cover term for preposition (SG [1636](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1636&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1702](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1702&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) and postpositions (SG [1665](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1665&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). Adpositions are morphologically identifiable by being a set of invariable word forms. Their list can be found in SG ([1636](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1636&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1702](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1702&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), which includes both proper (SG [1636](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1636&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1698](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1698&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) and improper (SG [1699](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1699&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1702](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1702&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) adpositions.
+Adposition is a cover term for preposition (SG [1636](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1636&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1702](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1702&fromdoc=Perseus%3Atext%3A1999.04.0007)) and postpositions (SG [1665](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1665&fromdoc=Perseus%3Atext%3A1999.04.0007)). Adpositions are morphologically identifiable by being a set of invariable word forms. Their list can be found in SG ([1636](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1636&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1702](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1702&fromdoc=Perseus%3Atext%3A1999.04.0007)), which includes both proper (SG [1636](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1636&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1698](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1698&fromdoc=Perseus%3Atext%3A1999.04.0007)) and improper (SG [1699](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1699&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1702](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1702&fromdoc=Perseus%3Atext%3A1999.04.0007)) adpositions.
 
 The lemma translation should be an English adposition (or an equivalent expression). Some examples are:
 
@@ -264,7 +264,7 @@ The lemma translation should be an English adposition (or an equivalent expressi
 
 #### 2.8 Conjunction
 
-The Conjunction is an invariable PoS, which can be morphologically defined as a word form belonging to a set. The list can be found in SG ([2163](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2163&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); _excluding the  inferential, causal, and some of the adversative conjunctions_ (such as _μέντοι_); _these are all treated here as adverbs_) and in SG ([2770](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2770&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)).
+The Conjunction is an invariable PoS, which can be morphologically defined as a word form belonging to a set. The list can be found in SG ([2163](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2163&fromdoc=Perseus%3Atext%3A1999.04.0007); _excluding the  inferential, causal, and some of the adversative conjunctions_ (such as _μέντοι_); _these are all treated here as adverbs_) and in SG ([2770](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2770&fromdoc=Perseus%3Atext%3A1999.04.0007)).
 
 The lemma translation should be an English conjunction.
 
@@ -276,7 +276,7 @@ The Prague annotation allows the distinction between coordinating conjunctions (
 
 #### 2.9 Numeral
 
-The numeral is a word form belonging to the set defined by SG ([347](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+347&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)-[354](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+354&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). A numeral is annotated for its type: cardinal, ordinal, or adverb. Cardinal and ordinal numerals are always taken to be [adjectives](#adj) (even when a cardinal is indeclinable), and so annotated for gender, number, and case (if declinable).
+The numeral is a word form belonging to the set defined by SG ([347](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+347&fromdoc=Perseus%3Atext%3A1999.04.0007)-[354](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+354&fromdoc=Perseus%3Atext%3A1999.04.0007)). A numeral is annotated for its type: cardinal, ordinal, or adverb. Cardinal and ordinal numerals are always taken to be [adjectives](#adj) (even when a cardinal is indeclinable), and so annotated for gender, number, and case (if declinable).
 
 The lemma translation should be an English numeral.
 
@@ -300,7 +300,7 @@ The interjection receives the syntactic label ExD. No SG annotation is available
 
 #### 2.11 Punctuation
 
-Punctuation marks are identifiable by being a set of forms (see SG ([188](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+188&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) and include modern puntuation marks, such as inverted commas for direct speech). They are annotated because they are part of the edition of a text. Their annotation is however to be considered "technical", punctuation not being part of the morphosyntax of a sentence, but rather being able to function as a clue for syntactic phenomena: e.g., apposition is often preceded and followed by a comma.
+Punctuation marks are identifiable by being a set of forms (see SG ([188](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+188&fromdoc=Perseus%3Atext%3A1999.04.0007)) and include modern puntuation marks, such as inverted commas for direct speech). They are annotated because they are part of the edition of a text. Their annotation is however to be considered "technical", punctuation not being part of the morphosyntax of a sentence, but rather being able to function as a clue for syntactic phenomena: e.g., apposition is often preceded and followed by a comma.
 
  The Prague annotation labels for puntuation can be AuxX, AuxY, AuxK, AuxG, COORD (and APOS). There is no available SG annotation for punctuation marks.
 
@@ -325,7 +325,7 @@ The PRED ("predicate") function is reserved for the verb of the main clause in a
 
 #### 3.2 SBJ
 
-The SBJ ("subject") label is attached to every subject (SG [927](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+927&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[943](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+943&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) in a sentence. The subject is typically a noun (or one of its equivalents) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=24&doc=4971)), including the infinitive, both articular (SG [2025](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2025&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2034](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2034&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=40&doc=4971)) and verbal (SG [1984](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1984&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1985](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1985&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=2&doc=4971)), bearing the nominative case, or the genitive case (in the genitive absolute (SG [2070](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2070&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2075](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2075&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=3&doc=4971)), or the accusative (in the infinitive clause (SG [1972](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1972&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1981](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1981&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=4&doc=4971)) or with the supplementary participle (SG [2106](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2106&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [2112b](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2112&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2115](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2115&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [2123](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2123&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2145](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=5&doc=4971))). The label SBJ can also apply to a substantive clause (SG [2574](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2574&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2575](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2575&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=6&doc=4971)) or a substantivized relative clause (SG [2488](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2488&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=7&doc=4971), which annotation is the default one, while the one with adjective clause + elliptical node has to be declared ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=34&doc=4971))).
+The SBJ ("subject") label is attached to every subject (SG [927](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+927&fromdoc=Perseus%3Atext%3A1999.04.0007)–[943](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+943&fromdoc=Perseus%3Atext%3A1999.04.0007)) in a sentence. The subject is typically a noun (or one of its equivalents) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=24&doc=4971)), including the infinitive, both articular (SG [2025](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2025&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2034](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2034&fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=40&doc=4971)) and verbal (SG [1984](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1984&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1985](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1985&fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=2&doc=4971)), bearing the nominative case, or the genitive case (in the genitive absolute (SG [2070](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2070&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2075](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2075&fromdoc=Perseus%3Atext%3A1999.04.0007))) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=3&doc=4971)), or the accusative (in the infinitive clause (SG [1972](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1972&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1981](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1981&fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=4&doc=4971)) or with the supplementary participle (SG [2106](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2106&fromdoc=Perseus%3Atext%3A1999.04.0007); [2112b](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2112&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2115](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2115&fromdoc=Perseus%3Atext%3A1999.04.0007); [2123](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2123&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2145](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=5&doc=4971))). The label SBJ can also apply to a substantive clause (SG [2574](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2574&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2575](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2575&fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=6&doc=4971)) or a substantivized relative clause (SG [2488](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2488&fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=7&doc=4971), which annotation is the default one, while the one with adjective clause + elliptical node has to be declared ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=34&doc=4971))).
 
 </a>
 
@@ -333,43 +333,7 @@ The SBJ ("subject") label is attached to every subject (SG [927](http://www.pers
 
 #### 3.3 OBJ
 
-The OBJ ("object") label is attached to any dependent which is taken to be an argument of the verb, adjective, or adverb (excluding, of course, arguments which are captured by other labels, such as SBJ). The concept of argument is notoriously difficult to define. As a broad definition, an OBJ argument is taken to be a constituent which is selected by a specific verb or class of verbs (and hence cannot accur with any other verb/class of verbs). For example, verbs of movement require a constituent meaning direction ("I went _to Rome_"), which cannot be used with any other verb: this is therefore an argument. On the contrary, a constituent meaning (time) simultaneous location ("I ate apples _yesterday_") is not an argument (but an ADV) in that it can virtually modify any kind of verb. If there are doubs, it may be useful to consult [Verbnet](http://verbs.colorado.edu/verb-index/index.php), which shows argument structure for English verbs.
-
-    An OBJ argument can be a noun (or one of its equivalents)
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=8&amp;doc=4971)), 
-
-    a PP
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=9&amp;doc=4971)), 
-
-    or an adverb
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=10&amp;doc=4971)). 
-
-     An infinitive can also receive the label OBJ, both in the infinitive clause (SG [2016](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2016&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2024](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2024&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) 
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=4&amp;doc=4971))
-
-     and as a complement of a verb (or an adjective) (SG [1989](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1989&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2007](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2007&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-
-     ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=37&amp;doc=4971)). 
-
-     Similarly, a supplementary participle in indirect discourse (SG [2106](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2106&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), [2112](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2112&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2115](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2115&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), [2123](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2123&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2145](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-
-     ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=5&amp;doc=4971)), 
-
-     a substantive clause (SG [2574](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2574&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2575](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2575&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-
-     ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=11&amp;doc=4971)),
-
-     including the εἰ-substantive clause (SG [2247](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2247&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-
-     ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=12&amp;doc=4971)),
-
-     and a substantivized relative clause (SG [2488](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2488&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) 
-
-     can receive the label OBJ. 
+The OBJ ("object") label is attached to any dependent which is taken to be an argument of the verb, adjective, or adverb (excluding, of course, arguments which are captured by other labels, such as SBJ). The concept of argument is notoriously difficult to define. As a broad definition, an OBJ argument is taken to be a constituent which is selected by a specific verb or class of verbs (and hence cannot accur with any other verb/class of verbs). For example, verbs of movement require a constituent meaning direction ("I went _to Rome_"), which cannot be used with any other verb: this is therefore an argument. On the contrary, a constituent meaning (time) simultaneous location ("I ate apples _yesterday_") is not an argument (but an ADV) in that it can virtually modify any kind of verb. If there are doubs, it may be useful to consult [Verbnet](http://verbs.colorado.edu/verb-index/index.php), which shows argument structure for English verbs. An OBJ argument can be a noun (or one of its equivalents) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=8&doc=4971)), a PP ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=9&doc=4971)), or an adverb([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=10&doc=4971)). An infinitive can also receive the label OBJ, both in the infinitive clause (SG [2016](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2016&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2024](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2024&fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=4&doc=4971)) and as a complement of a verb (or an adjective) (SG [1989](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1989&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2007](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2007&fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=37&doc=4971)). Similarly, a supplementary participle in indirect discourse (SG [2106](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2106&fromdoc=Perseus%3Atext%3A1999.04.0007), [2112](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2112&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2115](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2115&fromdoc=Perseus%3Atext%3A1999.04.0007), [2123](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2123&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2145](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=5&doc=4971)), a substantive clause (SG [2574](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2574&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2575](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2575&fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=11&doc=4971)), including the εἰ-substantive clause (SG [2247](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2247&fromdoc=Perseus%3Atext%3A1999.04.0007)) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=12&doc=4971)), and a substantivized relative clause (SG [2488](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2488&fromdoc=Perseus%3Atext%3A1999.04.0007)) can receive the label OBJ. 
 
 </a>
 
@@ -379,23 +343,23 @@ The OBJ ("object") label is attached to any dependent which is taken to be an ar
 
 Any dependent of the noun (or one of its equivalents, excluding the substantive participle and the infinitive when they function as verbs), which is an article
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=3&amp;doc=4971)), 
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=3&doc=4971)), 
 
     an adjective
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=9&amp;doc=4971)), 
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=9&doc=4971)), 
 
     or a noun (or one of its equivalents)
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=14&amp;doc=4971)) ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=15&amp;doc=4971)), 
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=14&doc=4971)) ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=15&doc=4971)), 
 
     a PP
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=16&amp;doc=4971)),
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=16&doc=4971)),
 
     or a relative clause 
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=17&amp;doc=4971))
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=17&doc=4971))
 
     receives the ATR ("attribute") function.
 
@@ -407,35 +371,35 @@ Any dependent of the noun (or one of its equivalents, excluding the substantive 
 
 The ADV ("adverbial") label is attached to any dependent which is taken to be an optional modification of the verb, the adjective, or the adverb. An ADV modification can be a noun (or one of its equivalents) 
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=18&amp;doc=4971)), 
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=18&doc=4971)), 
 
     a PP
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=31&amp;doc=4971)),
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=31&doc=4971)),
 
     or an adverb
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=6&amp;doc=4971)). 
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=6&doc=4971)). 
 
-    Adverb clauses (SG [2191](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2191&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2487](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2487&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+    Adverb clauses (SG [2191](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2191&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2487](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2487&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=38&amp;doc=4971)), 
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=38&doc=4971)), 
 
-    as well as a substantivized relative clause (SG [2488](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2488&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+    as well as a substantivized relative clause (SG [2488](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2488&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=20&amp;doc=4971), 
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=20&doc=4971), 
 
     which annotation is the default one, while the alternative annotation style, i.e., adjective clause + elliptical node is to be declared
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=35&amp;doc=4971))), 
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=35&doc=4971))), 
 
-    the infinitive of purpose and result (SG [2008](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2008&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)-[2011](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2011&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+    the infinitive of purpose and result (SG [2008](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2008&fromdoc=Perseus%3Atext%3A1999.04.0007)-[2011](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2011&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=41&amp;doc=4971)), 
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=41&doc=4971)), 
 
-    and the circumstantial participle (SG [2054](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2054&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2087](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2087&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+    and the circumstantial participle (SG [2054](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2054&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2087](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2087&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=11&amp;doc=4971)) 
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=11&doc=4971)) 
 
     are ADV modifications as well.
 
@@ -447,11 +411,11 @@ The ADV ("adverbial") label is attached to any dependent which is taken to be an
 
 ATV/AtvV ("verbal attribute") is in the AGDT 1.0 the label for those adjectives agreeing with a subject but functioning as adjuncts. They are annotated as ADV and appended to the governing verb in the AGDT 2.0
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=7&amp;doc=4971)). 
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=7&doc=4971)). 
 
     Alternatively, according to the annotation style of the AGDT 1.0, they can receive the label ATV/AtvV and be appended to the subject/verb (see the guidelines for the [AGDT 1.0](http://nlp.perseus.tufts.edu/syntax/treebank/greek.html) for more information)
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=36&amp;doc=4971)). 
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=36&doc=4971)). 
 
     This latter annotation style has to be declared.
 
@@ -463,17 +427,17 @@ ATV/AtvV ("verbal attribute") is in the AGDT 1.0 the label for those adjectives 
 
 The PNOM ("predicate nominal") label applies to every noun 
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=17&amp;doc=4971))
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=17&doc=4971))
 
-    (or one of its equivalents, including the infinitive (especially SG [1982](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1982&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1983](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1983&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))) 
+    (or one of its equivalents, including the infinitive (especially SG [1982](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1982&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1983](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1983&fromdoc=Perseus%3Atext%3A1999.04.0007))) 
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=39&amp;doc=4971))
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=39&doc=4971))
 
-    or adjective (including the adjective pronoun and the supplementary participle not in indirect discourse; SG [2094](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2094&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2105](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2105&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [2123](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2123&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2145](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+    or adjective (including the adjective pronoun and the supplementary participle not in indirect discourse; SG [2094](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2094&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2105](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2105&fromdoc=Perseus%3Atext%3A1999.04.0007); [2123](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2123&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2145](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&fromdoc=Perseus%3Atext%3A1999.04.0007)
 
-    ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=21&amp;doc=4971)))
+    ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=21&doc=4971)))
 
-    which are dependent on a copulative verb (SG [917](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+917&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). 
+    which are dependent on a copulative verb (SG [917](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+917&fromdoc=Perseus%3Atext%3A1999.04.0007)). 
 
 </a>
 
@@ -481,13 +445,13 @@ The PNOM ("predicate nominal") label applies to every noun
 
 #### 3.8 OCOMP
 
-The function OCOMP ("object complement") is reserved for the predicative accusative (SG [1613](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1613&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1618](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1618&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) 
+The function OCOMP ("object complement") is reserved for the predicative accusative (SG [1613](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1613&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1618](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1618&fromdoc=Perseus%3Atext%3A1999.04.0007)) 
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=22&amp;doc=4971)) 
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=22&doc=4971)) 
 
-    and, more in general, any predicative complement not agreeing with the subject. It is also used with the supplementary participle not in indirect discourse with verbs of perceiving and finding (SG [2110](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2110&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2115](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2115&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+    and, more in general, any predicative complement not agreeing with the subject. It is also used with the supplementary participle not in indirect discourse with verbs of perceiving and finding (SG [2110](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2110&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2115](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2115&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=23&amp;doc=4971)).
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=23&doc=4971)).
 
 </a>
 
@@ -495,17 +459,17 @@ The function OCOMP ("object complement") is reserved for the predicative accusat
 
 #### 3.9 COORD
 
-The function COORD ("coordination") is reserved for coordinate conjunctions (the list can be found in SG [2163](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2163&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), _excluding the  inferential, causal, and some of the adversative conjunctions_ (_such as μέντοι_);_ these are all treated here as _(_sentence_) _adverbs_)
+The function COORD ("coordination") is reserved for coordinate conjunctions (the list can be found in SG [2163](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2163&fromdoc=Perseus%3Atext%3A1999.04.0007), _excluding the  inferential, causal, and some of the adversative conjunctions_ (_such as μέντοι_);_ these are all treated here as _(_sentence_) _adverbs_)
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=24&amp;doc=4971))
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=24&doc=4971))
 
     and commas coordinating two or more constituents when no conjunction is present (asyndeton)
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=25&amp;doc=4971)). 
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=25&doc=4971)). 
 
     If there are correlative conjunctions (or more coordinating commas without conjunctions), the last one by rule takes the function COORD, while the preceding ones take the technical label AuxY and are attached to the last one
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=26&amp;doc=4971)). Every coordinated constituent takes the suffix _CO (if function words, such as AuxPs, are coordinated, the suffix is attached to their children).
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=26&doc=4971)). Every coordinated constituent takes the suffix _CO (if function words, such as AuxPs, are coordinated, the suffix is attached to their children).
 
 </a>
 
@@ -515,21 +479,21 @@ The function COORD ("coordination") is reserved for coordinate conjunctions (the
 
 There are two possible annotations for apposition. In the first annotation style, the label APOS ("apposition"/"appositive") is attached to an appositive noun 
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=27&amp;doc=4971))
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=27&doc=4971))
 
-    ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=28&amp;doc=4971))
+    ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=28&doc=4971))
 
-    (SG [916](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+916&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) or an equivalent of an appositive noun (including a substantivized relative clause and a substantive or adverb clause (SG [976](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+976&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[995](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+995&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)))
+    (SG [916](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+916&fromdoc=Perseus%3Atext%3A1999.04.0007)) or an equivalent of an appositive noun (including a substantivized relative clause and a substantive or adverb clause (SG [976](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+976&fromdoc=Perseus%3Atext%3A1999.04.0007)–[995](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+995&fromdoc=Perseus%3Atext%3A1999.04.0007)))
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=29&amp;doc=4971))
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=29&doc=4971))
 
-    ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=30&amp;doc=4971)), 
+    ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=30&doc=4971)), 
 
     and the appositive is annotated as a dependent of the noun it specifies. 
 
-    Note that, according to this anotation style, the appositive is always a noun and annotated in the same way, independently of whether it functions as an attribute or is, for example, descriptive (see SG [976](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+976&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[995](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+995&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). In the second annotation style, used in AGDT 1.0, the label APOS marks the comma separating a noun and its appositive, and the noun and its appositive take the function required within the sentence (with suffix _AP; see the [AGDT 1.0 guidelines](http://nlp.perseus.tufts.edu/syntax/treebank/agdt/1.7/docs/guidelines.pdf)); if the appositive is an attributive noun it is attached to the noun and labeled as ATR. If this second annotation style is adopted, it has to be declared.
+    Note that, according to this anotation style, the appositive is always a noun and annotated in the same way, independently of whether it functions as an attribute or is, for example, descriptive (see SG [976](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+976&fromdoc=Perseus%3Atext%3A1999.04.0007)–[995](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+995&fromdoc=Perseus%3Atext%3A1999.04.0007)). In the second annotation style, used in AGDT 1.0, the label APOS marks the comma separating a noun and its appositive, and the noun and its appositive take the function required within the sentence (with suffix _AP; see the [AGDT 1.0 guidelines](http://nlp.perseus.tufts.edu/syntax/treebank/agdt/1.7/docs/guidelines.pdf)); if the appositive is an attributive noun it is attached to the noun and labeled as ATR. If this second annotation style is adopted, it has to be declared.
 
-In the SG annotation (if the first annotation style for apposition is adopted) the analysis of an appositive noun is (technically) the same as that of the governing noun. The annotator should pay attention to the many examples of clauses in apposition to a noun, which have to be fully annotated: [tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=52&amp;doc=4971)
+In the SG annotation (if the first annotation style for apposition is adopted) the analysis of an appositive noun is (technically) the same as that of the governing noun. The annotator should pay attention to the many examples of clauses in apposition to a noun, which have to be fully annotated: [tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=52&doc=4971)
 
 </a>
 
@@ -545,9 +509,9 @@ The label MWP is reseverd for multiword expressions. When there is an phrase whe
 
 #### 3.12 AuxP
 
-The function AuxP ("preposition") is reserved for adpositions (whose list is in SG [1636](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1636&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1702](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1702&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+The function AuxP ("preposition") is reserved for adpositions (whose list is in SG [1636](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1636&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1702](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1702&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=6&amp;doc=4971)).
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=6&doc=4971)).
 
 </a>
 
@@ -555,9 +519,9 @@ The function AuxP ("preposition") is reserved for adpositions (whose list is in 
 
 #### 3.13 AuxC
 
-The function AuxC ("conjunction") is used to label subordinate conjunctions only. Their list is in SG ([2770](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2770&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+The function AuxC ("conjunction") is used to label subordinate conjunctions only. Their list is in SG ([2770](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2770&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=11&amp;doc=4971)).
+    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=11&doc=4971)).
 
 </a>
 
@@ -565,7 +529,7 @@ The function AuxC ("conjunction") is used to label subordinate conjunctions only
 
 #### 3.14 AuxX
 
-AuxX is the label used for commas, unless they function as coodinating commas when no conjunction is present (in which case they take the [COORD](#coord) function ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=25&amp;doc=4971)); when there is a coordination with conjunctions and commas, see the example in [tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=31&amp;doc=4971)). A non-coordinating comma is appended to its preceding word. If two commas mark a vocative or a parenthetical clause, they are both appended (with label AuxX) to the vocative and the head of the parenthetical clause respectively.
+AuxX is the label used for commas, unless they function as coodinating commas when no conjunction is present (in which case they take the [COORD](#coord) function ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=25&doc=4971)); when there is a coordination with conjunctions and commas, see the example in [tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=31&doc=4971)). A non-coordinating comma is appended to its preceding word. If two commas mark a vocative or a parenthetical clause, they are both appended (with label AuxX) to the vocative and the head of the parenthetical clause respectively.
 
 </a>
 
@@ -581,7 +545,7 @@ The label AuxG is used for modern punctuation marks (other than commas) that can
 
 #### 3.16 AuxK
 
-The label AuxK is used for the final punctuation mark of a sentence (which can be a period, a semicolon, or the point above the line). The node is always appended to the ROOT node ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=31&amp;doc=4971)).
+The label AuxK is used for the final punctuation mark of a sentence (which can be a period, a semicolon, or the point above the line). The node is always appended to the ROOT node ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=31&doc=4971)).
 
 </a>
 
@@ -589,7 +553,7 @@ The label AuxK is used for the final punctuation mark of a sentence (which can b
 
 #### 3.17 AuxY
 
-The AuxY label is used to mark technical nodes (such as correlative conjunctions attached to the last one, which is taken to be the coordinating one: see [tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=26&amp;doc=4971) and [tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=25&amp;doc=4971)) or for sentence adverbs (i.e., non-conjunction particles in SG ([1094](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1094&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), but only those whose scope is the whole sentence).
+The AuxY label is used to mark technical nodes (such as correlative conjunctions attached to the last one, which is taken to be the coordinating one: see [tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=26&doc=4971) and [tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=25&doc=4971)) or for sentence adverbs (i.e., non-conjunction particles in SG ([1094](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1094&fromdoc=Perseus%3Atext%3A1999.04.0007)), but only those whose scope is the whole sentence).
 
 </a>
 
@@ -723,16 +687,16 @@ The morphosyntactic tagset consists of those categories which, on the basis of t
 In traditional grammar, the syntax of the case is concerned with the functions of the cases of the noun and 
 its syntactic equivalents (the substantive pronoun, the substantive adjective, including the verbal ones in τος/τεος, the substantive participle, the articular infinitive, and the substantivized adjective clause; henceforth I will usually use the term "noun" to mean "noun" plus these syntactic equivalents). It deals with the distinction between, for example, an [accusative of the external object](#acc_aff) and an [accusative of respect](#acc_rsp). In the treebank 2.0, it is possible to fully annotate the syntax of the case by means of an elaborate algorithm. Most of the categories covered by the traditional syntax of the case are today treated under the rubric of semantic roles (in the following, the term "(semantic) function" is sometimes used as a synonym for "semantic role").
 
-After the morphological annotation, the annotator is required to annotate the syntax of a noun, starting from the selection of the noun's syntactic case. Even though the syntactic case of a noun usually corresponds to its morphological case, there are some cases where this does not hold true: the so-called phenomenon of "attraction" of the relative pronoun (SG [2522](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2522&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), for example, calls for a clear distinction between the morphology and the syntax of a case. Similarly, when a genitive or an accusative are analyzed as subjects or predicate nominals, the syntactic case selected should be the nominative.
+After the morphological annotation, the annotator is required to annotate the syntax of a noun, starting from the selection of the noun's syntactic case. Even though the syntactic case of a noun usually corresponds to its morphological case, there are some cases where this does not hold true: the so-called phenomenon of "attraction" of the relative pronoun (SG [2522](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2522&fromdoc=Perseus%3Atext%3A1999.04.0007)), for example, calls for a clear distinction between the morphology and the syntax of a case. Similarly, when a genitive or an accusative are analyzed as subjects or predicate nominals, the syntactic case selected should be the nominative.
 
 The dependent and independent functions of each case are always kept distinct: "dependent" is a case function of a noun which is syntactically governed, while "independent" is a case function of a noun which is not syntactically dependent on any other word in the sentence. A noun with an independent function is very often, but not always, the head of a sentence, syntactic "independency" sometimes corresponding to a technical dependency in the treebank: e.g., a 
 [nominativus pendens](#nmn_pnd) is technically attached to a PRED, although it is not syntactically dependent on it.
 
 Following SG, the annotation algorithm distinguishes between main and adpositional functions for each case: e.g., the semantic function encoded by the 
 [terminal accusative](#acc_trm) (accusative of direction) is a main function (because it can be expressed by the bare case), while an adpositional function is a semantic function that can be encoded only by a case plus an adposition (e.g., "cause" expressed by 
-[διά + accusative](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), which cannot be expressed by the bare accusative case). A case can sometimes express a main function also in conjunction with an adposition, which can define it more specifically: e.g., "direction" can also be encoded by, for example, 
-[εἰς](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1686&amp;fromdoc=Perseus%3Atext%3A1999.04.0007) or 
-[παρά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1692&amp;fromdoc=Perseus%3Atext%3A1999.04.0007) + accusative. A main function, whether or not it is specified by an adposition, is _always_ annotated by selecting the relevant main function.
+[διά + accusative](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&fromdoc=Perseus%3Atext%3A1999.04.0007), which cannot be expressed by the bare accusative case). A case can sometimes express a main function also in conjunction with an adposition, which can define it more specifically: e.g., "direction" can also be encoded by, for example, 
+[εἰς](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1686&fromdoc=Perseus%3Atext%3A1999.04.0007) or 
+[παρά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1692&fromdoc=Perseus%3Atext%3A1999.04.0007) + accusative. A main function, whether or not it is specified by an adposition, is _always_ annotated by selecting the relevant main function.
 
 By contrast, a function that is shown as adpositional in the annotation algorithm is a semantic function that is always different from those expressed by the main functions (i.e., they cannot be expressed by the bare case). For the sake of perspicuity/simplicity, however, time and place SRs are all grouped together under the relevant non-adpositional function specific to each case (irrespective of the above criterion), with the exception of the genitive of separation and the terminal accusative, which are kept distinct from the genitive of place and the accusative of extent respectively, being in traditional grammar treated as separate categories.
 
@@ -746,22 +710,22 @@ The annotator is _required_ to annotate the syntax of the case when the noun _on
 *   noun (and its equivalents)
 *   an adposition depending on one of the above categories
 
-When a case depends on any other part of speech, the option "none of the above" is to be selected. The latter option is made available because I do not attempt to provide guidelines for the annotation of dependents of the adjective and the adverb, which is, as is known, more controversial and so more difficult to rule. There are cases where the SG annotation of a noun depending on an adjective or an adverb is rather straightforward, but many others where it is not  (SG ([1413](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1413&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) itself acknowledges this). Providing operational criteria for this latter kind of annotation is outside the scope of the present guidelines. However, the annotation environment "Arethusa" technically allows the annotation of a given SR also when a noun depends on an adjective or adverb: the annotator is free to also annotate it, provided that this is declared and the annotation criteria are documented.
+When a case depends on any other part of speech, the option "none of the above" is to be selected. The latter option is made available because I do not attempt to provide guidelines for the annotation of dependents of the adjective and the adverb, which is, as is known, more controversial and so more difficult to rule. There are cases where the SG annotation of a noun depending on an adjective or an adverb is rather straightforward, but many others where it is not  (SG ([1413](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1413&fromdoc=Perseus%3Atext%3A1999.04.0007)) itself acknowledges this). Providing operational criteria for this latter kind of annotation is outside the scope of the present guidelines. However, the annotation environment "Arethusa" technically allows the annotation of a given SR also when a noun depends on an adjective or adverb: the annotator is free to also annotate it, provided that this is declared and the annotation criteria are documented.
 
 The option "none of the above" is also to be selected when a PP expresses a SR whose annotation is not available (for a selection of SRs can currently be annotated only: see the list below). I have tried to design the algorithm in such a way that it is possible to annotate a certain SR wherever it appears within the clause, independently of its morphosyntactic realization (e.g., "cause" can always be annotated, whether it is expressed by a noun, an adverb, a PP, a participle, or a clause). Note, however, that, following SG and much literature on the subject, the semantics of the adjective, the nominative, and that of some kinds of genitive, dative, and accusative (such as the partitive genitive with verbs or the dative as direct complement of verbs) is not investigated (and so cannot be annotated), there being much less agreement on it. Providing operational criteria for this kind of annotation is outside the scope of the present release of the guidelines.
 
 With the aforementioned limitations, the SRs that can be currently annotated are almost all the ones identified in SG. Greek examples for each SR can be read in the relevant sections in SG. In a few cases the definitions I provide below have been modified from the ones that can be found in SG. In the following table, I list (1) the SRs, (2) their definitions, (3) English examples to illustrate them (often literally taken from SG), (4) references to SG with Greek examples, and (5) additional remarks.
 
-The SG sections referred to are only a few of the ones concerned with a given SR (e.g., there is no reference to sections dealing with PPs or clauses expressing the same SR, which can however be easily found in the rest of the document). My definitions are basically formulated following SG, with an attempt to make them compatible with the ones adopted in [Luraghi 2003](http://www.worldcat.org/title/on-the-meaning-of-prepositions-and-cases-the-expression-of-semantic-roles-in-ancient-greek/oclc/227038149&amp;referer=brief_results), [Haspelmath 1997](https://www.worldcat.org/title/from-space-to-time-temporal-adverbials-in-the-worlds-languages/oclc/37670970&amp;referer=brief_results) (relative to time SRs), and in [Verbnet](http://verbs.colorado.edu/verb-index/VerbNet_Guidelines.pdf). In general, the system of SRs that is lincesed in the present guidelines is more fine-grained than that in Luraghi 2003 and Verbnet. In the following definitions, I use the term "participant" as a cover term for any entity bearing a SR, and "event" as a cover term for any kind of action or state. Although the definitions are compatible with many of those adopted in Verbnet, there is no claim here about a structural hierarchy of SRs.
+The SG sections referred to are only a few of the ones concerned with a given SR (e.g., there is no reference to sections dealing with PPs or clauses expressing the same SR, which can however be easily found in the rest of the document). My definitions are basically formulated following SG, with an attempt to make them compatible with the ones adopted in [Luraghi 2003](http://www.worldcat.org/title/on-the-meaning-of-prepositions-and-cases-the-expression-of-semantic-roles-in-ancient-greek/oclc/227038149&referer=brief_results), [Haspelmath 1997](https://www.worldcat.org/title/from-space-to-time-temporal-adverbials-in-the-worlds-languages/oclc/37670970&referer=brief_results) (relative to time SRs), and in [Verbnet](http://verbs.colorado.edu/verb-index/VerbNet_Guidelines.pdf). In general, the system of SRs that is lincesed in the present guidelines is more fine-grained than that in Luraghi 2003 and Verbnet. In the following definitions, I use the term "participant" as a cover term for any entity bearing a SR, and "event" as a cover term for any kind of action or state. Although the definitions are compatible with many of those adopted in Verbnet, there is no claim here about a structural hierarchy of SRs.
 
 In the list I do not include the categories 
-"divided whole" (SG [1306](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1306&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1319](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1319&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [1341](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1341&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1371](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1371&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), 
-"subjective/objective genitive" (SG [1328](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1328&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1335](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1335&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)),
-"dative of direct complement of verbs" (SG [1460](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1460&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1468](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1468&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [1471](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1471&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1473](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1473&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), 
-"dative with the participle of inclination or aversion" (SG [1487](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1487&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), 
-"dative of the participle expressing time" (SG [1498](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1498&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), 
-object affected (SG [1551](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1551&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1562](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1562&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), and
-object effected ([1563](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1563&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1579](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1579&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)): they are grammatical categories rather than SRs. As stated above, their semantics cannot be annotated in the present version of the guidelines.
+"divided whole" (SG [1306](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1306&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1319](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1319&fromdoc=Perseus%3Atext%3A1999.04.0007); [1341](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1341&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1371](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1371&fromdoc=Perseus%3Atext%3A1999.04.0007)), 
+"subjective/objective genitive" (SG [1328](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1328&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1335](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1335&fromdoc=Perseus%3Atext%3A1999.04.0007)),
+"dative of direct complement of verbs" (SG [1460](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1460&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1468](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1468&fromdoc=Perseus%3Atext%3A1999.04.0007); [1471](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1471&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1473](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1473&fromdoc=Perseus%3Atext%3A1999.04.0007)), 
+"dative with the participle of inclination or aversion" (SG [1487](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1487&fromdoc=Perseus%3Atext%3A1999.04.0007)), 
+"dative of the participle expressing time" (SG [1498](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1498&fromdoc=Perseus%3Atext%3A1999.04.0007)), 
+object affected (SG [1551](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1551&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1562](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1562&fromdoc=Perseus%3Atext%3A1999.04.0007)), and
+object effected ([1563](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1563&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1579](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1579&fromdoc=Perseus%3Atext%3A1999.04.0007)): they are grammatical categories rather than SRs. As stated above, their semantics cannot be annotated in the present version of the guidelines.
 
 <table id="table_SR" style="border:1">
 <caption>
@@ -781,7 +745,7 @@ object effected ([1563](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+gramm
 
 I went to Rome <span style="font-style: italic">with him</span>
 </td>
-<td>[1524](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1524&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1526](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1526&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1524](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1524&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1526](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1526&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td/>
 </tr>
 
@@ -789,7 +753,7 @@ I went to Rome <span style="font-style: italic">with him</span>
 <td>accompanying circumstance</td>
 <td>abstract participant that denotes the circumstance (but not the manner) accompanying an event</td>
 <td/>
-<td>[1527](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1527&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1527](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1527&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td>This SR should be selected only when the accompanying circumstance cannot be interpreted as a manner</td>
 </tr>
 
@@ -798,7 +762,7 @@ I went to Rome <span style="font-style: italic">with him</span>
 <td>animate participant (or participant composed of animate entities, such as "country") to whose advantage an event occurs</td>
 <td>I work <span style="font-style: italic">for you</span>
               </td>
-<td>[1481](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1481&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1485](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1485&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1481](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1481&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1485](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1485&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td>This SR is also known as "beneficiary" in the literature</td>
 </tr>
 
@@ -807,7 +771,7 @@ I went to Rome <span style="font-style: italic">with him</span>
 <td>animate participant (or participant composed of animate entities, such as "country") to whose disadvantage an event occurs</td>
 <td>I work <span style="font-style: italic">against you</span>
               </td>
-<td>[1481](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1481&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1485](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1485&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1481](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1481&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1485](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1485&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td/>
 </tr>
 
@@ -816,7 +780,7 @@ I went to Rome <span style="font-style: italic">with him</span>
 <td>participant that causes an event intentionally or consciously</td>
 <td>The cake was made <span style="font-style: italic">by him</span>
               </td>
-<td>[1488](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1488&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1494](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1494&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1488](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1488&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1494](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1494&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td>Due to the limitations stated above, this SR cannot be annotated when it is expressed by a nominative (the semantics of the nominative not being investigated in this version of the treebank)</td>
 </tr>
 <tr>
@@ -827,7 +791,7 @@ He associates <span style="font-style: italic">with you</span>;
 
 He agrees <span style="font-style: italic">with you</span>
 </td>
-<td>[1523](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1523&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1523](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1523&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td>If the verb is of speaking, the semantic role is "recipient or addressee"</td>
 </tr>
 <tr>
@@ -836,7 +800,7 @@ He agrees <span style="font-style: italic">with you</span>
 <td>
 He fights <span style="font-style: italic">with you</span>
 </td>
-<td>[1523](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1523&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1523](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1523&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td>If the verb is of speaking, the semantic role is "recipient or addressee"</td>
 </tr>
 <tr>
@@ -847,7 +811,7 @@ I was astonished <span style="font-style: italic">at that</span>;
 
 I admire him <span style="font-style: italic">for</span> his <span style="font-style: italic">bravery</span>
 </td>
-<td>[1405](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1405&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1408](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1408&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [1517](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1517&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1520](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1520&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1405](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1405&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1408](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1408&fromdoc=Perseus%3Atext%3A1999.04.0007); [1517](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1517&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1520](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1520&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td/>
 </tr>
 
@@ -857,7 +821,7 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>
 <span style="font-style: italic">in accordance with</span> the <span style="font-style: italic">laws</span>
 </td>
-<td>[1688](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1688&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1688](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1688&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td>This SR is only adpositional</td>
 </tr>
 
@@ -867,7 +831,7 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>
 <span style="font-style: italic">as regards</span> a <span style="font-style: italic">wife</span>, if she conducts herself ill, etc.
 </td>
-<td>[1381](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1381&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1381](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1381&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td>This SR is also used when a genitive expresses the SR of respect. Note that, contrary to SG, if a genitive expresses topic with verbs of saying or thinking (or similar verbs), the SR to be selected is "topic"</td>
 </tr>
 <tr>
@@ -875,14 +839,14 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>participant that is the crime a participant is accused of</td>
 <td>He was accused <span style="font-style: italic">of robbery</span>
               </td>
-<td>[1375](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1375&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1379](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1379&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1375](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1375&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1379](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1379&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td/>
 </tr>
 <tr>
 <td>(distinction and) comparison</td>
 <td>participant to which another participant is compared</td>
 <td>he is superior <span style="font-style: italic">to you</span> in eloquence</td>
-<td>[1401](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1401&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1404](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1404&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1401](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1401&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1404](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1404&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td/>
 </tr>
 
@@ -891,7 +855,7 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>participant that specifies by restriction the meaning of another participant</td>
 <td>the city <span style="font-style: italic">Rome</span>
               </td>
-<td>[1322](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1322&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1322](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1322&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td/>
 </tr>
 <tr>
@@ -899,7 +863,7 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>participant which is manipulated by an agent and through which an event occurs</td>
 <td>he hit me <span style="font-style: italic">with</span> a <span style="font-style: italic">stone</span>
               </td>
-<td>[1507](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1507&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1511](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1511&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1507](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1507&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1511](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1511&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td/>
 </tr>
 <tr>
@@ -907,15 +871,15 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>participant that specifies how an event occurs</td>
 <td>he reads <span style="font-style: italic">wonderfully</span>
               </td>
-<td>[1527](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1527&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
-<td>SG definition ([1513](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1513&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1515](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1515&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) of manner is not the one adopted here: SG defines manner as "measure of difference" and "respect", both of which are treated here as distinct SRs. My definition of manner basically coincides with SG definition of accompanying circumstance ([1527](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1527&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), excluding all those instances that cannot be strictly interpreted as manner specifications</td>
+<td>[1527](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1527&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>SG definition ([1513](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1513&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1515](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1515&fromdoc=Perseus%3Atext%3A1999.04.0007)) of manner is not the one adopted here: SG defines manner as "measure of difference" and "respect", both of which are treated here as distinct SRs. My definition of manner basically coincides with SG definition of accompanying circumstance ([1527](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1527&fromdoc=Perseus%3Atext%3A1999.04.0007)), excluding all those instances that cannot be strictly interpreted as manner specifications</td>
 </tr>
 <tr>
 <td>material or contents</td>
 <td>participant that is the material or contents of another participant</td>
 <td>spring <span style="font-style: italic">of water</span>
               </td>
-<td>[1323](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1323&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1324](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1324&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1323](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1323&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1324](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1324&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td/>
 </tr>
 <tr>
@@ -923,14 +887,14 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>participant specifying the measure of space, time, or degree of a participant</td>
 <td>provisions <span style="font-style: italic">of</span> five <span style="font-style: italic">days</span>
               </td>
-<td>[1325](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1325&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1327](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1327&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [1581](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1581&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
-<td>This kind of SR, when governed by a pronoun, might be confused with the partitive genitive. The latter is more general, while the former only quantifies a measure of space, time, and degree (SG [1317](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1317&amp;fromdoc=Perseus%3Atext%3A1999.04.0007) vs [1325](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1325&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). Time can be annotated as a measure only within the genitive of measure.</td>
+<td>[1325](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1325&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1327](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1327&fromdoc=Perseus%3Atext%3A1999.04.0007); [1581](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1581&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>This kind of SR, when governed by a pronoun, might be confused with the partitive genitive. The latter is more general, while the former only quantifies a measure of space, time, and degree (SG [1317](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1317&fromdoc=Perseus%3Atext%3A1999.04.0007) vs [1325](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1325&fromdoc=Perseus%3Atext%3A1999.04.0007)). Time can be annotated as a measure only within the genitive of measure.</td>
 </tr>
 <tr>
 <td>measure of difference</td>
 <td>participant that specifies the degree by which a participant differs from another participant in a comparison</td>
 <td>many <span style="font-style: italic">days</span> later</td>
-<td>[1513](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1513&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1515](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1515&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1513](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1513&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1515](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1515&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td/>
 </tr>
 <tr>
@@ -938,7 +902,7 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>place where an event occurs</td>
 <td>He lives <span style="font-style: italic">in Milano</span>
               </td>
-<td>[1448](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1448&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1449](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1449&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [1531](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1531&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1538](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1538&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [1581](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1581&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1448](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1448&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1449](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1449&fromdoc=Perseus%3Atext%3A1999.04.0007); [1531](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1531&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1538](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1538&fromdoc=Perseus%3Atext%3A1999.04.0007); [1581](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1581&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td/>
 </tr>
 <tr>
@@ -946,14 +910,14 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>place through which an event accurs</td>
 <td>we moved <span style="font-style: italic">through</span> the <span style="font-style: italic">land</span>
               </td>
-<td>[1581](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1581&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1581](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1581&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td/>
 </tr>
 <tr>
 <td>(place) separation</td>
 <td>place from where an event occurs</td>
 <td>He went <span style="font-style: italic">from Austria</span> to Italy</td>
-<td>[1392](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1392&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1400](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1400&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1392](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1392&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1400](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1400&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td>This SR is also known in the literature as "source" or "ablative". In SG the genitive of separation is a broad category including both spatial and non-spatial separation. According to the present scheme, spatial separation is "separation &gt; concrete", while any other kind of metaphorical separation is labeled "sepratation &gt; figurative".</td>
 </tr>
 <tr>
@@ -962,9 +926,9 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>He went from Austria <span style="font-style: italic">to Italy</span>
               </td>
 <td>
-[1448](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1448&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1449](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1449&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); 
-[1531](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1531&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1538](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1538&amp;fromdoc=Perseus%3Atext%3A1999.04.0007);    
-[1588](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1588&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1589](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1589&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+[1448](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1448&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1449](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1449&fromdoc=Perseus%3Atext%3A1999.04.0007); 
+[1531](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1531&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1538](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1538&fromdoc=Perseus%3Atext%3A1999.04.0007);    
+[1588](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1588&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1589](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1589&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td>This SR is also known as "goal" or "allative"</td>
 </tr>
 <tr>
@@ -972,7 +936,7 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>participant that possesses or is interested in possessing another participant</td>
 <td>
                 <span style="font-style: italic">Areistotle's</span> books</td>
-<td>[1297](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1297&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1305](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1305&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [1476](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1476&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1480](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1480&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1297](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1297&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1305](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1305&fromdoc=Perseus%3Atext%3A1999.04.0007); [1476](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1476&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1480](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1480&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td>The genitive of possession indicates possession, while the dative of possessor interest in possession</td>
 </tr>
 <tr>
@@ -980,7 +944,7 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>participant that indicates the price or value of another participant</td>
 <td>he bought a table <span style="font-style: italic">for</span> much <span style="font-style: italic">money</span>
               </td>
-<td>[1336](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1336&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1337](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1337&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [1372](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1372&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1374](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1374&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1336](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1336&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1337](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1337&fromdoc=Perseus%3Atext%3A1999.04.0007); [1372](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1372&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1374](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1374&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td/>
 </tr>
 <tr>
@@ -988,7 +952,7 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>participant that is the aim of an event</td>
 <td>He earned money <span style="font-style: italic">for him/that</span>
               </td>
-<td>[1408](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1408&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1408](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1408&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td>The SR "purpose" is usually inanimate. When the participant is animate, the context can help in distinguishing between purpose and beneficiary.</td>
 </tr>
 <tr>
@@ -996,21 +960,21 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>participant that denotes a quality</td>
 <td>I am <span style="font-style: italic">of</span> the same <span style="font-style: italic">opinion</span>
               </td>
-<td>[1320](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1320&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1321](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1321&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1320](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1320&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1321](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1321&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td/>
 </tr>
 <tr>
 <td>relation</td>
 <td>animate participant that limits the meaning of an event</td>
 <td>it is safer <span style="font-style: italic">for them</span> to flee</td>
-<td>[1495](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1495&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1495](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1495&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td>This SR and that of "respect" can be distinguished on the basis of animacy</td>
 </tr>
 <tr>
 <td>recipient or addressee</td>
 <td>participant to which an event is directed</td>
 <td>he told <span style="font-style: italic">me</span> that he was happy</td>
-<td>[1469](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1469&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1470](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1470&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1469](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1469&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1470](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1470&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td>This SR prototypically depends on verbs of giving (recipient) and saying (addressee)</td>
 </tr>
 <tr>
@@ -1018,7 +982,7 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>participant in whose opinion an event holds good</td>
 <td>pitful <span style="font-style: italic">in the eyes of many</span>
               </td>
-<td>[1496](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1496&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1497](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1497&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1496](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1496&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1497](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1497&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td/>
 </tr>
 <tr>
@@ -1026,14 +990,14 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>inanimate participant that delimits the scope of a property or event</td>
 <td>harsh <span style="font-style: italic">of voice</span>
               </td>
-<td>[1516](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1516&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [1600](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1600&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1605](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1605&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1516](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1516&fromdoc=Perseus%3Atext%3A1999.04.0007); [1600](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1600&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1605](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1605&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td>This SR can be expressed by the dative or the accusative. The SR of connection can be considered as a variant of it.</td>
 </tr>
 <tr>
 <td>feeling</td>
 <td>participant who shows participation/interest in an event to an interlocutor</td>
 <td>study <span style="font-style: italic">me</span> how to please the eye</td>
-<td>[1486](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1486&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1486](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1486&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td/>
 </tr>
 <tr>
@@ -1048,9 +1012,9 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 
 <span style="font-style: italic">during</span> that <span style="font-style: italic">day</span>
 </td>
-<td>[1444](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1444&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1447](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1447&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); 
-[1539](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1539&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1543](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1543&amp;fromdoc=Perseus%3Atext%3A1999.04.0007);
-[1582](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1582&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1587](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1587&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+<td>[1444](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1444&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1447](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1447&fromdoc=Perseus%3Atext%3A1999.04.0007); 
+[1539](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1539&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1543](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1543&fromdoc=Perseus%3Atext%3A1999.04.0007);
+[1582](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1582&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1587](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1587&fromdoc=Perseus%3Atext%3A1999.04.0007)
 </td>
 <td>More examples and explanation in Haspelmath 1997:102–116</td>
 </tr>
@@ -1060,7 +1024,7 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>
                 <span style="font-style: italic">before</span>/<span style="font-style: italic">after</span> the <span style="font-style: italic">meal</span>
               </td>
-<td>[1444](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1444&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1447](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1447&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1444](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1444&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1447](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1447&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td>More examples and explanation in Haspelmath 1997:56–63</td>
 </tr>
 <tr>
@@ -1073,8 +1037,8 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 
 <span style="font-style: italic">from now on</span>
 </td>
-<td>[1444](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1444&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1447](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1447&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [1539](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1539&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1543](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1543&amp;fromdoc=Perseus%3Atext%3A1999.04.0007);
-[1582](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1582&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1587](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1587&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+<td>[1444](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1444&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1447](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1447&fromdoc=Perseus%3Atext%3A1999.04.0007); [1539](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1539&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1543](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1543&fromdoc=Perseus%3Atext%3A1999.04.0007);
+[1582](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1582&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1587](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1587&fromdoc=Perseus%3Atext%3A1999.04.0007)
 </td>
 <td>More examples and explanation in Haspelmath 1997:66–78</td>
 </tr>
@@ -1084,7 +1048,7 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 <td>(I will return) <span style="font-style: italic">in</span> three <span style="font-style: italic">weeks</span>
  three <span style="font-style: italic">years ago</span>
 </td>
-<td>[1539](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1539&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1543](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1543&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1539](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1539&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1543](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1543&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td>More examples and explanation in Haspelmath 1997:80–96</td>
 </tr>
 <tr>
@@ -1095,9 +1059,9 @@ I admire him <span style="font-style: italic">for</span> his <span style="font-s
 
 I wrote the letter <span style="font-style: italic">in</span> two <span style="font-style: italic">hours</span>
 </td>
-<td>[1444](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1444&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1447](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1447&amp;fromdoc=Perseus%3Atext%3A1999.04.0007);
-[1539](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1539&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1543](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1543&amp;fromdoc=Perseus%3Atext%3A1999.04.0007);
-[1582](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1582&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1587](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1587&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+<td>[1444](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1444&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1447](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1447&fromdoc=Perseus%3Atext%3A1999.04.0007);
+[1539](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1539&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1543](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1543&fromdoc=Perseus%3Atext%3A1999.04.0007);
+[1582](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1582&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1587](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1587&fromdoc=Perseus%3Atext%3A1999.04.0007)
 </td>
 <td>More examples and explanation in Haspelmath 1997:120–136</td>
 </tr>
@@ -1106,7 +1070,7 @@ I wrote the letter <span style="font-style: italic">in</span> two <span style="f
 <td>participant that is the topic around which an event of communication or disputing occurs</td>
 <td>He talked to me <span style="font-style: italic">about him</span>
               </td>
-<td>[1380](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1380&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1381](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1381&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [1409](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1409&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1380](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1380&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1381](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1381&fromdoc=Perseus%3Atext%3A1999.04.0007); [1409](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1409&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td/>
 </tr>
 <tr>
@@ -1116,7 +1080,7 @@ I wrote the letter <span style="font-style: italic">in</span> two <span style="f
                 <span style="font-style: italic">of Darius</span> and <span style="font-style: italic">Parysatis</span> were born two sons; 
 
 I heard that from him</td>
-<td>[1410](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1410&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1411](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1411&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1410](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1410&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1411](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1411&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td>This SR is also known as "origin" in the literature</td>
 </tr>
 <tr>
@@ -1124,7 +1088,7 @@ I heard that from him</td>
 <td>participant by which another participant is measured or judged</td>
 <td>it was plain <span style="font-style: italic">from that</span>
               </td>
-<td>[1512](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1512&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
+<td>[1512](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1512&fromdoc=Perseus%3Atext%3A1999.04.0007)</td>
 <td/>
 </tr>
 </table>
@@ -1137,7 +1101,7 @@ In the following sections I show the algorithms underlying the annotation for ea
 
 The nominative is a grammatical case, which can encode different SRs: this is particularly clear if one considers the SR of the nominative of a passive verb, which 
 can correspond to an accusative, or a genitive, or a dative depending on the same verb, when it is in the 
-[active voice](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1745&amp;fromdoc=Perseus%3Atext%3A1999.04.0007). How many and which SRs the nominative can encode is a controversial issue, and so there is no attempt to annotate them in the treebank 2.0: the annotation for the dependent nominative, either as a subject or a predicate nominal, is therefore empty (nominative &gt; dependent). The nominative should be used also when a genitive, a dative, or an accusative are syntactically equivalent to a nominative (for example, when a genitive is the subject or the predicate nominal in a genitive absolute; see also examples of attraction (SG [1060](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1060&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1062](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1062&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))). The following is the full algorithm for the nominative:
+[active voice](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1745&fromdoc=Perseus%3Atext%3A1999.04.0007). How many and which SRs the nominative can encode is a controversial issue, and so there is no attempt to annotate them in the treebank 2.0: the annotation for the dependent nominative, either as a subject or a predicate nominal, is therefore empty (nominative &gt; dependent). The nominative should be used also when a genitive, a dative, or an accusative are syntactically equivalent to a nominative (for example, when a genitive is the subject or the predicate nominal in a genitive absolute; see also examples of attraction (SG [1060](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1060&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1062](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1062&fromdoc=Perseus%3Atext%3A1999.04.0007))). The following is the full algorithm for the nominative:
 
 *   [dependent](#nmn_dpn)
 *   [independent](#nmn_ind)
@@ -1161,17 +1125,17 @@ Independent is a nominative which does not grammatically depend on another word 
 #### <a id="nmn_ctc">4.1.1.1.3 Citation</a>
 
 The nominative of citation can occur in titles. It can also occur within a sentence (SG 
-[940](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+940&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), and so be (technically) attached to the word it specifies.
+[940](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+940&fromdoc=Perseus%3Atext%3A1999.04.0007)), and so be (technically) attached to the word it specifies.
 
 #### <a id="nmn_pnd">4.1.1.1.4 Nominativus pendens</a>
 
 The nominativus pendens (SG 
-[941](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+941&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) is technically annotated as a dependent on the PRED verb.
+[941](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+941&fromdoc=Perseus%3Atext%3A1999.04.0007)) is technically annotated as a dependent on the PRED verb.
 
 #### <a id="nmn_exc">4.1.1.1.5 Exclamation</a>
 
 The nominative of exclamation (SG 
-[1288](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1288&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) can be the head of a sentence or be technically dependent of another word when equivalent to a vocative.
+[1288](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1288&fromdoc=Perseus%3Atext%3A1999.04.0007)) can be the head of a sentence or be technically dependent of another word when equivalent to a vocative.
 
 </a> <!-- end nominative -->
 
@@ -1180,53 +1144,53 @@ The nominative of exclamation (SG
 #### 4.1.1.2 Genitive
 
 Three main functions are acknowledged for the bare genitive: the genitive proper, the ablatival genitive, and the genitive of time and place. Differently from SG, the algorithm for the genitive does not distinguish between genitives governed by a noun from those governed by a verb, because such a piece of information 
-is expressed by the dependency annotation, which makes it explicit which the governor of a word is. Note that when the genitive is the subject or a predicate nominal in a genitive absolute, and hence is functionally equivalent to a nominative, the syntactic case selected should be the nominative. The same holds when the genitive is attracted (SG [1060](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1060&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1062](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1062&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). If the genitive has the function of OCOMP (SG [2112](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2112&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), the annotation ends with the selection of the dependent feature. The following is the algorithm for the genitive (with links referring to the SG sections of the noun-dependent and verb-dependent genitive, which distinction is lost at this level, it resulting from the tree structure). 
+is expressed by the dependency annotation, which makes it explicit which the governor of a word is. Note that when the genitive is the subject or a predicate nominal in a genitive absolute, and hence is functionally equivalent to a nominative, the syntactic case selected should be the nominative. The same holds when the genitive is attracted (SG [1060](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1060&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1062](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1062&fromdoc=Perseus%3Atext%3A1999.04.0007)). If the genitive has the function of OCOMP (SG [2112](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2112&fromdoc=Perseus%3Atext%3A1999.04.0007)), the annotation ends with the selection of the dependent feature. The following is the algorithm for the genitive (with links referring to the SG sections of the noun-dependent and verb-dependent genitive, which distinction is lost at this level, it resulting from the tree structure). 
 
-*   [dependent](#gnt_dpn) (SG [1289](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1289&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1406](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1406&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [1408](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1408&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1449](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1449&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+*   [dependent](#gnt_dpn) (SG [1289](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1289&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1406](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1406&fromdoc=Perseus%3Atext%3A1999.04.0007); [1408](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1408&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1449](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1449&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-        *   genitive proper (noun: SG [1290](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1290&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1337](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1337&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); verb: SG [1341](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1341&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1390](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1390&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   genitive proper (noun: SG [1290](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1290&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1337](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1337&fromdoc=Perseus%3Atext%3A1999.04.0007); verb: SG [1341](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1341&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1390](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1390&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-                *   genitive of possession or belonging (SG [1297](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1297&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1305](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1305&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-        *   genitive of the divided whole (noun: SG [1306](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1306&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1319](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1319&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); verb: SG [1341](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1341&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1371](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1371&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-        *   genitive of quality (SG [1320](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1320&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1321](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1321&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-        *   genitive of explanation (SG [1322](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1322&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-        *   genitive of material or contents (SG [1323](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1323&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1324](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1324&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-        *   [genitive of measure](#msr) (SG [1325](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1325&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1327](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1327&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+                *   genitive of possession or belonging (SG [1297](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1297&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1305](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1305&fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   genitive of the divided whole (noun: SG [1306](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1306&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1319](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1319&fromdoc=Perseus%3Atext%3A1999.04.0007); verb: SG [1341](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1341&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1371](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1371&fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   genitive of quality (SG [1320](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1320&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1321](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1321&fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   genitive of explanation (SG [1322](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1322&fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   genitive of material or contents (SG [1323](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1323&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1324](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1324&fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   [genitive of measure](#msr) (SG [1325](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1325&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1327](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1327&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-                        *   time (SG [1325](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1325&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1327](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1327&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-            *   space (SG [1325](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1325&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1327](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1327&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-            *   degree (SG [1325](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1325&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1327](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1327&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+                        *   time (SG [1325](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1325&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1327](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1327&fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   space (SG [1325](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1325&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1327](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1327&fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   degree (SG [1325](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1325&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1327](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1327&fromdoc=Perseus%3Atext%3A1999.04.0007))
             *   none of the above
             *   I do not know
-        *   subjective/objective genitive (SG [1328](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1328&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1335](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1335&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   subjective/objective genitive (SG [1328](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1328&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1335](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1335&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-                        *   subjective genitive (SG [1330](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1330&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-            *   objective genitive (SG [1331](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1331&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1335](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1335&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+                        *   subjective genitive (SG [1330](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1330&fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   objective genitive (SG [1331](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1331&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1335](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1335&fromdoc=Perseus%3Atext%3A1999.04.0007))
             *   none of the above
             *   I do not know
-        *   genitive of price and value (noun: SG [1336](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1336&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1337](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1337&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); verb: SG [1372](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1372&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1374](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1374&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-        *   genitive of crime and accountability (SG [1375](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1375&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1379](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1379&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-        *   [genitive of topic](#tpc) (SG [1380](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1380&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1381](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1381&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [1409](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1409&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-        *   [genitive of connection](#cnn) (SG [1380](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1380&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1381](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1381&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   genitive of price and value (noun: SG [1336](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1336&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1337](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1337&fromdoc=Perseus%3Atext%3A1999.04.0007); verb: SG [1372](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1372&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1374](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1374&fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   genitive of crime and accountability (SG [1375](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1375&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1379](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1379&fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   [genitive of topic](#tpc) (SG [1380](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1380&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1381](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1381&fromdoc=Perseus%3Atext%3A1999.04.0007); [1409](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1409&fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   [genitive of connection](#cnn) (SG [1380](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1380&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1381](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1381&fromdoc=Perseus%3Atext%3A1999.04.0007))
         *   none of the above
         *   I do not know
-    *   ablatival genitive (SG [1391](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1391&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1411](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1411&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   ablatival genitive (SG [1391](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1391&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1411](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1411&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-                *   [genitive of separation](#spr) (SG [1392](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1392&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1400](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1400&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+                *   [genitive of separation](#spr) (SG [1392](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1392&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1400](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1400&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                         *   concrete
             *   figurative
             *   none of the above
             *   I do not know
-        *   genitive of distinction and comparison (SG [1401](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1401&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1404](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1404&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-        *   genitive of cause (SG [1405](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1405&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1407](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1407&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-        *   genitive of purpose (SG [1408](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1408&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-        *   [genitive of source](#src) (SG [1410](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1410&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1411](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1411&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   genitive of distinction and comparison (SG [1401](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1401&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1404](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1404&fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   genitive of cause (SG [1405](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1405&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1407](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1407&fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   genitive of purpose (SG [1408](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1408&fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   [genitive of source](#src) (SG [1410](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1410&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1411](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1411&fromdoc=Perseus%3Atext%3A1999.04.0007))
         *   none of the above
         *   I do not know
-    *   genitive of time and place (SG [1444](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1444&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1449](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1449&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   genitive of time and place (SG [1444](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1444&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1449](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1449&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-                *   genitive of time (SG [1444](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1444&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1447](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1447&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+                *   genitive of time (SG [1444](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1444&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1447](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1447&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                         *   simultaneous location
             *   sequential location
@@ -1235,7 +1199,7 @@ is expressed by the dependency annotation, which makes it explicit which the gov
             *   temporal extent
             *   none of the above
             *   I do not know
-        *   genitive of place (SG [1448](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1448&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1449](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1449&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   genitive of place (SG [1448](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1448&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1449](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1449&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                         *   location
 
@@ -1261,27 +1225,27 @@ is expressed by the dependency annotation, which makes it explicit which the gov
         *   I do not know
     *   adpositional genitive
 
-                *   (with [ἀπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),
-            [διά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),           [ἐξ](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) instrument or means
-        *   (with [ἀπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),         [ἐξ](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),            [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), [ὑπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1698&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),            [παρά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1692&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) agent
-        *   (with [ἀπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),
-            [διά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),           [ἐξ](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),
-            [μετά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),          [ὑπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyfth+grammar+1698&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),          [κατά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) manner
-        *   (with [μετά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) friendly association
-        *   (with [μετά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) hostile association
-        *   (with [μετά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), [ὑπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1698&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) accompaniment
-        *   (with [μετά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), [ὑπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1698&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) accompanying circumstance
-        *   (with [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), [πρό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1694&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),          [ὑπέρ](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1697&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), [κατά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) advantage
-        *   (with [κατά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) disadvantage
-        *   (with [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) reference
-        *   (with [ἀπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),         [ἐξ](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),            [μετά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) conformity
+                *   (with [ἀπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&fromdoc=Perseus%3Atext%3A1999.04.0007),
+            [διά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&fromdoc=Perseus%3Atext%3A1999.04.0007),           [ἐξ](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&fromdoc=Perseus%3Atext%3A1999.04.0007)) instrument or means
+        *   (with [ἀπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&fromdoc=Perseus%3Atext%3A1999.04.0007),         [ἐξ](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&fromdoc=Perseus%3Atext%3A1999.04.0007),            [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&fromdoc=Perseus%3Atext%3A1999.04.0007), [ὑπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1698&fromdoc=Perseus%3Atext%3A1999.04.0007),            [παρά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1692&fromdoc=Perseus%3Atext%3A1999.04.0007)) agent
+        *   (with [ἀπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&fromdoc=Perseus%3Atext%3A1999.04.0007),
+            [διά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&fromdoc=Perseus%3Atext%3A1999.04.0007),           [ἐξ](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&fromdoc=Perseus%3Atext%3A1999.04.0007),
+            [μετά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&fromdoc=Perseus%3Atext%3A1999.04.0007),          [ὑπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyfth+grammar+1698&fromdoc=Perseus%3Atext%3A1999.04.0007),          [κατά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&fromdoc=Perseus%3Atext%3A1999.04.0007)) manner
+        *   (with [μετά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&fromdoc=Perseus%3Atext%3A1999.04.0007)) friendly association
+        *   (with [μετά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&fromdoc=Perseus%3Atext%3A1999.04.0007)) hostile association
+        *   (with [μετά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&fromdoc=Perseus%3Atext%3A1999.04.0007), [ὑπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1698&fromdoc=Perseus%3Atext%3A1999.04.0007)) accompaniment
+        *   (with [μετά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&fromdoc=Perseus%3Atext%3A1999.04.0007), [ὑπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1698&fromdoc=Perseus%3Atext%3A1999.04.0007)) accompanying circumstance
+        *   (with [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&fromdoc=Perseus%3Atext%3A1999.04.0007), [πρό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1694&fromdoc=Perseus%3Atext%3A1999.04.0007),          [ὑπέρ](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1697&fromdoc=Perseus%3Atext%3A1999.04.0007), [κατά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&fromdoc=Perseus%3Atext%3A1999.04.0007)) advantage
+        *   (with [κατά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&fromdoc=Perseus%3Atext%3A1999.04.0007)) disadvantage
+        *   (with [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&fromdoc=Perseus%3Atext%3A1999.04.0007)) reference
+        *   (with [ἀπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&fromdoc=Perseus%3Atext%3A1999.04.0007),         [ἐξ](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&fromdoc=Perseus%3Atext%3A1999.04.0007),            [μετά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&fromdoc=Perseus%3Atext%3A1999.04.0007)) conformity
         *   none of the above
         *   I do not know
     *   none of the above
     *   I do not know
 *   [independent](#gnt_ind)
 
-        *   exclamation (SG [1407](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1407&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   exclamation (SG [1407](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1407&fromdoc=Perseus%3Atext%3A1999.04.0007))
     *   none of the above
     *   I do not know
 *   none of the above
@@ -1297,15 +1261,15 @@ The genitive of measure specifies the measure of time, space, or degree.
 
 #### <a id="tpc">4.1.1.2.3 Genitive of topic</a>
 
-This kind of genitive specifies the topic with verbs of saying and thinking, which it depends on (note that I deviate from SG here, because this SR corresponds to the first kind of SG genitive of connection (SG [1380](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1380&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) and what is treated in SG at [1409](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1409&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+This kind of genitive specifies the topic with verbs of saying and thinking, which it depends on (note that I deviate from SG here, because this SR corresponds to the first kind of SG genitive of connection (SG [1380](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1380&fromdoc=Perseus%3Atext%3A1999.04.0007)) and what is treated in SG at [1409](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1409&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
 #### <a id="cnn">4.1.1.2.4 Genitive of connection</a>
 
-The genitive of connection delimits the scope of the following clause, i.e., prototypically specifies with respect to what the following clause holds. It corresponds only to a part of SG genitive of connection (only SG [1381](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1381&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). Such kind of genitive is attached to the main verb of the clause it delimits. More generally, the genitive of connection is used here as an equivalent of the accusative/dative of respect, in that it can also specify in reference to/with respect to what the meaning of a verb (or verb phrase) holds.
+The genitive of connection delimits the scope of the following clause, i.e., prototypically specifies with respect to what the following clause holds. It corresponds only to a part of SG genitive of connection (only SG [1381](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1381&fromdoc=Perseus%3Atext%3A1999.04.0007)). Such kind of genitive is attached to the main verb of the clause it delimits. More generally, the genitive of connection is used here as an equivalent of the accusative/dative of respect, in that it can also specify in reference to/with respect to what the meaning of a verb (or verb phrase) holds.
 
 #### <a id="spr">4.1.1.2.5 Genitive of separation</a>
 
-The SR of the genitive of separation ("separation") is usually labeled "source" in modern linguistic literature (which term is here and in traditional grammar used to indicate "origin"). Even though in SG the bare genitive of separation is mainly treatead not as a local function, it is in the present guidelines: more precisely, spatial separation corresponds to "separation &gt; concrete", while for verbs meaning "cease", "release", "remove", "lack", etc. (see SG [1392](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1392&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1400](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1400&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) select "separation &gt; figurative".
+The SR of the genitive of separation ("separation") is usually labeled "source" in modern linguistic literature (which term is here and in traditional grammar used to indicate "origin"). Even though in SG the bare genitive of separation is mainly treatead not as a local function, it is in the present guidelines: more precisely, spatial separation corresponds to "separation &gt; concrete", while for verbs meaning "cease", "release", "remove", "lack", etc. (see SG [1392](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1392&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1400](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1400&fromdoc=Perseus%3Atext%3A1999.04.0007)) select "separation &gt; figurative".
 
 #### <a id="src">4.1.1.2.6 Genitive of source</a>
 
@@ -1321,60 +1285,60 @@ A genitive is independent if it does not dependent on any other word, and so is 
 
 #### 4.1.1.3 Dative
 
-There exist three main kinds of bare dative: the dative proper, the instrumental dative, and the locative dative. When the dative has the function of a PNOM (SG [1060](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1060&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1062](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1062&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), the syntactic case selected should be the nominative. The following is the algorithm for the dative: 
+There exist three main kinds of bare dative: the dative proper, the instrumental dative, and the locative dative. When the dative has the function of a PNOM (SG [1060](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1060&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1062](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1062&fromdoc=Perseus%3Atext%3A1999.04.0007)), the syntactic case selected should be the nominative. The following is the algorithm for the dative: 
 
-*   dependent (SG [1450](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1450&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1550](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1550&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+*   dependent (SG [1450](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1450&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1550](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1550&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-        *   dative proper (SG [1457](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1457&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1498](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1498&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   dative proper (SG [1457](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1457&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1498](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1498&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-                *   dative as direct complement of verbs (SG [1460](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1460&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1468](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1468&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [1471](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1471&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1473](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1473&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-        *   [dative as indirect complement of verbs](#dat_ind_cmp) (SG [1469](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1469&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1470](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1470&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [1471](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1471&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1473](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1473&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-        *   dative of interest (SG [1474](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1474&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1494](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1494&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+                *   dative as direct complement of verbs (SG [1460](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1460&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1468](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1468&fromdoc=Perseus%3Atext%3A1999.04.0007); [1471](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1471&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1473](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1473&fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   [dative as indirect complement of verbs](#dat_ind_cmp) (SG [1469](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1469&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1470](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1470&fromdoc=Perseus%3Atext%3A1999.04.0007); [1471](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1471&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1473](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1473&fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   dative of interest (SG [1474](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1474&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1494](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1494&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-                        *   dative of the possessor (SG [1476](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1476&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1480](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1480&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-            *   dative of advantage (SG [1481](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1481&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1485](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1485&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-            *   dative of disadvantage (SG [1481](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1481&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1485](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1485&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-            *   dative of feeling (SG [1486](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1486&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-            *   dative with participle of inclination or aversion (SG [1487](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1487&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-            *   dative of agent (SG [1488](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1488&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1494](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1494&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+                        *   dative of the possessor (SG [1476](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1476&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1480](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1480&fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   dative of advantage (SG [1481](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1481&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1485](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1485&fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   dative of disadvantage (SG [1481](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1481&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1485](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1485&fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   dative of feeling (SG [1486](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1486&fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   dative with participle of inclination or aversion (SG [1487](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1487&fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   dative of agent (SG [1488](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1488&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1494](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1494&fromdoc=Perseus%3Atext%3A1999.04.0007))
             *   none of the above
             *   I do not know
-        *   dative of relation (SG [1495](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1495&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1498](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1498&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   dative of relation (SG [1495](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1495&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1498](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1498&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-                        *   dative of relation proper (SG [1495](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1495&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-            *   dative of reference (SG [1496](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1496&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1497](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1497&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-            *   dative of the participle expressing time (SG [1498](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1498&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+                        *   dative of relation proper (SG [1495](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1495&fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   dative of reference (SG [1496](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1496&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1497](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1497&fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   dative of the participle expressing time (SG [1498](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1498&fromdoc=Perseus%3Atext%3A1999.04.0007))
             *   none of the above
             *   I do not know
         *   none of the above
         *   I do not know
 
-        *   instrumental dative (SG [1503](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1503&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1529](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1529&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   instrumental dative (SG [1503](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1503&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1529](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1529&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-                *   instrumental dative proper (SG [1506](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1506&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1520](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1520&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+                *   instrumental dative proper (SG [1506](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1506&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1520](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1520&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-                        *   dative of instrument or means (SG [1507](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1507&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1511](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1511&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-            *   dative of standard of judgment (SG [1512](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1512&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+                        *   dative of instrument or means (SG [1507](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1507&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1511](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1511&fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   dative of standard of judgment (SG [1512](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1512&fromdoc=Perseus%3Atext%3A1999.04.0007))
             *   [dative of manner](#dtv_mnn)
-            *   dative of measure of difference (SG [1513](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1513&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1515](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1515&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-            *   dative of respect (SG [1516](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1516&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-            *   dative of cause (SG [1517](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1517&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1520](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1520&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   dative of measure of difference (SG [1513](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1513&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1515](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1515&fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   dative of respect (SG [1516](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1516&fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   dative of cause (SG [1517](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1517&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1520](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1520&fromdoc=Perseus%3Atext%3A1999.04.0007))
             *   none of the above
             *   I do not know
-        *   comitative dative (SG [1521](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1521&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1528](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1528&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   comitative dative (SG [1521](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1521&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1528](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1528&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-                        *   dative of friendly association (SG [1523](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1523&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-            *   dative of hostile association (SG [1523](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1523&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-            *   dative of accompaniment (SG [1524](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1524&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1526](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1526&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-            *   [dative of accompanying circumstance](#dtv_acc_crc) (SG [1527](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1527&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+                        *   dative of friendly association (SG [1523](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1523&fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   dative of hostile association (SG [1523](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1523&fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   dative of accompaniment (SG [1524](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1524&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1526](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1526&fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   [dative of accompanying circumstance](#dtv_acc_crc) (SG [1527](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1527&fromdoc=Perseus%3Atext%3A1999.04.0007))
             *   none of the above
             *   I do not know
         *   none of the above
         *   I do not know
 
-        *   locative dative (SG [1530](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1530&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1543](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1543&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   locative dative (SG [1530](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1530&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1543](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1543&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-                *   dative of place (SG [1531](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1531&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1538](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1538&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+                *   dative of place (SG [1531](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1531&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1538](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1538&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                         *   location
 
@@ -1396,7 +1360,7 @@ There exist three main kinds of bare dative: the dative proper, the instrumental
                 *   I do not know
             *   none of the above
             *   I do not know
-        *   dative of time (SG [1539](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1539&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1543](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1543&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   dative of time (SG [1539](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1539&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1543](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1543&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                         *   simultaneous location
             *   sequential location
@@ -1409,10 +1373,10 @@ There exist three main kinds of bare dative: the dative proper, the instrumental
         *   I do not know
 
         *   adpositional dative
-            *   (with [ἐπί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) purpose
-        *   (with [ἐν](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1687&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),          [συν](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1696&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) conformity
-        *   (with [ἐπί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) price and value
-        *   (with [ἐπί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) condition
+            *   (with [ἐπί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&fromdoc=Perseus%3Atext%3A1999.04.0007)) purpose
+        *   (with [ἐν](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1687&fromdoc=Perseus%3Atext%3A1999.04.0007),          [συν](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1696&fromdoc=Perseus%3Atext%3A1999.04.0007)) conformity
+        *   (with [ἐπί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&fromdoc=Perseus%3Atext%3A1999.04.0007)) price and value
+        *   (with [ἐπί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&fromdoc=Perseus%3Atext%3A1999.04.0007)) condition
         *   none of the above
         *   I do not know
     *   none of the above
@@ -1422,19 +1386,19 @@ There exist three main kinds of bare dative: the dative proper, the instrumental
 
 #### <a id="dat_ind_cmp">4.1.1.3.1 Dative as indirect complement of verbs</a>
 
-The dative of indirect complement of verbs is associated with the SR of recipient or addressee (with verbs of saying). Note that if a verb can take a dative as direct or indirect complement of a verb (as described in  SG [1471](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1471&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1473](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1473&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), the annotator will label the dative  as a direct or an indirect complement according to the actual usage in a given sentence.
+The dative of indirect complement of verbs is associated with the SR of recipient or addressee (with verbs of saying). Note that if a verb can take a dative as direct or indirect complement of a verb (as described in  SG [1471](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1471&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1473](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1473&fromdoc=Perseus%3Atext%3A1999.04.0007)), the annotator will label the dative  as a direct or an indirect complement according to the actual usage in a given sentence.
 
 #### <a id="dtv_mnn">4.1.1.3.2 Manner</a>
 
-The dative of manner is here meant to cover the SR of manner (according to my definition above), which SG associates with the "dative of accompanying circumstance" (SG [1527](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1527&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). In SG the dative of manner corresponds to a dative of measure of difference or dative of respect (see SG [1513](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1513&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1516](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1516&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), both of which I consider separate categories here.
+The dative of manner is here meant to cover the SR of manner (according to my definition above), which SG associates with the "dative of accompanying circumstance" (SG [1527](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1527&fromdoc=Perseus%3Atext%3A1999.04.0007)). In SG the dative of manner corresponds to a dative of measure of difference or dative of respect (see SG [1513](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1513&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1516](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1516&fromdoc=Perseus%3Atext%3A1999.04.0007)), both of which I consider separate categories here.
 
 #### <a id="dtv_acc_crc">4.1.1.3.3 Dative of accompanying circumstance</a>
 
-The dative of accompanying circumstance is to be selected when the SR expressed by the SG "accompanying circumstance" (SG [1527](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1527&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) is not of "manner", as here conceived.
+The dative of accompanying circumstance is to be selected when the SR expressed by the SG "accompanying circumstance" (SG [1527](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1527&fromdoc=Perseus%3Atext%3A1999.04.0007)) is not of "manner", as here conceived.
 
 #### <a id="dtv_pth">4.1.1.3.4 Path</a>
 
-"Path" partly corresponds here to what is labeled (dative of) "space and time" in SG ([1528](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1528&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). Similarly, the dative of time treated in SG as a kind of instrumental/comitative dative (SG [1528](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1528&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) has to be simply annotated with one of the categories under "dative of time".
+"Path" partly corresponds here to what is labeled (dative of) "space and time" in SG ([1528](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1528&fromdoc=Perseus%3Atext%3A1999.04.0007)). Similarly, the dative of time treated in SG as a kind of instrumental/comitative dative (SG [1528](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1528&fromdoc=Perseus%3Atext%3A1999.04.0007)) has to be simply annotated with one of the categories under "dative of time".
 
 </a> <!-- end dative -->
 
@@ -1443,20 +1407,20 @@ The dative of accompanying circumstance is to be selected when the SR expressed 
 #### 4.1.1.4 Accusative
 
 There are five main kinds of bare accusative: 
-[internal object (object effected)](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1563&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), 
-[external object (object affected)](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1590&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), 
-[accusative of extent](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1580&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), 
-[terminal accusative](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1588&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), and 
-[accusative of respect](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1600&amp;fromdoc=Perseus%3Atext%3A1999.04.0007). The so-called [adverbial accusative](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1606&amp;fromdoc=Perseus%3Atext%3A1999.04.0007) is treated under the category 'adverb'. The accusative can express (1) one of 
+[internal object (object effected)](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1563&fromdoc=Perseus%3Atext%3A1999.04.0007), 
+[external object (object affected)](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1590&fromdoc=Perseus%3Atext%3A1999.04.0007), 
+[accusative of extent](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1580&fromdoc=Perseus%3Atext%3A1999.04.0007), 
+[terminal accusative](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1588&fromdoc=Perseus%3Atext%3A1999.04.0007), and 
+[accusative of respect](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1600&fromdoc=Perseus%3Atext%3A1999.04.0007). The so-called [adverbial accusative](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1606&fromdoc=Perseus%3Atext%3A1999.04.0007) is treated under the category 'adverb'. The accusative can express (1) one of 
 these functions by itself or in conjunction with an adposition, which defines it more precisely, or (2) a new function in conjunction with an adposition (e.g., 'purpose'): in the former case, the function of the accusative is always annotated under one of the main functions, while in the latter case one of the adpositional functions should be used. Note that when the accusative is the subject or the predicate nominal in an infinitive clause, and hence is functionally equivalent to a nominative, the syntactic case selected should be the nominative. When the accusative has the function of OCOMP, the annotation process ends with the selection of the dependent feature (which parallels the annotation of the nominative as PNOM). The adverbial accusative should always be morphologically labeled as an adverb, so this kind of accusative is never annotated as a case. The algorithm for the accusative is the following:
 
-*   [dependent](#acc_dpn) (SG [1551](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1551&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1598](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1598&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [1600](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1600&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1635](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1635&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+*   [dependent](#acc_dpn) (SG [1551](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1551&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1598](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1598&fromdoc=Perseus%3Atext%3A1999.04.0007); [1600](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1600&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1635](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1635&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-        *   [internal object](#acc_eff) (object effected) (SG [1563](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1563&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1577](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1577&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [1619](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1619&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1627](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1627&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-    *   [external object](#acc_aff) (object affected) (SG [1590](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1590&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1598](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1598&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [1613](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1613&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1633](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1633&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-    *   [accusative of extent](#acc_ext) (SG [1580](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1580&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1587](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1587&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   [internal object](#acc_eff) (object effected) (SG [1563](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1563&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1577](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1577&fromdoc=Perseus%3Atext%3A1999.04.0007); [1619](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1619&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1627](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1627&fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   [external object](#acc_aff) (object affected) (SG [1590](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1590&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1598](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1598&fromdoc=Perseus%3Atext%3A1999.04.0007); [1613](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1613&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1633](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1633&fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   [accusative of extent](#acc_ext) (SG [1580](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1580&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1587](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1587&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-                *   accusative of space (SG [1581](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1581&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+                *   accusative of space (SG [1581](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1581&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                         *   location
 
@@ -1472,7 +1436,7 @@ these functions by itself or in conjunction with an adposition, which defines it
                 *   I do not know
             *   none of the above
             *   I do not know
-        *   accusative of time (SG [1582](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1582&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1587](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1587&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   accusative of time (SG [1582](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1582&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1587](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1587&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                         *   simultaneous location
             *   sequential location
@@ -1481,37 +1445,37 @@ these functions by itself or in conjunction with an adposition, which defines it
             *   temporal extent
             *   none of the above
             *   I do not know
-        *   accusative of measure (SG [1581](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1581&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   accusative of measure (SG [1581](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1581&fromdoc=Perseus%3Atext%3A1999.04.0007))
         *   none of the above
         *   I do not know
-    *   [terminal accusative](#acc_trm) (SG [1588](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1588&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1589](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1589&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   [terminal accusative](#acc_trm) (SG [1588](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1588&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1589](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1589&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                 *   concrete
         *   figurative
         *   none of the above
         *   I do not know
-    *   [accusative of respect](#acc_rsp) (SG [1600](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1600&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1605](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1605&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   [accusative of respect](#acc_rsp) (SG [1600](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1600&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1605](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1605&fromdoc=Perseus%3Atext%3A1999.04.0007))
     *   adpositional accusative
 
-                *   (with [ἀνά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1682&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),             [εἰς](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1686&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),               [κατά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) manner
-        *   (with [διά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) instrument or means
-        *   (with [διά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),             [παρά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1692&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), [κατά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) cause
-        *   (with [διά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),             [εἰς](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1686&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),               [ἐπί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),               [κατά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),              [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) purpose
-        *   (with [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) standard of judgment
-        *   (with [παρά](http://www.perseus.txufts.edu/hopper/text?doc=Smyth+grammar+1692&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), [κατά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) comparison
+                *   (with [ἀνά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1682&fromdoc=Perseus%3Atext%3A1999.04.0007),             [εἰς](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1686&fromdoc=Perseus%3Atext%3A1999.04.0007),               [κατά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&fromdoc=Perseus%3Atext%3A1999.04.0007)) manner
+        *   (with [διά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&fromdoc=Perseus%3Atext%3A1999.04.0007)) instrument or means
+        *   (with [διά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&fromdoc=Perseus%3Atext%3A1999.04.0007),             [παρά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1692&fromdoc=Perseus%3Atext%3A1999.04.0007), [κατά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&fromdoc=Perseus%3Atext%3A1999.04.0007)) cause
+        *   (with [διά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&fromdoc=Perseus%3Atext%3A1999.04.0007),             [εἰς](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1686&fromdoc=Perseus%3Atext%3A1999.04.0007),               [ἐπί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&fromdoc=Perseus%3Atext%3A1999.04.0007),               [κατά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&fromdoc=Perseus%3Atext%3A1999.04.0007),              [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&fromdoc=Perseus%3Atext%3A1999.04.0007)) purpose
+        *   (with [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&fromdoc=Perseus%3Atext%3A1999.04.0007)) standard of judgment
+        *   (with [παρά](http://www.perseus.txufts.edu/hopper/text?doc=Smyth+grammar+1692&fromdoc=Perseus%3Atext%3A1999.04.0007), [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&fromdoc=Perseus%3Atext%3A1999.04.0007), [κατά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&fromdoc=Perseus%3Atext%3A1999.04.0007)) comparison
         *   advantage
-        *   (with [ἐπί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),                 [εἰς](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1686&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) disadvantage
-        *   (with [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),                    [εἰς](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1686&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) recipient or addressee
-        *   (with [κατά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&amp;fromdoc=Perseus%3Atext%3A1999.04.0007),                    [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) conformity
-        *   (with [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) friendly association
-        *   (with [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) hostile association
+        *   (with [ἐπί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&fromdoc=Perseus%3Atext%3A1999.04.0007),                 [εἰς](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1686&fromdoc=Perseus%3Atext%3A1999.04.0007)) disadvantage
+        *   (with [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&fromdoc=Perseus%3Atext%3A1999.04.0007),                    [εἰς](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1686&fromdoc=Perseus%3Atext%3A1999.04.0007)) recipient or addressee
+        *   (with [κατά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&fromdoc=Perseus%3Atext%3A1999.04.0007),                    [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&fromdoc=Perseus%3Atext%3A1999.04.0007)) conformity
+        *   (with [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&fromdoc=Perseus%3Atext%3A1999.04.0007)) friendly association
+        *   (with [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&fromdoc=Perseus%3Atext%3A1999.04.0007)) hostile association
         *   none of the above
         *   I do not know
     *   none of the above
     *   I do not know
-*   [independent](#acc_ipn) (SG [1599](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1599&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+*   [independent](#acc_ipn) (SG [1599](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1599&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-        *   elliptical accusative (SG [1599](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1599&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   elliptical accusative (SG [1599](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1599&fromdoc=Perseus%3Atext%3A1999.04.0007))
     *   none of the above
     *   I do not know
 *   none of the above
@@ -1523,34 +1487,34 @@ Dependent is the accusative which is syntactically dependent on another word in 
 
 #### <a id="acc_eff">4.1.1.4.2 Internal object (object effected)</a>
 
-This accusative is considered to be already contained in the meaning of the verb. An object effected is a noun or one of its equivalents from a similar or the same root as that of the governing verb (SG [1563](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1563&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1577](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1577&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)).
+This accusative is considered to be already contained in the meaning of the verb. An object effected is a noun or one of its equivalents from a similar or the same root as that of the governing verb (SG [1563](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1563&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1577](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1577&fromdoc=Perseus%3Atext%3A1999.04.0007)).
 
 #### <a id="acc_aff">4.1.1.4.3 External object (object affected)</a>
 
-The accusative of the affected object is not contained in the verb, and so it is considered to be external. The semantic macro-role is Patient. SG ([1551](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1551&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1562](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1562&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) 
-provides some examples of verbs taking an external accusative. The accusative of result (SG [1578](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1578&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1579](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1579&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) is not annotated, but is subsumed under the external or internal object on the basis of the relationship of the accusative with the verb.
+The accusative of the affected object is not contained in the verb, and so it is considered to be external. The semantic macro-role is Patient. SG ([1551](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1551&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1562](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1562&fromdoc=Perseus%3Atext%3A1999.04.0007)) 
+provides some examples of verbs taking an external accusative. The accusative of result (SG [1578](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1578&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1579](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1579&fromdoc=Perseus%3Atext%3A1999.04.0007)) is not annotated, but is subsumed under the external or internal object on the basis of the relationship of the accusative with the verb.
 
 #### <a id="acc_ext">4.1.1.4.4 Accusative of extent</a>
 
 The accusative of extent expresses extension over 
-[space](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1581&amp;fromdoc=Perseus%3Atext%3A1999.04.0007) 
+[space](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1581&fromdoc=Perseus%3Atext%3A1999.04.0007) 
 and 
-[time](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1582&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), or measure. The category measure should be used only when concerning space or amounts, not time. The accusative of extent can also be expressed by the accusative in conjunction with many 
-[adpositions](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1587&amp;fromdoc=Perseus%3Atext%3A1999.04.0007).
+[time](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1582&fromdoc=Perseus%3Atext%3A1999.04.0007), or measure. The category measure should be used only when concerning space or amounts, not time. The accusative of extent can also be expressed by the accusative in conjunction with many 
+[adpositions](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1587&fromdoc=Perseus%3Atext%3A1999.04.0007).
 
 #### <a id="acc_trm">4.1.1.4.5 Terminal accusative</a>
 
-The terminal accusative expresses place direction (SG [1588](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1588&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). While in poetry the simple terminal accusative is common, in prose such an accusative is regularly specified by an adposition (SG [1589](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1589&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)).
+The terminal accusative expresses place direction (SG [1588](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1588&fromdoc=Perseus%3Atext%3A1999.04.0007)). While in poetry the simple terminal accusative is common, in prose such an accusative is regularly specified by an adposition (SG [1589](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1589&fromdoc=Perseus%3Atext%3A1999.04.0007)).
 
 #### <a id="acc_rsp">4.1.1.4.6 Accusative of respect</a>
 
-The accusative of respect (SG [1600](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1600&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1605](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1605&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-expresses in relation to what the meaning of a verb or adjective is circumscribed. It can also be expressed by an accusative with an adposition (SG [1603](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1603&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) 
+The accusative of respect (SG [1600](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1600&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1605](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1605&fromdoc=Perseus%3Atext%3A1999.04.0007))
+expresses in relation to what the meaning of a verb or adjective is circumscribed. It can also be expressed by an accusative with an adposition (SG [1603](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1603&fromdoc=Perseus%3Atext%3A1999.04.0007)) 
 . 
 
 #### <a id="acc_ipn">4.1.1.4.7 Independent</a>
 
-Independent is the accusative which is the head of a sentence, i.e. the elliptical accusative (SG [1599](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1599&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)).
+Independent is the accusative which is the head of a sentence, i.e. the elliptical accusative (SG [1599](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1599&fromdoc=Perseus%3Atext%3A1999.04.0007)).
 
 </a> <!-- end accusative -->
 
@@ -1558,11 +1522,11 @@ Independent is the accusative which is the head of a sentence, i.e. the elliptic
 
 #### 4.1.1.5 Adpositions
 
-In the following sections, the annotation of the adpositional case is detailed. I follow the SG list for the meanings/functions of each proper adposition (SG [1681](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1681&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[1698](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1698&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); note that some use of a certain preposition might not be covered in SG and hence here). Each function is followed by indication of how to annotate it. Note that "genitive of place/time", "dative of place/time", and "accusative of space/time" are here used as abbreviations to mean that the annotator has to choose, on the basis of the verb governing the case, the right SR that is algorithmically available for each of them (e.g., genitive of place &gt; location). If it is not possible to annotate a semantic funtion (i.e., it is not included in the list), "none of the above" has to be selected. The annotator should try to stick to the lemma translation proposed (if present). Since most prepositions conveying a local meaning can also be used in a figurative sense, the annotation algorithm always requires specification of whether a certain use of a preposition is concrete or figurative (this option is therefore available under any local meaning of a case).
+In the following sections, the annotation of the adpositional case is detailed. I follow the SG list for the meanings/functions of each proper adposition (SG [1681](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1681&fromdoc=Perseus%3Atext%3A1999.04.0007)–[1698](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1698&fromdoc=Perseus%3Atext%3A1999.04.0007); note that some use of a certain preposition might not be covered in SG and hence here). Each function is followed by indication of how to annotate it. Note that "genitive of place/time", "dative of place/time", and "accusative of space/time" are here used as abbreviations to mean that the annotator has to choose, on the basis of the verb governing the case, the right SR that is algorithmically available for each of them (e.g., genitive of place &gt; location). If it is not possible to annotate a semantic funtion (i.e., it is not included in the list), "none of the above" has to be selected. The annotator should try to stick to the lemma translation proposed (if present). Since most prepositions conveying a local meaning can also be used in a figurative sense, the annotation algorithm always requires specification of whether a certain use of a preposition is concrete or figurative (this option is therefore available under any local meaning of a case).
 
 <a>
 
-#### 4.1.1.5.1 [ἀμφί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1681&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+#### 4.1.1.5.1 [ἀμφί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1681&fromdoc=Perseus%3Atext%3A1999.04.0007)
 
 with genitive
 
@@ -1587,7 +1551,7 @@ with accusative
 
 <a>
 
-#### 4.1.1.5.2 [ἀνά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1682&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+#### 4.1.1.5.2 [ἀνά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1682&fromdoc=Perseus%3Atext%3A1999.04.0007)
 
 with dative
 
@@ -1604,7 +1568,7 @@ with accusative
 
 <a>
 
-#### 4.1.1.5.3 [ἀντί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1683&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+#### 4.1.1.5.3 [ἀντί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1683&fromdoc=Perseus%3Atext%3A1999.04.0007)
 
 with genitive
 
@@ -1615,7 +1579,7 @@ with genitive
 
 <a>
 
-#### 4.1.1.5.4 [ἀπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1684&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+#### 4.1.1.5.4 [ἀπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1684&fromdoc=Perseus%3Atext%3A1999.04.0007)
 
 with genitive
 
@@ -1634,7 +1598,7 @@ with genitive
 
 <a>
 
-#### 4.1.1.5.5 [διά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+#### 4.1.1.5.5 [διά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&fromdoc=Perseus%3Atext%3A1999.04.0007)
 
 with genitive
 
@@ -1657,7 +1621,7 @@ with accusative
 
 <a>
 
-#### 4.1.1.5.6 [εἰς](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1686&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), ἐς
+#### 4.1.1.5.6 [εἰς](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1686&fromdoc=Perseus%3Atext%3A1999.04.0007), ἐς
 
 with accusative
 
@@ -1674,7 +1638,7 @@ with accusative
 
 <a>
 
-#### 4.1.1.5.7 [ἐν](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1687&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+#### 4.1.1.5.7 [ἐν](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1687&fromdoc=Perseus%3Atext%3A1999.04.0007)
 
 with dative
 
@@ -1691,7 +1655,7 @@ with dative
 
 <a>
 
-#### 4.1.1.5.8 [ἐξ](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1688&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), ἐκ
+#### 4.1.1.5.8 [ἐξ](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1688&fromdoc=Perseus%3Atext%3A1999.04.0007), ἐκ
 
 with genitive
 
@@ -1713,7 +1677,7 @@ with genitive
 
 <a>
 
-#### 4.1.1.5.9 [ἐπί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+#### 4.1.1.5.9 [ἐπί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&fromdoc=Perseus%3Atext%3A1999.04.0007)
 
 with genitive
 
@@ -1745,7 +1709,7 @@ with accusative
 
 <a>
 
-#### 4.1.1.5.10 [κατά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+#### 4.1.1.5.10 [κατά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&fromdoc=Perseus%3Atext%3A1999.04.0007)
 
 with genitive
 
@@ -1772,7 +1736,7 @@ with accusative
 
 <a>
 
-#### 4.1.1.5.11 [μετά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+#### 4.1.1.5.11 [μετά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&fromdoc=Perseus%3Atext%3A1999.04.0007)
 
 with genitive
 
@@ -1795,7 +1759,7 @@ with accusative
 
 <a>
 
-#### 4.1.1.5.12 [παρά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1692&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+#### 4.1.1.5.12 [παρά](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1692&fromdoc=Perseus%3Atext%3A1999.04.0007)
 
 with genitive
 
@@ -1825,7 +1789,7 @@ with accusative
 
 <a>
 
-#### 4.1.1.5.13 [περί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1693&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+#### 4.1.1.5.13 [περί](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1693&fromdoc=Perseus%3Atext%3A1999.04.0007)
 
 with genitive
 
@@ -1852,7 +1816,7 @@ with accusative
 
 <a>
 
-#### 4.1.1.5.14 [πρό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1694&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+#### 4.1.1.5.14 [πρό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1694&fromdoc=Perseus%3Atext%3A1999.04.0007)
 
 with genitive
 
@@ -1866,7 +1830,7 @@ with genitive
 
 <a>
 
-#### 4.1.1.5.15 [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+#### 4.1.1.5.15 [πρός](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&fromdoc=Perseus%3Atext%3A1999.04.0007)
 
 with genitive
 
@@ -1901,7 +1865,7 @@ with accusative
 
 <a>
 
-#### 4.1.1.5.16 [σύν](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1696&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+#### 4.1.1.5.16 [σύν](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1696&fromdoc=Perseus%3Atext%3A1999.04.0007)
 
 with dative
 
@@ -1914,7 +1878,7 @@ with dative
 
 <a>
 
-#### 4.1.1.5.17 [ὑπέρ](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1697&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+#### 4.1.1.5.17 [ὑπέρ](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1697&fromdoc=Perseus%3Atext%3A1999.04.0007)
 
 with genitive
 
@@ -1934,7 +1898,7 @@ with accusative
 
 <a>
 
-#### 4.1.1.5.18 [ὑπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1698&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)
+#### 4.1.1.5.18 [ὑπό](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1698&fromdoc=Perseus%3Atext%3A1999.04.0007)
 
 with genitive
 
@@ -1987,7 +1951,7 @@ The Prague annotation label for the substantive adjective are the same as those 
 
 #### 4.1.4 Verbal adjective in τος/τεος
 
-A verbal adjective in τος/τεος derives from a verb root by the addition of the suffix τος/τεος (see SG [2149](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2149&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2152](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2152&amp;fromdoc=Perseus%3Atext%3A1999.04.0007) for more information). The present option is reserved when the verbal adjective has adjective function only (i.e., is not a substantive). No further SG annotation is available.
+A verbal adjective in τος/τεος derives from a verb root by the addition of the suffix τος/τεος (see SG [2149](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2149&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2152](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2152&fromdoc=Perseus%3Atext%3A1999.04.0007) for more information). The present option is reserved when the verbal adjective has adjective function only (i.e., is not a substantive). No further SG annotation is available.
 
 The verbal adjective in τος/τεος takes the same Prague annotation labels as the [adjective](#adj) in adjective function.
 
@@ -2029,40 +1993,40 @@ The Prague annotation labels are the same as those for the [adjective](#adj) in 
 
 On the basis of the mood selected at the morphological level, the annotation algorithm gives access to the the following options:
 
-*   [independent](#ind_fnt_vrb) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=1&amp;doc=4971))
+*   [independent](#ind_fnt_vrb) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=1&doc=4971))
 
-    *   statement (SG [2153](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2153&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-    *   assumption (SG [2154](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2154&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-    *   command (SG [2155](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2155&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-    *   wish (SG [2156](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2156&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-    *   question (SG [2157](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2157&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-    *   exclamation (SG [2158](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2158&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   statement (SG [2153](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2153&fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   assumption (SG [2154](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2154&fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   command (SG [2155](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2155&fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   wish (SG [2156](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2156&fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   question (SG [2157](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2157&fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   exclamation (SG [2158](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2158&fromdoc=Perseus%3Atext%3A1999.04.0007))
     *   none of the above
     *   I do not know
 
 *   [dependent](#dpn_fnt_vrb)
 
-        *   [substantive clause](#sbs_cls)                                                      ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=11&amp;doc=4971))                                                        ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=12&amp;doc=4971))
+        *   [substantive clause](#sbs_cls)                                                      ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=11&doc=4971))                                                        ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=12&doc=4971))
 
-                *   statement (SG [2576](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2576&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2588](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2588&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-
-                        *   in indirect discourse
-            *   not in indirect discourse
-            *   none of the above
-            *   I do not know
-        *   will or desire (SG [2207](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2207&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2239](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2239&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+                *   statement (SG [2576](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2576&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2588](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2588&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                         *   in indirect discourse
             *   not in indirect discourse
             *   none of the above
             *   I do not know
-        *   question (SG [2663](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2663&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2680](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2680&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   will or desire (SG [2207](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2207&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2239](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2239&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                         *   in indirect discourse
             *   not in indirect discourse
             *   none of the above
             *   I do not know
-        *   exclamation (SG [2681](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2681&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2687](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2687&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   question (SG [2663](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2663&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2680](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2680&fromdoc=Perseus%3Atext%3A1999.04.0007))
+
+                        *   in indirect discourse
+            *   not in indirect discourse
+            *   none of the above
+            *   I do not know
+        *   exclamation (SG [2681](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2681&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2687](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2687&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                         *   in indirect discourse
             *   not in indirect discourse
@@ -2070,35 +2034,35 @@ On the basis of the mood selected at the morphological level, the annotation alg
             *   I do not know
         *   none of the above
         *   I do not know
-    *   [adjective clause](#adj_cls) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=17&amp;doc=4971))
+    *   [adjective clause](#adj_cls) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=17&doc=4971))
 
                 *   adjective clause proper
 
-                        *   ordinary relative clause (SG [2553](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2553&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+                        *   ordinary relative clause (SG [2553](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2553&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                                 *   in indirect discourse
                 *   not in indirect discourse
                 *   none of the above
                 *   I do not know
-            *   final relative clause (SG [2554](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2554&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   final relative clause (SG [2554](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2554&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                                 *   in indirect discourse
                 *   not in indirect discourse
                 *   none of the above
                 *   I do not know
-            *   cause relative clause (SG [2555](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2555&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   cause relative clause (SG [2555](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2555&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                                 *   in indirect discourse
                 *   not in indirect discourse
                 *   none of the above
                 *   I do not know
-            *   consecutive relative clause (SG [2556](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2556&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2559](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2559&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   consecutive relative clause (SG [2556](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2556&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2559](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2559&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                                 *   in indirect discourse
                 *   not in indirect discourse
                 *   none of the above
                 *   I do not know
-            *   conditional relative clause (SG [2560](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2560&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2573](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2573&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+            *   conditional relative clause (SG [2560](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2560&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2573](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2573&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                                 *   in indirect discourse
                 *   not in indirect discourse
@@ -2118,39 +2082,39 @@ On the basis of the mood selected at the morphological level, the annotation alg
             *   I do not know
         *   none of the above
         *   I do not know
-    *   adverb clause ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=38&amp;doc=4971))
+    *   adverb clause ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=38&doc=4971))
 
-                *   final clause (SG [2193](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2193&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2206](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2206&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-
-                        *   in indirect discourse
-            *   not in indirect speech
-            *   none of the above
-            *   I do not know
-        *   causal clause (SG [2240](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2240&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2248](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2248&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+                *   final clause (SG [2193](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2193&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2206](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2206&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                         *   in indirect discourse
             *   not in indirect speech
             *   none of the above
             *   I do not know
-        *   consecutive clause (SG [2249](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2249&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2278](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2278&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   causal clause (SG [2240](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2240&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2248](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2248&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                         *   in indirect discourse
             *   not in indirect speech
             *   none of the above
             *   I do not know
-        *   conditional clause (SG [2280](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2280&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2368](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2368&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   consecutive clause (SG [2249](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2249&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2278](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2278&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                         *   in indirect discourse
             *   not in indirect speech
             *   none of the above
             *   I do not know
-        *   concessive clause (SG [2369](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2369&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2382](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2382&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   conditional clause (SG [2280](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2280&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2368](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2368&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                         *   in indirect discourse
             *   not in indirect speech
             *   none of the above
             *   I do not know
-        *   temporal clause (SG [2383](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2383&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2461](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2461&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   concessive clause (SG [2369](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2369&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2382](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2382&fromdoc=Perseus%3Atext%3A1999.04.0007))
+
+                        *   in indirect discourse
+            *   not in indirect speech
+            *   none of the above
+            *   I do not know
+        *   temporal clause (SG [2383](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2383&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2461](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2461&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                         *   simultaneous location
 
@@ -2184,7 +2148,7 @@ On the basis of the mood selected at the morphological level, the annotation alg
                 *   I do not know
             *   none of the above
             *   I do not know
-        *   clause of comparison (SG [2462](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2462&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2487](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2487&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   clause of comparison (SG [2462](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2462&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2487](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2487&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                         *   in indirect discourse
             *   not in indirect speech
@@ -2201,12 +2165,12 @@ On the basis of the mood selected at the morphological level, the annotation alg
 
 #### 4.1.8.1 Independent
 
-A finite verb form is said to be independent if it is the head of a main clause (simple or coordinated). On the basis of its meaning, the clause can be annotated as a statement (SG [2153](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2153&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), an assumption 
-    (SG [2154](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2154&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), a command (SG 
-    [2155](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2155&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), a wish (SG 
-    [2156](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2156&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), a question (SG 
-    [2157](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2157&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), or an exclamation (SG
-    [2158](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2158&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)).
+A finite verb form is said to be independent if it is the head of a main clause (simple or coordinated). On the basis of its meaning, the clause can be annotated as a statement (SG [2153](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2153&fromdoc=Perseus%3Atext%3A1999.04.0007)), an assumption 
+    (SG [2154](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2154&fromdoc=Perseus%3Atext%3A1999.04.0007)), a command (SG 
+    [2155](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2155&fromdoc=Perseus%3Atext%3A1999.04.0007)), a wish (SG 
+    [2156](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2156&fromdoc=Perseus%3Atext%3A1999.04.0007)), a question (SG 
+    [2157](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2157&fromdoc=Perseus%3Atext%3A1999.04.0007)), or an exclamation (SG
+    [2158](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2158&fromdoc=Perseus%3Atext%3A1999.04.0007)).
 
 The finite verb takes the Prague annotation label PRED, OBJ, ADV, or ATR.
 
@@ -2224,7 +2188,7 @@ A finite verb form is said to be dependent if it is the head of a subordinate cl
 
 #### 4.1.8.3 Substantive clause
 
-A substantive clause is equivalent to a noun with respect to its governing verb (and indeed it could often be replaced with a pronoun such as τόδε). On the basis of its meaning, the clause can be annotated as a statement (SG [2576](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2576&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2588](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2588&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), will or desire (SG [2207](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2207&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2239](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2239&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), a question (SG [2663](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2663&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2680](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2680&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), or an exclamation (SG [2681](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2681&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2687](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2687&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)).
+A substantive clause is equivalent to a noun with respect to its governing verb (and indeed it could often be replaced with a pronoun such as τόδε). On the basis of its meaning, the clause can be annotated as a statement (SG [2576](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2576&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2588](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2588&fromdoc=Perseus%3Atext%3A1999.04.0007)), will or desire (SG [2207](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2207&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2239](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2239&fromdoc=Perseus%3Atext%3A1999.04.0007)), a question (SG [2663](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2663&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2680](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2680&fromdoc=Perseus%3Atext%3A1999.04.0007)), or an exclamation (SG [2681](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2681&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2687](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2687&fromdoc=Perseus%3Atext%3A1999.04.0007)).
 
 The head verb of the substantive clause takes the Prague annotation labels SBJ, OBJ, or APOS.
 
@@ -2234,9 +2198,9 @@ The head verb of the substantive clause takes the Prague annotation labels SBJ, 
 
 #### 4.1.8.4 Adjective clause
 
-The Adjective clause is a relative clause. Just like an adjective, the relative clause can have the function of an adjective (adjective clause proper) or be substantivized (i.e., when the antecedent is not expressed). There two ways to annotate substantivized relative clauses. The easiest way is to not add an elliptical node for the omitted antecedent. The second option is to add the elliptical node and so treat the relative clause as an adjective clause proper (and so any relative clause is treated as an adjective clause proper, independentely of whether or not the antecedent of the relative pronoun is expressed). The first option is the default one, while the second one has to be declared. The adjective clause proper can be an ordinary relative clause (SG [2553](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2553&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), a final relative clause (SG [2554](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2554&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), a cause relative clause (SG [2555](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2555&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), a consecutive relative clause (SG [2556](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2556&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2559](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2559&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), or a conditional relative clause (SG [2560](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2560&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2573](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2573&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), on the basis of its meaning.
+The Adjective clause is a relative clause. Just like an adjective, the relative clause can have the function of an adjective (adjective clause proper) or be substantivized (i.e., when the antecedent is not expressed). There two ways to annotate substantivized relative clauses. The easiest way is to not add an elliptical node for the omitted antecedent. The second option is to add the elliptical node and so treat the relative clause as an adjective clause proper (and so any relative clause is treated as an adjective clause proper, independentely of whether or not the antecedent of the relative pronoun is expressed). The first option is the default one, while the second one has to be declared. The adjective clause proper can be an ordinary relative clause (SG [2553](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2553&fromdoc=Perseus%3Atext%3A1999.04.0007)), a final relative clause (SG [2554](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2554&fromdoc=Perseus%3Atext%3A1999.04.0007)), a cause relative clause (SG [2555](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2555&fromdoc=Perseus%3Atext%3A1999.04.0007)), a consecutive relative clause (SG [2556](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2556&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2559](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2559&fromdoc=Perseus%3Atext%3A1999.04.0007)), or a conditional relative clause (SG [2560](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2560&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2573](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2573&fromdoc=Perseus%3Atext%3A1999.04.0007)), on the basis of its meaning.
 
-The easiest example of relative clause is the one with the antecedent expressed ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=46&amp;doc=4971)). When the antecedent is not expressed, and so the adjective clause it taken to be substantivized, the verb of the relative clause is attached to the governor verb and receives the SG annotation that an antecedent would have received if it were expressed; the relative pronoun is attached to the verb of the relative clause and receives the SG annotation that is required by the governor verb, no matter what the morphology of the relative pronoun is (i.e., the syntactic case can be different from the morphological one of the relative pronoun/adverb): see  [tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=20&amp;doc=4971), [tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=49&amp;doc=4971). The possibility to choose a different syntactic case for each word allows also the annotation of examples of incorporation of the ancedent ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=51&amp;doc=4971)). When an adjective clause proper has adverbial function, it has to be appended to its superordinate verb: [tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=47&amp;doc=4971).
+The easiest example of relative clause is the one with the antecedent expressed ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=46&doc=4971)). When the antecedent is not expressed, and so the adjective clause it taken to be substantivized, the verb of the relative clause is attached to the governor verb and receives the SG annotation that an antecedent would have received if it were expressed; the relative pronoun is attached to the verb of the relative clause and receives the SG annotation that is required by the governor verb, no matter what the morphology of the relative pronoun is (i.e., the syntactic case can be different from the morphological one of the relative pronoun/adverb): see  [tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=20&doc=4971), [tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=49&doc=4971). The possibility to choose a different syntactic case for each word allows also the annotation of examples of incorporation of the ancedent ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=51&doc=4971)). When an adjective clause proper has adverbial function, it has to be appended to its superordinate verb: [tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=47&doc=4971).
 
 The Prague annotation labels for the head verb of an adjective clause are the same as those for the [adjective](#adj) or [noun](#noun) (for the substantivized adjective clause).
 
@@ -2246,7 +2210,7 @@ The Prague annotation labels for the head verb of an adjective clause are the sa
 
 #### 4.1.8.5 Adverb clause
 
-An adverb clause is a clause functioning as an adverb with respect to its governing verb. On the basis of its meaning it is possible to specify if the adverb clause is a final clause (SG [2193](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2193&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2206](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2206&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), a causal clause (SG [2240](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2240&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2248](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2248&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), a consecutive clause (SG [2249](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2249&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2278](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2278&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), a conditional clause (SG [2280](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2280&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2368](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2368&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), a concessive clause (SG [2369](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2369&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2382](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2382&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), a temporal clause (SG [2383](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2383&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2461](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2461&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), or a clause of comparison (SG [2462](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2462&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2487](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2487&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)).
+An adverb clause is a clause functioning as an adverb with respect to its governing verb. On the basis of its meaning it is possible to specify if the adverb clause is a final clause (SG [2193](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2193&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2206](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2206&fromdoc=Perseus%3Atext%3A1999.04.0007)), a causal clause (SG [2240](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2240&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2248](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2248&fromdoc=Perseus%3Atext%3A1999.04.0007)), a consecutive clause (SG [2249](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2249&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2278](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2278&fromdoc=Perseus%3Atext%3A1999.04.0007)), a conditional clause (SG [2280](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2280&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2368](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2368&fromdoc=Perseus%3Atext%3A1999.04.0007)), a concessive clause (SG [2369](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2369&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2382](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2382&fromdoc=Perseus%3Atext%3A1999.04.0007)), a temporal clause (SG [2383](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2383&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2461](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2461&fromdoc=Perseus%3Atext%3A1999.04.0007)), or a clause of comparison (SG [2462](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2462&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2487](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2487&fromdoc=Perseus%3Atext%3A1999.04.0007)).
 
 The verb head of an adverb clause takes the Prague annotation label ADV.
 
@@ -2258,13 +2222,13 @@ The verb head of an adverb clause takes the Prague annotation label ADV.
 
 #### 4.1.9 Adjective participle
 
-The participle is a verbal adjective (SG [2039](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2039&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). Like any other [adjective](#adj), it can have adjective function or be [substantivized](#sbs_prt). In the former case, the SG tagset allows annotation of the following categories:
+The participle is a verbal adjective (SG [2039](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2039&fromdoc=Perseus%3Atext%3A1999.04.0007)). Like any other [adjective](#adj), it can have adjective function or be [substantivized](#sbs_prt). In the former case, the SG tagset allows annotation of the following categories:
 
-*   [attributive participle](#att_prt) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=42&amp;doc=4971)) ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=44&amp;doc=4971))
-*   [circumstantial participle](#crc_prt)   ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=43&amp;doc=4971))
-                                                            ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=3&amp;doc=4971))
+*   [attributive participle](#att_prt) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=42&doc=4971)) ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=44&doc=4971))
+*   [circumstantial participle](#crc_prt)   ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=43&doc=4971))
+                                                            ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=3&doc=4971))
 
-        *   time (SG [2061](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2061&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   time (SG [2061](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2061&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                 *   simultaneous location
         *   sequential location
@@ -2273,24 +2237,24 @@ The participle is a verbal adjective (SG [2039](http://www.perseus.tufts.edu/hop
         *   temporal extent
         *   none of the above
         *   I do not know
-    *   manner (SG [2062](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2062&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-    *   means (SG [2063](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2063&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-    *   cause (SG [2064](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2064&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-    *   purpose (SG [2065](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2065&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-    *   concession (SG [2066](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2066&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-    *   condition (SG [2067](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2067&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-    *   any attendant circumstance (SG [2068](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2068&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   manner (SG [2062](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2062&fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   means (SG [2063](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2063&fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   cause (SG [2064](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2064&fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   purpose (SG [2065](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2065&fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   concession (SG [2066](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2066&fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   condition (SG [2067](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2067&fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   any attendant circumstance (SG [2068](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2068&fromdoc=Perseus%3Atext%3A1999.04.0007))
     *   none of the above
     *   I do not know
-*   [supplementary participle](#spp_prt) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=21&amp;doc=4971))
-                                                        ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=5&amp;doc=4971))
-                                                        ([tree3](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=23&amp;doc=4971))
+*   [supplementary participle](#spp_prt) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=21&doc=4971))
+                                                        ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=5&doc=4971))
+                                                        ([tree3](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=23&doc=4971))
 
         *   in indirect discourse
     *   not in indirect discourse
     *   none of the above
     *   I do not know
-*   [periphrastic participle](#prh_prt) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=45&amp;doc=4971))
+*   [periphrastic participle](#prh_prt) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=45&doc=4971))
 *   none of the above
 *   I do not know
 
@@ -2298,7 +2262,7 @@ The participle is a verbal adjective (SG [2039](http://www.perseus.tufts.edu/hop
 
 #### 4.1.9.1 Attributive participle
 
-The attributive participle is the participle having a function similar to that of an attributive adjective (SG [2049](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2049&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2053](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2053&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), and so is annotated as depending on the noun (or one of its equivalents) which it agrees with. It usually has attributive position (SG [1166](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1166&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), but can also be in predicate position (SG [2053](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2053&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)):
+The attributive participle is the participle having a function similar to that of an attributive adjective (SG [2049](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2049&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2053](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2053&fromdoc=Perseus%3Atext%3A1999.04.0007)), and so is annotated as depending on the noun (or one of its equivalents) which it agrees with. It usually has attributive position (SG [1166](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1166&fromdoc=Perseus%3Atext%3A1999.04.0007)), but can also be in predicate position (SG [2053](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2053&fromdoc=Perseus%3Atext%3A1999.04.0007)):
 
 &gt; ἐπὶ Κόδρου βασιλεύοντος
 &gt; 
@@ -2333,9 +2297,9 @@ All the participles so far discussed take the Prague annotation label ATR when t
 #### 4.1.9.2 Circumstantial participle
 
 The circumstantial participle, according to SG
-([2054](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2054&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)),  specifies the circumstance under which the action of the superordinate verb takes place. The annotation algorithm allows us to specify the force of the circumstantial participle:
+([2054](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2054&fromdoc=Perseus%3Atext%3A1999.04.0007)),  specifies the circumstance under which the action of the superordinate verb takes place. The annotation algorithm allows us to specify the force of the circumstantial participle:
 
-*   time (SG [2061](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2061&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+*   time (SG [2061](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2061&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
         *   simultaneous location
     *   sequential location
@@ -2344,22 +2308,22 @@ The circumstantial participle, according to SG
     *   temporal extent
     *   none of the above
     *   I do not know
-*   manner (SG [2062](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2062&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-*   means (SG [2063](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2063&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-*   cause (SG [2064](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2064&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-*   purpose (SG [2065](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2065&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-*   concession (SG [2066](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2066&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-*   condition (SG [2067](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2067&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-*   any attendant circumstance (SG [2068](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2068&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+*   manner (SG [2062](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2062&fromdoc=Perseus%3Atext%3A1999.04.0007))
+*   means (SG [2063](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2063&fromdoc=Perseus%3Atext%3A1999.04.0007))
+*   cause (SG [2064](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2064&fromdoc=Perseus%3Atext%3A1999.04.0007))
+*   purpose (SG [2065](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2065&fromdoc=Perseus%3Atext%3A1999.04.0007))
+*   concession (SG [2066](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2066&fromdoc=Perseus%3Atext%3A1999.04.0007))
+*   condition (SG [2067](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2067&fromdoc=Perseus%3Atext%3A1999.04.0007))
+*   any attendant circumstance (SG [2068](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2068&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
-It is to be noted that the force of a participle heavily depends on the context, and so ambiguities may sometimes arise (SG ([2069](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2069&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) well acknowledges this as well): the annotator should choose the most likely label according to his/her interpretation of the participle. Notwithstanding, the meaning of the circumstantial participle is very often signalled clearly by adverbs in the superordinate clause, such as 
+It is to be noted that the force of a participle heavily depends on the context, and so ambiguities may sometimes arise (SG ([2069](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2069&fromdoc=Perseus%3Atext%3A1999.04.0007)) well acknowledges this as well): the annotator should choose the most likely label according to his/her interpretation of the participle. Notwithstanding, the meaning of the circumstantial participle is very often signalled clearly by adverbs in the superordinate clause, such as 
 ἔπειτα 'thereupon', τότε 'then', ἤδη 'already', etc. (a list can be found in SG 
-([2079](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2079&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2087](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2087&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)); note that ἅτε, οἷα, οἷον, ὡς, and ὥσπερ depend on the participles - and not on the superordinate verb of the participle - as AuxZ). 
-The label "any attendand circumstance" should be reserved for those participles whose meaning can be rendered in English with a preposition (“ἔχων στρατιὰν ἀφικνεῖται” he arrives with an army” [T. 4.30](http://www.perseus.tufts.edu/hopper/text?doc=Thuc.%204.30&amp;lang=original)) or with a coordinate clause (rather than a subordinate clause).
+([2079](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2079&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2087](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2087&fromdoc=Perseus%3Atext%3A1999.04.0007)); note that ἅτε, οἷα, οἷον, ὡς, and ὥσπερ depend on the participles - and not on the superordinate verb of the participle - as AuxZ). 
+The label "any attendand circumstance" should be reserved for those participles whose meaning can be rendered in English with a preposition (“ἔχων στρατιὰν ἀφικνεῖται” he arrives with an army” [T. 4.30](http://www.perseus.tufts.edu/hopper/text?doc=Thuc.%204.30&lang=original)) or with a coordinate clause (rather than a subordinate clause).
 
 These kinds of circumstantial participles are labeled as ADV in the Prague annotation.
 
-The genitive absolute and the accusative absolute (SG [2070](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2070&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2078](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2078&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) are considered to be a kind of circumstantial participle, so there is no difference in their annotation, except that the genitive or the accusative nouns functioning as their subjects are attached to the participle (and receive the Prague annotation label "SBJ") and not to the superordinate verb of the participle.
+The genitive absolute and the accusative absolute (SG [2070](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2070&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2078](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2078&fromdoc=Perseus%3Atext%3A1999.04.0007)) are considered to be a kind of circumstantial participle, so there is no difference in their annotation, except that the genitive or the accusative nouns functioning as their subjects are attached to the participle (and receive the Prague annotation label "SBJ") and not to the superordinate verb of the participle.
 
 </a>
 
@@ -2368,8 +2332,8 @@ The genitive absolute and the accusative absolute (SG [2070](http://www.perseus.
 #### 4.1.9.3 Supplementary participle
 
 The supplementary participle is an argument of the verb. Following SG, two kinds of supplementary participles are distinguished: the one not in indirect discourse (SG 
-[2094](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2094&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2105](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2105&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [2123](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2123&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2145](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) and the one in indirect discourse (SG
-[2106](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2106&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2115](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2115&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); [2120](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2120&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2145](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). The difference lies in the nature of the governing verb, which can allow a participle to be equivalent to a dependent statement according to the principles of indirect discourse (SG [2589](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2589&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2635](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2635&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)):
+[2094](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2094&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2105](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2105&fromdoc=Perseus%3Atext%3A1999.04.0007); [2123](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2123&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2145](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&fromdoc=Perseus%3Atext%3A1999.04.0007)) and the one in indirect discourse (SG
+[2106](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2106&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2115](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2115&fromdoc=Perseus%3Atext%3A1999.04.0007); [2120](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2120&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2145](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&fromdoc=Perseus%3Atext%3A1999.04.0007)). The difference lies in the nature of the governing verb, which can allow a participle to be equivalent to a dependent statement according to the principles of indirect discourse (SG [2589](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2589&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2635](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2635&fromdoc=Perseus%3Atext%3A1999.04.0007)):
 
 &gt; οὐ γὰρ ᾔδεσαν αὐτὸν τεθνηκότα (= τέθνηκε)
 &gt; 
@@ -2377,7 +2341,7 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 &gt; 
 &gt; τεθνηκότα (participle &gt; supplementary &gt; indirect discourse)
 
-In the example the participle depends on ᾔδεσαν, and αὐτὸν depends on the participle, being interpreted as its subject. Such participles receive the function OBJ, as in the example, or PNOM, if a personal construction is present (as with δῆλός εἰμι, SG ([2107](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2107&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)); when building the tree, the participle is attached to the adjective). When the supplementary participle is not in indirect discourse, there is no dependent statement according to the principles of indirect discourse:
+In the example the participle depends on ᾔδεσαν, and αὐτὸν depends on the participle, being interpreted as its subject. Such participles receive the function OBJ, as in the example, or PNOM, if a personal construction is present (as with δῆλός εἰμι, SG ([2107](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2107&fromdoc=Perseus%3Atext%3A1999.04.0007)); when building the tree, the participle is attached to the adjective). When the supplementary participle is not in indirect discourse, there is no dependent statement according to the principles of indirect discourse:
 
 &gt; διάγουσι μανθάνοντες
 &gt; 
@@ -2392,9 +2356,9 @@ In the example the participle depends on ᾔδεσαν, and αὐτὸν depends
 &gt; '(they asked the god) whether it would be better for them to make war', T. 1.118.
 
 The participle πολεμοῦσιν depends on ἔσται and receives the label SBJ: the accordance with the implied dative of advantage can be explained as a case of attraction (SG 
-    [1060](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1060&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). A list of verbs allowing a supplementary participle not in indirect discourse can be found in (SG [2094](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2094&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2105](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2105&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). Verbs of perceiving and finding (SG [2110](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2110&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2115](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2115&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) allow participles both in indirect discourse and not in indirect discourse: when the participle is not in indirect discourse, it takes the function OCOMP ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=23&amp;doc=4971)).
+    [1060](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1060&fromdoc=Perseus%3Atext%3A1999.04.0007)). A list of verbs allowing a supplementary participle not in indirect discourse can be found in (SG [2094](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2094&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2105](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2105&fromdoc=Perseus%3Atext%3A1999.04.0007)). Verbs of perceiving and finding (SG [2110](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2110&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2115](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2115&fromdoc=Perseus%3Atext%3A1999.04.0007)) allow participles both in indirect discourse and not in indirect discourse: when the participle is not in indirect discourse, it takes the function OCOMP ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=23&doc=4971)).
     Some verbs (SG 
- [2123](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2123&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2145](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) allow either the participle or the infinitive in indirect discourse or not in indirect discourse.
+ [2123](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2123&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2145](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&fromdoc=Perseus%3Atext%3A1999.04.0007)) allow either the participle or the infinitive in indirect discourse or not in indirect discourse.
 
 </a>
 
@@ -2402,9 +2366,9 @@ The participle πολεμοῦσιν depends on ἔσται and receives the lab
 
 ####  4.1.9.4 Periphrastic participle
 
-In SG, this participle is considered to be a kind of supplementary participle (SG [2091](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2091&amp;fromdoc=Perseus%3Atext%3A1999.04.0007); note that if a participle is substantivized it cannot be taken to be periphrastic). However it seems to be useful to categorize it separately. See SG ([599](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+599&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), 
-        [600](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+600&amp;fromdoc=Perseus%3Atext%3A1999.04.0007), 
-            [1961](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1961&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)-[1965](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1965&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) for plenty of examples.
+In SG, this participle is considered to be a kind of supplementary participle (SG [2091](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2091&fromdoc=Perseus%3Atext%3A1999.04.0007); note that if a participle is substantivized it cannot be taken to be periphrastic). However it seems to be useful to categorize it separately. See SG ([599](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+599&fromdoc=Perseus%3Atext%3A1999.04.0007), 
+        [600](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+600&fromdoc=Perseus%3Atext%3A1999.04.0007), 
+            [1961](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1961&fromdoc=Perseus%3Atext%3A1999.04.0007)-[1965](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1965&fromdoc=Perseus%3Atext%3A1999.04.0007)) for plenty of examples.
 
 The syntactic label for the periphrastic participle is PNOM.
 
@@ -2425,7 +2389,7 @@ The Prague annotation labels for the substantive participle are the same as thos
 
 #### 4.1.11 Syntax of the infinitive
 
-The infinitive is a [verbal noun](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1966&amp;fromdoc=Perseus%3Atext%3A1999.04.0007). Its syntactic behavior is due to its partly nominal and partly verbal nature. Although such an "in-between" nature is always present in the infinitive, the articular function and the (for a lack of a better term) verbal function of the infinitive are here distinguished for the purposes of the classification. The algorithm for the infinitive is the following:
+The infinitive is a [verbal noun](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1966&fromdoc=Perseus%3Atext%3A1999.04.0007). Its syntactic behavior is due to its partly nominal and partly verbal nature. Although such an "in-between" nature is always present in the infinitive, the articular function and the (for a lack of a better term) verbal function of the infinitive are here distinguished for the purposes of the classification. The algorithm for the infinitive is the following:
 
 *   [dependent](#dpn_inf)
 
@@ -2440,7 +2404,7 @@ The infinitive is a [verbal noun](http://www.perseus.tufts.edu/hopper/text?doc=S
 
         *   [verbal](#vrl_inf)
 
-            *   as nominative ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=39&amp;doc=4971))
+            *   as nominative ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=39&doc=4971))
 
                     *   in indirect discourse
 
@@ -2464,7 +2428,7 @@ The infinitive is a [verbal noun](http://www.perseus.tufts.edu/hopper/text?doc=S
                         *   none of the above
             *   I do not know
 
-                *   as accusative ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=4&amp;doc=4971))
+                *   as accusative ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=4&doc=4971))
 
                     *   in indirect discourse
             *   not in indirect discourse
@@ -2473,7 +2437,7 @@ The infinitive is a [verbal noun](http://www.perseus.tufts.edu/hopper/text?doc=S
 
                 *   uncertain case
 
-                    *   [infinitive of purpose (uncertain case)](#vrl_inf) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=41&amp;doc=4971))*   [infinitive of result (uncertain case)](#vrl_inf)
+                    *   [infinitive of purpose (uncertain case)](#vrl_inf) ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=41&doc=4971))*   [infinitive of result (uncertain case)](#vrl_inf)
             *   [temporal infinitive (uncertain case)](#vrl_inf)
 
                                 *   simultaneous location
@@ -2495,10 +2459,10 @@ The infinitive is a [verbal noun](http://www.perseus.tufts.edu/hopper/text?doc=S
 
 *   [independent](#idp_inf)
 
-    *   command (SG [2013](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2013&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-    *   wish (SG [2014](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2014&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-    *   exclamation (SG [2015](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2015&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-    *   absolute infinitive (SG [2012](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2012&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   command (SG [2013](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2013&fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   wish (SG [2014](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2014&fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   exclamation (SG [2015](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2015&fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   absolute infinitive (SG [2012](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2012&fromdoc=Perseus%3Atext%3A1999.04.0007))
     *   none of the above
     *   I do not know
 
@@ -2527,10 +2491,10 @@ An infinitive is said to be "independent" if it is the head of a sentence (or li
 
 The articular infinitive is the infinitive preceded by the definite article:
 
-*   nominative (articular) (SG [2031](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2031&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-*   genitive (articular) (SG [2032](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2032&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-*   dative (articular) (SG [2033](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2033&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-*   accusative (articular) (SG [2034](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2034&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+*   nominative (articular) (SG [2031](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2031&fromdoc=Perseus%3Atext%3A1999.04.0007))
+*   genitive (articular) (SG [2032](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2032&fromdoc=Perseus%3Atext%3A1999.04.0007))
+*   dative (articular) (SG [2033](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2033&fromdoc=Perseus%3Atext%3A1999.04.0007))
+*   accusative (articular) (SG [2034](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2034&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
 The whole spectrum of possibilities available to annotate the noun is algorithmically made available for the articular infinitive, even though only some them 
     are likely to be found in practice. On the basis of the case selected, the annotator has access to the [syntax of the case](#snt_cas).
@@ -2573,9 +2537,9 @@ When the infinitive is not articular, it is labeled as "verbal". The following p
     *   I do not know
 *   uncertain case
 
-        *   infinitive of purpose (uncertain case) (SG [2008](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2008&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2010](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2010&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-    *   infinitive of result (uncertain case) (SG [2011](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2011&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
-    *   temporal infinitive (uncertain case) (SG [2453](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2453&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2461](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2461&amp;fromdoc=Perseus%3Atext%3A1999.04.0007))
+        *   infinitive of purpose (uncertain case) (SG [2008](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2008&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2010](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2010&fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   infinitive of result (uncertain case) (SG [2011](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2011&fromdoc=Perseus%3Atext%3A1999.04.0007))
+    *   temporal infinitive (uncertain case) (SG [2453](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2453&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2461](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2461&fromdoc=Perseus%3Atext%3A1999.04.0007))
 
                 *   simultaneous location
         *   sequential location
@@ -2590,8 +2554,8 @@ When the infinitive is not articular, it is labeled as "verbal". The following p
 *   I do not know
 
 The infinitive, when depending on a verb, bears a syntactic nominative or accusative case on the basis of whether it is the subject or the object of a verb, and can be in indirect discourse (SG
-    [2016](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2016&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2024](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2024&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)) or not in indirect discourse (SG 
-    [1989](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1989&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2007](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2007&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)). The infinitive can also be used to express purpose (SG [2008](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2008&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2010](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2010&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), result (SG [2011](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2011&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)), or temporal clauses (SG [2453](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2453&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)–[2461](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2461&amp;fromdoc=Perseus%3Atext%3A1999.04.0007)).
+    [2016](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2016&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2024](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2024&fromdoc=Perseus%3Atext%3A1999.04.0007)) or not in indirect discourse (SG 
+    [1989](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1989&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2007](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2007&fromdoc=Perseus%3Atext%3A1999.04.0007)). The infinitive can also be used to express purpose (SG [2008](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2008&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2010](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2010&fromdoc=Perseus%3Atext%3A1999.04.0007)), result (SG [2011](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2011&fromdoc=Perseus%3Atext%3A1999.04.0007)), or temporal clauses (SG [2453](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2453&fromdoc=Perseus%3Atext%3A1999.04.0007)–[2461](http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2461&fromdoc=Perseus%3Atext%3A1999.04.0007)).
 
 The Prague annotation labels are the same as those for the [noun](#nou). When the infinitive is of purpose, result, or temporal, the label is [ADV](#adv_fnc).
 
@@ -2665,7 +2629,7 @@ Particle are here defined as those adverbs, typically sentence adverbs, which in
 
 *   ἀλλά
 *   ἀτάρ
-*   δέ [tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=51&amp;doc=4971)
+*   δέ [tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=51&doc=4971)
 *   εἴτε
 *   ἤ
 *   ἠδέ
@@ -2679,8 +2643,8 @@ Particle are here defined as those adverbs, typically sentence adverbs, which in
 
 Some of these particples can of course be adverbs, and so should accordingly be annotated as such. When a particle is a conjunction, it governs other nodes: 
 
-[tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=24&amp;doc=4971),
-[tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=26&amp;doc=4971).
+[tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=24&doc=4971),
+[tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=26&doc=4971).
 
 Any other particle which is not one of the above conjunctions is attached to the verb of the main clause and receives the AuxY label, if the particle is a sentence adverb, or is attached to the word which it modifies and receives the label AuxZ. In the current version of the treebank it is left to the annotator to decide which of these two options is the right one for each of the non-conjuntion particles.
 
@@ -2693,3 +2657,4 @@ Any other particle which is not one of the above conjunctions is attached to the
 </a>
 </a>
 </a>
+
