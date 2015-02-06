@@ -154,7 +154,7 @@
 			</li>
 		</ul>
 		</li>
-		<li/>
+		</li>
 		</ul>
 		</li>
 	</ul>
@@ -1535,7 +1535,7 @@ The nominative of exclamation (SG
 </p>	
 
 
-</a> <!-- end nominative -->
+</a>
 
 <a id="gnt">
 <h4>4.1.1.2 Genitive</h4>
@@ -1748,7 +1748,7 @@ The SR expressed by the genitive of source is sometimes labeled "origin" in ling
 <p>
 A genitive is independent if it does not dependent on any other word, and so is the linguistic head of a sentence.
 </p>
-</a> <!-- end genitive -->
+</a> 
 
 <a id="dtv">
 <h4>4.1.1.3 Dative</h4>
@@ -1915,7 +1915,7 @@ The dative of accompanying circumstance is to be selected when the SR expressed 
 "Path" partly corresponds here to what is labeled (dative of) "space and time" in SG (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1528&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1528</a>). Similarly, the dative of time treated in SG as a kind of instrumental/comitative dative (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1528&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1528</a>) has to be simply annotated with one of the categories under "dative of time".
 </p>
 
-</a> <!-- end dative -->
+</a> 
 
 <a id="acc">
 <h4>4.1.1.4 Accusative</h4>
@@ -2097,7 +2097,7 @@ Independent is the accusative which is the head of a sentence, i.e. the elliptic
 </p>
 
 
-</a> <!-- end accusative -->
+</a> 
 
 <a id="prp">
 <h4>4.1.1.5 Adpositions</h4>	
@@ -2561,7 +2561,7 @@ In the following sections, the annotation of the adpositional case is detailed. 
 
 </a>
 
-</a> <!-- end adposition -->
+</a> 
 
 </a>
 
