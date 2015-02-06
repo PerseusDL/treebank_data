@@ -502,7 +502,7 @@ The advanced syntax layer allows annotation of the rich number of categories des
 ### 4.1 Morphosyntactic tagset
 
 The morphosyntactic tagset consists of those categories which, on the basis of the part of speech, can be defined if their syntax is also taken into account. I call such categories morphosyntactic. In the following list, the categories of the morphological tagset which give access to the morphosyntactic categories of the SG annotation are given in parentheses (the lack of a nested menu under a morphological tag means that no SG annotation is available). For those PoS having case, the case has to be re-selected at this layer, because the syntactic case can be different from the morphological one (see [below](#snt_cas)).
-'''
+```
 1.  (article)
 2.  (noun/substantive)
       *   [<span style="font-style:italic">syntax of the case</span>](#snt_cas)
@@ -553,7 +553,7 @@ The morphosyntactic tagset consists of those categories which, on the basis of t
                *   [<span style="font-style:italic">syntax of the adverb</span>](#adv_snt)
 10.  (interjection)
 11.  (punctuation)
-'''
+```
 <a id="snt_cas">  
 
 #### 4.1.1 Syntax of the case
