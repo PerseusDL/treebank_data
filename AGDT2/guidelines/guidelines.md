@@ -317,15 +317,7 @@ The syntactic layer allows annotation of traditional syntactic functions, such a
 
 #### 3.1 PRED
 
-The PRED ("predicate") function is reserved for the verb of the main clause in a sentence 
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=1&amp;doc=4971))
-
-    ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=38&amp;doc=4971)). 
-
-    Every sentence has one PRED only. Any other verb (finite and non-finite) takes a different label, which shows the function the verb has with respect to its linguistic parent
-
-    ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=32&amp;doc=4971)).
+The PRED ("predicate") function is reserved for the verb of the main clause in a sentence ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=1&amp;doc=4971)) ([tree2](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=38&amp;doc=4971)). Every sentence has one PRED only. Any other verb (finite and non-finite) takes a different label, which shows the function the verb has with respect to its linguistic parent ([tree1](http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=32&amp;doc=4971)).
 
 </a>
 
