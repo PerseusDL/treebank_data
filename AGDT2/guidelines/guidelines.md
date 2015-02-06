@@ -505,44 +505,33 @@ The morphosyntactic tagset consists of those categories which, on the basis of t
 
 1.  (article)
 2.  (noun/substantive)
-
-        *   [<span style="font-style:italic">syntax of the case</span>](#snt_cas)
+      *   [<span style="font-style:italic">syntax of the case</span>](#snt_cas)
 3.  (adjective)
-
-        *   [adjective proper](#adj_prp)
-    *   [substantive adjective](#sbs_adj)
-
-                *   [<span style="font-style:italic">syntax of the case</span>](#snt_cas)
-    *   [verbal adjective in τος/τεος](#vrb_adj)
-    *   [substantive verbal adjective in τος/τεος](#vrb_adj_sbs)
-
-                *   [<span style="font-style:italic">syntax of the case</span>](#snt_cas)
-    *   none of the above
-    *   I do not know
+      *   [adjective proper](#adj_prp)
+      *   [substantive adjective](#sbs_adj)
+      *   [<span style="font-style:italic">syntax of the case</span>](#snt_cas)
+      *   [verbal adjective in τος/τεος](#vrb_adj)
+      *   [substantive verbal adjective in τος/τεος](#vrb_adj_sbs)
+      *   [<span style="font-style:italic">syntax of the case</span>](#snt_cas)
+      *   none of the above
+      *   I do not know
 4.  (pronoun)
-
-        *   [substantive pronoun](#sbs_prn)
-
-                *   [<span style="font-style:italic">syntax of the case</span>](#snt_cas)
-    *   [adjective pronoun](#adj_prn)
-    *   none of the above
-    *   I do not know
+      *   [substantive pronoun](#sbs_prn)
+      *   [<span style="font-style:italic">syntax of the case</span>](#snt_cas)
+      *   [adjective pronoun](#adj_prn)
+      *   none of the above
+      *   I do not know
 5.  (verb)
-
-        *   (a finite mood, i.e., indicative, optative, subjunctive, and imperative)
-
-                *   [<span style="font-style:italic">syntax of the finite verb</span>](#fnt_moo)
-    *   (participle)
-
-                *   [adjective participle](#adj_prt)
-        *   [substantive participle](#sbs_prt)
-
-                        *   [<span style="font-style:italic">syntax of the case</span>](#snt_cas)
-        *   none of the above
-        *   I do not know
-    *   (infinitive)
-
-                *   [<span style="font-style:italic">syntax of the infinitive</span>](#inf)
+      *   (a finite mood, i.e., indicative, optative, subjunctive, and imperative)
+            *   [<span style="font-style:italic">syntax of the finite verb</span>](#fnt_moo)
+      *    (participle)
+            *   [adjective participle](#adj_prt)
+            *   [substantive participle](#sbs_prt)
+                  *   [<span style="font-style:italic">syntax of the case</span>](#snt_cas)
+                  *   none of the above
+                  *    I do not know
+      *   (infinitive)
+            *   [<span style="font-style:italic">syntax of the infinitive</span>](#inf)
 6.  (adverb)
 
         *   [<span style="font-style:italic">syntax of the adverb</span>](#adv_snt)
