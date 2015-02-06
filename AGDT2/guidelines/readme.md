@@ -1,8 +1,6 @@
 ## README
 
-This folder contains the guidelines used to treebank the texts of the Ancient Greek and Dependency Treebank 2
-
-Two formats for the guidelines are available: 
+This folder contains the guidelines used to treebank the texts of the Ancient Greek Dependency Treebank 2. Two formats for the guidelines are available: 
 
 ```
 1. html 
