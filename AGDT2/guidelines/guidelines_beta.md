@@ -1,7 +1,7 @@
 <body>
 
 <a id="guidelines">
-<h3 style="text-align: center">GUIDELINES FOR THE ANCIENT GREEK DEPENDENCY TREEBANK 2.0 (PRE-RELEASE)</h3>
+<h3 style="text-align: center">GUIDELINES FOR THE ANCIENT GREEK DEPENDENCY TREEBANK 2.0 (beta version)</h3>
 <h4 style="text-align: center">Giuseppe G. A. Celano</h4>
 <h4 style="text-align: center">Tufts University &amp; Universität Leipzig</h4>
 
