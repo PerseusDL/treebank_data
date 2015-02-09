@@ -28,6 +28,15 @@ In the following table you find specifications for each annotation. The Perseus 
 <td></td>
 </tr>
 <tr>
+<td>Plutarch</td>
+<td>Historical Library</td>
+<td>12.27.1-12.28.4</td>
+<td><a href="http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0060.tlg001.perseus-grc3" target="_blank">Historical Library</a></td>
+<td>Marcel Merniz</td>
+<td><a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&doc=9817" target="_blank">12.27.1-12.28.4</a></td>
+<td></td>
+</tr>
+<tr>
 <td>Strabo</td>
 <td>Geographia. Selections</td>
 <td>1.1.1; 1.1.2; 1.1.3-4</td>
