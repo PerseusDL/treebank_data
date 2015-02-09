@@ -2,7 +2,7 @@
 
 This page contains links to the morphosyntactic and/or semantic annotations (i.e., treebanked texts) performed on the collaborative Platform <a href="http://sosol.perseids.org/sosol/" target="_blank">Perseids</a> through the Annotation tool Arethusa. The annotations can there be viewed and downloaded (click on the drop-down arrow at the top-right corner of the screen). These annotations are usually work-in-progress, so they can vary over time. If you plan to perform research on this data, save a copy of it. Annotations that have been reviewed and are stable will be published in the stableannotation folder.
 
-In the following table you find specifications for each annotation. The Perseus Catalogue entry contains detailed information about the digital edition of the text treebanked. In particular the URN there indicated allows you to track back the text in the PerseusDL canonical repository.
+In the following table you find specifications for each annotation. The Perseus Catalogue entry contains detailed information about the digital edition of the text treebanked. In particular the URN there indicated allows you to track back the text in the <a href="https://github.com/PerseusDL/canonical/tree/master/CTS_XML_TEI/perseus" target="_blank">PerseusDL</a> canonical repository.
 
 <br/>
 <br/>
