@@ -1,8 +1,10 @@
 ## Live Annotations
 
-This page contains links to the morphosyntactic and/or semantic annotations performed on the collaborative Platform Perseids through the Annotation tool Arethusa. The annotations can there be viewed and downloaded (click on the drop-down arrow at the top-right corner of the screen). These annotations are usually work-in-progress, so they can vary across time. If you plan to perform research on these data, save a copy of it. Annotations that have been reviewed and are stable will be published in the stableannotation folder.
+This page contains links to the morphosyntactic and/or semantic annotations (i.e., treebanked texts) performed on the collaborative Platform Perseids through the Annotation tool Arethusa. The annotations can there be viewed and downloaded (click on the drop-down arrow at the top-right corner of the screen). These annotations are usually work-in-progress, so they can vary over time. If you plan to perform research on this data, save a copy of it. Annotations that have been reviewed and are stable will be published in the stableannotation folder.
 
-In the following table annotations are listed with reference to the fields: author, work, passage
+If you would like to treebank, please sign up in <a>Perseids</a>. If you want the link to your text to appear in this document, let us know.
+
+In the following table you find specifications for each annotation. The Perseus Catalogue entry contains detailed information about the digital edition of the text treebanked. In particular the URN there indicated allows you to track back the text in the PerseusDL canonical repository.
 
 <br/>
 <br/>
