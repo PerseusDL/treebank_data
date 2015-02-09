@@ -5,8 +5,8 @@ This page contains links to the morphosyntactic and/or semantic annotations (i.e
 In the following table you find specifications for each annotation. The Perseus Catalogue entry contains detailed information about the digital edition of the text treebanked. In particular the URN there indicated allows you to track back the text in the <a href="https://github.com/PerseusDL/canonical/tree/master/CTS_XML_TEI/perseus" target="_blank">PerseusDL</a> canonical repository.
 
 <br/>
-<br/>
-<br/>
+
+
 
 <table>
 <tr>
