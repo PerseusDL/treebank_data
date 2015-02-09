@@ -30,10 +30,10 @@ In the following table you find specifications for each annotation. The Perseus 
 <tr>
 <td>Plutarch</td>
 <td>Themistocles</td>
-<td>12.27.1-12.28.4</td>
+<td>2.1</td>
 <td><a href="https://github.com/PerseusDL/canonical/blob/master/CTS_XML_TEI/perseus/greekLit/tlg0007/tlg010/tlg0007.tlg010.perseus-grc1.xml" target="_blank">Themistocles</a></td>
 <td>Marcel Merniz</td>
-<td><a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&doc=9817" target="_blank">12.27.1-12.28.4</a></td>
+<td><a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&doc=10314" target="_blank">2.1</a></td>
 <td></td>
 </tr>
 <tr>
