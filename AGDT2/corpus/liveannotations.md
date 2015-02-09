@@ -28,6 +28,15 @@ In the following table you find specifications for each annotation. The Perseus 
 <td></td>
 </tr>
 <tr>
+<td>Strabo</td>
+<td>Geographia. Selections</td>
+<td>2.34-2.46</td>
+<td><a href="http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0099.tlg001.perseus-grc1" target="_blank">Geographia. Selections</a></td>
+<td>Giuseppe G. A. Celano</td>
+<td><a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&doc=9258" target="_blank">view/download</a><f/td>
+<td></td>
+</tr>
+<tr>
 <td>Thucydides</td>
 <td>History of the Peloponnesian War</td>
 <td>2.34-2.46</td>
