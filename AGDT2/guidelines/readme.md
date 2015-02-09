@@ -13,5 +13,5 @@ The html version is the standard one that should be used for treebanking: it has
 Please quote the guidelines in the following way:
 
 ```
-Celano, Giuseppe G. A. 2014. Guidelines for the annotation of the Ancient Greek Dependency Treebank 2. https://github.com/PerseusDL/treebank_data/edit/master/AGDT2/guidelines/
+Celano, Giuseppe G. A. 2014. Guidelines for the annotation of the Ancient Greek Dependency Treebank 2. https://github.com/PerseusDL/treebank_data/edit/master/AGDT2/guidelines
 ```
