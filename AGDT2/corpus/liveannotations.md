@@ -60,6 +60,15 @@ In the following table you find specifications for each annotation. The Perseus 
 <td><a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&doc=9258" target="_blank">2.34-2.46</a></td>
 <td>Morphosyntactic and semantic annotation</td>
 </tr>
+<tr>
+<td></td>
+<td>Marmor Parium</td>
+<td><i>inscription</i></td>
+<td>not available</td>
+<td>Giuseppe G. A. Celano</td>
+<td><a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&doc=5891" target="_blank"></a>inscription</td>
+<td>Morphosyntactic and semantic annotation</td>
+</tr>
 </table>
 
 
