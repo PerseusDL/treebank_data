@@ -18,6 +18,7 @@ In the following table you find specifications for each annotation. The Perseus 
 <td><b>Annotation</b></td>
 <td><b>Notes</b></td>
 </tr>
+<tr>
 <td>Diodorus Siculus</td>
 <td>Historical Library</td>
 <td>12.27.1-12.28.4</td>
@@ -26,7 +27,15 @@ In the following table you find specifications for each annotation. The Perseus 
 <td><a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&doc=9817" target="_blank">Annotation</a><f/td>
 <td></td>
 </tr>
-
+<tr>
+<td>Diodorus Siculus</td>
+<td>Historical Library</td>
+<td>12.27.1-12.28.4</td>
+<td><a href="http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0060.tlg001.perseus-grc3" target="_blank">Historical Library</a></td>
+<td>Marcel Merniz</td>
+<td><a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&doc=9817" target="_blank">Annotation</a><f/td>
+<td></td>
+</tr>
 </table>
 
 
