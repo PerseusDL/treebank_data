@@ -66,7 +66,7 @@ In the following table you find specifications for each annotation. The Perseus 
 <td><i>inscription</i></td>
 <td>not available</td>
 <td>Giuseppe G. A. Celano</td>
-<td><a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&doc=5891" target="_blank"></a>inscription</td>
+<td><a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&doc=5891" target="_blank"><i>inscription</i></a></td>
 <td>Morphosyntactic and semantic annotation</td>
 </tr>
 </table>
