@@ -53,9 +53,9 @@ In the following table you find specifications for each annotation. The Perseus 
 </tr>
 <tr>
 <td>Thucydides</td>
-<td>History of the Peloponnesian War</td>
+<td>Thycididis Historiae</td>
 <td>2.34-2.46</td>
-<td><a href="http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0003.tlg001.perseus-grc1" target="_blank">History of the Peloponnesian War</a></td>
+<td><a href="http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0003.tlg001.perseus-grc1" target="_blank">Thycididis Historiae</a></td>
 <td>Giuseppe G. A. Celano</td>
 <td><a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&doc=9258" target="_blank">2.34-2.46</a></td>
 <td>Morphosyntactic and semantic annotation</td>
