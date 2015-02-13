@@ -47,6 +47,17 @@ In the following table you find specifications for each annotation. The Perseus 
 <td><a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&doc=9817" target="_blank">12.27.1-12.28.4</a></td>
 <td>Morphosyntactic and semantic annotation</td>
 </tr>
+
+<tr>
+<td>Isocrates</td>
+<td>On the peace</td>
+<td>1-</td>
+<td><a href="http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0010.tlg017.perseus-grc1" target="_blank">Historical Library</a></td>
+<td>Eleni Bozia</td>
+<td><a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&doc=9766" target="_blank">1-/a></td>
+<td></td>
+</tr>
+
 <tr>
 <td>Lysias</td>
 <td>In Eratosthenem</td>
