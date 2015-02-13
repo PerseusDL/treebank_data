@@ -8,8 +8,6 @@ In the following table you find specifications for each annotation. The Perseus 
 
 <br/>
 
-http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0062.tlg057.perseus-grc1
-
 <table>
 <tr>
 <td><b>Author</b></td>
