@@ -30,6 +30,15 @@ In the following table you find specifications for each annotation. The Perseus 
 <td>Morphosyntactic and semantic annotation</td>
 </tr>
 <tr>
+<td>Lysias</td>
+<td>In Eratosthenem</td>
+<td><i>1.1-</i></td>
+<td><a href="http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0540.tlg012.perseus-grc1" target="_blank">In Eratosthenem</a></td>
+<td>Eleni Bozia</td>
+<td><a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&doc=8611" target="_blank">1.1-</a></td>
+<td></td>
+</tr>
+<tr>
 <td>Plutarch</td>
 <td>Themistocles</td>
 <td>2.1</td>
