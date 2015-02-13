@@ -9,7 +9,6 @@ In the following table you find specifications for each annotation. The Perseus 
 <br/>
 
 
-
 <table>
 <tr>
 <td><b>Author</b></td>
@@ -20,6 +19,16 @@ In the following table you find specifications for each annotation. The Perseus 
 <td><b>Annotation</b></td>
 <td><b>Notes</b></td>
 </tr>
+<tr>
+<td>Aelius Aristides</td>
+<td>Ῥώμης ἐγκώμιον</td>
+<td>14.197-</td>
+<td><a href="http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0284.tlg014.perseus-grc1" target="_blank">Ῥώμης ἐγκώμιον</a></td>
+<td>Eleni Bozia</td>
+<td><a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&doc=9635" target="_blank">14.197-</a></td>
+<td></td>
+</tr>
+
 <tr>
 <td>Demosthenes</td>
 <td>Philippica 1</td>
