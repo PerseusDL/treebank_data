@@ -21,6 +21,15 @@ In the following table you find specifications for each annotation. The Perseus 
 <td><b>Notes</b></td>
 </tr>
 <tr>
+<td>Demosthenes</td>
+<td>Philippica 1</td>
+<td>1.1-</td>
+<td><a href="http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0014.tlg004.perseus-grc1" target="_blank">Philippica 1</a></td>
+<td>Eleni Bozia</td>
+<td><a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&doc=9534" target="_blank">1.1-</a></td>
+<td></td>
+</tr>
+<tr>
 <td>Diodorus Siculus</td>
 <td>Historical Library</td>
 <td>12.27.1-12.28.4</td>
