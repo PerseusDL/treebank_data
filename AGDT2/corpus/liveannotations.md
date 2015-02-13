@@ -30,6 +30,15 @@ In the following table you find specifications for each annotation. The Perseus 
 <td></td>
 </tr>
 <tr>
+<td>Dio Chrysostom</td>
+<td>Orationes</td>
+<td>1.1-</td>
+<td><a href="http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0612.tlg001.opp-grc1" target="_blank">Orationes</a></td>
+<td>Eleni Bozia</td>
+<td><a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&doc=9592" target="_blank">Oratio 25</a></td>
+<td></td>
+</tr>
+<tr>
 <td>Diodorus Siculus</td>
 <td>Historical Library</td>
 <td>12.27.1-12.28.4</td>
