@@ -701,7 +701,7 @@ The syntactic layer allows annotation of traditional syntactic functions, such a
 <a id="mwe">
 <h4>3.11 MWE</h4>	
 <p>
-The label MWP is reseverd for multiword expressions. When there is an phrase where it is not clear which the function/meaning of the single words are, the head of that phrase takes the function of the phrase as a whole, while the other words are attached to it with the label MWE.
+The label MWE is reseverd for multiword expressions. When there is an phrase where it is not clear which the function/meaning of the single words are, the head of that phrase takes the function of the phrase as a whole, while the other words are attached to it with the label MWE.
 </p>
 </a>
 
