@@ -3376,6 +3376,7 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 	<li>none of the above</li>
 	<li>I do not know</li>
 	</ul>
+	</ul>
 	
 <p>The tagset distinguishes many kinds of time and place adverbs because the annotation aims to preserve the distinctions that are morphologically signaled by the case when the SR is expressed by a noun.</p>
 
