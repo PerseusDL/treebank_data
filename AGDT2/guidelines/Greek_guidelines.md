@@ -18,7 +18,7 @@
               </li>
 		<li>2.3<a href="#adj"> adjective</a>
               </li>
-		<li>2.4<a href="#prn"> pronoun</a>
+		<li>2.4<a href="#prn"> pronoun</a> 
               </li>
 		<li>2.5<a href="#vrb"> verb</a>
               </li>
