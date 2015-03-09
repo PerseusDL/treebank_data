@@ -377,7 +377,7 @@ The adverb is morphologically defined as the PoS having an invariable form (with
 
 <p>Sentence adverbs, which are labeled as particles in SG (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1094&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1094</a>), should be tagged as adverbs at the morphological level (the label "particle" is however available in the SG annotation). If a certain noun, adjective, or PP has attained the status of an adverb, <em>it has to be annotated as an adverb</em>. This occurs, for example, with the so-called adverbial accusative (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1606&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1606</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1611&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1611</a>) or the head of PPs such as πρὸ πολλοῦ (πρὸ πολλοῦ ποιεῖσθαι, "to esteem highly") or ἀφ᾽ οὗ ("since"). The annotator has to pay attention here, because the system sometimes suggests a nominal/adjectival analysis, which means that the adverbial analysis has to added manually.</p>
 
-<p>The lemma translation should be an English adjective, if the Greek lemma is an adjective, or an English adverb. For the translation of correlative adverbs, see SG (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+346&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">346</a>).</p>
+<p>The lemma translation should be an English adverb. For the translation of correlative adverbs, see SG (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+346&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">346</a>).</p>
 
 <p>Sentence adverbs (i.e., some of those words that SG (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2769&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2769</a>) defines as particles) are not required to be translated. If the annotator decides to translate them (or some of them), this should be made in a consistent way and declared. Note that conjunctions (both coordinate and subordinate) are here treated as a separate category from particles (see <a href="#cnj">below</a>).</p>
 
@@ -715,7 +715,7 @@ The label MWP is reseverd for multiword expressions. When there is an phrase whe
 
 <a id="auxc">
 <h4>3.13 AuxC</h4>
-<p>The function AuxC ("conjunction") is used to label subordinate conjunctions only. Their list is in SG (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2770&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2770</a>)
+<p>The function AuxC ("conjunction") is used to label subordinate conjunctions only. Their list is in SG (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2770&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2770</a>, excluding the local ones, which have to be treated as relative pronouns/adverbs)
 	
 	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=11&amp;doc=4971" target="_blank">tree1</a>).</p>
 		
@@ -3130,6 +3130,14 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 </ul>
                           </li>
 <li>not in indirect discourse
+</li>	
+<li>none of the above</li>
+<li>I do not know</li>
+</ul>
+</li>
+<li>as accusative (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=4&amp;doc=4971" target="_blank">tree1</a>)
+<ul>
+<li>in indirect discourse
 <ul>
 	<li>statement</li>
 	<li>assumption </li>
@@ -3140,14 +3148,9 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 	<li>none of the above</li>
 	<li>I do not know</li>
 </ul>
-</li>	
-<li>none of the above</li>
-<li>I do not know</li>
-</ul>
+
+
 </li>
-<li>as accusative (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=4&amp;doc=4971" target="_blank">tree1</a>)
-<ul>
-<li>in indirect discourse</li>
 <li>not in indirect discourse</li>	
 <li>none of the above</li>
 <li>I do not know</li>
