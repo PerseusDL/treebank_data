@@ -3375,12 +3375,14 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
                 </li>
 	<li>none of the above</li>
 	<li>I do not know</li>
-	</ul>
-	</ul>
+</ul>
+	
 	
 <p>The tagset distinguishes many kinds of time and place adverbs because the annotation aims to preserve the distinctions that are morphologically signaled by the case when the SR is expressed by a noun.</p>
 
 <p>The Prague annotation labels are <a href="#obj">OBJ</a>, <a href="#adv_fnc">ADV</a> (on the basis of whether or not the adverb is an argument), <a href="#auxz">AuxZ</a>, or <a href="#auxy">AuxY</a>.</p>
+
+</a>
 
 <a id="part">
 <h4>4.1.12.1 Particle</h4>
