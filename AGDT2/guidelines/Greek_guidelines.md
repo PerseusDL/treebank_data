@@ -3311,10 +3311,10 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 <a id="adv_snt">
 <h4>4.1.12 Syntax of the adverb</h4>	
 <p>The SG tagset allows the annotation of the following SRs for the adverb:</p>
-	<ul>
-	<li>time
-	<ul>
-		<li>simultaneous location</li>
+<ul>
+<li>time
+<ul>
+	<li>simultaneous location</li>
 		<li>sequential location</li>
 		<li>sequential-durative</li>
 		<li>temporal distance</li>
