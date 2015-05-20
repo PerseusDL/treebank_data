@@ -783,7 +783,7 @@
               <th>Words with equal value</th>
               <th>Words with unequal value</th>
               <th>Percentage of agreement</th>
-              <th>Cohenߣs kappa</th>
+              <th>Cohen's kappa</th>
             </tr>
           </thead>
           <tbody>
@@ -1495,7 +1495,7 @@
               <th>Words with equal value</th>
               <th>Words with unequal value</th>
               <th>Percentage of agreement</th>
-              <th>Cohenߣs kappa</th>
+              <th>Cohen's kappa</th>
             </tr>
           </thead>
           <tbody>
@@ -3109,7 +3109,7 @@
               <th>Words with equal value</th>
               <th>Words with unequal value</th>
               <th>Percentage of agreement</th>
-              <th>Cohenߣs kappa</th>
+              <th>Cohen's kappa</th>
             </tr>
           </thead>
           <tbody>
@@ -4294,7 +4294,7 @@
               <th>Words with equal value</th>
               <th>Words with unequal value</th>
               <th>Percentage of agreement</th>
-              <th>Cohenߣs kappa</th>
+              <th>Cohen's kappa</th>
             </tr>
           </thead>
           <tbody>
