@@ -863,8 +863,6 @@
         <word id="6" cid="45091434" form="χειμών" lemma="χειμών1" postag="n-s---mn-" head="5" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg001:167"/>
         <word id="7" cid="45091435" form="." lemma="περιοδ1" postag="u--------" head="0" relation="AuxK" cite=""/>
     </sentence>
-    
-    
     <sentence subdoc="168-174" id="2897992" document_id="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2" span="καὶ0:;0">
         <annotator>FrancescoM</annotator>
         <word id="1" cid="45091436" form="καὶ" lemma="καί1" postag="c--------" head="6" relation="AuxY" cite="urn:cts:greekLit:tlg0085.tlg001:168"/>

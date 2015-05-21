@@ -5449,7 +5449,6 @@
         <word id="9" cid="45088899" form="-" lemma="οτηερ" postag="---------" head="0" relation="AuxK" cite=""/>
       <word id="10" insertion_id="0009e" form="[0]" artificial="elliptic" head="5" relation="OBJ"/>
   </sentence>
-    
     <sentence subdoc="735" id="2901074" document_id="urn:cts:greekLit:tlg0085.tlg002.perseus-grc2" span="πῶς1:;7">
         <annotator>FrancescoM</annotator>
         <word id="1" cid="45088900" form="πῶς" lemma="πῶς2" postag="d--------" head="4" relation="ADV_CO" cite="urn:cts:greekLit:tlg0085.tlg002:735"/>
@@ -7793,9 +7792,6 @@
         <word id="7" cid="45090694" form="." lemma="περιοδ1" postag="u--------" head="0" relation="AuxK" cite=""/>
       <word id="8" insertion_id="0007e" form="[0]" artificial="elliptic" head="0" relation="PRED"/>
   </sentence>
-    
-    
-    
     <sentence subdoc="1070" id="2901250" document_id="urn:cts:greekLit:tlg0085.tlg002.perseus-grc2" span="ἰὼ1:.7">
         <annotator>FrancescoM</annotator>
         <word id="1" cid="45090709" form="ἰὼ" lemma="ἰώ1" postag="e--------" head="2" relation="AuxY" cite=""/>

@@ -1054,9 +1054,6 @@
         <word id="13" cid="32944488" form="φίλα]" lemma="φίλος1" postag="a-s---fv-" head="0" relation="UNDEFINED" cite=""/>
         <word id="14" cid="32944489" form="." lemma="περιοδ1" postag="u--------" head="0" relation="AuxK" cite=""/>
     </sentence>
-    
-    
-    
     <sentence subdoc="148-155" id="2896427" document_id="urn:cts:greekLit:tlg0085.tlg004.perseus-grc2" span="Ἄρτεμι0:.2">
         <annotator>FrancescoM</annotator>
         <word id="1" cid="32944510" form="Ἄρτεμι" lemma="Ἄρτεμις1" postag="n-s---fv-" head="12" relation="ExD" cite="urn:cts:greekLit:tlg0085.tlg004:148"/>
