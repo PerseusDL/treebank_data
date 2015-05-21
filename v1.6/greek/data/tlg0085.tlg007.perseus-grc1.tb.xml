@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<treebank xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:treebank="http://nlp.perseus.tufts.edu/syntax/treebank/1.5" version="1.6" xsi:schemaLocation="http://nlp.perseus.tufts.edu/syntax/treebank/version="1.6 treebank-1.6.xsd" xml:lang="grc">
+<treebank xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:treebank="http://nlp.perseus.tufts.edu/syntax/treebank/1.5" version="1.6"  xml:lang="grc">
 	<date>Thu Nov 19 11:16:26 EST 2009</date>
 	<annotator>
 		<short>FrancescoM</short>
