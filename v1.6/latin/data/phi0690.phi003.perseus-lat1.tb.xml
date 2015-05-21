@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<treebank xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:treebank="http://nlp.perseus.tufts.edu/syntax/treebank/1.5" version="1.6" xsi:schemaLocation="http://nlp.perseus.tufts.edu/syntax/treebank/1.6 treebank-1.6.xsd">
+<treebank xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:treebank="http://nlp.perseus.tufts.edu/syntax/treebank/1.5" version="1.6" xsi:schemaLocation="http://nlp.perseus.tufts.edu/syntax/treebank/1.6 treebank-1.6.xsd" format="aldt" xml:lang="lat">
 	<sentence id="1" document_id="urn:cts:latinLit:phi0690.phi003.perseus-lat1" subdoc="6.1" span="sic0:oris0">
 		<word id="1" form="Sic" lemma="sic1" postag="d--------" head="2" relation="AuxY"/>
 		<word id="2" form="fatur" lemma="for1" postag="v3spip---" head="10" relation="PRED_CO"/>
