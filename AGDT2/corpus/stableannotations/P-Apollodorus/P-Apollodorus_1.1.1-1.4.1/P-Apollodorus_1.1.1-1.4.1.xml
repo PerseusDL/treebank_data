@@ -7,18 +7,6 @@ https:&#x2F;&#x2F;github.com&#x2F;PerseusDL&#x2F;canonical&#x2F;blob&#x2F;master
 The text has been automatically checked for Unicode codepoints, so that it only contains the correct letters
 from the Unicode Chart &quot;Greek Extended&quot; and Unicode Chart &quot;Greek and Coptic&quot; (for example, no mathematical Greek letters).
 I have automatically checked punctuation: as in the original file, apostrophes are encoded as modifier letter apostrophes (U+02BC).</comment>
-  <annotator>
-    <short/>
-    <name/>
-    <address/>
-    <uri>http:&#x2F;&#x2F;github.com&#x2F;latin-language-toolkit&#x2F;arethusa</uri>
-  </annotator>
-  <annotator>
-    <short>Polina Yordanova</short>
-    <name>Polina Yordanova</name>
-    <address>polina.yordanova@yahoo.com</address>
-    <uri>http:&#x2F;&#x2F;data.perseus.org&#x2F;sosol&#x2F;users&#x2F;Polina%20Yordanova</uri>
-  </annotator>
   <sentence id='1' document_id='urn:cts:greekLit:tlg0548.tlg001' subdoc='1.1.1' span=''>
     <word id='1' form='Οὐρανὸς' lemma='Οὐρανός' postag='n-s---mn-' relation='SBJ' ref='' gloss='Sky' sg='nmn dpd' head='5'/>
     <word id='2' form='πρῶτος' lemma='πρῶτος' postag='a-s---mn-' relation='ATV' ref='' gloss='first' sg='prp' head='5'/>
