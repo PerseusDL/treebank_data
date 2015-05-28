@@ -9,8 +9,6 @@ The text has been automatically checked for Unicode codepoints, so that it only 
 from the Unicode Chart Greek Extended and Unicode Chart Greek and Coptic (for example, no mathematical Greek letters).
 I have automatically checked punctuation: all colons (U+003A) have been converted into middle dots (U+00B7) and all apostrophes (U+0027) into modifier letter apostrophes (U+02BC).
 The @subdoc contains reference to the number of fable according to Chambry&#x27;s aforementioned edition.</comment>
-  <annotator>
-  </annotator>
   <sentence id='1' document_id='' subdoc='1' span=''>
     <word id='1' form='Ἀγαθὰ' lemma='ἀγαθός' postag='a-p---nn-' relation='ExD_CO' ref='' sg='sbs nmn ind ctc' gloss='good' head='2'/>
     <word id='2' form='καὶ' lemma='καί' postag='c--------' relation='COORD' ref='' sg='' gloss='and' head='0'/>
