@@ -1870,6 +1870,7 @@ There exist three main kinds of bare dative: the dative proper, the instrumental
 </li>
 	<li>adpositional dative 
 	<ul>
+	<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ἐπί</a>) purpose</li>
 	<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1687&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ἐν</a>, 
 			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1696&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">συν</a>) conformity</li>
 	<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ἐπί</a>) price and value</li>
@@ -2293,6 +2294,7 @@ In the following sections, the annotation of the adpositional case is detailed. 
 	<li>reason, motive: dative of cause</li>
 	<li>hostility: dative of disadvantage</li>
 	<li>price: adpositional price and value</li>
+        <li>end/purpose: adpositional purpose</li>
 </ul>	
 
 
