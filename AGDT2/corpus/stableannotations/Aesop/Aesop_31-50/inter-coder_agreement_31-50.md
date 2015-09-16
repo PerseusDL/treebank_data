@@ -4,6 +4,7 @@
   </head>
   <body>
     <h1>Inter-coder Agreement</h1>
+    <p>This is the final inter-annotator agreement calculated on 26 May 2015.</p>
     <div>
       <div>
         <h2>1. Morphology</h2>
