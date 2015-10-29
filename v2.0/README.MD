@@ -38,7 +38,7 @@ Sophocles | Ajax
  | Trachinae 
 Thucydides | Histories (1)
 
-## DATA CREATION
+### DATA CREATION
 
 The data have been semi-automatically annotated. The full tagsets can be consulted here:
 
@@ -57,3 +57,14 @@ Data have been annotated using the following guidelines:
 
 The GAGDT 2.0 can be basically taken to be an extension of the GSAAGDT 1.1, by making them more stringent. The GAGDT 2.0 also allows
 semantic annotation. Each annotation file specifies which guidelines have been adopted.
+
+
+### ANNOTATORS
+
+(in alphabetical order)
+
+Giuseppe G. A. Celano, J. F. Gentile, Robert Gorman, Vanessa Gorman,
+Jordan Hawkesworth, Yoana Ivanova, Tovah Keynton, Florin Leonte, Alex Lessie,
+Daniel Lim Libatique, Meg Luthin, Francesco Mambrini, George Matthews,
+Jack Mitchell, Molly Miller, Jessica Nord, Sean Stewart, Anthony D. Yates,
+Polina Yordanova, and Sam Zukoff.
