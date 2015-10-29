@@ -55,7 +55,7 @@ Data have been annotated using the following guidelines:
 * [Guidelines for the Syntactic Annotation of the Ancient Greek Dependency Treebank (1.1)](http://nlp.perseus.tufts.edu/syntax/treebank/agdt/1.7/docs/guidelines.pdf) (GAGDT)
 * [Guidelines for the Ancient Greek Dependecy Treebank 2.0](https://github.com/PerseusDL/treebank_data/tree/master/AGDT2/guidelines) (GSAAGDT)
 
-The GAGDT 2.0 can be basically taken to be an extension of the GSAAGDT 1.1, by making them more stringent. The GAGDT 2.0 also allows
+The GAGDT 2.0 can be considered as an extension of the GSAAGDT 1.1, by making them more stringent. The GAGDT 2.0 also allows
 semantic annotation. Each annotation file specifies which guidelines have been adopted.
 
 
