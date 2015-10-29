@@ -53,7 +53,7 @@
     <profileDesc xml:space="preserve">
     Consult the file README.xml for the details concerning normalization and harmonization of the text, 
     and the file TAGSETS.xml for the meaning of the labels used in the annotation. The treebanked text before normalization 
-    and harmonization can be consulted on PerseusDL (https://github.com/PerseusDL/treebank_data/tree/master/v1.6).
+    and harmonization can be consulted on PerseusDL (https://github.com/PerseusDL/treebank_data/tree/master/AGDT2).
     </profileDesc>
   </header>
   <body>
