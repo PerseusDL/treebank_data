@@ -3,7 +3,7 @@ Treebank Data
 
 The repository contains the published Perseus Treebank Data. 
 
-The current release of the data is v. 2.0. 
+_The current release of the data is v. 2.0_ 
 
 More information on the data is available within the folder for each version. 
 
