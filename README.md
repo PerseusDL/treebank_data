@@ -1,4 +1,4 @@
-treebank_data
+Treebank Data
 =============
 
 The repository contains the published Perseus Treebank Data. 
