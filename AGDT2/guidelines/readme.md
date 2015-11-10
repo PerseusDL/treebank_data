@@ -1,6 +1,6 @@
 ## README
 
-This folder contains the guidelines used to treebank the texts of the Ancient Greek Dependency Treebank 2.0. They expand the <a href="http://nlp.perseus.tufts.edu/syntax/treebank/greekguidelines.pdf" target="_blank">Guidelines for the Syntactic Annotation of the Ancient Greek Dependecy Treebank (1.1)</a>, by refining the morphosyntactic annotation and adding a semantic layer. The latter is build on the categories identified in H. W. Smyth's <a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0007" target="_blank">Greek Grammar</a>.
+This folder contains the guidelines for the annotation of Ancient Greek. They expand the <a href="http://nlp.perseus.tufts.edu/syntax/treebank/greekguidelines.pdf" target="_blank">Guidelines for the Syntactic Annotation of the Ancient Greek Dependecy Treebank (1.1)</a>, by refining the morphosyntactic annotation and adding a semantic layer. The latter is build on the categories identified in H. W. Smyth's <a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0007" target="_blank">Greek Grammar</a>.
 
 Two formats for the guidelines are available: 
 
