@@ -21,16 +21,17 @@ Hesiod | Shield of Heracles
  | Theogony
  | Works and Days 
 Homer | Iliad 
-Homer | Odyssey 
+ | Odyssey 
 Lysias | Oration 1 
-Lysias | Oration 14 
-Lysias | Oration 15 
-Lysias | Oration 23 
+ | Oration 14 
+ | Oration 15 
+ | Oration 23 
 Plato | Euthyphro 
 Plutarch | Alcibiades 
-Plutarch | Lycurgus 
+ | Lycurgus 
 Polybius | Histories (1) 
 Pseudo Apollodorus | Library (1.1.1-1.4.1)
+Pseudo Homer |Hymn to Demeter
 Sophocles | Ajax
  | Antigone
  | Electra
@@ -40,16 +41,7 @@ Thucydides | Histories (1)
 
 ### DATA CREATION
 
-The data have been semi-automatically annotated. The full tagsets can be consulted here:
-
-morphology:
-* https://github.com/alpheios-project/arethusa-configs/blob/gcelano/configs/arethusa.morph/gr_attributes2.json
-
-syntax:
-* https://github.com/alpheios-project/arethusa-configs/blob/gcelano/configs/arethusa.relation/relations2.json
-
-semantics:
-* https://github.com/alpheios-project/arethusa-configs/tree/gcelano/configs/arethusa.sg/sg_labels
+The data have been semi-automatically annotated. The full tagsets can be consulted in the TAGSETS.xml file.
 
 Data have been annotated using the following guidelines:
 * [Guidelines for the Syntactic Annotation of the Ancient Greek Dependency Treebank (1.1)](http://nlp.perseus.tufts.edu/syntax/treebank/agdt/1.7/docs/guidelines.pdf) (GAGDT)
