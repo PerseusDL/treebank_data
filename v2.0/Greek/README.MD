@@ -41,7 +41,7 @@ Thucydides | Histories (1)
 
 ### DATA CREATION
 
-The data have been semi-automatically annotated. The full tagsets can be consulted in the TAGSETS.xml file.
+The data have been semi-automatically annotated. The full tagsets can be consulted in TAGSETS.xml.
 
 Data have been annotated using the following guidelines:
 * [Guidelines for the Syntactic Annotation of the Ancient Greek Dependency Treebank (1.1)](http://nlp.perseus.tufts.edu/syntax/treebank/agdt/1.7/docs/guidelines.pdf) (GAGDT)
