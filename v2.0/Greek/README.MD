@@ -61,8 +61,7 @@ The texts have been checked/normalized for the Greek characters and the punctuat
 
 The <code>@form</code> and <code>@lemma</code> values for punctuation marks have been corrected and levelled: both values now contain the form of a punctuation mark and @postag contains u--------
 
-The tagsets form morphology have been harmonized. Previous versions of the treebank had participle also as a part of speech. Now
-participle is only treated as a kind of mood. Similarly, all words with morphological category "exclamation" have been assigned the category "interjection". 
+The tagsets form morphology have been harmonized. Previous versions of the treebank had "participle" also as a part of speech. Now "participle" is only treated as a kind of mood. Similarly, all words with morphological category "exclamation" have been assigned the category "interjection". 
 
 Some work is still needed in order to satisfactorily deal with the distinction adverb/particle.
 
