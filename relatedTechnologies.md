@@ -4,19 +4,19 @@
 
 * Perseids/Arethusa, an online environment to visualize data and annotate them: http://sosol.perseids.org/
 
-### Query the treebank via a GUI
+### Search engines
 
-There exist external services allowing qruerying the treebank data (in alphabetical order): 
+There exist external GUIs allowing qruerying the treebank data (in alphabetical order): 
 
-* Structural Search by Nick Kallen (only Greek data, v1.6): http://www.iliados.com/
+* Structural Search (only Greek data, v1.6): http://www.iliados.com/
  * query language documentation [1]
 
-* Tündra, an online search engine developed by CLARIN-D (Greek and Latin data, v2.0): http://weblicht.sfs.uni-tuebingen.de/TundraPerseus/
+* Tündra (Greek and Latin data, v2.0): http://weblicht.sfs.uni-tuebingen.de/TundraPerseus/
  * query language documentation [2] [3]
 
-### Compare annotation
+### Inter-annotator agreement calculator
 
-* Dolphin, an inter-annotator agreement calculator: http://l-processor.org:8984/i-agldt
+* Dolphin: http://l-processor.org:8984/i-agldt
 
 -----
 [1] https://github.com/nkallen/pseudw/wiki/Structural-Search </br>
