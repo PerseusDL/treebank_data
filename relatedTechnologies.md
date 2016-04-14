@@ -1,4 +1,10 @@
-## Query the treebank via a GUI
+## External Services related to the Ancient Greek and Latin Treebank
+
+### Annotation tool
+
+* Perseids/Arethusa, an online environment to visualize data and annotate them: http://sosol.perseids.org/
+
+### Query the treebank via a GUI
 
 There exist external services allowing qruerying the treebank data (in alphabetical order): 
 
@@ -7,6 +13,10 @@ There exist external services allowing qruerying the treebank data (in alphabeti
 
 * Tündra, an online search engine developed by CLARIN-D (Greek and Latin data, v2.0): http://weblicht.sfs.uni-tuebingen.de/TundraPerseus/
  * query language documentation [2] [3]
+
+### Compare annotation
+
+* Dolphin, an inter-annotator agreement calculator: http://l-processor.org:8984/i-agldt
 
 -----
 [1] https://github.com/nkallen/pseudw/wiki/Structural-Search </br>
