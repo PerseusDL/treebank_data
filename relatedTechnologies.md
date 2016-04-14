@@ -1,8 +1,8 @@
 ## External Services related to the Ancient Greek and Latin Treebank
 
-### Annotation tool
+### Annotation/visualization tools
 
-* Perseids/Arethusa, an online environment to visualize data and annotate them: http://sosol.perseids.org/
+* Perseids/Arethusa: http://sosol.perseids.org/
 
 ### Search engines
 
@@ -14,7 +14,7 @@ There exist external GUIs allowing qruerying the treebank data (in alphabetical 
 * Tündra (Greek and Latin data, v2.0): http://weblicht.sfs.uni-tuebingen.de/TundraPerseus/
  * query language documentation [2] [3]
 
-### Inter-annotator agreement calculator
+### Inter-annotator agreement calculators
 
 * Dolphin: http://l-processor.org:8984/i-agldt
 
