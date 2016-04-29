@@ -7,17 +7,17 @@ The currently available texts are:
 Author | Text 
 ------------ | ------------- 
 Augustus | Res Gestae
-Caesar | Commentarii de Bello Gallico 2.1-2.3; 2.5; 2.7; 2.9; 2.14-2.18; 2.32-2.33
-Cicero | In Catilinam 1.1-2.11 
+Caesar | Commentarii de Bello Gallico (2.1-2.3; 2.5; 2.7; 2.9; 2.14-2.18; 2.32-2.33)
+Cicero | In Catilinam (1.1-2.11) 
 Jerome | Vulgata 
-Vergil | Aeneid 6.1-6.336 
-Ovid| Metamorphoses 1.1-1.778
-Petronius | Satyricon 26-78
-Phaedrus| Fabulae 1-3 
-Propertius | Elegiae 1.1-1.22
-Sallust Bellum Catilinae
-Suetonius | Life of Augustus 1-55 
-Tacitus | Historiae 1.1.21
+Vergil | Aeneid (6.1-6.336) 
+Ovid| Metamorphoses (1.1-1.778)
+Petronius | Satyricon (26-78)
+Phaedrus| Fabulae (1-3) 
+Propertius | Elegiae (1.1-1.22)
+Sallust | Bellum Catilinae
+Suetonius | Life of Augustus (1-55) 
+Tacitus | Historiae (1.1.21)
 
 ### DATA CREATION
 
