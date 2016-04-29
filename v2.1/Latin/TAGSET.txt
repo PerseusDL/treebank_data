@@ -1,0 +1,102 @@
+@postag
+
+1:	part of speech
+
+n	noun
+v	verb
+a	adjective
+d	adverb
+l	article
+g	particle
+c	conjunction
+r	adposition
+p	pronoun
+m	numeral
+i	interjection
+u	punctuation
+
+2:	person
+
+1	first person
+2	second person
+3	third person
+
+3:	number
+
+s	singular
+p	plural
+d	dual
+
+4:	tense
+
+p	present
+i	imperfect
+r	perfect
+l	pluperfect
+t	future perfect
+f	future
+a	aorist
+
+5:	mood
+
+i	indicative
+s	subjunctive
+o	optative
+n	infinitive
+m	imperative
+p	participle
+
+6:	voice
+
+a	active
+p	passive
+m	middle
+e	medio-passive
+
+7:	gender
+			
+m	masculine
+f	feminine
+n	neuter
+
+8:	case
+
+n	nominative
+g	genitive
+d	dative
+a	accusative
+v	vocative
+
+9:	degree
+
+p	apositive
+c	comparative
+s	superlative
+
+
+@relation
+
+PRED	predicate
+SBJ	subject
+OBJ	object
+ATR	attribute
+ADV	adverbial
+AuxP	preposition
+AuxC	conjunction
+AuxY	sentence adverbial
+AuxZ	emphasizing particle
+AuxV	auxiliary verb
+AuxR	reflexive passive
+AuxG	bracketing punctuation
+AuxX	comma
+AuxK	terminal punctuation
+COORD	coordinator
+ATV	non-obligatory complementation
+AtvV	non-obligatory complementation
+PNOM	predicate nominal
+OCOMP	object complement
+APOS	apposing element
+ExD	ellipsis
+CO	coordinated
+AP	apposing
+AP_CO	apposing and coordinated

@@ -1,0 +1,656 @@
+<LatinTagset type="object">
+<legenda>The following XML file details the tagsets for the annotated texts: morphology (@postag) (<morph/>) and syntax (<relation/>)</legenda>
+<morph type="object">
+  <postagSchema type="array">
+    <_>pos</_>
+    <_>pers</_>
+    <_>num</_>
+    <_>tense</_>
+    <_>mood</_>
+    <_>voice</_>
+    <_>gend</_>
+    <_>case</_>
+    <_>degree</_>
+  </postagSchema>
+  <styledThrough>pos</styledThrough>
+  <attributes type="object">
+    <pos type="object">
+      <long>Part of Speech</long>
+      <short>pos</short>
+      <values type="object">
+        <noun type="object">
+          <long>noun</long>
+          <short>noun</short>
+          <postag>n</postag>
+          <style type="object">
+            <color>rgb(43, 114, 124)</color>
+          </style>
+        </noun>
+        <adj type="object">
+          <long>adjective</long>
+          <short>adj</short>
+          <postag>a</postag>
+          <style type="object">
+            <color>blue</color>
+          </style>
+        </adj>
+        <adv type="object">
+          <long>adverb</long>
+          <short>adv</short>
+          <postag>d</postag>
+          <style type="object">
+            <color>darkorange</color>
+          </style>
+        </adv>
+        <conj type="object">
+          <long>conjunction</long>
+          <short>conj</short>
+          <postag>c</postag>
+          <style type="object">
+            <color>deeppink</color>
+          </style>
+        </conj>
+        <prep type="object">
+          <long>preposition</long>
+          <short>prep</short>
+          <postag>r</postag>
+          <style type="object">
+            <color>green</color>
+          </style>
+        </prep>
+        <pron type="object">
+          <long>pronoun</long>
+          <short>pron</short>
+          <postag>p</postag>
+          <style type="object">
+            <color>purple</color>
+          </style>
+        </pron>
+        <excl type="object">
+          <long>exclamation</long>
+          <short>excl</short>
+          <postag>e</postag>
+          <style type="object">
+            <color>gold</color>
+          </style>
+        </excl>
+        <verb type="object">
+          <long>verb</long>
+          <short>verb</short>
+          <postag>v</postag>
+          <style type="object">
+            <color>red</color>
+          </style>
+        </verb>
+        <nrl type="object">
+          <long>numeral</long>
+          <short>nrl</short>
+          <postag>m</postag>
+          <style type="object">
+            <color>lightgreen</color>
+          </style>
+        </nrl>
+        <punct type="object">
+          <long>punctuation</long>
+          <short>punct</short>
+          <postag>u</postag>
+        </punct>
+        <irreg type="object">
+          <long>irregular</long>
+          <short>irreg</short>
+          <postag>x</postag>
+          <style type="object">
+            <color>gray</color>
+          </style>
+        </irreg>
+      </values>
+    </pos>
+    <pers type="object">
+      <long>Person</long>
+      <short>pers</short>
+      <values type="object">
+        <_0031st type="object">
+          <long>first person</long>
+          <short>1st</short>
+          <postag>1</postag>
+        </_0031st>
+        <_0032nd type="object">
+          <long>second person</long>
+          <short>2nd</short>
+          <postag>2</postag>
+        </_0032nd>
+        <_0033rd type="object">
+          <long>third person</long>
+          <short>3rd</short>
+          <postag>3</postag>
+        </_0033rd>
+      </values>
+      <rules type="array">
+        <_ type="object">
+          <if type="object">
+            <pos>verb</pos>
+            <mood>*</mood>
+          </if>
+          <unless type="object">
+            <mood type="array">
+              <_>part</_>
+              <_>inf</_>
+            </mood>
+          </unless>
+        </_>
+      </rules>
+    </pers>
+    <num type="object">
+      <long>Number</long>
+      <short>num</short>
+      <rules type="array">
+        <_ type="object">
+          <if type="object">
+            <pos type="array">
+              <_>noun</_>
+              <_>adj</_>
+              <_>nrl</_>
+              <_>pron</_>
+            </pos>
+          </if>
+        </_>
+        <_ type="object">
+          <if type="object">
+            <pos>verb</pos>
+            <mood>*</mood>
+          </if>
+          <unless type="object">
+            <mood>inf</mood>
+          </unless>
+        </_>
+      </rules>
+      <values type="object">
+        <sg type="object">
+          <long>singular</long>
+          <short>sg</short>
+          <postag>s</postag>
+        </sg>
+        <pl type="object">
+          <long>plural</long>
+          <short>pl</short>
+          <postag>p</postag>
+        </pl>
+      </values>
+    </num>
+    <tense type="object">
+      <long>Tense</long>
+      <short>tense</short>
+      <rules type="array">
+        <_ type="object">
+          <if type="object">
+            <pos>verb</pos>
+          </if>
+        </_>
+      </rules>
+      <values type="object">
+        <pr type="object">
+          <long>present</long>
+          <short>pr</short>
+          <postag>p</postag>
+        </pr>
+        <imp type="object">
+          <long>imperfect</long>
+          <short>imp</short>
+          <postag>i</postag>
+        </imp>
+        <perf type="object">
+          <long>perfect</long>
+          <short>perf</short>
+          <postag>r</postag>
+        </perf>
+        <pqpf type="object">
+          <long>plusquamperfect</long>
+          <short>pqpf</short>
+          <postag>l</postag>
+        </pqpf>
+        <fex type="object">
+          <long>future perfect</long>
+          <short>fex</short>
+          <postag>t</postag>
+        </fex>
+        <fut type="object">
+          <long>future</long>
+          <short>fut</short>
+          <postag>f</postag>
+        </fut>
+      </values>
+    </tense>
+    <mood type="object">
+      <long>Mood</long>
+      <short>mood</short>
+      <rules type="array">
+        <_ type="object">
+          <if type="object">
+            <pos>verb</pos>
+          </if>
+        </_>
+      </rules>
+      <values type="object">
+        <ind type="object">
+          <long>indicative</long>
+          <short>ind</short>
+          <postag>i</postag>
+        </ind>
+        <sub type="object">
+          <long>subjunctive</long>
+          <short>sub</short>
+          <postag>s</postag>
+        </sub>
+        <inf type="object">
+          <long>infinitive</long>
+          <short>inf</short>
+          <postag>n</postag>
+        </inf>
+        <imp type="object">
+          <long>imperative</long>
+          <short>imp</short>
+          <postag>m</postag>
+        </imp>
+        <gerund type="object">
+          <long>gerund</long>
+          <short>gerund</short>
+          <postag>d</postag>
+        </gerund>
+        <gerundive type="object">
+          <long>gerundive</long>
+          <short>gerundive</short>
+          <postag>g</postag>
+        </gerundive>
+        <part type="object">
+          <long>participle</long>
+          <short>part</short>
+          <postag>p</postag>
+        </part>
+        <sup type="object">
+          <long>supine</long>
+          <short>sup</short>
+          <postag>s</postag>
+        </sup>
+      </values>
+    </mood>
+    <voice type="object">
+      <long>Voice</long>
+      <short>voice</short>
+      <rules type="array">
+        <_ type="object">
+          <if type="object">
+            <pos>verb</pos>
+          </if>
+        </_>
+      </rules>
+      <values type="object">
+        <act type="object">
+          <long>active</long>
+          <short>act</short>
+          <postag>a</postag>
+        </act>
+        <pass type="object">
+          <long>passive</long>
+          <short>pass</short>
+          <postag>p</postag>
+        </pass>
+        <dep type="object">
+          <long>deponens</long>
+          <short>dep</short>
+          <postag>d</postag>
+        </dep>
+      </values>
+    </voice>
+    <gend type="object">
+      <long>gender</long>
+      <short>gend</short>
+      <rules type="array">
+        <_ type="object">
+          <if type="object">
+            <pos type="array">
+              <_>noun</_>
+              <_>adj</_>
+              <_>pron</_>
+              <_>nrl</_>
+            </pos>
+          </if>
+        </_>
+        <_ type="object">
+          <if type="object">
+            <pos>verb</pos>
+            <mood>part</mood>
+          </if>
+        </_>
+        <_ type="object">
+          <if type="object">
+            <pos>verb</pos>
+            <mood>gerundive</mood>
+          </if>
+        </_>
+      </rules>
+      <values type="object">
+        <masc type="object">
+          <long>masculine</long>
+          <short>masc</short>
+          <postag>m</postag>
+        </masc>
+        <fem type="object">
+          <long>feminine</long>
+          <short>fem</short>
+          <postag>f</postag>
+        </fem>
+        <neut type="object">
+          <long>neuter</long>
+          <short>neut</short>
+          <postag>n</postag>
+        </neut>
+      </values>
+    </gend>
+    <case type="object">
+      <long>Casus</long>
+      <short>case</short>
+      <rules type="array">
+        <_ type="object">
+          <if type="object">
+            <pos type="array">
+              <_>noun</_>
+              <_>adj</_>
+              <_>pron</_>
+              <_>nrl</_>
+            </pos>
+          </if>
+        </_>
+        <_ type="object">
+          <if type="object">
+            <pos>verb</pos>
+            <mood>part</mood>
+          </if>
+        </_>
+        <_ type="object">
+          <if type="object">
+            <pos>verb</pos>
+            <mood>gerund</mood>
+          </if>
+        </_>
+        <_ type="object">
+          <if type="object">
+            <pos>verb</pos>
+            <mood>gerundive</mood>
+          </if>
+        </_>
+      </rules>
+      <values type="object">
+        <nom type="object">
+          <long>nominative</long>
+          <short>nom</short>
+          <postag>n</postag>
+        </nom>
+        <gen type="object">
+          <long>genitive</long>
+          <short>gen</short>
+          <postag>g</postag>
+        </gen>
+        <dat type="object">
+          <long>dative</long>
+          <short>dat</short>
+          <postag>d</postag>
+        </dat>
+        <acc type="object">
+          <long>accusative</long>
+          <short>acc</short>
+          <postag>a</postag>
+        </acc>
+        <voc type="object">
+          <long>vocative</long>
+          <short>voc</short>
+          <postag>v</postag>
+        </voc>
+        <abl type="object">
+          <long>ablative</long>
+          <short>abl</short>
+          <postag>b</postag>
+        </abl>
+        <loc type="object">
+          <long>locative</long>
+          <short>loc</short>
+          <postag>l</postag>
+        </loc>
+      </values>
+    </case>
+    <degree type="object">
+      <long>Degree</long>
+      <short>degree</short>
+      <rules type="array">
+        <_ type="object">
+          <if type="object">
+            <pos>adj</pos>
+          </if>
+        </_>
+        <_ type="object">
+          <if type="object">
+            <pos>adv</pos>
+          </if>
+        </_>
+        <_ type="object">
+          <if type="object">
+            <pos>verb</pos>
+            <mood>part</mood>
+          </if>
+        </_>
+      </rules>
+      <values type="object">
+        <pos type="object">
+          <long>positive</long>
+          <short>pos</short>
+          <postag>p</postag>
+        </pos>
+        <comp type="object">
+          <long>comparative</long>
+          <short>comp</short>
+          <postag>c</postag>
+        </comp>
+        <sup type="object">
+          <long>superlative</long>
+          <short>sup</short>
+          <postag>s</postag>
+        </sup>
+      </values>
+    </degree>
+  </attributes>
+  <mappings type="object">
+    <BspMorphRetriever type="object">
+      <attributes type="object">
+        <pofs>pos</pofs>
+        <comp>degree</comp>
+      </attributes>
+      <values type="object">
+        <pos type="object">
+          <verb_000aparticiple>verb</verb_000aparticiple>
+        </pos>
+        <tense type="object">
+          <pluperfect>plusquamperfect</pluperfect>
+        </tense>
+      </values>
+    </BspMorphRetriever>
+  </mappings>
+</morph>
+<relation type="object">
+  <relations type="object">
+    <labels type="object">
+      <PRED type="object">
+        <short>PRED</short>
+        <long>predicate</long>
+        <style type="object">
+          <color>rgb(223, 38, 38)</color>
+        </style>
+      </PRED>
+      <SBJ type="object">
+        <short>SBJ</short>
+        <long>subject</long>
+        <style type="object">
+          <color>rgb(92, 201, 83)</color>
+        </style>
+      </SBJ>
+      <OBJ type="object">
+        <short>OBJ</short>
+        <long>object</long>
+        <style type="object">
+          <color>rgb(11, 200, 216)</color>
+        </style>
+      </OBJ>
+      <ATR type="object">
+        <short>ATR</short>
+        <long>attribute</long>
+        <style type="object">
+          <color>blue</color>
+        </style>
+      </ATR>
+      <ADV type="object">
+        <short>ADV</short>
+        <long>adverbial</long>
+        <style type="object">
+          <color>darkorange</color>
+        </style>
+      </ADV>
+      <Aux type="object">
+        <short>Aux</short>
+        <long>auxiliary</long>
+        <nested type="object">
+          <AuxP type="object">
+            <short>AuxP</short>
+            <long>preposition</long>
+            <style type="object">
+              <color>green</color>
+            </style>
+          </AuxP>
+          <AuxC type="object">
+            <short>AuxC</short>
+            <long>conjunction</long>
+            <style type="object">
+              <color>deeppink</color>
+            </style>
+          </AuxC>
+          <AuxY type="object">
+            <short>AuxY</short>
+            <long>sentence adverbial</long>
+            <style type="object">
+              <color>rgb(139, 211, 31)</color>
+            </style>
+          </AuxY>
+          <AuxZ type="object">
+            <short>AuxZ</short>
+            <long>emphasizing particle</long>
+            <style type="object">
+              <color>rgb(216, 57, 159)</color>
+            </style>
+          </AuxZ>
+          <AuxV type="object">
+            <short>AuxV</short>
+            <long>auxiliary verb</long>
+            <style type="object">
+              <color>rgb(70, 96, 235)</color>
+            </style>
+          </AuxV>
+          <AuxR type="object">
+            <short>AuxR</short>
+            <long>reflexive passive</long>
+            <style type="object">
+              <color>rgb(162, 70, 235)</color>
+            </style>
+          </AuxR>
+          <AuxG type="object">
+            <short>AuxG</short>
+            <long>bracketing punctuation</long>
+            <style type="object">
+              <color>black</color>
+            </style>
+          </AuxG>
+          <AuxX type="object">
+            <short>AuxX</short>
+            <long>comma</long>
+            <style type="object">
+              <color>black</color>
+            </style>
+          </AuxX>
+          <AuxK type="object">
+            <short>AuxK</short>
+            <long>terminal punctuation</long>
+            <style type="object">
+              <color>black</color>
+            </style>
+          </AuxK>
+        </nested>
+      </Aux>
+      <COORD type="object">
+        <short>COORD</short>
+        <long>coordinator</long>
+        <style type="object">
+          <color>rgb(154, 130, 206)</color>
+        </style>
+      </COORD>
+      <ATV type="object">
+        <short>ATV</short>
+        <long>non-oblicatory complementation</long>
+        <style type="object">
+          <color>rgb(131, 11, 16)</color>
+        </style>
+      </ATV>
+      <AtvV type="object">
+        <short>AtvV</short>
+        <long>non-oblicatory complementation</long>
+        <style type="object">
+          <color>rgb(131, 11, 16)</color>
+        </style>
+      </AtvV>
+      <PNOM type="object">
+        <short>PNOM</short>
+        <long>predicate nominal</long>
+        <style type="object">
+          <color>rgb(87, 160, 119)</color>
+        </style>
+      </PNOM>
+      <OCOMP type="object">
+        <short>OCOMP</short>
+        <long>object complement</long>
+        <style type="object">
+          <color>rgb(92, 201, 83)</color>
+        </style>
+      </OCOMP>
+      <APOS type="object">
+        <short>APOS</short>
+        <long>apposing element</long>
+        <style type="object">
+          <color>rgb(7, 95, 39)</color>
+        </style>
+      </APOS>
+      <ExD type="object">
+        <short>ExD</short>
+        <long>ellipsis</long>
+        <style type="object">
+          <color>rgb(17, 131, 67)</color>
+        </style>
+      </ExD>
+    </labels>
+    <suffixes type="object">
+      <CO type="object">
+        <short>CO</short>
+        <long>coordinated</long>
+        <style type="object">
+          <color>rgb(154, 130, 206)</color>
+        </style>
+      </CO>
+      <AP type="object">
+        <short>AP</short>
+        <long>apposing</long>
+        <style type="object">
+          <color>rgb(154, 130, 206)</color>
+        </style>
+      </AP>
+      <AP__CO type="object">
+        <short>AP_CO</short>
+        <long>apposing and coordinated</long>
+      </AP__CO>
+    </suffixes>
+  </relations>
+</relation>
+</LatinTagset>
