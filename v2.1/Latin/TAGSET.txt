@@ -6,8 +6,6 @@ n	noun
 v	verb
 a	adjective
 d	adverb
-l	article
-g	particle
 c	conjunction
 r	adposition
 p	pronoun
@@ -26,7 +24,6 @@ u	punctuation
 
 s	singular
 p	plural
-d	dual
 
 4:	tense
 
@@ -36,23 +33,22 @@ r	perfect
 l	pluperfect
 t	future perfect
 f	future
-a	aorist
 
 5:	mood
 
 i	indicative
 s	subjunctive
-o	optative
 n	infinitive
 m	imperative
 p	participle
+d	gerund
+g	gerundive
 
 6:	voice
 
 a	active
 p	passive
-m	middle
-e	medio-passive
+d	deponent
 
 7:	gender
 			
@@ -67,6 +63,8 @@ g	genitive
 d	dative
 a	accusative
 v	vocative
+b	ablative
+l	locative
 
 9:	degree
 
