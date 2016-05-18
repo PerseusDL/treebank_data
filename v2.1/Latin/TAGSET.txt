@@ -96,6 +96,6 @@ PNOM	predicate nominal
 OCOMP	object complement
 APOS	apposing element
 ExD	ellipsis
-CO	coordinated
-AP	apposing
+_CO	coordinated (suffix)
+_AP	apposing (suffix)
 AP_CO	apposing and coordinated
