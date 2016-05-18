@@ -13,6 +13,7 @@ r	adposition
 p	pronoun
 m	numeral
 i	interjection
+e	exclamation
 u	punctuation
 
 2:	person
