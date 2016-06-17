@@ -1171,7 +1171,7 @@
       <word id="16" form="μὲν" lemma="μέν" postag="d--------" relation="AuxY" head="27"/>
       <word id="17" form="ἦν" lemma="εἰμί" postag="v3siia---" relation="ATR_CO" head="27"/>
       <word id="18" form="Φεραία" lemma="Φεραῖος" postag="a-s---fn-" relation="ATR" head="19"/>
-      <word id="19" form="Νικησίπολις" lemma="" postag="--------" relation="PNOM" head="17"/>
+      <word id="19" form="Νικησίπολις" lemma="" postag="---------" relation="PNOM" head="17"/>
       <word id="20" form="," lemma="," postag="u--------" relation="AuxX" head="23"/>
       <word id="21" form="ἥτις" lemma="ὅστις" postag="p-s---fn-" relation="SBJ" head="23"/>
       <word id="22" form="αὐτῷ" lemma="αὐτός" postag="p-s---nd-" relation="OBJ" head="23"/>
@@ -2259,7 +2259,7 @@
       <word id="3" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="122" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.8">
-      <word id="1" form="β" lemma="" postag="--------" relation="UNDEFINED" head="0"/>
+      <word id="1" form="β" lemma="" postag="---------" relation="UNDEFINED" head="0"/>
       <word id="2" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="123" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.8">
@@ -2320,7 +2320,7 @@
       <word id="7" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="129" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.8">
-      <word id="1" form="β" lemma="" postag="--------" relation="UNDEFINED" head="0"/>
+      <word id="1" form="β" lemma="" postag="---------" relation="UNDEFINED" head="0"/>
       <word id="2" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="130" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.8">
@@ -2336,7 +2336,7 @@
       <word id="3" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="132" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.8">
-      <word id="1" form="α" lemma="" postag="--------" relation="UNDEFINED" head="0"/>
+      <word id="1" form="α" lemma="" postag="---------" relation="UNDEFINED" head="0"/>
       <word id="2" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="133" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.8">
@@ -6951,7 +6951,7 @@
       <word id="14" form="τετρεμαίνοντα" lemma="τετρεμαίνω" postag="v-sppama-" relation="ADV_CO" head="15"/>
       <word id="15" form="καὶ" lemma="καί" postag="c--------" relation="COORD" head="7"/>
       <word id="16" form="φοβούμενον" lemma="φοβέω" postag="v-sppema-" relation="ADV_CO" head="15"/>
-      <word id="17" form="..." lemma="" postag="--------" relation="UNDEFINED" head="0"/>
+      <word id="17" form="..." lemma="" postag="---------" relation="UNDEFINED" head="0"/>
       <word id="18" form="δεδιότα" lemma="δείδω" postag="v-srpama-" relation="ADV" head="7"/>
       <word id="19" form="," lemma="," postag="u--------" relation="AuxX" head="18"/>
       <word id="20" form="ἐν" lemma="ἐν" postag="r--------" relation="AuxP" head="25"/>
@@ -7532,7 +7532,7 @@
       <word id="6" form=";" lemma=";" postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="412" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.26">
-      <word id="1" form="β" lemma="" postag="--------" relation="UNDEFINED" head="0"/>
+      <word id="1" form="β" lemma="" postag="---------" relation="UNDEFINED" head="0"/>
       <word id="2" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="413" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.26">
@@ -7549,7 +7549,7 @@
       <word id="4" insertion_id="0003e" artificial="elliptic" relation="PRED" form="[0]" head="0"/>
     </sentence>
     <sentence id="415" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.26">
-      <word id="1" form="Α" lemma="" postag="--------" relation="UNDEFINED" head="0"/>
+      <word id="1" form="Α" lemma="" postag="---------" relation="UNDEFINED" head="0"/>
       <word id="2" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="416" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.26">
@@ -7561,7 +7561,7 @@
       <word id="6" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="417" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.26">
-      <word id="1" form="β" lemma="" postag="--------" relation="UNDEFINED" head="0"/>
+      <word id="1" form="β" lemma="" postag="---------" relation="UNDEFINED" head="0"/>
       <word id="2" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="418" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.26">
@@ -7573,7 +7573,7 @@
       <word id="6" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="419" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.26">
-      <word id="1" form="α" lemma="" postag="--------" relation="UNDEFINED" head="0"/>
+      <word id="1" form="α" lemma="" postag="---------" relation="UNDEFINED" head="0"/>
       <word id="2" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="420" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.26">
@@ -8291,7 +8291,7 @@
       <word id="8" form=";" lemma=";" postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="459" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.29">
-      <word id="1" form="β" lemma="" postag="--------" relation="UNDEFINED" head="0"/>
+      <word id="1" form="β" lemma="" postag="---------" relation="UNDEFINED" head="0"/>
       <word id="2" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="460" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.29">
@@ -15201,7 +15201,7 @@
       <word id="17" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="807" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.50">
-      <word id="1" form="β" lemma="" postag="--------" relation="UNDEFINED" head="0"/>
+      <word id="1" form="β" lemma="" postag="---------" relation="UNDEFINED" head="0"/>
       <word id="2" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="808" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.50">
@@ -15876,7 +15876,7 @@
       <word id="26" form="αἱ" lemma="ὁ" postag="l-p---fn-" relation="ATR" head="27"/>
       <word id="27" form="μαστροποί" lemma="μαστροπός" postag="n-p---mn-" relation="SBJ" head="22"/>
       <word id="28" form="," lemma="," postag="u--------" relation="AuxX" head="22"/>
-      <word id="29" form="..." lemma="" postag="--------" relation="AuxK" head="32"/>
+      <word id="29" form="..." lemma="" postag="---------" relation="AuxK" head="32"/>
       <word id="30" form="ἢ" lemma="ἤ" postag="d--------" relation="AuxY" head="32"/>
       <word id="31" form="Ναύσιον" lemma="Ναύσιον" postag="n-s---fa-" relation="OBJ_CO" head="32"/>
       <word id="32" form="ἢ" lemma="ἤ" postag="c--------" relation="COORD" head="6"/>
@@ -16498,7 +16498,7 @@
       <word id="9" form=";" lemma=";" postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="880" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.55">
-      <word id="1" form="β" lemma="" postag="--------" relation="UNDEFINED" head="0"/>
+      <word id="1" form="β" lemma="" postag="---------" relation="UNDEFINED" head="0"/>
       <word id="2" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="881" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.55">
@@ -17030,7 +17030,7 @@
       <word id="22" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="907" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.57">
-      <word id="1" form="β" lemma="" postag="--------" relation="UNDEFINED" head="0"/>
+      <word id="1" form="β" lemma="" postag="---------" relation="UNDEFINED" head="0"/>
       <word id="2" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="908" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.57">
@@ -20063,7 +20063,7 @@
       <word id="17" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="1059" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.68">
-      <word id="1" form="α" lemma="" postag="--------" relation="nil" head="0"/>
+      <word id="1" form="α" lemma="" postag="---------" relation="nil" head="0"/>
       <word id="2" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="1060" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.68">
@@ -20096,7 +20096,7 @@
       <word id="15" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="1062" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.68">
-      <word id="1" form="β" lemma="" postag="--------" relation="nil" head="0"/>
+      <word id="1" form="β" lemma="" postag="---------" relation="nil" head="0"/>
       <word id="2" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="1063" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.68">
@@ -20119,7 +20119,7 @@
       <word id="17" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="1064" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.68">
-      <word id="1" form="α" lemma="" postag="--------" relation="nil" head="0"/>
+      <word id="1" form="α" lemma="" postag="---------" relation="nil" head="0"/>
       <word id="2" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="1065" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.68">
@@ -20217,7 +20217,7 @@
       <word id="26" form="Κρατῖνος" relation="SBJ" lemma="Κρατῖνος" postag="n-s---mn-" head="25"/>
       <word id="27" form="διὰ" relation="AuxP" lemma="διά" postag="r--------" head="25"/>
       <word id="28" form="τούτων" relation="ADV" lemma="οὗτος" postag="p-p---ng-" head="27"/>
-      <word id="29" form="..." lemma="" postag="--------" relation="AuxK" head="0"/>
+      <word id="29" form="..." lemma="" postag="---------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="1070" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="13.69">
       <word id="1" form="εἰς" relation="AuxP" lemma="εἰς" postag="r--------" head="6"/>

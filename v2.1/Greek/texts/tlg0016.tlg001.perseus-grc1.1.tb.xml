@@ -18595,7 +18595,7 @@
       <word id="5" form="Μηδικὴ" lemma="Μηδικός" postag="a-s---fn-" relation="ATR" head="6"/>
       <word id="6" form="χώρη" lemma="χώρα" postag="n-s---fn-" relation="SBJ" head="10"/>
       <word id="7" form="πρὸς" lemma="πρός" postag="r--------" relation="AuxP" head="6"/>
-      <word id="8" form="Σασπείρων" postag="--------" lemma="" relation="ATR" head="7"/>
+      <word id="8" form="Σασπείρων" postag="---------" lemma="" relation="ATR" head="7"/>
       <word id="9" form="ὀρεινή" lemma="ὀρεινός" postag="a-s---fn-" relation="PNOM_CO" head="12"/>
       <word id="10" form="ἐστι" lemma="εἰμί" postag="v3spia---" relation="PRED_CO" head="20"/>
       <word id="11" form="κάρτα" lemma="κάρτος" postag="n-p---na-" relation="ADV" head="9"/>
@@ -24628,7 +24628,7 @@
       <word id="13" form="καὶ" lemma="καί" postag="c--------" relation="COORD" head="15"/>
       <word id="14" form="Κάμειρος" lemma="Κάμειρος" postag="n-s---fn-" relation="SBJ_AP_CO" head="13"/>
       <word id="15" form="καὶ" lemma="καί" postag="c--------" relation="COORD" head="8"/>
-      <word id="16" form="Κῶς" lemma="πῶς" postag="n---" relation="SBJ_AP_CO" head="18"/>
+      <word id="16" form="Κῶς" lemma="πῶς" postag="n--------" relation="SBJ_AP_CO" head="18"/>
       <word id="17" form="τε" lemma="τε" postag="d--------" relation="AuxY" head="18"/>
       <word id="18" form="καὶ" lemma="καί" postag="c--------" relation="COORD" head="15"/>
       <word id="19" form="Κνίδος" lemma="Κνίδος" postag="n-s---mn-" relation="SBJ_AP_CO" head="18"/>
@@ -24819,7 +24819,7 @@
       <word id="2" form="Ἄβαντες" lemma="Ἄβαντες" postag="n-p---mn-" relation="SBJ" head="6"/>
       <word id="3" form="μὲν" lemma="μέν" postag="d--------" relation="AuxY" head="20"/>
       <word id="4" form="ἐξ" lemma="ἐκ" postag="r--------" relation="AuxP" head="2"/>
-      <word id="5" form="Εὐβοίες" postag="--------" lemma="" relation="ATR" head="4"/>
+      <word id="5" form="Εὐβοίες" postag="---------" lemma="" relation="ATR" head="4"/>
       <word id="6" form="εἰσὶ" lemma="εἰμί" postag="v3ppia---" relation="PRED_CO" head="20"/>
       <word id="7" form="οὐκ" lemma="οὐ" postag="d--------" relation="AuxZ" head="8"/>
       <word id="8" form="ἐλαχίστη" lemma="ἐλάχιστος" postag="a-s---fn-" relation="ATR" head="9"/>
