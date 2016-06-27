@@ -1,6 +1,6 @@
 ## Ancient Greek Dependency Treebank 2.1
 
-This repository contains the data for the Ancient Greek Dependency Treebank 2.1. In this release no chance has been made to the texts already contained in the version 2.0. Information about the editions of the texts can be found within the files.
+This repository contains the data for the Ancient Greek Dependency Treebank 2.1. In this release no change has been made to the texts already contained in the version 2.0. Information about the editions of the texts can be found within the files.
 The currently available texts are:
 
 Author | Text 
