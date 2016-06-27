@@ -40,7 +40,9 @@ Thucydides | Histories (1)
 
 ### DATA CREATION
 
-The data have been semi-automatically annotated. The full tagsets can be consulted in TAGSETS.xml.
+The data have been semi-automatically annotated. They have been annotated manually, but many corrections have been performed automatically in order to improve consistency. Morphology has been annotated with the help of the Morpheus tagger. 
+
+The full tagsets can be consulted in TAGSETS.xml.
 
 Data have been annotated using the following guidelines:
 * [Guidelines for the Syntactic Annotation of the Ancient Greek Dependency Treebank (1.1)](http://nlp.perseus.tufts.edu/syntax/treebank/agdt/1.7/docs/guidelines.pdf) (GSAAGDT)
