@@ -468,13 +468,13 @@ The syntactic layer allows annotation of traditional syntactic functions, such a
 <h4>3.1 PRED</h4>
 <p>The PRED ("predicate") function is reserved for the verb of the main clause in a sentence 
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=1&amp;doc=4971" target="_blank">tree1</a>)
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&amp;doc=4971" target="_blank">tree1</a>)
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=38&amp;doc=4971" target="_blank">tree2</a>). 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=38&amp;doc=4971" target="_blank">tree2</a>). 
 	
 	Every sentence has one PRED only. Any other verb (finite and non-finite) takes a different label, which shows the function the verb has with respect to its linguistic parent
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=32&amp;doc=4971" target="_blank">tree1</a>).</p>	
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=32&amp;doc=4971" target="_blank">tree1</a>).</p>	
 
 
 </a>
@@ -483,33 +483,33 @@ The syntactic layer allows annotation of traditional syntactic functions, such a
 <h4>3.2 SBJ</h4>
 <p>The SBJ ("subject") label is attached to every subject (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+927&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">927</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+943&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">943</a>) in a sentence. The subject is typically a noun (or one of its equivalents)
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=24&amp;doc=4971" target="_blank">tree1</a>), 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=24&amp;doc=4971" target="_blank">tree1</a>), 
 	
 	including the infinitive, both articular (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2025&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2025</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2034&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2034</a>) 
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=40&amp;doc=4971" target="_blank">tree1</a>)
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=40&amp;doc=4971" target="_blank">tree1</a>)
 	
 	and verbal (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1984&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1984</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1985&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1985</a>) 
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=2&amp;doc=4971" target="_blank">tree1</a>), 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=2&amp;doc=4971" target="_blank">tree1</a>), 
 	
 	 bearing the nominative case, or the genitive case (in the genitive absolute (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2070&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2070</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2075&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2075</a>)) (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=3&amp;doc=4971" target="_blank">tree1</a>), or the accusative (in the infinitive clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1972&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1972</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1981&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1981</a>) 
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=4&amp;doc=4971" target="_blank">tree1</a>)
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=4&amp;doc=4971" target="_blank">tree1</a>)
 	
 	or with the supplementary participle (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2106&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2106</a>; <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2112&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2112b</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2115&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2115</a>; <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2123&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2123</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2145</a>) 
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=5&amp;doc=4971" target="_blank">tree1</a>)). 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=5&amp;doc=4971" target="_blank">tree1</a>)). 
 	
 	The label SBJ can also apply to a substantive clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2574&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2574</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2575&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2575</a>) 
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=6&amp;doc=4971" target="_blank">tree1</a>) 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=6&amp;doc=4971" target="_blank">tree1</a>) 
 	
 	or a substantivized relative clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2488&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2488</a>)
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=7&amp;doc=4971" target="_blank">tree1</a>, which annotation is the default one, while the one with adjective clause + elliptical node has to be declared 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=7&amp;doc=4971" target="_blank">tree1</a>, which annotation is the default one, while the one with adjective clause + elliptical node has to be declared 
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=34&amp;doc=4971" target="_blank">tree2</a>)) 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=34&amp;doc=4971" target="_blank">tree2</a>)) 
 	
 	.</p>
 
@@ -522,35 +522,35 @@ The syntactic layer allows annotation of traditional syntactic functions, such a
 <p>	
 	An OBJ argument can be a noun (or one of its equivalents)
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=8&amp;doc=4971" target="_blank">tree1</a>), 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=8&amp;doc=4971" target="_blank">tree1</a>), 
 	
 	a PP
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=9&amp;doc=4971" target="_blank">tree1</a>), 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=9&amp;doc=4971" target="_blank">tree1</a>), 
 	
 	or an adverb
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=10&amp;doc=4971" target="_blank">tree1</a>). 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=10&amp;doc=4971" target="_blank">tree1</a>). 
 	
 	 An infinitive can also receive the label OBJ, both in the infinitive clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2016&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2016</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2024&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2024</a>) 
 	 
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=4&amp;doc=4971" target="_blank">tree1</a>)
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=4&amp;doc=4971" target="_blank">tree1</a>)
 	 
 	 and as a complement of a verb (or an adjective) (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1989&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1989</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2007&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2007</a>)
 	 
-	 (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=37&amp;doc=4971" target="_blank">tree1</a>). 
+	 (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=37&amp;doc=4971" target="_blank">tree1</a>). 
 	 
 	 Similarly, a supplementary participle in indirect discourse (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2106&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2106</a>, <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2112&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2112</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2115&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2115</a>, <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2123&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2123</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2145</a>)
 	 
-	 (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=5&amp;doc=4971" target="_blank">tree1</a>), 
+	 (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=5&amp;doc=4971" target="_blank">tree1</a>), 
 	 
 	 a substantive clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2574&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2574</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2575&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2575</a>)
 	 
-	 (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=11&amp;doc=4971" target="_blank">tree1</a>),
+	 (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=11&amp;doc=4971" target="_blank">tree1</a>),
 	 
 	 including the εἰ-substantive clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2247&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2247</a>)
 	 
-	 (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=12&amp;doc=4971" target="_blank">tree1</a>),
+	 (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=12&amp;doc=4971" target="_blank">tree1</a>),
 	 
 	 and a substantivized relative clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2488&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2488</a>) 
 	 
@@ -561,23 +561,23 @@ The syntactic layer allows annotation of traditional syntactic functions, such a
 <h4>3.4 ATR</h4>
 <p>Any dependent of the noun (or one of its equivalents, excluding the substantive participle and the infinitive when their verbal function is prominent: in this case their argument structure is verbal), which is an article
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=3&amp;doc=4971" target="_blank">tree1</a>), 
+	(<a href="http://wwww.perseids.org/tools/arethusa/app/#/perseids?chunk=3&amp;doc=4971" target="_blank">tree1</a>), 
 	
 	an adjective
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=9&amp;doc=4971" target="_blank">tree1</a>), 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=9&amp;doc=4971" target="_blank">tree1</a>), 
 	
 	or a noun (or one of its equivalents)
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=14&amp;doc=4971" target="_blank">tree1</a>) (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=15&amp;doc=4971" target="_blank">tree2</a>), 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=14&amp;doc=4971" target="_blank">tree1</a>) (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=15&amp;doc=4971" target="_blank">tree2</a>), 
 	
 	a PP
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=16&amp;doc=4971" target="_blank">tree1</a>),
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=16&amp;doc=4971" target="_blank">tree1</a>),
 	
 	or a relative clause 
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=17&amp;doc=4971" target="_blank">tree1</a>)
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=17&amp;doc=4971" target="_blank">tree1</a>)
 	
 	receives the ATR ("attribute") function.</p>	
 </a>
@@ -586,35 +586,35 @@ The syntactic layer allows annotation of traditional syntactic functions, such a
 <h4>3.5 ADV</h4>
 <p>The ADV ("adverbial") label is attached to any dependent which is taken to be an optional modification of the verb, the adjective, or the adverb. An ADV modification can be a noun (or one of its equivalents) 
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=18&amp;doc=4971" target="_blank">tree1</a>), 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=18&amp;doc=4971" target="_blank">tree1</a>), 
 	
 	a PP
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=31&amp;doc=4971" target="_blank">tree1</a>),
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=31&amp;doc=4971" target="_blank">tree1</a>),
 	
 	or an adverb
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=6&amp;doc=4971" target="_blank">tree1</a>). 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=6&amp;doc=4971" target="_blank">tree1</a>). 
 	
 	Adverb clauses (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2191&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2191</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2487&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2487</a>)
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=38&amp;doc=4971" target="_blank">tree1</a>), 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=38&amp;doc=4971" target="_blank">tree1</a>), 
 	
 	as well as a substantivized relative clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2488&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2488</a>)
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=20&amp;doc=4971" target="_blank">tree1</a>, 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=20&amp;doc=4971" target="_blank">tree1</a>, 
 	
 	which annotation is the default one, while the alternative annotation style, i.e., adjective clause + elliptical node is to be declared
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=35&amp;doc=4971" target="_blank">tree1</a>)), 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=35&amp;doc=4971" target="_blank">tree1</a>)), 
 	
 	the infinitive of purpose and result (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2008&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2008</a>-<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2011&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2011</a>)
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=41&amp;doc=4971" target="_blank">tree1</a>), 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=41&amp;doc=4971" target="_blank">tree1</a>), 
 	
 	and the circumstantial participle (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2054&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2054</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2087&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2087</a>)
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=11&amp;doc=4971" target="_blank">tree1</a>) 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=11&amp;doc=4971" target="_blank">tree1</a>) 
 	
 	are ADV modifications as well.</p>	
 </a>
@@ -623,11 +623,11 @@ The syntactic layer allows annotation of traditional syntactic functions, such a
 <h4>3.6 ATV/AtvV</h4>
 <p>ATV/AtvV ("verbal attribute") is in the AGDT 1.0 the label for those adjectives agreeing with a subject but functioning as adjuncts. They are annotated as ADV and appended to the governing verb in the AGDT 2.0
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=7&amp;doc=4971" target="_blank">tree1</a>). 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=7&amp;doc=4971" target="_blank">tree1</a>). 
 	
 	Alternatively, according to the annotation style of the AGDT 1.0, they can receive the label ATV/AtvV and be appended to the subject/verb (see the guidelines for the <a href="http://nlp.perseus.tufts.edu/syntax/treebank/greek.html" target="_blank">AGDT 1.0</a> for more information)
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=36&amp;doc=4971" target="_blank">tree1</a>). 
+	(<a href="http://ww.perseids.org/tools/arethusa/app/#/perseids?chunk=36&amp;doc=4971" target="_blank">tree1</a>). 
 	
 	This latter annotation style has to be declared.</p>	
 </a>
@@ -636,7 +636,7 @@ The syntactic layer allows annotation of traditional syntactic functions, such a
 <h4>3.7 PNOM</h4>
 <p>The PNOM ("predicate nominal") label applies to every noun 
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=17&amp;doc=4971" target="_blank">tree1</a>)
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=17&amp;doc=4971" target="_blank">tree1</a>)
 	
 	(or one of its equivalents, including the infinitive (especially SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1982&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1982</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1983&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1983</a>)) 
 	
