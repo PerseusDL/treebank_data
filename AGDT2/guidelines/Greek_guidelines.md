@@ -493,7 +493,7 @@ The syntactic layer allows annotation of traditional syntactic functions, such a
 	
 	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=2&amp;doc=4971" target="_blank">tree1</a>), 
 	
-	 bearing the nominative case, or the genitive case (in the genitive absolute (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2070&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2070</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2075&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2075</a>)) (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=3&amp;doc=4971" target="_blank">tree1</a>), or the accusative (in the infinitive clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1972&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1972</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1981&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1981</a>) 
+	 bearing the nominative case, or the genitive case (in the genitive absolute (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2070&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2070</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2075&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2075</a>)) (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=3&amp;doc=4971" target="_blank">tree1</a>), or the accusative (in the infinitive clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1972&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1972</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1981&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1981</a>) 
 	
 	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=4&amp;doc=4971" target="_blank">tree1</a>)
 	
@@ -640,11 +640,11 @@ The syntactic layer allows annotation of traditional syntactic functions, such a
 	
 	(or one of its equivalents, including the infinitive (especially SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1982&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1982</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1983&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1983</a>)) 
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=39&amp;doc=4971" target="_blank">tree1</a>)
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=39&amp;doc=4971" target="_blank">tree1</a>)
 	
 	or adjective (including the adjective pronoun and the supplementary participle not in indirect discourse; SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2094&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2094</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2105&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2105</a>; <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2123&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2123</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2145</a>
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=21&amp;doc=4971" target="_blank">tree2</a>))
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=21&amp;doc=4971" target="_blank">tree2</a>))
 	
 	which are dependent on a copulative verb (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+917&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">917</a>). </p>	
 </a>
@@ -653,48 +653,48 @@ The syntactic layer allows annotation of traditional syntactic functions, such a
 <h4>3.8 OCOMP</h4>
 <p>The function OCOMP ("object complement") is reserved for the predicative accusative (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1613&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1613</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1618&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1618</a>) 
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=22&amp;doc=4971" target="_blank">tree1</a>) 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=22&amp;doc=4971" target="_blank">tree1</a>) 
 	
 	and, more in general, any predicative complement not agreeing with the subject. It is also used with the supplementary participle not in indirect discourse with verbs of perceiving and finding (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2110&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2110</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2115&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2115</a>)
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=23&amp;doc=4971" target="_blank">tree1</a>).</p>	
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=23&amp;doc=4971" target="_blank">tree1</a>).</p>	
 </a>
 
 <a id="coord">
 <h4>3.9 COORD</h4>
 <p>The function COORD ("coordination") is reserved for coordinate conjunctions (the list can be found in SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2163&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2163</a>, <em>excluding the  inferential, causal, and some of the adversative conjunctions</em> (<em>such as μέντοι</em>);<em> these are all treated here as </em>(<em>sentence</em>) <em>adverbs</em>)
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=24&amp;doc=4971" target="_blank">tree1</a>)
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=24&amp;doc=4971" target="_blank">tree1</a>)
 	
 	and commas coordinating two or more constituents when no conjunction is present (asyndeton)
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=25&amp;doc=4971" target="_blank">tree1</a>). 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=25&amp;doc=4971" target="_blank">tree1</a>). 
 	
 	If there are correlative conjunctions (or more coordinating commas without conjunctions), the last one by rule takes the function COORD, while the preceding ones take the technical label AuxY and are attached to the last one
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=26&amp;doc=4971" target="_blank">tree1</a>). Every coordinated constituent takes the suffix _CO (if function words, such as AuxPs, are coordinated, the suffix is attached to their children).</p>	
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=26&amp;doc=4971" target="_blank">tree1</a>). Every coordinated constituent takes the suffix _CO (if function words, such as AuxPs, are coordinated, the suffix is attached to their children).</p>	
 </a>
 
 <a id="apos">
 <h4>3.10 APOS</h4>
 <p>There are two possible annotations for apposition. In the first annotation style, the label APOS ("apposition"/"appositive") is attached to an appositive noun 
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=27&amp;doc=4971" target="_blank">tree1</a>)
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=27&amp;doc=4971" target="_blank">tree1</a>)
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=28&amp;doc=4971" target="_blank">tree2</a>)
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=28&amp;doc=4971" target="_blank">tree2</a>)
 	
 	(SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+916&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">916</a>) or an equivalent of an appositive noun (including a substantivized relative clause and a substantive or adverb clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+976&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">976</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+995&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">995</a>))
 	
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=29&amp;doc=4971" target="_blank">tree1</a>)
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=29&amp;doc=4971" target="_blank">tree1</a>)
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=30&amp;doc=4971" target="_blank">tree2</a>), 
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=30&amp;doc=4971" target="_blank">tree2</a>), 
 	
 	and the appositive is annotated as a dependent of the noun it specifies. 
 	
 	Note that, according to this anotation style, the appositive is always a noun and annotated in the same way, independently of whether it functions as an attribute or is, for example, descriptive (see SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+976&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">976</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+995&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">995</a>). In the second annotation style, used in AGDT 1.0, the label APOS marks the comma separating a noun and its appositive, and the noun and its appositive take the function required within the sentence (with suffix _AP; see the <a href="http://nlp.perseus.tufts.edu/syntax/treebank/agdt/1.7/docs/guidelines.pdf" target="_blank">AGDT 1.0 guidelines</a>); if the appositive is an attributive noun it is attached to the noun and labeled as ATR. If this second annotation style is adopted, it has to be declared.</p>
 	
-<p>In the SG annotation (if the first annotation style for apposition is adopted) the analysis of an appositive noun is (technically) the same as that of the governing noun. The annotator should pay attention to the many examples of clauses in apposition to a noun, which have to be fully annotated: <a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=52&amp;doc=4971" target="_blank">tree1</a>
+<p>In the SG annotation (if the first annotation style for apposition is adopted) the analysis of an appositive noun is (technically) the same as that of the governing noun. The annotator should pay attention to the many examples of clauses in apposition to a noun, which have to be fully annotated: <a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=52&amp;doc=4971" target="_blank">tree1</a>
           </p>
 </a>
 
@@ -710,20 +710,20 @@ The label MWE is reseverd for multiword expressions. When there is an phrase whe
 <p>The function AuxP ("preposition") is reserved for adpositions (whose list is in SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1636&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1636</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1702&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1702</a>)
 	
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=6&amp;doc=4971" target="_blank">tree1</a>).</p>	
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=6&amp;doc=4971" target="_blank">tree1</a>).</p>	
 </a>
 
 <a id="auxc">
 <h4>3.13 AuxC</h4>
 <p>The function AuxC ("conjunction") is used to label subordinate conjunctions only. Their list is in SG (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2770&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2770</a>, excluding the local ones, which have to be treated as relative pronouns/adverbs)
 	
-	(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=11&amp;doc=4971" target="_blank">tree1</a>).</p>
+	(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=11&amp;doc=4971" target="_blank">tree1</a>).</p>
 		
 </a>
 
 <a id="auxx">
 <h4>3.14 AuxX</h4>
-<p>AuxX is the label used for commas, unless they function as coodinating commas when no conjunction is present (in which case they take the <a href="#coord">COORD</a> function (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=25&amp;doc=4971" target="_blank">tree1</a>); when there is a coordination with conjunctions and commas, see the example in <a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=31&amp;doc=4971" target="_blank">tree1</a>). A non-coordinating comma is appended to its preceding word. If two commas mark a vocative or a parenthetical clause, they are both appended (with label AuxX) to the vocative and the head of the parenthetical clause respectively.</p>
+<p>AuxX is the label used for commas, unless they function as coodinating commas when no conjunction is present (in which case they take the <a href="#coord">COORD</a> function (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=25&amp;doc=4971" target="_blank">tree1</a>); when there is a coordination with conjunctions and commas, see the example in <a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=31&amp;doc=4971" target="_blank">tree1</a>). A non-coordinating comma is appended to its preceding word. If two commas mark a vocative or a parenthetical clause, they are both appended (with label AuxX) to the vocative and the head of the parenthetical clause respectively.</p>
 </a>
 
 <a id="auxg">
@@ -733,12 +733,12 @@ The label MWE is reseverd for multiword expressions. When there is an phrase whe
 
 <a id="auxk">
 <h4>3.16 AuxK</h4>
-<p>The label AuxK is used for the final punctuation mark of a sentence (which can be a period, a semicolon, or the point above the line). The node is always appended to the ROOT node (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=31&amp;doc=4971" target="_blank">tree1</a>).</p>	
+<p>The label AuxK is used for the final punctuation mark of a sentence (which can be a period, a semicolon, or the point above the line). The node is always appended to the ROOT node (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=31&amp;doc=4971" target="_blank">tree1</a>).</p>	
 </a>
 
 <a id="auxy">
 <h4>3.17 AuxY</h4>
-<p>The AuxY label is used to mark technical nodes (such as correlative conjunctions attached to the last one, which is taken to be the coordinating one: see <a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=26&amp;doc=4971" target="_blank">tree1</a> and <a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=25&amp;doc=4971" target="_blank">tree2</a>) or for sentence adverbs (i.e., non-conjunction particles in SG (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1094&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1094</a>), but only those whose scope is the whole sentence).</p>	
+<p>The AuxY label is used to mark technical nodes (such as correlative conjunctions attached to the last one, which is taken to be the coordinating one: see <a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=26&amp;doc=4971" target="_blank">tree1</a> and <a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=25&amp;doc=4971" target="_blank">tree2</a>) or for sentence adverbs (i.e., non-conjunction particles in SG (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1094&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1094</a>), but only those whose scope is the whole sentence).</p>	
 </a>
 
 <a id="auxz">
@@ -2628,7 +2628,7 @@ On the basis of the mood selected at the morphological level, the annotation alg
 
 <ul>
 <li>
-                <a href="#ind_fnt_vrb">independent</a> (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=1&amp;doc=4971" target="_blank">tree1</a>)
+                <a href="#ind_fnt_vrb">independent</a> (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&amp;doc=4971" target="_blank">tree1</a>)
 <ul>
 	<li>statement (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2153&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2153</a>)</li>
 	<li>assumption (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2154&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2154</a>)</li>
@@ -2645,8 +2645,8 @@ On the basis of the mood selected at the morphological level, the annotation alg
 	<ul>
 		<li>
                     <a href="#sbs_cls">substantive clause</a>	
-														(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=11&amp;doc=4971" target="_blank">tree1</a>) 
-														(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=12&amp;doc=4971" target="_blank">tree2</a>)
+														(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=11&amp;doc=4971" target="_blank">tree1</a>) 
+														(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=12&amp;doc=4971" target="_blank">tree2</a>)
 		<ul>
 			<li>statement (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2576&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2576</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2588&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2588</a>)
 				<ul>
@@ -2685,7 +2685,7 @@ On the basis of the mood selected at the morphological level, the annotation alg
 		</ul>
 		</li>
 		<li>
-                    <a href="#adj_cls">adjective clause</a> (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=17&amp;doc=4971" target="_blank">tree1</a>)
+                    <a href="#adj_cls">adjective clause</a> (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=17&amp;doc=4971" target="_blank">tree1</a>)
 		<ul>
 		<li>adjective clause proper
 		<ul>
@@ -2761,7 +2761,7 @@ On the basis of the mood selected at the morphological level, the annotation alg
 		<li>I do not know</li>
 		</ul>
 		</li>
-		<li>adverb clause (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=38&amp;doc=4971" target="_blank">tree1</a>)
+		<li>adverb clause (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=38&amp;doc=4971" target="_blank">tree1</a>)
 		<ul>
 		<li>final clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2193&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2193</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2206&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2206</a>)
 		<ul>
@@ -2899,7 +2899,7 @@ On the basis of the mood selected at the morphological level, the annotation alg
 <p>
 The Adjective clause is a relative clause. Just like an adjective, the relative clause can have the function of an adjective (adjective clause proper) or be substantivized (i.e., when the antecedent is not expressed). There two ways to annotate substantivized relative clauses. The easiest way is to not add an elliptical node for the omitted antecedent. The second option is to add the elliptical node and so treat the relative clause as an adjective clause proper (and so any relative clause is treated as an adjective clause proper, independentely of whether or not the antecedent of the relative pronoun is expressed). The first option is the default one, while the second one has to be declared. The adjective clause proper can be an ordinary relative clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2553&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2553</a>), a final relative clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2554&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2554</a>), a cause relative clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2555&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2555</a>), a consecutive relative clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2556&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2556</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2559&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2559</a>), or a conditional relative clause (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2560&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2560</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2573&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2573</a>), on the basis of its meaning.</p>
 
-<p>The easiest example of relative clause is the one with the antecedent expressed (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=46&amp;doc=4971" target="_blank">tree1</a>). When the antecedent is not expressed, and so the adjective clause it taken to be substantivized, the verb of the relative clause is attached to the governor verb and receives the SG annotation that an antecedent would have received if it were expressed; the relative pronoun is attached to the verb of the relative clause and receives the SG annotation that is required by the governor verb, no matter what the morphology of the relative pronoun is (i.e., the syntactic case can be different from the morphological one of the relative pronoun/adverb): see  <a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=20&amp;doc=4971" target="_blank">tree1</a>, <a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=49&amp;doc=4971" target="_blank">tree2</a>. The possibility to choose a different syntactic case for each word allows also the annotation of examples of incorporation of the ancedent (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=51&amp;doc=4971" target="_blank">tree1</a>). When an adjective clause proper has adverbial function, it has to be appended to its superordinate verb: <a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=47&amp;doc=4971">tree1</a>.</p>
+<p>The easiest example of relative clause is the one with the antecedent expressed (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=46&amp;doc=4971" target="_blank">tree1</a>). When the antecedent is not expressed, and so the adjective clause it taken to be substantivized, the verb of the relative clause is attached to the governor verb and receives the SG annotation that an antecedent would have received if it were expressed; the relative pronoun is attached to the verb of the relative clause and receives the SG annotation that is required by the governor verb, no matter what the morphology of the relative pronoun is (i.e., the syntactic case can be different from the morphological one of the relative pronoun/adverb): see  <a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=20&amp;doc=4971" target="_blank">tree1</a>, <a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=49&amp;doc=4971" target="_blank">tree2</a>. The possibility to choose a different syntactic case for each word allows also the annotation of examples of incorporation of the ancedent (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=51&amp;doc=4971" target="_blank">tree1</a>). When an adjective clause proper has adverbial function, it has to be appended to its superordinate verb: <a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=47&amp;doc=4971">tree1</a>.</p>
 
 <p>
 The Prague annotation labels for the head verb of an adjective clause are the same as those for the <a href="#adj">adjective</a> or <a href="#noun">noun</a> (for the substantivized adjective clause).
@@ -2924,10 +2924,10 @@ An adverb clause is a clause functioning as an adverb with respect to its govern
 
 <ul>
 	<li>
-                <a href="#att_prt">attributive participle</a> (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=42&amp;doc=4971" target="_blank">tree1</a>) (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=44&amp;doc=4971" target="_blank">tree2</a>)</li>
+                <a href="#att_prt">attributive participle</a> (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=42&amp;doc=4971" target="_blank">tree1</a>) (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=44&amp;doc=4971" target="_blank">tree2</a>)</li>
 	<li>
-                <a href="#crc_prt">circumstantial participle</a>   (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=43&amp;doc=4971" target="_blank">tree1</a>)
-															(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=3&amp;doc=4971" target="_blank">tree2</a>)
+                <a href="#crc_prt">circumstantial participle</a>   (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=43&amp;doc=4971" target="_blank">tree1</a>)
+															(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=3&amp;doc=4971" target="_blank">tree2</a>)
 	<ul>
 		<li>time (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2061&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2061</a>)
 		<ul>
@@ -2952,9 +2952,9 @@ An adverb clause is a clause functioning as an adverb with respect to its govern
 	</ul>
 	</li>
 	<li>
-                <a href="#spp_prt">supplementary participle</a> (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=21&amp;doc=4971" target="_blank">tree1</a>)
-														(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=5&amp;doc=4971" target="_blank">tree2</a>)
-														(<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=23&amp;doc=4971" target="_blank">tree3</a>)
+                <a href="#spp_prt">supplementary participle</a> (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=21&amp;doc=4971" target="_blank">tree1</a>)
+														(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=5&amp;doc=4971" target="_blank">tree2</a>)
+														(<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=23&amp;doc=4971" target="_blank">tree3</a>)
 														
 	<ul>
 		<li>in indirect discourse</li>
@@ -2964,7 +2964,7 @@ An adverb clause is a clause functioning as an adverb with respect to its govern
 	</ul>
 	</li>
 	<li>
-                <a href="#prh_prt">periphrastic participle</a> (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=45&amp;doc=4971" target="_blank">tree1</a>)</li>
+                <a href="#prh_prt">periphrastic participle</a> (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=45&amp;doc=4971" target="_blank">tree1</a>)</li>
 	<li>none of the above</li>
 	<li>I do not know</li>
 </ul>
@@ -3068,7 +3068,7 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 </blockquote>
 	
 <p>The participle πολεμοῦσιν depends on ἔσται and receives the label SBJ: the accordance with the implied dative of advantage can be explained as a case of attraction (SG 
-	<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1060&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1060</a>). A list of verbs allowing a supplementary participle not in indirect discourse can be found in (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2094&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2094</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2105&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2105</a>). Verbs of perceiving and finding (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2110&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2110</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2115&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2115</a>) allow participles both in indirect discourse and not in indirect discourse: when the participle is not in indirect discourse, it takes the function OCOMP (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=23&amp;doc=4971" target="_blank">tree1</a>).
+	<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1060&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">1060</a>). A list of verbs allowing a supplementary participle not in indirect discourse can be found in (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2094&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2094</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2105&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2105</a>). Verbs of perceiving and finding (SG <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2110&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2110</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2115&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2115</a>) allow participles both in indirect discourse and not in indirect discourse: when the participle is not in indirect discourse, it takes the function OCOMP (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=23&amp;doc=4971" target="_blank">tree1</a>).
 	Some verbs (SG 
  <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2123&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2123</a>–<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+2145&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">2145</a>) allow either the participle or the infinitive in indirect discourse or not in indirect discourse.</p>
 </a>
@@ -3116,7 +3116,7 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 <li>
                     <a href="#vrl_inf">verbal</a>
 <ul>
-<li>as nominative (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=39&amp;doc=4971" target="_blank">tree1</a>)
+<li>as nominative (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=39&amp;doc=4971" target="_blank">tree1</a>)
 <ul>
 <li>in indirect discourse
 <ul>
@@ -3136,7 +3136,7 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 <li>I do not know</li>
 </ul>
 </li>
-<li>as accusative (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=4&amp;doc=4971" target="_blank">tree1</a>)
+<li>as accusative (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=4&amp;doc=4971" target="_blank">tree1</a>)
 <ul>
 <li>in indirect discourse
 <ul>
@@ -3160,7 +3160,7 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 <li>uncertain case
 <ul>
 <li>
-                            <a href="#vrl_inf">infinitive of purpose (uncertain case)</a> (<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=41&amp;doc=4971" target="_blank">tree1</a>)  </li>
+                            <a href="#vrl_inf">infinitive of purpose (uncertain case)</a> (<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=41&amp;doc=4971" target="_blank">tree1</a>)  </li>
 <li>
                             <a href="#vrl_inf">infinitive of result (uncertain case)</a>
                           </li>
@@ -3392,7 +3392,7 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 <ul>
                   <li>ἀλλά</li>
 	<li>ἀτάρ</li>
-	<li>δέ <a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=51&amp;doc=4971" target="_blank">tree1</a>
+	<li>δέ <a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=51&amp;doc=4971" target="_blank">tree1</a>
                   </li>
 	<li>εἴτε</li>
 	<li>ἤ</li>
