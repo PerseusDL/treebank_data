@@ -3409,8 +3409,8 @@ The supplementary participle is an argument of the verb. Following SG, two kinds
 	
 <p>Some of these particples can of course be adverbs, and so should accordingly be annotated as such. When a particle is a conjunction, it governs other nodes: 
 
-<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=24&amp;doc=4971" target="_blank">tree1</a>,
-<a href="http://sosol.perseids.org/tools/arethusa/app/#/perseids?chunk=26&amp;doc=4971" target="_blank">tree2</a>.
+<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=24&amp;doc=4971" target="_blank">tree1</a>,
+<a href="http://www.perseids.org/tools/arethusa/app/#/perseids?chunk=26&amp;doc=4971" target="_blank">tree2</a>.
 
 Any other particle which is not one of the above conjunctions is attached to the verb of the main clause and receives the AuxY label, if the particle is a sentence adverb, or is attached to the word which it modifies and receives the label AuxZ. In the current version of the treebank it is left to the annotator to decide which of these two options is the right one for each of the non-conjuntion particles.
 
