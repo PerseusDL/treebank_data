@@ -13599,7 +13599,7 @@
       <word id="1" form="paene" lemma="paene1" postag="d--------" relation="ADV" head="4"/>
       <word id="2" form="de" lemma="de1" postag="r--------" relation="AuxP" head="4"/>
       <word id="3" form="lectis" lemma="lectus2" postag="n-p---mb-" relation="OBJ" head="2"/>
-      <word id="4" form="deiecti" lemma="deicio1" postag="v-prpamn-" relation="PRED_CO" head="6"/>
+      <word id="4" form="deiecti" lemma="deicio1" postag="v-prppmn-" relation="PRED_CO" head="6"/>
       <word id="5" form="sumus" lemma="sum1" postag="v1ppia---" relation="AuxV" head="4"/>
       <word id="6" form="," lemma="comma1" postag="---------" relation="COORD" head="0"/>
       <word id="7" form="adeo" lemma="adeo2" postag="d--------" relation="AuxZ" head="8"/>
