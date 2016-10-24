@@ -844,7 +844,7 @@
       <word id="1" form="ἀλλ̓" lemma="ἀλλά" postag="c--------" head="0" relation="COORD" cite="urn:cts:greekLit:tlg0059.tlg001:1"/>
       <word id="2" form="ἴσως" lemma="ἴσος" postag="d--------" head="11" relation="AuxY" cite="urn:cts:greekLit:tlg0059.tlg001:1"/>
       <word id="3" form="οὐδὲν" lemma="οὐδείς" postag="a-s---nn-" head="9" relation="ATR" cite="urn:cts:greekLit:tlg0059.tlg001:1"/>
-      <word id="4" form="ἔσται" lemma="εἰμί" postag="v3sfi----" head="11" relation="PRED_CO" cite="urn:cts:greekLit:tlg0059.tlg001:1"/>
+      <word id="4" form="ἔσται" lemma="εἰμί" postag="v3sfim---" head="11" relation="PRED_CO" cite="urn:cts:greekLit:tlg0059.tlg001:1"/>
       <word id="5" form="," lemma="," postag="u--------" head="7" relation="AuxX" cite=""/>
       <word id="6" form="ὦ" lemma="ὦ" postag="i--------" head="7" relation="AuxZ" cite="urn:cts:greekLit:tlg0059.tlg001:1"/>
       <word id="7" form="Σώκρατες" lemma="Σωκράτης" postag="n-s---mv-" head="11" relation="ExD" cite="urn:cts:greekLit:tlg0059.tlg001:1"/>
@@ -2141,7 +2141,7 @@
       <word id="40" form="ἄλλα" lemma="ἄλλος" postag="a-p---nn-" head="41" relation="ATR" cite="urn:cts:greekLit:tlg0059.tlg001:1"/>
       <word id="41" form="ἱερὰ" lemma="ἱερός" postag="a-p---nn-" head="43" relation="SBJ" cite="urn:cts:greekLit:tlg0059.tlg001:1"/>
       <word id="42" form="ἡμῖν" lemma="ἐγώ" postag="p-p---md-" head="43" relation="ADV" cite="urn:cts:greekLit:tlg0059.tlg001:1"/>
-      <word id="43" form="καταπεποίκιλται" lemma="καταποικίλλω" postag="v3sri----" head="45" relation="ATR_CO" cite="urn:cts:greekLit:tlg0059.tlg001:1"/>
+      <word id="43" form="καταπεποίκιλται" lemma="καταποικίλλω" postag="v3srie---" head="45" relation="ATR_CO" cite="urn:cts:greekLit:tlg0059.tlg001:1"/>
       <word id="44" form="," lemma="," postag="u--------" head="45" relation="AuxY" cite=""/>
       <word id="45" form="καὶ" lemma="καί" postag="c--------" head="33" relation="COORD" cite="urn:cts:greekLit:tlg0059.tlg001:1"/>
       <word id="46" form="δὴ" lemma="δή" postag="g--------" head="57" relation="AuxZ" cite="urn:cts:greekLit:tlg0059.tlg001:1"/>
