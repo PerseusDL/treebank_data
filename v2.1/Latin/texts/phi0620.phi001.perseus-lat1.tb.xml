@@ -3756,7 +3756,7 @@
       <word id="8" form="," lemma="comma1" postag="u--------" relation="AuxX" head="17"/>
       <word id="9" form="nec" lemma="neque" postag="c--------" relation="AuxY" head="17"/>
       <word id="10" form="tibi" lemma="tu1" postag="p-s---md-" relation="OBJ" head="12"/>
-      <word id="11" form="praeteritos" lemma="praetereo1" postag="v-prpama-" relation="ATR" head="15"/>
+      <word id="11" form="praeteritos" lemma="praetereo1" postag="v-prppma-" relation="ATR" head="15"/>
       <word id="12" form="passa" lemma="patior" postag="v-srpdfn_" relation="PRED_CO" head="17"/>
       <word id="13" form="est" lemma="sum1" postag="v3spia---" relation="AuxV" head="12"/>
       <word id="14" form="succedere" lemma="succedo1" postag="v--pna---" relation="OBJ" head="12"/>
