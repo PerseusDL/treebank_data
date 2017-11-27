@@ -182,7 +182,7 @@ The AGDT 2.0 is organized into three layers: the morphological layer, the (Pragu
 
 <p>The language the guidelines focus on is Classical Greek: additions and adaptations for other stages of the language will follow.</p>
 
-<p>In Section <a href="#mph_tgs">2</a>, I describe the morphological tagset. I define the Prague labels accompanied by links to key treebanking examples in Section <a href="#prg_ann">3</a>, which integrates/corrects the already existing guidelines for the <a href="http://nlp.perseus.tufts.edu/syntax/treebank/greek.html" target="_blank">AGDT 1.0</a>. In Section <a href="#sg_ann">4</a>, I deal with the SG algorithm of the advanced syntax layer (also called "semantic layer").</p>
+<p>In Section <a href="#mph_tgs">2</a>, I describe the morphological tagset. I define the Prague labels accompanied by links to key treebanking examples in Section <a href="#prg_ann">3</a>, which integrates/corrects the already existing guidelines for the <a href="https://github.com/PerseusDL/treebank_data/blob/master/v1/greek/docs/guidelines.pdf" target="_blank">AGDT 1.0</a>. In Section <a href="#sg_ann">4</a>, I deal with the SG algorithm of the advanced syntax layer (also called "semantic layer").</p>
 </a> 
 
 <a id="mph_tgs">
