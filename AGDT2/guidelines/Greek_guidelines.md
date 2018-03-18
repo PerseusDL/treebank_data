@@ -467,16 +467,10 @@ The syntactic layer allows annotation of traditional syntactic functions, such a
 <a id="pred">
 <h4>3.1 PRED</h4>
 <p>The PRED ("predicate") function is reserved for the verb of the main clause in a sentence 
-	
-	(<a href="https://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&amp;doc=4971" target="_blank">tree1</a>)
-	
-	(<a href="https://www.perseids.org/tools/arethusa/app/#/perseids?chunk=38&amp;doc=4971" target="_blank">tree2</a>). 
-	
-	Every sentence has one PRED only. Any other verb (finite and non-finite) takes a different label, which shows the function the verb has with respect to its linguistic parent
-	
+	(<a href="https://www.perseids.org/tools/arethusa/app/#/perseids?chunk=1&amp;doc=4971" target="_blank">tree1</a>)	
+	(<a href="https://www.perseids.org/tools/arethusa/app/#/perseids?chunk=38&amp;doc=4971" target="_blank">tree2</a>). 	
+	Every sentence has one PRED only. Any other verb (finite and non-finite) takes a different label, which shows the function the verb has with respect to its linguistic parent	
 	(<a href="https://www.perseids.org/tools/arethusa/app/#/perseids?chunk=32&amp;doc=4971" target="_blank">tree1</a>).</p>	
-
-
 </a>
 
 <a id="sbj">
