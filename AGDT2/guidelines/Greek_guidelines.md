@@ -692,7 +692,6 @@ The morphosyntactic tagset consists of those categories which, on the basis of t
 
 <ol>
 	<li>(article)</li>
-
 	<li>(noun/substantive)
 		<ul>
 			<li>
@@ -702,7 +701,6 @@ The morphosyntactic tagset consists of those categories which, on the basis of t
                 </li>
 		</ul>
 	</li>
-
 	<li>(adjective)
 		<ul>
 			<li>
@@ -734,8 +732,7 @@ The morphosyntactic tagset consists of those categories which, on the basis of t
 			<li>none of the above</li>
 			<li>I do not know</li>
 		</ul>
-	</li>
-	
+	</li>	
 	<li>(pronoun)
 		<ul>
 			<li>
@@ -755,7 +752,6 @@ The morphosyntactic tagset consists of those categories which, on the basis of t
 			<li>I do not know</li>
 		</ul>
 	</li>
-
 	<li>(verb)
 		<ul>
 			<li>(a finite mood, i.e., indicative, optative, subjunctive, and imperative)
@@ -1558,39 +1554,28 @@ is expressed by the dependency annotation, which makes it explicit which the gov
 			<ul>
 			<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ἀπό</a>,
 			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">διά</a>, 
-			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ἐξ</a>) instrument or means</li>
-			
+			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ἐξ</a>) instrument or means</li>			
 			<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ἀπό</a>, 
 			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ἐξ</a>, 
 			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">πρός</a>, <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1698&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ὑπό</a>, 
-			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1692&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">παρά</a>) agent</li>
-			
+			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1692&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">παρά</a>) agent</li>			
 			<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ἀπό</a>,
 			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">διά</a>, 
 			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ἐξ</a>,
 			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">μετά</a>, 
 			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyfth+grammar+1698&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ὑπό</a>, 
-			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">κατά</a>) manner</li>
-			
+			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">κατά</a>) manner</li>		
 			<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">μετά</a>) friendly association</li>
-			
-			<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">μετά</a>) hostile association</li>
-			
-			<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">μετά</a>, <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1698&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ὑπό</a>) accompaniment</li>
-			
-			<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">μετά</a>, <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1698&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ὑπό</a>) accompanying circumstance</li>
-			
-			<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">πρός</a>, <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1694&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">πρό</a>, 	
-			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1697&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ὑπέρ</a>, <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">κατά</a>) advantage</li>
-			
-			<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">κατά</a>) disadvantage</li>
-			
-			<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">πρός</a>) reference</li>
-			
+						<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">μετά</a>) hostile association</li>			
+			<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">μετά</a>, <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1698&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ὑπό</a>) accompaniment</li>			
+			<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">μετά</a>, <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1698&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ὑπό</a>) accompanying circumstance</li>			
+			<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">πρός</a>, <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1694&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">πρό</a>, 
+			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1697&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ὑπέρ</a>, <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">κατά</a>) advantage</li>			
+			<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">κατά</a>) disadvantage</li>			
+			<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">πρός</a>) reference</li>			
 			<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1685&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ἀπό</a>, 
 			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ἐξ</a>, 
-			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">μετά</a>) conformity</li>
-			
+			<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1691&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">μετά</a>) conformity</li>			
 			<li>none of the above</li>
 			<li>I do not know</li>
 		</ul>
@@ -1912,18 +1897,12 @@ these functions by itself or in conjunction with an adposition, which defines it
 				<li> advantage</li>
 				<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1689&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">ἐπί</a>, 
 					<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1686&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">εἰς</a>) disadvantage</li>
-
 				<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">πρός</a>, 
-					<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1686&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">εἰς</a>) recipient or addressee</li>
-				
+					<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1686&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">εἰς</a>) recipient or addressee</li>				
 				<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1690&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">κατά</a>, 
-					<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">πρός</a>) conformity</li>
-					
+					<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">πρός</a>) conformity</li>					
 				<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">πρός</a>) friendly association</li>
-				
-				<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">πρός</a>) hostile association</li>
-					
-		
+								<li>(with <a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+1695&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">πρός</a>) hostile association</li>							
 			<li>none of the above</li>
 			<li>I do not know</li>
 			</ul>
