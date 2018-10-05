@@ -555,7 +555,7 @@
       <word id="8" form="Tros" lemma="Tros1" postag="n-s---mv-" relation="ATR" head="12"/>
       <word id="9" form="'" lemma="punc1" postag="u--------" relation="AuxG" head="2"/>
       <word id="10" form="ait" lemma="aio1" postag="v3spia---" relation="PRED" head="0"/>
-      <word id="11" form="'" lemma="" postag="---------" relation="AuxG" head="12"/>
+      <word id="11" form="'" lemma="punc1" postag="u--------" relation="AuxG" head="12"/>
       <word id="12" form="Aenea" lemma="Aeneas" postag="n-s---mv-" relation="ExD" head="2"/>
       <word id="13" form="?" lemma="punc1" postag="u--------" relation="AuxK" head="0"/>
     </sentence>
