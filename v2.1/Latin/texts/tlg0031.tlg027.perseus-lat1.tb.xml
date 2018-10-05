@@ -3756,7 +3756,7 @@
       <word id="2" form="de" lemma="de1" postag="r--------" relation="AuxP" head="4"/>
       <word id="3" form="fumo" lemma="fumus1" postag="n-s---mb-" relation="OBJ" head="2"/>
       <word id="4" form="exierunt" lemma="exeo1" postag="v3pria---" relation="PRED_CO" head="8"/>
-      <word id="5" form="lucustae" lemma="lucusta1" postag="---------" relation="SBJ" head="4"/>
+      <word id="5" form="lucustae" lemma="lucusta1" postag="n-s---fg-" relation="SBJ" head="4"/>
       <word id="6" form="in" lemma="in1" postag="r--------" relation="AuxP" head="4"/>
       <word id="7" form="terram" lemma="terra1" postag="n-s---fa-" relation="OBJ" head="6"/>
       <word id="8" form="et" lemma="et1" postag="c--------" relation="COORD" head="0"/>
@@ -3812,7 +3812,7 @@
       <word id="9" form="ut" lemma="ut1" postag="c--------" relation="AuxC" head="8"/>
       <word id="10" form="cruciarentur" lemma="crucio1" postag="v3pisp---" relation="SBJ_CO" head="9"/>
       <word id="11" form="mensibus" lemma="mensis1" postag="n-p---mb-" relation="ADV" head="10"/>
-      <word id="12" form="quinque" lemma="quinque1" postag="---------" relation="ATR" head="11"/>
+      <word id="12" form="quinque" lemma="quinque1" postag="m--------" relation="ATR" head="11"/>
       <word id="13" form=";" lemma="punc1" postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="217" document_id="urn:cts:greekLit:tlg0031.tlg027.perseus-lat1" subdoc="9">
@@ -3856,7 +3856,7 @@
     <sentence id="220" document_id="urn:cts:greekLit:tlg0031.tlg027.perseus-lat1" subdoc="9">
       <word id="1" form="et" lemma="et1" postag="c--------" relation="AuxY" head="17"/>
       <word id="2" form="similitudines" lemma="similitudo1" postag="n-p---fn-" relation="SBJ" head="24"/>
-      <word id="3" form="lucustarum" lemma="lucusta1" postag="---------" relation="ATR" head="2"/>
+      <word id="3" form="lucustarum" lemma="lucusta1" postag="n-p---fg-" relation="ATR" head="2"/>
       <word id="4" form="similes" lemma="similis1" postag="a-p---fn-" relation="PNOM" head="24"/>
       <word id="5" form="equis" lemma="equus1" postag="n-p---md-" relation="ADV" head="4"/>
       <word id="6" form="paratis" lemma="paro1" postag="v-prppmd-" relation="ATR" head="5"/>
@@ -3923,7 +3923,7 @@
       <word id="2" form="habebant" lemma="habeo1" postag="v3piia---" relation="PRED_CO" head="6"/>
       <word id="3" form="caudas" lemma="cauda1" postag="n-p---fa-" relation="OBJ" head="2"/>
       <word id="4" form="similes" lemma="similis1" postag="a-p---fa-" relation="ATR" head="3"/>
-      <word id="5" form="scorpionum" lemma="scorpio1" postag="---------" relation="OBJ" head="4"/>
+      <word id="5" form="scorpionum" lemma="scorpio1" postag="n-p---mg-" relation="OBJ" head="4"/>
       <word id="6" form="et" lemma="et1" postag="c--------" relation="COORD" head="0"/>
       <word id="7" form="aculei" lemma="aculeus1" postag="n-s---md-" relation="SBJ" head="18"/>
       <word id="8" form="in" lemma="in1" postag="r--------" relation="AuxP" head="7"/>
@@ -3934,7 +3934,7 @@
       <word id="13" form="nocere" lemma="noceo1" postag="v--pna---" relation="OBJ" head="11"/>
       <word id="14" form="hominibus" lemma="homo1" postag="n-p---mb-" relation="OBJ" head="13"/>
       <word id="15" form="mensibus" lemma="mensis1" postag="n-p---mb-" relation="ADV" head="13"/>
-      <word id="16" form="quinque" lemma="quinque1" postag="---------" relation="ATR" head="15"/>
+      <word id="16" form="quinque" lemma="quinque1" postag="m--------" relation="ATR" head="15"/>
       <word id="17" form="." lemma="punc1" postag="u--------" relation="AuxK" head="0"/>
       <word id="18" insertion_id="0016e" form="[0]" artificial="elliptic" relation="PRED_CO" head="6"/>
       <word id="19" insertion_id="0016f" form="[1]" artificial="elliptic" relation="PRED_CO" head="6"/>
