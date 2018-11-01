@@ -24,7 +24,7 @@ Tacitus | Historiae (1.1.21)
 The data have been semi-automatically annotated. The full tagset can be consulted in TAGSET.xml. Each word is specified for a number of attributes describing it. The @pos attribute is a 9-character long string where each character has a particular meaning depending on its position. In TAGSET.xml this logic is documented in all detail (the file is derived from the one used in Arethusa, the online annotation environment used for annotation). In TAGSET.txt there is a more easily readable version of the tagset.
 
 Data have been annotated using the following guidelines:
-* [Guidelines for the Syntactic Annotation of Latin Treebanks (1.3)](http://nlp.perseus.tufts.edu/syntax/treebank/ldt/1.5/docs/guidelines.pdf) (GSALT)
+* [Guidelines for the Syntactic Annotation of Latin Treebanks (1.3)](https://github.com/PerseusDL/treebank_data/blob/master/v1/latin/docs/guidelines.pdf) (GSALT)
 
 In the present release the following new texts have been added:
 
