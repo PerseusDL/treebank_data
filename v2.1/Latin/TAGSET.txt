@@ -68,7 +68,7 @@ l	locative
 
 9:	degree
 
-p	apositive
+p	positive
 c	comparative
 s	superlative
 
