@@ -4463,19 +4463,19 @@
     </sentence>
     <sentence subdoc="569-570" id="2896082" document_id="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2">
       <annotator>FrancescoM</annotator>
-      <word id="2" form="τί" lemma="τίς" postag="p-s---na-" head="8" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg006:569"/>
-      <word id="3" form="δὴ" lemma="δή" postag="g--------" head="3" relation="AuxZ" cite="urn:cts:greekLit:tlg0085.tlg006:569"/>
-      <word id="4" form="πύλαισι" lemma="πύλη" postag="n-p---fd-" head="8" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg006:569"/>
-      <word id="5" form="τὸν" lemma="ὁ" postag="l-s---ma-" head="7" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg006:569"/>
-      <word id="6" form="ἱκέτην" lemma="ἱκέτης" postag="n-s---ma-" head="8" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg006:569"/>
-      <word id="7" form="ἀπείργεται" lemma="ἀπείργω" postag="v3spie---" head="0" relation="PRED" cite="urn:cts:greekLit:tlg0085.tlg006:569"/>
-      <word id="8" form="Αἴγισθος" lemma="Αἴγισθος" postag="n-s---mn-" head="8" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg006:570"/>
-      <word id="9" form="," lemma="," postag="u--------" head="11" relation="AuxX" cite=""/>
-      <word id="10" form="εἴπερ" lemma="εἴπερ" postag="c--------" head="8" relation="AuxP" cite="urn:cts:greekLit:tlg0085.tlg006:570"/>
-      <word id="11" form="οἶδεν" lemma="οἶδα" postag="v3sria---" head="11" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg006:570"/>
-      <word id="12" form="ἔνδημος" lemma="ἔνδημος" postag="a-s---mn-" head="14" relation="AtvV" cite="urn:cts:greekLit:tlg0085.tlg006:570"/>
-      <word id="13" form="παρών" lemma="πάρειμι" postag="v-sppamn-" head="12" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg006:570"/>
-      <word id="14" form=";" lemma=";" postag="u--------" head="0" relation="AuxK" cite=""/>
+      <word id="1" form="τί" lemma="τίς" postag="p-s---na-" head="6" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg006:569"/>
+      <word id="2" form="δὴ" lemma="δή" postag="g--------" head="6" relation="AuxZ" cite="urn:cts:greekLit:tlg0085.tlg006:569"/>
+      <word id="3" form="πύλαισι" lemma="πύλη" postag="n-p---fd-" head="6" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg006:569"/>
+      <word id="4" form="τὸν" lemma="ὁ" postag="l-s---ma-" head="5" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg006:569"/>
+      <word id="5" form="ἱκέτην" lemma="ἱκέτης" postag="n-s---ma-" head="6" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg006:569"/>
+      <word id="6" form="ἀπείργεται" lemma="ἀπείργω" postag="v3spie---" head="0" relation="PRED" cite="urn:cts:greekLit:tlg0085.tlg006:569"/>
+      <word id="7" form="Αἴγισθος" lemma="Αἴγισθος" postag="n-s---mn-" head="6" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg006:570"/>
+      <word id="8" form="," lemma="," postag="u--------" head="9" relation="AuxX" cite=""/>
+      <word id="9" form="εἴπερ" lemma="εἴπερ" postag="c--------" head="6" relation="AuxC" cite="urn:cts:greekLit:tlg0085.tlg006:570"/>
+      <word id="10" form="οἶδεν" lemma="οἶδα" postag="v3sria---" head="9" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg006:570"/>
+      <word id="11" form="ἔνδημος" lemma="ἔνδημος" postag="a-s---mn-" head="12" relation="AtvV" cite="urn:cts:greekLit:tlg0085.tlg006:570"/>
+      <word id="12" form="παρών" lemma="πάρειμι" postag="v-sppamn-" head="10" relation="PNOM" cite="urn:cts:greekLit:tlg0085.tlg006:570"/>
+      <word id="13" form=";" lemma=";" postag="u--------" head="6" relation="AuxK" cite=""/>
     </sentence>
     <sentence subdoc="571-576" id="2896083" document_id="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2">
       <annotator>FrancescoM</annotator>
