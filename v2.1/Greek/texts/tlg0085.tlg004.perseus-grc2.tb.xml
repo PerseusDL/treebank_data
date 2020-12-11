@@ -4893,20 +4893,21 @@
     </sentence>
     <sentence subdoc="651-652" id="2896651" document_id="urn:cts:greekLit:tlg0085.tlg004.perseus-grc2">
       <annotator>FrancescoM</annotator>
-      <word id="2" form="ὡς" lemma="ὡς" postag="c--------" head="13" relation="AuxC" cite="urn:cts:greekLit:tlg0085.tlg004:651"/>
-      <word id="3" form="οὔποτ̓" lemma="οὔποτε" postag="d--------" head="8" relation="AuxZ" cite="urn:cts:greekLit:tlg0085.tlg004:651"/>
-      <word id="4" form="ἀνδρὶ" lemma="ἀνήρ" postag="n-s---md-" head="8" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg004:651"/>
-      <word id="5" form="τῷδε" lemma="ὅδε" postag="p-s---md-" head="5" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg004:651"/>
-      <word id="6" form="κηρυκευμάτων" lemma="κηρύκευμα" postag="n-p---ng-" head="8" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg004:651"/>
-      <word id="7" form="μέμψῃ" lemma="μέμφομαι" postag="v2sfim---" head="3" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
-      <word id="8" form="," lemma="," postag="u--------" head="11" relation="AuxX" cite=""/>
-      <word id="9" form="σὺ" lemma="σύ" postag="p-s---mn-" head="13" relation="ExD" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
-      <word id="10" form="δ̓" lemma="δέ" postag="g--------" head="13" relation="AuxY" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
-      <word id="11" form="αὐτὸς" lemma="αὐτός" postag="a-s---mn-" head="10" relation="ATV" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
-      <word id="12" form="γνῶθι" lemma="γιγνώσκω" postag="v2sama---" head="0" relation="PRED" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
-      <word id="13" form="ναυκληρεῖν" lemma="ναυκληρέω" postag="v--pna---" head="13" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
-      <word id="14" form="πόλιν" lemma="πόλις" postag="n-s---fa-" head="14" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
-      <word id="15" form="." lemma="." postag="u--------" head="0" relation="AuxK" cite=""/>
+      <word id="1" form="ὡς" lemma="ὡς" postag="c--------" head="15" relation="AuxC" cite="urn:cts:greekLit:tlg0085.tlg004:651"/>
+      <word id="2" form="οὔποτ̓" lemma="οὔποτε" postag="d--------" head="6" relation="AuxZ" cite="urn:cts:greekLit:tlg0085.tlg004:651"/>
+      <word id="3" form="ἀνδρὶ" lemma="ἀνήρ" postag="n-s---md-" head="6" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg004:651"/>
+      <word id="4" form="τῷδε" lemma="ὅδε" postag="p-s---md-" head="3" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg004:651"/>
+      <word id="5" form="κηρυκευμάτων" lemma="κηρύκευμα" postag="n-p---ng-" head="6" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg004:651"/>
+      <word id="6" form="μέμψῃ" lemma="μέμφομαι" postag="v2sfim---" head="9" relation="ADV_CO" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
+      <word id="7" form="," lemma="," postag="u--------" head="9" relation="AuxX" cite=""/>
+      <word id="8" form="σὺ" lemma="σύ" postag="p-s---mn-" head="11" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
+      <word id="9" form="δ̓" lemma="δέ" postag="g--------" head="1" relation="COORD" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
+      <word id="10" form="αὐτὸς" lemma="αὐτός" postag="a-s---mn-" head="8" relation="ATV" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
+      <word id="11" form="γνῶθι" lemma="γιγνώσκω" postag="v2sama---" head="9" relation="ADV_CO" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
+      <word id="12" form="ναυκληρεῖν" lemma="ναυκληρέω" postag="v--pna---" head="11" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
+      <word id="13" form="πόλιν" lemma="πόλις" postag="n-s---fa-" head="13" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
+      <word id="14" form="." lemma="." postag="u--------" head="15" relation="AuxK" cite=""/>
+      <word id="15" insertion_id="0014e" form="[0]" artificial="elliptic" head="0" relation="PRED"/>
     </sentence>
     <sentence subdoc="653-655" id="2896652" document_id="urn:cts:greekLit:tlg0085.tlg004.perseus-grc2">
       <annotator>FrancescoM</annotator>
