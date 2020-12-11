@@ -6343,13 +6343,12 @@
     </sentence>
     <sentence subdoc="825-826" id="2896199" document_id="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2">
       <annotator>FrancescoM</annotator>
-      <word id="1" form="ἄ-" lemma="" postag="---------" head="4" relation="UNDEFINED" cite="urn:cts:greekLit:tlg0085.tlg006:825"/>
-      <word id="3" form="τα" lemma="ἄτη" postag="n-s---fn-" head="6" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg006:826"/>
-      <word id="4" form="δ̓" lemma="δέ" postag="g--------" head="0" relation="COORD" cite="urn:cts:greekLit:tlg0085.tlg006:826"/>
-      <word id="5" form="ἀποστατεῖ" lemma="ἀποστατέω" postag="v3spia---" head="5" relation="PRED_CO" cite="urn:cts:greekLit:tlg0085.tlg006:826"/>
-      <word id="6" form="φίλων" lemma="φίλος" postag="a-p---mg-" head="6" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg006:826"/>
-      <word id="7" form="." lemma="." postag="u--------" head="0" relation="AuxK" cite=""/>
-      <word id="8" form="&quot;" lemma="&quot;" postag="u--------" head="6" relation="AuxG" cite=""/>
+      <word id="1" form="ἄτα" lemma="ἄτη" postag="n-s---fn-" head="3" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg006:826"/>
+      <word id="2" form="δ̓" lemma="δέ" postag="g--------" head="0" relation="COORD" cite="urn:cts:greekLit:tlg0085.tlg006:826"/>
+      <word id="3" form="ἀποστατεῖ" lemma="ἀποστατέω" postag="v3spia---" head="2" relation="PRED_CO" cite="urn:cts:greekLit:tlg0085.tlg006:826"/>
+      <word id="4" form="φίλων" lemma="φίλος" postag="a-p---mg-" head="3" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg006:826"/>
+      <word id="5" form="." lemma="." postag="u--------" head="2" relation="AuxK" cite=""/>
+      <word id="6" form="&quot;" lemma="&quot;" postag="u--------" head="2" relation="AuxG" cite=""/>
     </sentence>
     <sentence subdoc="827-830" id="2896200" document_id="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2">
       <annotator>FrancescoM</annotator>
