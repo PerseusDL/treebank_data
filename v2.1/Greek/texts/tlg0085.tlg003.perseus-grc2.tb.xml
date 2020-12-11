@@ -4799,21 +4799,20 @@
     </sentence>
     <sentence subdoc="601-603" id="2897183" document_id="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2">
       <annotator>FrancescoM</annotator>
-      <word id="1" form="δυσ-" lemma="" postag="---------" head="4" relation="XSEG" cite="urn:cts:greekLit:tlg0085.tlg003:601"/>
-      <word id="3" form="δαιμόνων" lemma="δυσδαίμων" postag="a-p---mg-" head="6" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg003:602"/>
-      <word id="4" form="δὲ" lemma="δέ" postag="g--------" head="15" relation="AuxY" cite="urn:cts:greekLit:tlg0085.tlg003:602"/>
-      <word id="5" form="τίνες" lemma="τίς" postag="p-p---mn-" head="15" relation="PNOM" cite="urn:cts:greekLit:tlg0085.tlg003:602"/>
-      <word id="6" form="οἵ" lemma="ὅς" postag="p-p---mn-" head="14" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg003:602"/>
-      <word id="7" form="," lemma="," postag="u--------" head="10" relation="AuxX" cite=""/>
-      <word id="8" form="ἓ" lemma="ἕ" postag="i--------" head="10" relation="AuxY" cite="urn:cts:greekLit:tlg0085.tlg003:602"/>
-      <word id="9" form="ἕ" lemma="ἕ" postag="i--------" head="15" relation="ExD" cite="urn:cts:greekLit:tlg0085.tlg003:602"/>
-      <word id="10" form="," lemma="," postag="u--------" head="10" relation="AuxX" cite=""/>
-      <word id="11" form="οἷ̓" lemma="οἷος" postag="a-p---na-" head="16" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg003:603"/>
-      <word id="12" form="ἐγὼ" lemma="ἐγώ" postag="p-s---mn-" head="16" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg003:603"/>
-      <word id="13" form="μογοῦσιν" lemma="μογέω" postag="v3ppia---" head="15" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg003:603"/>
-      <word id="14" form=";" lemma=";" postag="u--------" head="0" relation="AuxK" cite=""/>
-      <word id="15" insertion_id="0014e" form="[0]" artificial="elliptic" head="0" relation="PRED"/>
-      <word id="16" insertion_id="0014f" form="[1]" artificial="elliptic" head="14" relation="OBJ"/>
+      <word id="1" form="δυσδαιμόνων" lemma="δυσδαίμων" postag="a-p---mg-" head="6" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg003:602"/>
+      <word id="2" form="δὲ" lemma="δέ" postag="g--------" head="15" relation="AuxY" cite="urn:cts:greekLit:tlg0085.tlg003:602"/>
+      <word id="3" form="τίνες" lemma="τίς" postag="p-p---mn-" head="15" relation="PNOM" cite="urn:cts:greekLit:tlg0085.tlg003:602"/>
+      <word id="4" form="οἵ" lemma="ὅς" postag="p-p---mn-" head="14" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg003:602"/>
+      <word id="5" form="," lemma="," postag="u--------" head="10" relation="AuxX" cite=""/>
+      <word id="6" form="ἓ" lemma="ἕ" postag="i--------" head="10" relation="AuxY" cite="urn:cts:greekLit:tlg0085.tlg003:602"/>
+      <word id="7" form="ἕ" lemma="ἕ" postag="i--------" head="15" relation="ExD" cite="urn:cts:greekLit:tlg0085.tlg003:602"/>
+      <word id="8" form="," lemma="," postag="u--------" head="10" relation="AuxX" cite=""/>
+      <word id="9" form="οἷ̓" lemma="οἷος" postag="a-p---na-" head="16" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg003:603"/>
+      <word id="10" form="ἐγὼ" lemma="ἐγώ" postag="p-s---mn-" head="16" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg003:603"/>
+      <word id="11" form="μογοῦσιν" lemma="μογέω" postag="v3ppia---" head="15" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg003:603"/>
+      <word id="12" form=";" lemma=";" postag="u--------" head="0" relation="AuxK" cite=""/>
+      <word id="13" insertion_id="0014e" form="[0]" artificial="elliptic" head="0" relation="PRED"/>
+      <word id="14" insertion_id="0014f" form="[1]" artificial="elliptic" head="14" relation="OBJ"/>
     </sentence>
     <sentence subdoc="604-607" id="2897184" document_id="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2">
       <annotator>FrancescoM</annotator>
