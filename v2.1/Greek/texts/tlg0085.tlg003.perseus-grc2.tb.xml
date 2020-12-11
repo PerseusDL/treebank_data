@@ -3503,7 +3503,7 @@
       <word id="20" form="," lemma="," postag="u--------" head="27" relation="AuxX" cite=""/>
       <word id="21" form="ὃς" lemma="ὅς" postag="p-s---mn-" head="27" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg003:429"/>
       <word id="22" form="οὐράνιόν" lemma="οὐράνιος" postag="a-s---ma-" head="24" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg003:429"/>
-      <word id="23" form="[τε]" lemma="τε" postag="g--------" head="23" relation="AuxZ" cite="urn:cts:greekLit:tlg0085.tlg003:429"/>
+      <word id="23" form="[τε]" lemma="τε" postag="g--------" head="24" relation="AuxZ" cite="urn:cts:greekLit:tlg0085.tlg003:429"/>
       <word id="24" form="πόλον" lemma="πόλος" postag="n-s---ma-" head="27" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg003:429"/>
       <word id="25" form="νώτοις" lemma="νῶτον" postag="n-p---nd-" head="26" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg003:430"/>
       <word id="26" form="στέγων" lemma="στέγω" postag="v-sppamn-" head="27" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg003:430"/>
