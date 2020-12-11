@@ -4370,7 +4370,7 @@
       <word id="23" form="στράτευμ̓" lemma="στράτευμα" postag="n-s---na-" head="22" relation="SBJ_AP_CO" cite="urn:cts:greekLit:tlg0085.tlg004:583"/>
       <word id="24" form="ἐπακτὸν" lemma="ἐπακτός" postag="a-s---na-" head="23" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg004:583"/>
       <word id="25" form="ἐμβεβληκότα" lemma="ἐμβάλλω" postag="v-srpama-" head="24" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg004:583"/>
-      <word id="26" form=";" lemma=";" postag="u--------" head="27" relation="AuxK" cite=""/>
+      <word id="26" form=";" lemma=";" postag="u--------" head="0" relation="AuxK" cite=""/>
       <word id="27" insertion_id="0027e" form="[0]" artificial="elliptic" head="0" relation="PRED"/>
     </sentence>
     <sentence subdoc="584" id="2896623" document_id="urn:cts:greekLit:tlg0085.tlg004.perseus-grc2">
@@ -4906,7 +4906,7 @@
       <word id="11" form="γνῶθι" lemma="γιγνώσκω" postag="v2sama---" head="9" relation="ADV_CO" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
       <word id="12" form="ναυκληρεῖν" lemma="ναυκληρέω" postag="v--pna---" head="11" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
       <word id="13" form="πόλιν" lemma="πόλις" postag="n-s---fa-" head="12" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
-      <word id="14" form="." lemma="." postag="u--------" head="15" relation="AuxK" cite=""/>
+      <word id="14" form="." lemma="." postag="u--------" head="0" relation="AuxK" cite=""/>
       <word id="15" insertion_id="0014e" form="[0]" artificial="elliptic" head="0" relation="PRED"/>
     </sentence>
     <sentence subdoc="653-655" id="2896652" document_id="urn:cts:greekLit:tlg0085.tlg004.perseus-grc2">

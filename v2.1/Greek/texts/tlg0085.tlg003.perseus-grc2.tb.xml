@@ -3508,7 +3508,7 @@
       <word id="25" form="νώτοις" lemma="νῶτον" postag="n-p---nd-" head="26" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg003:430"/>
       <word id="26" form="στέγων" lemma="στέγω" postag="v-sppamn-" head="27" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg003:430"/>
       <word id="27" form="ὑποστενάζει" lemma="ὑποστενάζω" postag="v3spia---" head="16" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg003:430"/>
-      <word id="28" form="." lemma="." postag="u--------" head="12" relation="AuxK" cite=""/>
+      <word id="28" form="." lemma="." postag="u--------" head="0" relation="AuxK" cite=""/>
     </sentence>
     <sentence subdoc="431-435" id="2897108" document_id="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2">
       <annotator>FrancescoM</annotator>
@@ -4337,7 +4337,7 @@
       <word id="5" form="μυρίοις" lemma="μυρίος" postag="a-p---md-" head="6" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg003:541"/>
       <word id="6" form="μόχθοις" lemma="μόχθος" postag="n-p---md-" head="7" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg003:541"/>
       <word id="7" form="διακναιόμενον" lemma="διακναίω" postag="v-sppema-" head="4" relation="OCOMP" cite="urn:cts:greekLit:tlg0085.tlg003:541"/>
-      <word id="8" form="." lemma="." postag="u--------" head="2" relation="AuxK" cite=""/>
+      <word id="8" form="." lemma="." postag="u--------" head="0" relation="AuxK" cite=""/>
     </sentence>
     <sentence subdoc="542-543" id="2897152" document_id="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2">
       <annotator>FrancescoM</annotator>
