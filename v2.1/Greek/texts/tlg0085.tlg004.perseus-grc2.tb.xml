@@ -4905,7 +4905,7 @@
       <word id="10" form="αὐτὸς" lemma="αὐτός" postag="a-s---mn-" head="8" relation="ATV" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
       <word id="11" form="γνῶθι" lemma="γιγνώσκω" postag="v2sama---" head="9" relation="ADV_CO" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
       <word id="12" form="ναυκληρεῖν" lemma="ναυκληρέω" postag="v--pna---" head="11" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
-      <word id="13" form="πόλιν" lemma="πόλις" postag="n-s---fa-" head="13" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
+      <word id="13" form="πόλιν" lemma="πόλις" postag="n-s---fa-" head="12" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg004:652"/>
       <word id="14" form="." lemma="." postag="u--------" head="15" relation="AuxK" cite=""/>
       <word id="15" insertion_id="0014e" form="[0]" artificial="elliptic" head="0" relation="PRED"/>
     </sentence>
