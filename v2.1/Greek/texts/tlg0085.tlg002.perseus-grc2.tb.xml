@@ -5942,7 +5942,9 @@
       <word id="8" form="," lemma="," postag="u--------" head="0" relation="COORD" cite=""/>
       <word id="9" form="κἀπεστράτευσα" lemma="ἐπιστρατεύω" postag="v1saia---" head="10" relation="PRED_CO" cite="urn:cts:greekLit:tlg0085.tlg002:780"/>
       <word id="10" form="πολλὰ" lemma="πολύς" postag="a-p---na-" head="11" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg002:780"/>
-      <word id="11" form="σὺν" lemma="σύν" postag="r--------" head="11" relation="AuxP" cite="urn:cts:greekLit:tlg0085.tlg002:780"/>
+      <word id="11" form="σὺν" lemma="σύν" postag="r--------" head="9" relation="AuxP" cite="urn:cts:greekLit:tlg0085.tlg002:780"/>
+      <word id="12" form="πολλῷ" lemma="πολύς" postag="a-s---md-" head="13" relation="AuxP" cite="urn:cts:greekLit:tlg0085.tlg002:780"/>
+      <word id="13" form="στρατῷ" lemma="στρατός" postag="n-s---md-" head="11" relation="AuxP" cite="urn:cts:greekLit:tlg0085.tlg002:780"/>
     </sentence>
     <sentence subdoc="781" id="2901100" document_id="urn:cts:greekLit:tlg0085.tlg002.perseus-grc2">
       <annotator>FrancescoM</annotator>
