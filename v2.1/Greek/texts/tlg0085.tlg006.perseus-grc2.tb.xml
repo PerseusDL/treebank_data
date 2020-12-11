@@ -361,13 +361,12 @@
     </sentence>
     <sentence subdoc="46-47" id="2895804" document_id="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2">
       <annotator>FrancescoM</annotator>
-      <word id="1" form="φοβοῦ-" lemma="" postag="---------" head="4" relation="XSEG" cite="urn:cts:greekLit:tlg0085.tlg006:46"/>
-      <word id="3" form="μαι" lemma="φοβέω" postag="v1spie---" head="0" relation="PRED" cite="urn:cts:greekLit:tlg0085.tlg006:47"/>
-      <word id="4" form="δ̓" lemma="δέ" postag="g--------" head="4" relation="AuxY" cite="urn:cts:greekLit:tlg0085.tlg006:47"/>
-      <word id="5" form="ἔπος" lemma="ἔπος" postag="n-s---na-" head="8" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg006:47"/>
-      <word id="6" form="τόδ̓" lemma="ὅδε" postag="p-s---na-" head="6" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg006:47"/>
-      <word id="7" form="ἐκβαλεῖν" lemma="ἐκβάλλω" postag="v--fna---" head="4" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg006:47"/>
-      <word id="8" form="." lemma="." postag="u--------" head="0" relation="AuxK" cite=""/>
+      <word id="1" form="φοβοῦμαι" lemma="φοβέω" postag="v1spie---" head="2" relation="PRED_CO" cite="urn:cts:greekLit:tlg0085.tlg006:47"/>
+      <word id="2" form="δ̓" lemma="δέ" postag="g--------" head="0" relation="COORD" cite="urn:cts:greekLit:tlg0085.tlg006:47"/>
+      <word id="3" form="ἔπος" lemma="ἔπος" postag="n-s---na-" head="5" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg006:47"/>
+      <word id="4" form="τόδ̓" lemma="ὅδε" postag="p-s---na-" head="4" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg006:47"/>
+      <word id="5" form="ἐκβαλεῖν" lemma="ἐκβάλλω" postag="v--fna---" head="1" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg006:47"/>
+      <word id="6" form="." lemma="." postag="u--------" head="2" relation="AuxK" cite=""/>
     </sentence>
     <sentence subdoc="48" id="2895805" document_id="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2">
       <annotator>FrancescoM</annotator>
