@@ -6327,10 +6327,10 @@
     </sentence>
     <sentence subdoc="823" id="2896197" document_id="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2">
       <annotator>FrancescoM</annotator>
-      <word id="2" form="πλεῖ" lemma="πλέω" postag="v3spia---" head="0" relation="PRED" cite="urn:cts:greekLit:tlg0085.tlg006:823"/>
-      <word id="3" form="τάδ̓" lemma="ὅδε" postag="p-p---nn-" head="3" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg006:823"/>
-      <word id="4" form="εὖ" lemma="εὖ" postag="d--------" head="3" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg006:823"/>
-      <word id="5" form="·" lemma="·" postag="u--------" head="0" relation="AuxK" cite=""/>
+      <word id="1" form="πλεῖ" lemma="πλέω" postag="v3spia---" head="0" relation="PRED" cite="urn:cts:greekLit:tlg0085.tlg006:823"/>
+      <word id="2" form="τάδ̓" lemma="ὅδε" postag="p-p---nn-" head="1" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg006:823"/>
+      <word id="3" form="εὖ" lemma="εὖ" postag="d--------" head="1" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg006:823"/>
+      <word id="4" form="·" lemma="·" postag="u--------" head="1" relation="AuxK" cite=""/>
     </sentence>
     <sentence subdoc="825" id="2896198" document_id="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2">
       <annotator>FrancescoM</annotator>
