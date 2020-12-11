@@ -7408,16 +7408,16 @@
     </sentence>
     <sentence subdoc="902-903" id="2897350" document_id="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2">
       <annotator>FrancescoM</annotator>
-      <word id="2" form="μη" lemma="μηδέ" postag="g--------" head="10" relation="AuxZ" cite="urn:cts:greekLit:tlg0085.tlg003:902"/>
-      <word id="3" form="δὲ" lemma="δέ" postag="g--------" head="10" relation="AuxY" cite="urn:cts:greekLit:tlg0085.tlg003:902"/>
-      <word id="4" form="κρεισσόνων" lemma="κρείσσων" postag="a-p---mgc" head="6" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg003:902"/>
-      <word id="5" form="θεῶν" lemma="θεός" postag="n-p---mg-" head="7" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg003:902"/>
-      <word id="6" form="ἔρως" lemma="ἔρως" postag="n-s---mn-" head="10" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg003:903"/>
-      <word id="7" form="ἄφυκτον" lemma="ἄφυκτος" postag="a-s---na-" head="9" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg003:903"/>
-      <word id="8" form="ὄμμα" lemma="ὄμμα" postag="n-s---na-" head="10" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg003:903"/>
-      <word id="9" form="προσδράκοι" lemma="προσδέρκομαι" postag="v3saoa---" head="0" relation="PRED" cite="urn:cts:greekLit:tlg0085.tlg003:903"/>
-      <word id="10" form="με" lemma="ἐγώ" postag="p-s---fa-" head="10" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg003:903"/>
-      <word id="11" form="." lemma="." postag="u--------" head="0" relation="AuxK" cite=""/>
+      <word id="1" form="μη" lemma="μηδέ" postag="g--------" head="8" relation="AuxZ" cite="urn:cts:greekLit:tlg0085.tlg003:902"/>
+      <word id="2" form="δὲ" lemma="δέ" postag="g--------" head="0" relation="COORD" cite="urn:cts:greekLit:tlg0085.tlg003:902"/>
+      <word id="3" form="κρεισσόνων" lemma="κρείσσων" postag="a-p---mgc" head="4" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg003:902"/>
+      <word id="4" form="θεῶν" lemma="θεός" postag="n-p---mg-" head="5" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg003:902"/>
+      <word id="5" form="ἔρως" lemma="ἔρως" postag="n-s---mn-" head="8" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg003:903"/>
+      <word id="6" form="ἄφυκτον" lemma="ἄφυκτος" postag="a-s---na-" head="5" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg003:903"/>
+      <word id="7" form="ὄμμα" lemma="ὄμμα" postag="n-s---na-" head="8" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg003:903"/>
+      <word id="8" form="προσδράκοι" lemma="προσδέρκομαι" postag="v3saoa---" head="2" relation="PRED" cite="urn:cts:greekLit:tlg0085.tlg003:903"/>
+      <word id="9" form="με" lemma="ἐγώ" postag="p-s---fa-" head="8" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg003:903"/>
+      <word id="10" form="." lemma="." postag="u--------" head="0" relation="AuxK" cite=""/>
     </sentence>
     <sentence subdoc="904" id="2897351" document_id="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2">
       <annotator>FrancescoM</annotator>
