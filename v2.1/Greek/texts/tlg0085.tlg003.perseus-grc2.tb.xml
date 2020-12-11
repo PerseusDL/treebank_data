@@ -4330,15 +4330,14 @@
     </sentence>
     <sentence subdoc="539-541" id="2897151" document_id="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2">
       <annotator>FrancescoM</annotator>
-      <word id="1" form="φρίσ-" lemma="" postag="---------" head="4" relation="XSEG" cite="urn:cts:greekLit:tlg0085.tlg003:539"/>
-      <word id="3" form="σω" lemma="φρίσσω" postag="v1spia---" head="0" relation="PRED" cite="urn:cts:greekLit:tlg0085.tlg003:540"/>
-      <word id="4" form="δέ" lemma="δέ" postag="g--------" head="4" relation="AuxY" cite="urn:cts:greekLit:tlg0085.tlg003:540"/>
-      <word id="5" form="σε" lemma="σύ" postag="p-s---ma-" head="7" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg003:540"/>
-      <word id="6" form="δερκομένα" lemma="δέρκομαι" postag="v-sppefn-" head="4" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg003:540"/>
-      <word id="7" form="μυρίοις" lemma="μυρίος" postag="a-p---md-" head="9" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg003:541"/>
-      <word id="8" form="μόχθοις" lemma="μόχθος" postag="n-p---md-" head="10" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg003:541"/>
-      <word id="9" form="διακναιόμενον" lemma="διακναίω" postag="v-sppema-" head="6" relation="ATV" cite="urn:cts:greekLit:tlg0085.tlg003:541"/>
-      <word id="10" form="." lemma="." postag="u--------" head="0" relation="AuxK" cite=""/>
+      <word id="1" form="φρίσσω" lemma="φρίσσω" postag="v1spia---" head="2" relation="PRED_CO" cite="urn:cts:greekLit:tlg0085.tlg003:540"/>
+      <word id="2" form="δέ" lemma="δέ" postag="g--------" head="0" relation="COORD" cite="urn:cts:greekLit:tlg0085.tlg003:540"/>
+      <word id="3" form="σε" lemma="σύ" postag="p-s---ma-" head="4" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg003:540"/>
+      <word id="4" form="δερκομένα" lemma="δέρκομαι" postag="v-sppefn-" head="1" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg003:540"/>
+      <word id="5" form="μυρίοις" lemma="μυρίος" postag="a-p---md-" head="6" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg003:541"/>
+      <word id="6" form="μόχθοις" lemma="μόχθος" postag="n-p---md-" head="7" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg003:541"/>
+      <word id="7" form="διακναιόμενον" lemma="διακναίω" postag="v-sppema-" head="4" relation="OCOMP" cite="urn:cts:greekLit:tlg0085.tlg003:541"/>
+      <word id="8" form="." lemma="." postag="u--------" head="2" relation="AuxK" cite=""/>
     </sentence>
     <sentence subdoc="542-543" id="2897152" document_id="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2">
       <annotator>FrancescoM</annotator>
