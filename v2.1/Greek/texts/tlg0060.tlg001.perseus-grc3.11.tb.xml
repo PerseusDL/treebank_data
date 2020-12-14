@@ -24760,7 +24760,7 @@
       <word id="18" form="καὶ" lemma="καί" postag="c--------" relation="COORD" head="30"/>
       <word id="19" form="διὰ" lemma="διά" postag="r--------" relation="AuxP" head="27"/>
       <word id="20" form="τοῦτο" lemma="οὗτος" postag="p-s---na-" relation="ADV" head="19"/>
-      <word id="21" form="οὐδὲ" lemma="οὐδέ" postag="d--------" relation="AuxZ" head="21"/>
+      <word id="21" form="οὐδὲ" lemma="οὐδέ" postag="d--------" relation="AuxZ" head="27"/>
       <word id="22" form="τοὺς" lemma="ὁ" postag="l-p---ma-" relation="ATR" head="26"/>
       <word id="23" form="ὑπὲρ" lemma="ὑπέρ" postag="r--------" relation="AuxP" head="26"/>
       <word id="24" form="τῆς" lemma="ὁ" postag="l-s---fg-" relation="ATR" head="25"/>
