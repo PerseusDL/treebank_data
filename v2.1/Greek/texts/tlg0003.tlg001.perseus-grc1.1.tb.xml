@@ -7596,7 +7596,7 @@
       <word id="28" form="," lemma="," postag="u--------" relation="AuxX" head="27"/>
       <word id="29" form="Κερκυραίοις" lemma="Κερυκυραῖος" postag="n-p---md-" relation="ADV" head="33"/>
       <word id="30" form="δὲ" lemma="δέ" postag="c--------" relation="COORD" head="0"/>
-      <word id="31" form="οὐδὲ" lemma="οὐδέ" postag="d--------" relation="AuxZ" head="31"/>
+      <word id="31" form="οὐδὲ" lemma="οὐδέ" postag="d--------" relation="AuxZ" head="35"/>
       <word id="32" form="δἰ" lemma="διά" postag="r--------" relation="AuxP" head="35"/>
       <word id="33" form="ἀνοκωχῆς" lemma="ἀνοκωχή" postag="n-s---fg-" relation="ADV" head="32"/>
       <word id="34" form="πώποτ̓" lemma="πώποτε" postag="d--------" relation="ADV" head="35"/>
