@@ -14916,7 +14916,7 @@
       <word id="25" form="δὲ" lemma="δέ" postag="c--------" relation="COORD" head="36"/>
       <word id="26" form="καὶ" lemma="καί" postag="c--------" relation="COORD" head="25"/>
       <word id="27" form="αἰτιᾶσθαι" lemma="αἰτιάομαι" postag="v--pne---" relation="OBJ_CO" head="26"/>
-      <word id="28" form="μήτε" lemma="μήτε" postag="d--------" relation="AuxZ" head="28"/>
+      <word id="28" form="μήτε" lemma="μήτε" postag="d--------" relation="AuxZ" head="32"/>
       <word id="29" form="πόλεμον" lemma="πόλεμος" postag="n-s---ma-" relation="OBJ" head="31"/>
       <word id="30" form="ἄγαν" lemma="ἄγαν" postag="d--------" relation="ADV" head="31"/>
       <word id="31" form="δηλοῦντας" lemma="δηλόω" postag="v-pppama-" relation="ADV_CO" head="32"/>
