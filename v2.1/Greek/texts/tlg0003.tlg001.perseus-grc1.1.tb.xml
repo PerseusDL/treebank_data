@@ -14818,7 +14818,7 @@
       <word id="1" form="κ-" lemma="καί" postag="d--------" relation="AuxY" head="20"/>
       <word id="2" form="ἀν" lemma="ἐάν" postag="c--------" relation="AuxC" head="20"/>
       <word id="3" form="τούτῳ" lemma="οὗτος" postag="p-s---nd-" relation="ADV" head="19"/>
-      <word id="4" form="οὐδὲ" lemma="οὐδέ" postag="d--------" relation="AuxZ" head="4"/>
+      <word id="4" form="οὐδὲ" lemma="οὐδέ" postag="d--------" relation="AuxZ" head="5"/>
       <word id="5" form="καταλύεσθαι" lemma="καταλύω" postag="v--pne---" relation="SBJ" head="20"/>
       <word id="6" form="ἔτι" lemma="ἔτι" postag="d--------" relation="ADV" head="7"/>
       <word id="7" form="καλόν" lemma="καλός" postag="a-s---nn-" relation="PNOM" head="20"/>
