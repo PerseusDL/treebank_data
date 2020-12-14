@@ -14891,7 +14891,7 @@
     <sentence id="512" document_id="urn:cts:greekLit:tlg0003.tlg001.perseus-grc1" subdoc="1.82.1">
       <word id="1" form="οὐ" lemma="οὐ" postag="d--------" relation="AuxZ" head="6"/>
       <word id="2" form="μὴν" lemma="μήν" postag="d--------" relation="AuxZ" head="3"/>
-      <word id="3" form="οὐδὲ" lemma="οὐδέ" postag="d--------" relation="AuxZ" head="3"/>
+      <word id="3" form="οὐδὲ" lemma="οὐδέ" postag="d--------" relation="AuxZ" head="6"/>
       <word id="4" form="ἀναισθήτως" lemma="ἀναίσθητος" postag="d--------" relation="ADV" head="13"/>
       <word id="5" form="αὐτοὺς" lemma="αὐτός" postag="p-p---ma-" relation="SBJ" head="18"/>
       <word id="6" form="κελεύω" lemma="κελεύω" postag="v1spia---" relation="PRED_CO" head="84"/>
