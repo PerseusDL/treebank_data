@@ -7617,7 +7617,7 @@
       <word id="49" insertion_id="0049e" artificial="elliptic" relation="ADV" form="[0]" head="11"/>
     </sentence>
     <sentence id="248" document_id="urn:cts:greekLit:tlg0003.tlg001.perseus-grc1" subdoc="1.40.5">
-      <word id="1" form="οὐδὲ" lemma="οὐδέ" postag="d--------" relation="AuxZ" head="1"/>
+      <word id="1" form="οὐδὲ" lemma="οὐδέ" postag="d--------" relation="AuxZ" head="7"/>
       <word id="2" form="γὰρ" lemma="γάρ" postag="d--------" relation="AuxY" head="22"/>
       <word id="3" form="ἡμεῖς" lemma="ἐγώ" postag="p1p---mn-" relation="SBJ" head="22"/>
       <word id="4" form="Σαμίων" lemma="Σάμιος" postag="n-p---mg-" relation="SBJ" head="5"/>
