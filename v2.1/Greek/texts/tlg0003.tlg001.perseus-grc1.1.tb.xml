@@ -12399,7 +12399,7 @@
       <word id="9" form="μηδὲν" lemma="μηδείς" postag="p-s---na-" relation="OBJ" head="8"/>
       <word id="10" form="καὶ" lemma="καί" postag="c--------" relation="COORD" head="17"/>
       <word id="11" form="ἔργῳ" lemma="ἔργον" postag="n-s---nd-" relation="ADV" head="15"/>
-      <word id="12" form="οὐδὲ" lemma="οὐδέ" postag="d--------" relation="AuxZ" head="12"/>
+      <word id="12" form="οὐδὲ" lemma="οὐδέ" postag="d--------" relation="AuxZ" head="15"/>
       <word id="13" form="τ-" lemma="ὁ" postag="l-p---na-" relation="ATR" head="14"/>
       <word id="14" form="ἀναγκαῖα" lemma="ἀναγκαῖος" postag="a-p---na-" relation="OBJ" head="15"/>
       <word id="15" form="ἐξικέσθαι" lemma="ἐξικνέομαι" postag="v--anm---" relation="OBJ_CO" head="10"/>
