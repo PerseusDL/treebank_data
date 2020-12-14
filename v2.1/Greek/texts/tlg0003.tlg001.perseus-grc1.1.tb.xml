@@ -12623,7 +12623,7 @@
       <word id="21" form="αἰεὶ" lemma="ἀεί" postag="d--------" relation="ADV" head="22"/>
       <word id="22" form="κτᾶσθαι" lemma="κτάομαι" postag="v--pne---" relation="ADV_CO" head="35"/>
       <word id="23" form="καὶ" lemma="καί" postag="d--------" relation="AuxY" head="35"/>
-      <word id="24" form="μήτε" lemma="μήτε" postag="d--------" relation="AuxZ" head="24"/>
+      <word id="24" form="μήτε" lemma="μήτε" postag="d--------" relation="AuxZ" head="28"/>
       <word id="25" form="ἑορτὴν" lemma="ἑορτή" postag="n-s---fa-" relation="OBJ" head="28"/>
       <word id="26" form="ἄλλο" lemma="ἄλλος" postag="a-s---na-" relation="ATR" head="27"/>
       <word id="27" form="τι" lemma="τις" postag="p-s---na-" relation="OCOMP" head="28"/>
