@@ -5802,7 +5802,7 @@
       <word id="9" form="τὸν" lemma="ὁ" postag="l-s---ma-" relation="ATR" head="10"/>
       <word id="10" form="δῆμον" lemma="δῆμος" postag="n-s---ma-" relation="OBJ" head="15"/>
       <word id="11" form="δ̓" lemma="δέ" postag="c--------" relation="COORD" head="20"/>
-      <word id="12" form="οὐδὲ" lemma="οὐδέ" postag="d--------" relation="ADV" head="12"/>
+      <word id="12" form="οὐδὲ" lemma="οὐδέ" postag="d--------" relation="ADV" head="15"/>
       <word id="13" form="τοῦτο" lemma="οὗτος" postag="p-s---nn-" relation="SBJ" head="15"/>
       <word id="14" form="μαλακώτερον" lemma="μαλακός" postag="a-s---mac" relation="OCOMP" head="15"/>
       <word id="15" form="ἐποίησε" lemma="ποιέω" postag="v3saia---" relation="PRED_CO" head="11"/>
@@ -6300,7 +6300,7 @@
       <word id="4" form="ψυχῆς" lemma="ψυχή" postag="n-s---fg-" relation="ADV" head="1"/>
       <word id="5" form="τῆς" lemma="ὁ" postag="l-s---fg-" relation="ATR" head="4"/>
       <word id="6" form="ἐμῆς" lemma="ἐμός" postag="a-s---fg-" relation="ATR" head="4"/>
-      <word id="7" form="οὐδὲ" lemma="οὐδέ" postag="d--------" relation="AuxZ" head="7"/>
+      <word id="7" form="οὐδὲ" lemma="οὐδέ" postag="d--------" relation="AuxZ" head="9"/>
       <word id="8" form="τῇ" lemma="ὁ" postag="l-s---fd-" relation="ATR" head="9"/>
       <word id="9" form="μητρί" lemma="μήτηρ" postag="n-s---fd-" relation="OBJ" head="21"/>
       <word id="10" form="," lemma="," postag="u--------" relation="AuxX" head="0"/>
