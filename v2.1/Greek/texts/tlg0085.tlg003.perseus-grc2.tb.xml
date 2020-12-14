@@ -4812,7 +4812,7 @@
       <word id="11" form="μογοῦσιν" lemma="μογέω" postag="v3ppia---" head="15" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg003:603"/>
       <word id="12" form=";" lemma=";" postag="u--------" head="0" relation="AuxK" cite=""/>
       <word id="13" insertion_id="0014e" form="[0]" artificial="elliptic" head="0" relation="PRED"/>
-      <word id="14" insertion_id="0014f" form="[1]" artificial="elliptic" head="14" relation="OBJ"/>
+      <word id="14" insertion_id="0014f" form="[1]" artificial="elliptic" head="13" relation="OBJ"/>
     </sentence>
     <sentence subdoc="604-607" id="2897184" document_id="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2">
       <annotator>FrancescoM</annotator>
