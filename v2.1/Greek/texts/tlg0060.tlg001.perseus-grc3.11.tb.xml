@@ -3645,7 +3645,7 @@
       <word id="7" form="κρίνειεν" lemma="κρίνω" postag="v3saoa---" relation="PRED" head="0"/>
       <word id="8" form="," lemma="," postag="u--------" relation="AuxX" head="0"/>
       <word id="9" form="οἵτινες" lemma="ὅστις" postag="p-p---mn-" relation="SBJ" head="20"/>
-      <word id="10" form="οὐδὲ" lemma="οὐδέ" postag="d--------" relation="AuxZ" head="10"/>
+      <word id="10" form="οὐδὲ" lemma="οὐδέ" postag="d--------" relation="AuxZ" head="20"/>
       <word id="11" form="τῷ" lemma="ὁ" postag="l-s---nd-" relation="ATR" head="13"/>
       <word id="12" form="χιλιοστῷ" lemma="χιλιοστός" postag="a-s---nd-" relation="ATR" head="13"/>
       <word id="13" form="μέρει" lemma="μέρος" postag="n-s---nd-" relation="ADV" head="16"/>
