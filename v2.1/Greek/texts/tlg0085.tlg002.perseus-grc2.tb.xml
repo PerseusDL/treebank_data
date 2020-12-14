@@ -7496,14 +7496,13 @@
       <word id="2" form="·" lemma="·" postag="u--------" head="0" relation="AuxK" cite=""/>
       <word id="3" insertion_id="0002e" form="[0]" artificial="elliptic" head="0" relation="PRED"/>
     </sentence>
-    <sentence subdoc="1026-1027" id="2901211" document_id="urn:cts:greekLit:tlg0085.tlg002.perseus-grc2">
+    <sentence subdoc="1027" id="2901211" document_id="urn:cts:greekLit:tlg0085.tlg002.perseus-grc2">
       <annotator>FrancescoM</annotator>
-      <word id="1" form="κατεῖ-" lemma="" postag="---------" head="5" relation="XSEG" cite="urn:cts:greekLit:tlg0085.tlg002:1026"/>
-      <word id="3" form="δον" lemma="κατεῖδον" postag="v3paia---" head="6" relation="PRED_CO" cite="urn:cts:greekLit:tlg0085.tlg002:1027"/>
-      <word id="4" form="δὲ" lemma="δέ" postag="g--------" head="0" relation="COORD" cite="urn:cts:greekLit:tlg0085.tlg002:1027"/>
-      <word id="5" form="πῆμ̓" lemma="πῆμα" postag="n-s---na-" head="5" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg002:1027"/>
-      <word id="6" form="ἄελπτον" lemma="ἄελπτος" postag="a-s---na-" head="7" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg002:1027"/>
-      <word id="7" form="." lemma="." postag="u--------" head="0" relation="AuxK" cite=""/>
+      <word id="1" form="κατεῖδον" lemma="κατεῖδον" postag="v3paia---" head="2" relation="PRED_CO" cite="urn:cts:greekLit:tlg0085.tlg002:1027"/>
+      <word id="2" form="δὲ" lemma="δέ" postag="g--------" head="0" relation="COORD" cite="urn:cts:greekLit:tlg0085.tlg002:1027"/>
+      <word id="3" form="πῆμ̓" lemma="πῆμα" postag="n-s---na-" head="1" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg002:1027"/>
+      <word id="4" form="ἄελπτον" lemma="ἄελπτος" postag="a-s---na-" head="3" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg002:1027"/>
+      <word id="5" form="." lemma="." postag="u--------" head="0" relation="AuxK" cite=""/>
     </sentence>
     <sentence subdoc="1028" id="2901214" document_id="urn:cts:greekLit:tlg0085.tlg002.perseus-grc2">
       <annotator>FrancescoM</annotator>
