@@ -3593,7 +3593,7 @@
       <word id="14" form="τάς" lemma="ὁ" postag="p-p---fa-" head="18" relation="OBJ_CO" cite="urn:cts:greekLit:tlg0011.tlg002:434"/>
       <word id="15" form="τε" lemma="τε" postag="g--------" head="18" relation="AuxY" cite="urn:cts:greekLit:tlg0011.tlg002:434"/>
       <word id="16" form="πρόσθεν" lemma="πρόσθεν" postag="d--------" head="14" relation="ATR" cite="urn:cts:greekLit:tlg0011.tlg002:434"/>
-      <word id="17" form="τάς" lemma="ὁ" postag="--p---fa-" head="21" relation="ATR" cite="urn:cts:greekLit:tlg0011.tlg002:434"/>
+      <word id="17" form="τάς" lemma="ὁ" postag="p-p---fa-" head="21" relation="ATR" cite="urn:cts:greekLit:tlg0011.tlg002:434"/>
       <word id="18" form="τε" lemma="τε" postag="g--------" head="20" relation="COORD" cite="urn:cts:greekLit:tlg0011.tlg002:434"/>
       <word id="19" form="νῦν" lemma="νῦν" postag="d--------" head="21" relation="ATR" cite="urn:cts:greekLit:tlg0011.tlg002:434"/>
       <word id="20" form="ἠλέγχομεν" lemma="ἐλέγχω" postag="v1piia---" head="13" relation="PRED_CO" cite="urn:cts:greekLit:tlg0011.tlg002:434"/>

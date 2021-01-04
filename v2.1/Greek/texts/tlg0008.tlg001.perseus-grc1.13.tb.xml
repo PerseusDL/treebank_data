@@ -12698,7 +12698,7 @@
       <word id="30" form="παῤ" lemma="παρά" postag="r--------" relation="AuxP" head="28"/>
       <word id="31" form="αὐτῆς" lemma="αὐτός" postag="p-s---fg-" relation="ADV" head="30"/>
       <word id="32" form="μηδέποτε" lemma="μηδέποτε" postag="d--------" relation="ADV" head="28"/>
-      <word id="33" form="τοῦ" lemma="ὁ" postag="a-s---ng-" relation="ATR" head="34"/>
+      <word id="33" form="τοῦ" lemma="ὁ" postag="l-s---ng-" relation="ATR" head="34"/>
       <word id="34" form="σχήματος" lemma="σχῆμα" postag="n-s---ng-" relation="OBJ" head="28"/>
       <word id="35" form="," lemma="," postag="u--------" relation="AuxX" head="40"/>
       <word id="36" form="ἐν" lemma="ἐν" postag="r--------" relation="AuxP" head="40"/>
