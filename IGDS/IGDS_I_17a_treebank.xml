@@ -1,0 +1,28 @@
+<treebank xmlns:saxon='http://saxon.sf.net/' xml:lang='grc' format='smyth3' version='1.5'>
+  <date>2015-08-28 21:35:10 +0000</date>
+  <annotator>
+    <short/>
+    <name/>
+    <address/>
+    <uri>http://services2.perseids.org/llt/segtok</uri>
+  </annotator>
+  <annotator>
+    <short/>
+    <name/>
+    <address/>
+    <uri>http://github.com/latin-language-toolkit/arethusa</uri>
+  </annotator>
+  <annotator>
+    <short>Francesca Oro</short>
+    <name>Francesca Dell Oro</name>
+    <address>francescadelloro81@gmail.com</address>
+    <uri>http://data.perseus.org/sosol/users/Francesca%20Oro</uri>
+  </annotator>
+  <sentence id='1' document_id='' subdoc='' span=''>
+    <word id='1' form='Ηιπ(π)οδρόμες' lemma='Ἱπποδρόμη' postag='n-s---fg-' relation='ATR' gloss='Hippodrome' sg='gnt dpd prp pss_bln' head='3'/>
+    <word id='2' form='τόδε' lemma='ὅδε' postag='p-s---nn-' relation='SBJ' sg='sbs nmn dpd' gloss='this' head='5'/>
+    <word id='3' form='δο͂ρον' lemma='δῶρον' postag='n-s---nn-' relation='PNOM' sg='nmn dpd' gloss='gift' head='5'/>
+    <word id='4' form='Πεδίοι' lemma='Πέδιος' postag='n-s---md-' relation='OBJ' sg='dtv dpd prp int adv' gloss='Pedios' head='5'/>
+    <word id='5' insertion_id='0001e' artificial='elliptic' relation='PRED' lemma='εἰμί' postag='v3spia---' gloss='be' form='ἐστί' sg='ind stt' head='0'/>
+  </sentence>
+</treebank>
