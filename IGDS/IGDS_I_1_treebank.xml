@@ -1,0 +1,27 @@
+<treebank xmlns:saxon='http://saxon.sf.net/' xml:lang='grc' format='smyth3' version='1.5'>
+  <date>Sun Jan 25 10:32:28 +0000 2015</date>
+  <annotator>
+    <short/>
+    <name/>
+    <address/>
+    <uri>http://services2.perseids.org/llt/segtok</uri>
+  </annotator>
+  <annotator>
+    <short/>
+    <name/>
+    <address/>
+    <uri>http://github.com/latin-language-toolkit/arethusa</uri>
+  </annotator>
+  <annotator>
+    <short>Francesca Oro</short>
+    <name>Francesca Oro</name>
+    <address>francescadelloro81@gmail.com</address>
+    <uri>http://data.perseus.org/sosol/users/Francesca%20Oro</uri>
+  </annotator>
+  <sentence id='1' document_id='' subdoc='' span=''>
+    <word id='1' form='Τιτταβό' lemma='Τιτταβώ' postag='n-s---fn-' relation='SBJ' sg='nmn dpd' gloss='Tittabó' head='4'/>
+    <word id='2' form='⁝' lemma='' postag='' relation='AuxX' sg='' head='1'/>
+    <word id='3' form='φίλη' lemma='φίλος' postag='a-s---fn-' relation='PNOM' sg='prp' gloss='dear' head='4'/>
+    <word id='4' insertion_id='0003e' artificial='elliptic' relation='PRED' lemma='εἰμί' postag='v3spia---' gloss='be' form='ἐστί' sg='ind stt' head='0'/>
+  </sentence>
+</treebank>

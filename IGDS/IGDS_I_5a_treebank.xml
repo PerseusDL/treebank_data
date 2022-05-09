@@ -1,0 +1,27 @@
+<treebank xmlns:saxon='http://saxon.sf.net/' xml:lang='grc' format='smyth3' version='1.5'>
+  <date>2015-08-26 16:40:08 +0000</date>
+  <annotator>
+    <short/>
+    <name/>
+    <address/>
+    <uri>http://services2.perseids.org/llt/segtok</uri>
+  </annotator>
+  <annotator>
+    <short/>
+    <name/>
+    <address/>
+    <uri>http://github.com/latin-language-toolkit/arethusa</uri>
+  </annotator>
+  <annotator>
+    <short>Francesca Oro</short>
+    <name>Francesca Dell Oro</name>
+    <address>francescadelloro81@gmail.com</address>
+    <uri>http://data.perseus.org/sosol/users/Francesca%20Oro</uri>
+  </annotator>
+  <sentence id='1' document_id='' subdoc='' span=''>
+    <word id='1' form='Μεσσένιοι' lemma='Μεσσήνιοι' postag='n-p---mn-' relation='SBJ' gloss='inhabitant of Messene' sg='nmn dpd' head='3'/>
+    <word id='2' form='Μυλαίον' lemma='Μυλαῖος' postag='n-p---mg-' relation='OBJ' gloss='inhabitant of Mylai' sg='gnt dpd prp dvd' head='4'/>
+    <word id='3' insertion_id='0002e' artificial='elliptic' relation='PRED' lemma='ἀνατίθημι' postag='v3paia---' gloss='dedicate' form='ἀνέθηκαν' sg='' head='0'/>
+    <word id='4' insertion_id='0002f' artificial='elliptic' relation='ADV' lemma='λαμβάνω' postag='v-papamn-' gloss='' form='λαβόντες' head='3' sg='adj crc tmp tmp_dst'/>
+  </sentence>
+</treebank>

@@ -1,0 +1,33 @@
+<treebank xmlns:saxon='http://saxon.sf.net/' xml:lang='grc' version='1.5' direction='ltr' format='smyth3'>
+  <date>2021-04-22 06:42:21 UTC</date>
+  <annotator>
+    <short/>
+    <name/>
+    <address/>
+    <uri>http://github.com/latin-language-toolkit/arethusa</uri>
+  </annotator>
+  <annotator>
+    <short/>
+    <name/>
+    <address/>
+    <uri>http://services2.perseids.org/llt/segtok</uri>
+  </annotator>
+  <annotator>
+    <short/>
+    <name/>
+    <address/>
+    <uri>http://github.com/latin-language-toolkit/arethusa</uri>
+  </annotator>
+  <annotator>
+    <short>Francesca Oro</short>
+    <name>Francesca Dell Oro</name>
+    <address>francescadelloro81@gmail.com</address>
+    <uri>http://data.perseus.org/sosol/users/Francesca%20Oro</uri>
+  </annotator>
+  <sentence id='1' document_id='' subdoc='' span=''>
+    <word id='1' form='Δαγκλαῖοι' lemma='Δαγκλαῖος' postag='n-p---mn-' relation='SBJ' sg='nmn dpd' gloss='inhabitant of Zankle' head='3'/>
+    <word id='2' form='Ῥεγίνον' lemma='Ῥηγῖνος' postag='n-p---mg-' relation='OBJ' gloss='inhabitant of Rhegium' sg='gnt dpd prp dvd' head='4'/>
+    <word id='3' insertion_id='0002e' artificial='elliptic' relation='PRED' form='ἀνέθηκαν' lemma='ἀνατίθημι' postag='v3paia---' gloss='dedicate' sg='ind stt' head='0'/>
+    <word id='4' insertion_id='0002f' artificial='elliptic' relation='ADV' lemma='λαμβάνω' postag='v-papamn_' gloss='take' form='λαβόντες' head='3' sg=''/>
+  </sentence>
+</treebank>

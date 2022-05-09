@@ -1,0 +1,35 @@
+<treebank xmlns:saxon='http://saxon.sf.net/' xml:lang='grc' version='1.5' direction='ltr' format='smyth3'>
+  <date>2021-04-21 09:08:41 UTC</date>
+  <annotator>
+    <short/>
+    <name/>
+    <address/>
+    <uri>http://github.com/latin-language-toolkit/arethusa</uri>
+  </annotator>
+  <annotator>
+    <short/>
+    <name/>
+    <address/>
+    <uri>http://services2.perseids.org/llt/segtok</uri>
+  </annotator>
+  <annotator>
+    <short/>
+    <name/>
+    <address/>
+    <uri>http://github.com/latin-language-toolkit/arethusa</uri>
+  </annotator>
+  <annotator>
+    <short>Francesca Oro</short>
+    <name>Francesca Dell Oro</name>
+    <address>francescadelloro81@gmail.com</address>
+    <uri>http://data.perseus.org/sosol/users/Francesca%20Oro</uri>
+  </annotator>
+  <sentence id='1' document_id='' subdoc='' span=''>
+    <word id='1' form='[Διὶ' lemma='Ζεύς' postag='n-s---md-' relation='OBJ' gloss='Zeus' sg='dtv dpd prp drc' head='4'/>
+    <word id='2' form='Ὀ]λυνπίο(ι)' lemma='Ὀλύμπιος' postag='a-s---md-' relation='ATR' gloss='Olympian' sg='sbs dtv dpd prp drc' head='1'/>
+    <word id='3' form='Μεσσένι[οι' lemma='Μεσσήνιοι' postag='n-p---mn-' relation='SBJ' sg='nmn dpd' gloss='inhabitants of Messene' head='4'/>
+    <word id='4' insertion_id='0006e' artificial='elliptic' relation='PRED' lemma='ἀνατίθημι' postag='v3paia---' gloss='set up as a votive gift' form='ἀνέθηκαν' sg='ind stt' head='0'/>
+    <word id='5' form='Λοκρο͂ν]' lemma='Λοκροί' postag='n-p---mg-' relation='OBJ' sg='gnt dpd abl spr cnc' gloss='inhabitants of Lokroi' head='6'/>
+    <word id='6' insertion_id='0006f' artificial='elliptic' relation='ADV' lemma='λαμβάνω' postag='v-papamn-' gloss='take' form='λαβόντες' sg='adj crc tmp tmp_dst' head='4'/>
+  </sentence>
+</treebank>
