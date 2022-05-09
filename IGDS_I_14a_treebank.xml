@@ -1,0 +1,25 @@
+<treebank xmlns:saxon='http://saxon.sf.net/' xml:lang='grc' format='smyth3' version='1.5'>
+  <date>2015-08-28 20:57:30 +0000</date>
+  <annotator>
+    <short/>
+    <name/>
+    <address/>
+    <uri>http://services2.perseids.org/llt/segtok</uri>
+  </annotator>
+  <annotator>
+    <short/>
+    <name/>
+    <address/>
+    <uri>http://github.com/latin-language-toolkit/arethusa</uri>
+  </annotator>
+  <annotator>
+    <short>Francesca Oro</short>
+    <name>Francesca Dell Oro</name>
+    <address>francescadelloro81@gmail.com</address>
+    <uri>http://data.perseus.org/sosol/users/Francesca%20Oro</uri>
+  </annotator>
+  <sentence id='1' document_id='' subdoc='' span=''>
+    <word id='1' form='[H]εκαταίο' lemma='Ἑκαταῖος' postag='n-s---mg-' relation='PNOM' gloss='Hecataios' sg='gnt dpd prp pss_bln' head='2'/>
+    <word id='2' form='ἐ[μί]' lemma='εἰμί' postag='v1spia---' relation='PRED' sg='ind stt' gloss='be' head='0'/>
+  </sentence>
+</treebank>

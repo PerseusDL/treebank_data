@@ -1,0 +1,33 @@
+<treebank xmlns:saxon='http://saxon.sf.net/' xml:lang='grc' format='smyth3' version='1.5'>
+  <date>2015-08-27 16:22:38 +0000</date>
+  <annotator>
+    <short/>
+    <name/>
+    <address/>
+    <uri>http://services2.perseids.org/llt/segtok</uri>
+  </annotator>
+  <annotator>
+    <short/>
+    <name/>
+    <address/>
+    <uri>http://github.com/latin-language-toolkit/arethusa</uri>
+  </annotator>
+  <annotator>
+    <short>Francesca Oro</short>
+    <name>Francesca Dell Oro</name>
+    <address>francescadelloro81@gmail.com</address>
+    <uri>http://data.perseus.org/sosol/users/Francesca%20Oro</uri>
+  </annotator>
+  <sentence id='1' document_id='' subdoc='' span=''>
+    <word id='1' form='Ζενὸς' lemma='Ζεύς' postag='n-s---mg-' relation='ATR' sg='gnt dpd prp pss_bln' gloss='Zeus' head='3'/>
+    <word id='2' form='ἐριγδούποιο' lemma='ἐρίγδουπος' postag='a-s---mg-' relation='ATR' sg='prp' gloss='thundering' head='1'/>
+    <word id='3' form='κόρει' lemma='κόρη' postag='n-s---fd-' relation='APOS' sg='dtv dpd prp drc' gloss='daughter' head='5'/>
+    <word id='4' form='γλαυκόπι' lemma='γλαυκῶπις' postag='a-s---fdp' relation='ATR' sg='prp' gloss='with gleaming eyes' head='3'/>
+    <word id='5' form='Ἀθένει' lemma='Ἀθήνη' postag='n-s---fd-' relation='OBJ' sg='dtv dpd prp drc' gloss='Athene' head='9'/>
+    <word id='6' form='Θριπύλος' lemma='Θρίπυλος' postag='n-s---mn-' relation='SBJ' sg='nmn dpd' gloss='Thripylos' head='9'/>
+    <word id='7' form='εὐξάμενος' lemma='εὔχομαι' postag='v-sapmmn-' relation='ADV' sg='adj crc tmp squ_lct' gloss='pray' head='9'/>
+    <word id='8' form='τήνδ&apos;' lemma='ὅδε' postag='p-s---fa-' relation='OBJ' sg='sbs acc dpd aff' gloss='this' head='9'/>
+    <word id='9' form='ἀνέθεκε' lemma='ἀνατίθημι' postag='v3saia---' relation='PRED' gloss='dedicate' sg='ind stt' head='0'/>
+    <word id='10' form='θεαῖ' lemma='θεά' postag='n-s---fd-' relation='ATR' sg='' gloss='goddess' head='5'/>
+  </sentence>
+</treebank>

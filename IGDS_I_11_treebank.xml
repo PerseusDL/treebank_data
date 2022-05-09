@@ -1,0 +1,34 @@
+<treebank xmlns:saxon='http://saxon.sf.net/' xml:lang='grc' format='smyth3' version='1.5'>
+  <date>2015-08-28 17:59:34 +0000</date>
+  <annotator>
+    <short/>
+    <name/>
+    <address/>
+    <uri>http://services2.perseids.org/llt/segtok</uri>
+  </annotator>
+  <annotator>
+    <short/>
+    <name/>
+    <address/>
+    <uri>http://github.com/latin-language-toolkit/arethusa</uri>
+  </annotator>
+  <annotator>
+    <short>Francesca Oro</short>
+    <name>Francesca Dell Oro</name>
+    <address>francescadelloro81@gmail.com</address>
+    <uri>http://data.perseus.org/sosol/users/Francesca%20Oro</uri>
+  </annotator>
+  <sentence id='1' document_id='' subdoc='' span=''>
+    <word id='1' form='Εὐοπίδας' lemma='Εὐοπίδας' postag='n-s---mn-' relation='SBJ' sg='nmn dpd' gloss='Euopidas' head='2'/>
+    <word id='2' form='hιάλε' lemma='ἰάλλω' postag='v3saip---' relation='PRED_CO' gloss='send forth' sg='ind stt' head='6'/>
+    <word id='3' form='Διεύχες' lemma='Διεύχης' postag='n-s---mn-' relation='SBJ' sg='nmn dpd' gloss='Dieuxes' head='5'/>
+    <word id='4' form=':' lemma='punc1' postag='u--------' relation='AuxK' sg='' head='0'/>
+    <word id='5' insertion_id='0005e' artificial='elliptic' relation='PRED_CO' form='hιάλε' sg='ind stt' head='6' gloss='send forth' lemma='ἱάλλω' postag='v3saip---'/>
+    <word id='6' insertion_id='0004e' artificial='elliptic' relation='COORD' form=',' sg='' head='0'/>
+  </sentence>
+  <sentence id='2' document_id='' subdoc='' span=''>
+    <word id='1' form='λοχαγὸς' lemma='λοχαγός' postag='n-s---mn-' relation='PNOM' gloss='commander of a company' sg='nmn dpd' head='3'/>
+    <word id='2' form='Δαῖτις' lemma='Δαῖτις' postag='n-s---mn-' relation='SBJ' gloss='Daitis' sg='nmn dpd' head='3'/>
+    <word id='3' insertion_id='0002e' artificial='elliptic' relation='PRED' lemma='εἰμί' postag='v3spia---' gloss='be' form='ἐστί' sg='ind stt' head='0'/>
+  </sentence>
+</treebank>
