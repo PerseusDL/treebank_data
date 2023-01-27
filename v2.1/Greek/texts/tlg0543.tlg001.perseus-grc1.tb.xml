@@ -2915,7 +2915,7 @@
       <word id="20" form="βοηθεῖν" lemma="βοηθέω" postag="v--pna---" relation="OBJ" head="21"/>
       <word id="21" form="ζητεῖν" lemma="ζητέω" postag="v--pna---" relation="SBJ" head="39"/>
       <word id="22" form="τοῖς" lemma="ὁ" postag="l-p---md-" relation="ATR" head="19"/>
-      <word id="23" form="τὰ" lemma="ὁ" postag="l-p---nb-" relation="ATR" head="24"/>
+      <word id="23" form="τὰ" lemma="ὁ" postag="l-p---na-" relation="ATR" head="24"/>
       <word id="24" form="παραπλήσια" lemma="παραπλήσιος" postag="a-p---na-" relation="OBJ" head="25"/>
       <word id="25" form="πεποιηκόσιν" lemma="ποιέω" postag="v-prpamd-" relation="ATR" head="19"/>
       <word id="26" form="οὐ" lemma="οὐ" postag="d--------" relation="AuxZ" head="27"/>
