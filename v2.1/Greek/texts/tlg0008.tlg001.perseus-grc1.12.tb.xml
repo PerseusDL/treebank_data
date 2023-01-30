@@ -12047,7 +12047,7 @@
     <sentence id="558" document_id="urn:cts:greekLit:tlg0008.tlg001.perseus-grc1" subdoc="12.47">
       <word id="1" form="ἀφικόμενος" lemma="ἀφικνέομαι" postag="v-sapmmn-" relation="ADV" head="8"/>
       <word id="2" form="δ̓" lemma="δέ" postag="d--------" relation="AuxY" head="8"/>
-      <word id="3" form="Ἀθήνησιν" lemma="Ἀθῆναι" postag="n-p---fl-" relation="OBJ" head="1"/>
+      <word id="3" form="Ἀθήνησιν" lemma="Ἀθῆναι" postag="d--------" relation="ADV" head="1"/>
       <word id="4" form="ἐξ" lemma="ἐκ" postag="r--------" relation="AuxP" head="1"/>
       <word id="5" form="Ὀλυμπίας" lemma="Ὀλυμπίας" postag="n-p---ma-" relation="OBJ" head="4"/>
       <word id="6" form="δύο" lemma="δύο" postag="a--------" relation="ATR" head="7"/>
