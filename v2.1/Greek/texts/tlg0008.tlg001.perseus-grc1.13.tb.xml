@@ -11891,7 +11891,7 @@
       <word id="18" form="τῶν" lemma="ὁ" postag="l-p---fg-" relation="ATR" head="19"/>
       <word id="19" form="ἐρωμένων" lemma="ἐράω" postag="v-pppefg-" relation="ADV" head="17"/>
       <word id="20" form="[" lemma="[" postag="u--------" relation="AuxG" head="21"/>
-      <word id="21" form="ἥσθε" lemma="ἥδομαι" postag="v3said---" relation="PRED" head="0"/>
+      <word id="21" form="ἥσθε" lemma="ἥδομαι" postag="v3saie---" relation="PRED" head="0"/>
       <word id="22" form="δ̓" lemma="δέ" postag="d--------" relation="AuxY" head="21"/>
       <word id="23" form="ὑπ̓" lemma="ὑπό" postag="r--------" relation="AuxP" head="26"/>
       <word id="24" form="αὐτῆς" lemma="αὐτός" postag="p-s---fg-" relation="OBJ" head="23"/>

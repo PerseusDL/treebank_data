@@ -1335,7 +1335,7 @@
       <word id="27" form="," lemma="," postag="u--------" relation="AuxX" head="1"/>
       <word id="28" form="ταχέως" lemma="ταχύς" postag="d--------" relation="ADV" head="33"/>
       <word id="29" form="ἂν" lemma="ἄν" postag="d--------" relation="AuxY" head="33"/>
-      <word id="30" form="οἶμαι" lemma="οἴομαι" postag="v1ppid---" relation="PRED" head="0"/>
+      <word id="30" form="οἶμαι" lemma="οἴομαι" postag="v1ppie---" relation="PRED" head="0"/>
       <word id="31" form="πάντας" lemma="πᾶς" postag="a-p---ma-" relation="ATR" head="32"/>
       <word id="32" form="αὐτοὺς" lemma="αὐτός" postag="p-p---ma-" relation="SBJ" head="33"/>
       <word id="33" form="ὁμολογήσειν" lemma="ὁμολογέω" postag="v--fna---" relation="OBJ" head="30"/>
@@ -2370,7 +2370,7 @@
       <word id="43" form="συνορούσης" lemma="συνοράω" postag="v-sppafg-" relation="ADV" head="41"/>
       <word id="44" form="οὐχ" lemma="οὐ" postag="d--------" relation="AuxZ" head="47"/>
       <word id="45" form="ὡς" lemma="ὡς" postag="c--------" relation="AuxC" head="47"/>
-      <word id="46" form="ἔτυχε" lemma="τυγχάνω" postag="v3said---" relation="ADV" head="45"/>
+      <word id="46" form="ἔτυχε" lemma="τυγχάνω" postag="v3saie---" relation="ADV" head="45"/>
       <word id="47" form="παρηνώχλουν" lemma="παρά,ἀνά-ὀχλέω" postag="v3piia---" relation="PRED_CO" head="54"/>
       <word id="48" form="τοῖς" lemma="ὁ" postag="l-p---md-" relation="ATR" head="50"/>
       <word id="49" form="τε" lemma="τε" postag="d--------" relation="AuxY" head="51"/>
@@ -2611,7 +2611,7 @@
       <word id="64" form="ὅτ̓" lemma="ὅτι" postag="c--------" relation="AuxC" head="50"/>
       <word id="65" form="αὐτὸν" lemma="αὐτός" postag="p-s---ma-" relation="SBJ" head="66"/>
       <word id="66" form="ἐξιέναι" lemma="ἐξίημι" postag="v--pna---" relation="OBJ" head="67"/>
-      <word id="67" form="δέοι" lemma="δέω" postag="v3spod---" relation="ADV" head="64"/>
+      <word id="67" form="δέοι" lemma="δέω" postag="v3spoe---" relation="ADV" head="64"/>
       <word id="68" form="μετὰ" lemma="μετά" postag="r--------" relation="AuxP" head="66"/>
       <word id="69" form="τῶν" lemma="ὁ" postag="l-p---fg-" relation="ATR" head="70"/>
       <word id="70" form="δυνάμεων" lemma="δύναμις" postag="n-p---fg-" relation="ADV" head="68"/>

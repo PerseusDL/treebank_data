@@ -35815,7 +35815,7 @@
       <word id="23" form="καὶ" lemma="καί" postag="c--------" relation="COORD" head="19"/>
       <word id="24" form="τοῖσι" lemma="ὁ" postag="l-p---nd-" relation="ATR" head="25"/>
       <word id="25" form="ἐγχειριδίοισι" lemma="ἐγχειρίδιος" postag="a-p---nd-" relation="ADV_CO" head="23"/>
-      <word id="26" form="συνέχεσθαι" lemma="συνέρχομαι" postag="v--pnd---" relation="OBJ_CO" head="12"/>
+      <word id="26" form="συνέχεσθαι" lemma="συνέρχομαι" postag="v--pne---" relation="OBJ_CO" head="12"/>
       <word id="27" form="." lemma="." postag="u--------" relation="AuxK" head="0"/>
     </sentence>
     <sentence id="1530" document_id="urn:cts:greekLit:tlg0016.tlg001.perseus-grc1" subdoc="1.214">
