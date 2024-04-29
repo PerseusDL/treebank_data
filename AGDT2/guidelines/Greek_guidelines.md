@@ -554,7 +554,7 @@ The syntactic layer allows annotation of traditional syntactic functions, such a
 	are ADV modifications as well.</p>	
 </a>
 
-<a id="atvv">
+<a id="atv">
 <h4>3.6 ATV/AtvV</h4>
 <p>ATV/AtvV ("verbal attribute") is in the AGDT 1.0 the label for those adjectives agreeing with a subject but functioning as adjuncts. They are annotated as ADV and appended to the governing verb in the AGDT 2.0	
 	(<a href="https://www.perseids.org/tools/arethusa/app/#/perseids?chunk=7&amp;doc=4971" target="_blank">tree1</a>). 	
