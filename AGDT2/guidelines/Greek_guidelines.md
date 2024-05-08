@@ -425,7 +425,7 @@ The Conjunction is an invariable PoS, which can be morphologically defined as a 
 <h4>2.9 Numeral</h4>
 
 <p>
-The numeral is a word form belonging to the set defined by SG (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+347&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">347</a>-<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+354&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">354</a>). A numeral is annotated for its type: cardinal, ordinal, or adverb. Cardinal and ordinal numerals are always taken to be <a href="#adj">adjectives</a> (even when a cardinal is indeclinable), and so annotated for gender, number, and case (if declinable).</p>
+The numeral is a word form belonging to the set defined by SG (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+347&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">347</a>-<a href="http://www.perseus.tufts.edu/hopper/text?doc=Smyth+grammar+354&amp;fromdoc=Perseus%3Atext%3A1999.04.0007" target="_blank">354</a>).
 
 <p>The lemma translation should be an English numeral.</p>
 
