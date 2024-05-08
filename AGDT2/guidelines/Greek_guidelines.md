@@ -240,8 +240,8 @@ In the annotation environment "Arethusa", the morphological annotation of each w
           </li>
 </ol>
 
-<p id="postag">The morpgological annotation is represented as a 9-character string, where each 
-position correspond to a specific category:
+<p id="postag">The morphological annotation is represented as a 9-character string, where each 
+position corresponds to a specific category:
 
                        1. part of speech
 			
