@@ -257,7 +257,7 @@ position corresponds to a specific category:
 				m	numeral
 				i	interjection
 				u	punctuation
-    				x       not avaialble (only for elliptical nodes)
+    			x       not avaialble (only for elliptical nodes)
 			
 			2. 	person
 			
