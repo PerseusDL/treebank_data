@@ -264,12 +264,15 @@ position corresponds to a specific category:
 				1	first person
 				2	second person
 				3	third person
+    			-	category does not apply
 			
 			3. 	number
 			
 				s	singular
 				p	plural
 				d	dual
+        			-	category does not apply
+
 			
 			4. 	tense
 			
